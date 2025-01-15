@@ -46,8 +46,7 @@ function App() {
           <p>
             <b>🙏🏾 Pleassss...</b>
           </p>
-          If you're a student of Uni Abuja please help us answer these 5 quick
-          questions to help us build this:
+          Help us answer these 5 quick questions to help us build this:
         </section>
         <section>
           <iframe
