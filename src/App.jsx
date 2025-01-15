@@ -3,8 +3,8 @@ import whatsapp from "./assets/images/whatsapp-icon.png";
 
 function App() {
   return (
-    <div class="bg-white py-20">
-      <div class="w-10/12 lg:w-[900px] mx-auto p-3 rounded-lg border-2 border-gray-200">
+    <div class="bg-white py-10 md:py-20">
+      <div class="w-11/12 lg:w-[900px] mx-auto p-3 rounded-lg border-2 border-gray-200">
         <header class="flex justify-between border-b pb-3">
           <div>
             <a href="www.offk.ng" class="text-blue-900 font-semibold text-2xl">
