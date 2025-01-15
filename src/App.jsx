@@ -47,18 +47,13 @@ function App() {
             <b>🙏🏾 Pleassss...</b>
           </p>
           Help us answer these 5 quick questions to help us build this:
-        </section>
-        <section>
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdQiuXDHsDsaoRwIMCvFEF3pvpYvR4AA0nbMoohbByf2bQFXQ/viewform?embedded=true"
-            width="100%"
-            height="2299"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
+          <br />
+          <a
+            href="https://forms.gle/N3317A5wQxhrYBSz6"
+            class="text-blue-800 hover:opacity-60"
           >
-            Loading…
-          </iframe>
+            click here
+          </a>
         </section>
       </div>
     </div>
