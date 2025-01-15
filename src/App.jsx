@@ -3,7 +3,7 @@ import whatsapp from "./assets/images/whatsapp-icon.png";
 
 function App() {
   return (
-    <div class="bg-white py-10 md:py-20">
+    <div class="bg-white py-10 md:py-10">
       <div class="w-11/12 lg:w-[900px] mx-auto p-3 rounded-lg border-2 border-gray-200">
         <header class="flex justify-between border-b pb-3">
           <div>
@@ -46,17 +46,19 @@ function App() {
           <p>
             <b>🙏🏾 Pleassss...</b>
           </p>
-          Help us complete a quick survey to help us build this:
-          <br />
+          Help us complete a quick survey to help us build this:{" "}
           <a
             href="https://forms.gle/N3317A5wQxhrYBSz6"
-            class="text-blue-800 hover:opacity-60"
+            class="text-orange-500 hover:opacity-60"
           >
             click here
           </a>
           .
         </section>
       </div>
+        <footer class="text-center text-sm pt-6 text-gray-400">
+          &copy; 2025
+        </footer>
     </div>
   );
 }
