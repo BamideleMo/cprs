@@ -8,7 +8,7 @@ function App() {
         <header class="flex justify-between border-b pb-3">
           <div>
             <a href="www.offk.ng" class="text-blue-900 font-semibold text-2xl">
-              OffK.ng
+              OffK
             </a>
           </div>
           <div>...</div>
@@ -46,7 +46,7 @@ function App() {
           <p>
             <b>🙏🏾 Pleassss...</b>
           </p>
-          Help us answer these 5 quick questions to help us build this:
+          Help us complete a quick survey to help us build this:
           <br />
           <a
             href="https://forms.gle/N3317A5wQxhrYBSz6"
@@ -54,6 +54,7 @@ function App() {
           >
             click here
           </a>
+          .
         </section>
       </div>
     </div>
