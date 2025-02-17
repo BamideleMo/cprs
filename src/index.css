@@ -13,6 +13,11 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: robotoregular;
+  src: url(assets/font/Roboto-Regular.ttf);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -24,3 +29,12 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+.txt{
+  font-family: robotoregular;
+}
+
+.h{
+  max-height: 60vh;
+}
+

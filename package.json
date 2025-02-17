@@ -19,6 +19,11 @@
   },
   "dependencies": {
     "solid-js": "^1.9.3",
-    "@solidjs/meta": "^0.29.4"
+    "@solidjs/meta": "^0.29.4",
+    "@solidjs/router": "^0.10.10",
+    "@suid/material": "^0.16.0",
+    "css-skeletons": "^1.0.7",
+    "solid-form-handler": "^1.2.1",
+    "zod": "^3.22.4"
   }
 }
