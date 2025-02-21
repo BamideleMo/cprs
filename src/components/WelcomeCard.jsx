@@ -5,10 +5,10 @@ import Badge from "./Badge";
 function WelcomeCard(props) {
   return (
     <div class="space-y-1 text-black grow border border-yellow-200 bg-yellow-100 bg-opacity-20 p-2 rounded-lg">
-      <div class="text-lg font-semibold">Welcome to OffK</div>
+      <div class="text-lg text-blue-900">Welcome to OffK.ng</div>
       <div>
-        A simple online portal for finding off-campus accommodations; easier &
-        faster!
+        A Fast & Easy Way to Find Off-Campus Accommodation with Trusted House
+        Agents!
       </div>
     </div>
   );

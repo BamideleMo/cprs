@@ -3,18 +3,18 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: regularPoppins;
+  font-family: poppins;
   src: url(assets/font/Poppins-Regular.ttf);
 }
 
 @font-face {
-  font-family: regularPoppins;
+  font-family: poppins;
   src: url(assets/font/Poppins-Bold.ttf);
-  font-weight: bold;
+  font-weight: 600;
 }
 
 @font-face {
-  font-family: robotoregular;
+  font-family: roboto;
   src: url(assets/font/Roboto-Regular.ttf);
 }
 
@@ -25,13 +25,12 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: regularPoppins;
-  font-weight: 400;
+  font-family: poppins;
   font-style: normal;
 }
 
 .txt{
-  font-family: robotoregular;
+  font-family: roboto;
 }
 
 .h{

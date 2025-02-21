@@ -15,7 +15,7 @@ function PopContent(props) {
         <Switch>
           <Match when={props.hd === "Post For Rent"}>1</Match>
           <Match when={props.hd === "Post Request"}>2</Match>
-          <Match when={props.hd === "Filter Post"}>3</Match>
+          <Match when={props.hd === "Filter List"}>3</Match>
           <Match when={props.hd === "FAQs"}>
             <FAQs />
           </Match>

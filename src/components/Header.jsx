@@ -12,24 +12,24 @@ function Header(props) {
           <div>
             <Logo />
           </div>
-          <div class="w-fit space-x-4 pt-2.5 uppercase text-xs">
+          <div class="w-fit space-x-3 pt-2.5 uppercase text-xs">
             <span
               onClick={() => {
                 props.setPopup(true);
                 props.setPopHd("Post For Rent");
               }}
-              class="cursor-pointer bg-purple-600 hover:opacity-60 text-white p-2 rounded-lg"
+              class="cursor-pointer bg-blue-900 hover:opacity-60 text-white p-3 rounded-full"
             >
-              Post For Rent
+              Gist
             </span>
             <span
               onClick={() => {
                 props.setPopup(true);
                 props.setPopHd("Post Request");
               }}
-              class="cursor-pointer bg-blue-600 hover:opacity-60 text-white p-2 rounded-lg"
+              class="cursor-pointer bg-purple-600 hover:opacity-60 text-white p-3 rounded-full"
             >
-              Post Request
+              Make Request
             </span>
           </div>
         </div>
