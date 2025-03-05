@@ -1,11 +1,11 @@
 import { A } from "@solidjs/router";
 import { Show } from "solid-js";
 
-function Requests(props) {
+function Requests() {
   return (
     <>
-      <div class="mt-24">
-        <div class="flex justify-between mx-4">
+      <div class="mt-8 sm:mt-24">
+        <div class="flex justify-between mx-4 mb-4">
           <h2 class="text-base sm:text-2xl font-semibold">👋 Students Requests:</h2>
           <div>
             <svg
