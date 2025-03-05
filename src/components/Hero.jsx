@@ -119,9 +119,11 @@ function Hero(props) {
                           label="WhatsApp Number:"
                           name="phone"
                           required={true}
-                          type="text"
+                          type="number"
                           formHandler={formHandler}
                           placeholder="You'll be contacted via WhatsApp"
+                          pattern="[0-9]*"
+                          inputmode="numeric"
                         />
                       </div>
                     </div>
@@ -176,10 +178,6 @@ function Hero(props) {
                     How it Works:
                   </h2>
                   <div class="space-y-4 my-4">
-                    <p>
-                      OffK.ng will help you find off-campus accommodation in 3
-                      steps:
-                    </p>
                     <ul class="space-y-6">
                       <li class="flex flex-col space-y-2">
                         <b class="text-base">1️⃣ Post Your Request:</b>
@@ -219,12 +217,12 @@ function Hero(props) {
       </Show>
 
       <div class="my-10 text-center">
-        <h1 class="text-2xl sm:text-4xl font-semibold">
+        <h1 class="text-xl sm:text-4xl font-semibold">
           The Simplest Way to Find
-          <br />
+          <br class="" />
           Off-Campus Accommodation.
         </h1>
-        <h2 class="text-xl sm:text-2xl mt-2 sm:mt-2 text-gray-600">
+        <h2 class="text-lg sm:text-xl mt-2 sm:mt-2 text-gray-600">
           Agents Come to You!
         </h2>
         <div class="pt-6 space-x-4">
