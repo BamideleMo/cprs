@@ -4,9 +4,11 @@ import { Show } from "solid-js";
 function Requests() {
   return (
     <>
-      <div class="mt-8 sm:mt-24">
+      <div class="mt-12 sm:mt-24">
         <div class="flex justify-between mx-4 mb-4">
-          <h2 class="text-base sm:text-2xl font-semibold">👋 Students Requests:</h2>
+          <h2 class="text-base sm:text-2xl font-semibold">
+            👋 Students Requests:
+          </h2>
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
