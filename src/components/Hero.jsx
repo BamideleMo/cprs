@@ -129,7 +129,7 @@ function Hero(props) {
                     </div>
                     <div>
                       <TextArea
-                        label="Your Request:"
+                        label="Request:"
                         name="request"
                         required={true}
                         type="text"
