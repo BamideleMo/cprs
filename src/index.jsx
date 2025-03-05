@@ -5,6 +5,10 @@ import { Router, Route } from "@solidjs/router";
 import "./index.css";
 import App from "./App";
 import Agents from "./pages/Agents";
+import CreateAccount from "./pages/CreateAccount";
+import Login from "./pages/Login";
+import FAQs from "./pages/FAQs";
+import Terms from "./pages/Terms";
 
 const root = document.getElementById("root");
 
@@ -19,6 +23,10 @@ render(
     <Router>
       <Route path="/" component={App} />
       <Route path="/agents" component={Agents} />
+      <Route path="/create-account" component={CreateAccount} />
+      <Route path="/login" component={Login} />
+      <Route path="/faqs" component={FAQs} />
+      <Route path="/terms" component={Terms} />
     </Router>
   ),
   root

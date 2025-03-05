@@ -11,9 +11,7 @@ function Header(props) {
             <Logo />
           </div>
           <div class="w-fit space-x-3 pt-2 text-sm">
-            <A href="/agents"
-              class="border border-purple-900 hover:opacity-60 text-purple-900 p-2 rounded-lg"
-            >
+            <A href="/agents" class="hover:opacity-60">
               For Agents
             </A>
           </div>
