@@ -1,6 +1,6 @@
 import { A } from "@solidjs/router";
 import { Show } from "solid-js";
-import Badge from "./Badge";
+import Badge from "./icons/Close";
 import a1 from "../assets/images/agents/test-user-1.png";
 
 function PostCard(props) {
