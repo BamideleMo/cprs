@@ -4,7 +4,7 @@ import Logo from "./Logo";
 
 function Footer(props) {
   return (
-    <footer class="mt-20 py-10 border-t">
+    <footer class="mt-20 py-10 mx-4 border-t">
       <div class="w-full px-1 sm:w-[620px] flex justify-between mx-auto">
         <ul
           class="flex-1 flex flex-col space-x-0 space-y-4 md:flex-row 

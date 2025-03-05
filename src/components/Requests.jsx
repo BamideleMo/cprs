@@ -5,8 +5,8 @@ function Requests(props) {
   return (
     <>
       <div class="mt-24">
-        <div class="flex justify-between m-4">
-          <h2 class="text-xl sm:text-2xl font-semibold">👋 Students Requests:</h2>
+        <div class="flex justify-between mx-4">
+          <h2 class="text-base sm:text-2xl font-semibold">👋 Students Requests:</h2>
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ function Requests(props) {
             </svg>
           </div>
         </div>
-        <div class="m-4 space-y-4">
+        <div class="mx-4 space-y-4">
           <div class="border border-gray-300 bg-gray-50 p-3 rounded-lg hover:bg-purple-200 cursor-pointer">
             <span class="text-gray-600">Moses&nbsp;in&nbsp;200 Level:</span>
             <br />I am looking for 1 room self contained around the main gate.
