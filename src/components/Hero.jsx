@@ -12,7 +12,6 @@ import { Select } from "./Select";
 const schema = z.object({
   fullname: z.string().min(4, "*Invalid"),
   level: z.string().min(1, "*Invalid"),
-  email: z.string().email("*Invalid"),
   phone: z.string().length(11, "*Invalid"),
   request: z.string().min(60, "*Too short").max(160, "*Too much"),
 });
@@ -102,15 +101,6 @@ function Hero(props) {
                               label: "Postgraduate Level",
                             },
                           ]}
-                          formHandler={formHandler}
-                        />
-                      </div>
-                      <div>
-                        <TextInput
-                          label="Email:"
-                          name="email"
-                          required={true}
-                          type="text"
                           formHandler={formHandler}
                         />
                       </div>
