@@ -5,7 +5,7 @@ function Requests() {
   return (
     <>
       <div class="mt-12 sm:mt-24">
-        <div class="flex justify-between mx-4 mb-4">
+        <div class="flex justify-between mx-4 mb-2">
           <h2 class="text-base sm:text-2xl font-semibold">
             👋 Students Requests:
           </h2>
