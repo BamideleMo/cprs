@@ -29,10 +29,10 @@ function Requests() {
         <div class="mx-4 space-y-4">
           <div class="space-y-2 border border-gray-400 bg-gray-50 p-3 rounded-lg hover:bg-purple-100 cursor-pointer">
             <div class="flex space-x-2 text-xs text-gray-600 lowercase">
-              <span class="bg-gray-100 border border-gray-300 py-0.5 px-1 rounded">
+              <span class="bg-gray-100 border border-gray-400 py-0.5 px-1 rounded">
                 2 Days Ago
               </span>
-              <span class="bg-gray-100 border border-gray-300 py-0.5 px-1 rounded">
+              <span class="bg-gray-100 border border-gray-400 py-0.5 px-1 rounded">
                 200 level student
               </span>
             </div>
@@ -42,10 +42,10 @@ function Requests() {
           </div>
           <div class="space-y-2 border border-gray-400 bg-gray-50 p-3 rounded-lg hover:bg-purple-100 cursor-pointer">
             <div class="flex space-x-2 text-xs text-gray-600 lowercase">
-              <span class="bg-gray-100 border border-gray-300 py-0.5 px-1 rounded">
+              <span class="bg-gray-100 border border-gray-400 py-0.5 px-1 rounded">
                 23 Days Ago
               </span>
-              <span class="bg-gray-100 border border-gray-300 py-0.5 px-1 rounded">
+              <span class="bg-gray-100 border border-gray-400 py-0.5 px-1 rounded">
                 400 level student
               </span>
             </div>
@@ -56,10 +56,10 @@ function Requests() {
           </div>
           <div class="space-y-2 border border-gray-400 bg-gray-50 p-3 rounded-lg hover:bg-purple-100 cursor-pointer">
             <div class="flex space-x-2 text-xs text-gray-600 lowercase">
-              <span class="bg-gray-100 border border-gray-300 py-0.5 px-1 rounded">
+              <span class="bg-gray-100 border border-gray-400 py-0.5 px-1 rounded">
                 29 Days Ago
               </span>
-              <span class="bg-gray-100 border border-gray-300 py-0.5 px-1 rounded">
+              <span class="bg-gray-100 border border-gray-400 py-0.5 px-1 rounded">
                 400 level student
               </span>
             </div>
@@ -70,10 +70,10 @@ function Requests() {
           </div>
           <div class="space-y-2 border border-gray-400 bg-gray-50 p-3 rounded-lg hover:bg-purple-100 cursor-pointer">
             <div class="flex space-x-2 text-xs text-gray-600 lowercase">
-              <span class="bg-gray-100 border border-gray-300 py-0.5 px-1 rounded">
+              <span class="bg-gray-100 border border-gray-400 py-0.5 px-1 rounded">
                 30 Days Ago
               </span>
-              <span class="bg-gray-100 border border-gray-300 py-0.5 px-1 rounded">
+              <span class="bg-gray-100 border border-gray-400 py-0.5 px-1 rounded">
                 400 level student
               </span>
             </div>
