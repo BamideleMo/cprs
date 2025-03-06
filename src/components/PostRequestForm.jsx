@@ -7,7 +7,6 @@ import TextArea from "./TextArea";
 import { Select } from "./Select";
 
 const schema = z.object({
-  fullname: z.string().min(4, "*Invalid"),
   level: z.string().min(1, "*Invalid"),
   phone: z.string().length(11, "*Invalid"),
   request: z.string().min(60, "*Too short").max(160, "*Too much"),
@@ -31,15 +30,6 @@ function PostRequestForm() {
     <>
       <form autocomplete="off" onSubmit={submit} class="space-y-3 my-4">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div>
-            <TextInput
-              label="Fullname:"
-              name="fullname"
-              required={true}
-              type="text"
-              formHandler={formHandler}
-            />
-          </div>
           <div>
             <Select
               label="Current Level:"
@@ -79,7 +69,7 @@ function PostRequestForm() {
               formHandler={formHandler}
             />
           </div>
-          <div class="sm:col-span-2">
+          <div>
             <TextInput
               label="WhatsApp Number:"
               name="phone"

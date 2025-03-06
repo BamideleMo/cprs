@@ -13,12 +13,13 @@ function Terms() {
       <div class="bg-white text-sm">
         <Header />
         <section class="w-full px-1 sm:w-[620px] mx-auto">
-          <div class="my-10 mx-2 text-left">
+          <div class="my-6 sm:my-10 mx-2 text-left">
             <h1 class="text-xl sm:text-3xl font-semibold space-y-0">
               Terms & Conditions
             </h1>
 
             <div class="my-6 space-y-6">
+              <p>Last Updated: Thu 6 Mar 2025</p>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
                   <span class="text-gray-400 block">#1.</span>
@@ -26,8 +27,8 @@ function Terms() {
                 </h2>
                 <p>
                   Welcome to OffK.ng! By using our website, you agree to comply
-                  with these Terms & Conditions. If you do not agree with any
-                  part of these terms, please do not use our services.
+                  with the following Terms & Conditions. Please read them
+                  carefully.
                 </p>
               </div>
               <div>

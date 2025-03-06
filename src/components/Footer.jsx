@@ -28,10 +28,10 @@ function Footer(props) {
           </li>
           <li>
             <A
-              href="/"
+              href="/safety"
               class="cursor-pointer hover:text-purple-800 border-b border-dashed border-purple-800"
             >
-              Safety
+              Safety Tips
             </A>
           </li>
         </ul>

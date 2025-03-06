@@ -6,7 +6,7 @@ function Requests() {
     <>
       <div class="mt-12 sm:mt-24">
         <div class="flex justify-between mx-4 mb-1">
-          <h2 class="text-lg sm:text-xl font-semibold">
+          <h2 class="text-base sm:text-xl font-semibold">
             👋 Students Requests:
           </h2>
           <div>
@@ -27,7 +27,7 @@ function Requests() {
           </div>
         </div>
         <div class="mx-4 space-y-4">
-          <div class="space-y-2 border border-gray-300 bg-white p-3 rounded-lg hover:bg-purple-100 cursor-pointer">
+          <div class="space-y-2 border border-gray-400 bg-white p-3 rounded-lg hover:bg-purple-100 cursor-pointer">
             <div class="flex space-x-2 text-xs text-gray-600 lowercase">
               <span class="bg-gray-50 border border-gray-300 py-0.5 px-1 rounded">
                 2 Days Ago
@@ -40,7 +40,7 @@ function Requests() {
               I am looking for 1 room self contained around the main gate.
             </div>
           </div>
-          <div class="space-y-2 border border-gray-300 bg-white p-3 rounded-lg hover:bg-purple-100 cursor-pointer">
+          <div class="space-y-2 border border-gray-400 bg-white p-3 rounded-lg hover:bg-purple-100 cursor-pointer">
             <div class="flex space-x-2 text-xs text-gray-600 lowercase">
               <span class="bg-gray-50 border border-gray-300 py-0.5 px-1 rounded">
                 23 Days Ago
@@ -54,7 +54,7 @@ function Requests() {
               very urgent.
             </div>
           </div>
-          <div class="space-y-2 border border-gray-300 bg-white p-3 rounded-lg hover:bg-purple-100 cursor-pointer">
+          <div class="space-y-2 border border-gray-400 bg-white p-3 rounded-lg hover:bg-purple-100 cursor-pointer">
             <div class="flex space-x-2 text-xs text-gray-600 lowercase">
               <span class="bg-gray-50 border border-gray-300 py-0.5 px-1 rounded">
                 29 Days Ago
@@ -68,7 +68,7 @@ function Requests() {
               immediately.
             </div>
           </div>
-          <div class="space-y-2 border border-gray-300 bg-white p-3 rounded-lg hover:bg-purple-100 cursor-pointer">
+          <div class="space-y-2 border border-gray-400 bg-white p-3 rounded-lg hover:bg-purple-100 cursor-pointer">
             <div class="flex space-x-2 text-xs text-gray-600 lowercase">
               <span class="bg-gray-50 border border-gray-300 py-0.5 px-1 rounded">
                 30 Days Ago

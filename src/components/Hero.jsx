@@ -31,34 +31,47 @@ function Hero() {
                     How it Works:
                   </h2>
                   <div class="space-y-4 my-4">
-                    <ul class="space-y-6">
-                      <li class="flex flex-col space-y-2">
+                    {/* <p>
+                      Finding off-campus accommodation has never been this
+                      simple! OffK.ng makes it fast, easy, and secure for you to
+                      connect with verified & vetted house agents who can help
+                      you find the right place to stay.
+                    </p> */}
+                    <ul class="space-y-4">
+                      <li class="flex flex-col space-y-1">
                         <b class="text-base">1️⃣ Post Your Request:</b>
-                        <span>
-                          Tell us what kind of accommodation you need by
-                          clicking the "Post Request" button. Fill the simple
-                          form & include details like budget, the location you
-                          want, house type, etc.
-                        </span>
+                        <ul class="list-disc mx-8 space-y-1">
+                          <li>
+                            Fill out a simple form with details like location,
+                            budget, & preferences.
+                          </li>
+                          <li>
+                            Your request is instantly visible on the portal.
+                          </li>
+                        </ul>
                       </li>
-                      <li class="flex flex-col space-y-2">
-                        <b class="text-base">
-                          2️⃣ Wait for Agents to Contact You:
-                        </b>
-                        <span>
-                          Your request is instantly visible to a group of
-                          verified & trusted house agents.
-                          <br />
-                          The agents with suitable apartments for you, will then
-                          contact you via WhatsApp chat.
-                        </span>
+                      <li class="flex flex-col space-y-1">
+                        <b class="text-base">2️⃣ Wait for Agents to Chat You:</b>
+                        <ul class="list-disc mx-8 space-y-1">
+                          <li>
+                            Only verified & vetted agents can access your
+                            WhatsApp number.
+                          </li>
+                          <li>
+                            If any of them has a suitable property, he/she will
+                            chat you on WhatsApp.
+                          </li>
+                        </ul>
                       </li>
-                      <li class="flex flex-col space-y-2">
-                        <b class="text-base">3️⃣ Secure Apartment:</b>
-                        <span>
-                          Visit apartments, conclude transaction, and secure
-                          your new home!
-                        </span>
+                      <li class="flex flex-col space-y-1">
+                        <b class="text-base">3️⃣ Finalize Your Accommodation:</b>
+                        <ul class="list-disc mx-8 space-y-1">
+                          <li>Review options from different agents.</li>
+                          <li>
+                            Choose the best option & secure your accommodation
+                            stress-free .
+                          </li>
+                        </ul>
                       </li>
                     </ul>
                   </div>
