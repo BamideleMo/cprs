@@ -56,7 +56,7 @@ function Agents() {
                   that match your available listings.
                 </li>
                 <li>
-                  🛑 <u>FREE & easy to start:</u>
+                  🛑 <u>FREE & Easy to Start:</u>
                   <br />
                   Create an account & start for free. Get more clients, and make
                   more money!

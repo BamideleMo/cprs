@@ -42,11 +42,9 @@ function Hero() {
                         <b class="text-base">1️⃣ Post Your Request:</b>
                         <ul class="list-disc mx-8 space-y-1">
                           <li>
-                            Fill out a simple form with details like location,
-                            budget, & preferences.
-                          </li>
-                          <li>
-                            Your request is instantly visible on the portal.
+                            Click on "Post Request" button, provide your
+                            WhatsApp contact & details like location, budget,
+                            preferences, etc.
                           </li>
                         </ul>
                       </li>
@@ -55,7 +53,7 @@ function Hero() {
                         <ul class="list-disc mx-8 space-y-1">
                           <li>
                             Only verified & vetted agents can access your
-                            WhatsApp number.
+                            WhatsApp contact.
                           </li>
                           <li>
                             If any of them has a suitable property, he/she will
@@ -66,10 +64,9 @@ function Hero() {
                       <li class="flex flex-col space-y-1">
                         <b class="text-base">3️⃣ Finalize Your Accommodation:</b>
                         <ul class="list-disc mx-8 space-y-1">
-                          <li>Review options from different agents.</li>
                           <li>
-                            Choose the best option & secure your accommodation
-                            stress-free .
+                            Review options from different agents. Choose the
+                            best option & secure your accommodation stress-free.
                           </li>
                         </ul>
                       </li>
