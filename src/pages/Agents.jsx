@@ -45,30 +45,31 @@ function Agents() {
               </h2>
               <ul class="space-y-4 my-4">
                 <li>
-                  ✅ <u>Get Access to Ready-to-Rent Students:</u>
+                  🛑 <u>Get Access to Ready-to-Rent Students:</u>
                   <br />
-                  Connect directly with students actively searching for
+                  Connect directly with students who are actively searching for
                   off-campus accommodation.
                 </li>
                 <li>
-                  ✅ <u>Save Time & Effort:</u>
+                  🛑 <u>Save Time & Effort:</u>
                   <br />
                   No need to scout for tenants—simply browse student requests
                   that match your available listings.
                 </li>
                 <li>
-                  ✅ <u>Direct WhatsApp Contact:</u>
+                  🛑 <u>Direct WhatsApp Contact:</u>
                   <br />
-                  Reach out to students instantly without middlemen or delays.
+                  Start chatting with students who need your services instantly
+                  without delays.
                 </li>
                 <li>
-                  ✅ <u>More Deals, More Earnings:</u>
+                  🛑 <u>More Deals, More Earnings:</u>
                   <br />
-                  The faster you connect with students, the more deals you close
-                  and the more money you make.
+                  OffK will bring you more clients which means more money to be
+                  earned.
                 </li>
                 <li>
-                  ✅ <u>Start for FREE:</u>
+                  🛑 <u>Start for FREE:</u>
                   <br />
                   Create an Account to start for free.
                 </li>
