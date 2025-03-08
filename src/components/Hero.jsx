@@ -42,7 +42,7 @@ function Hero() {
                         <b class="text-base">1️⃣ Post Your Request:</b>
                         <ul class="list-disc mx-8 space-y-1">
                           <li>
-                            Click on "Post Request" button, provide your
+                            Click on the "Post Request" button, provide your
                             WhatsApp contact & details like location, budget,
                             preferences, etc.
                           </li>
@@ -83,7 +83,11 @@ function Hero() {
         <h1 class="text-xl sm:text-3xl font-semibold">
           The Simplest Way to Find
           <br class="" />
-          Off-Campus Accommodation.
+          Off-Campus Accommodation{" "}
+          <Show when={JSON.parse(localStorage.getItem("OffKUni"))}>
+            in <span class="uppercase text-slate-600">{JSON.parse(localStorage.getItem("OffKUni")).uni}</span>
+          </Show>
+          .
         </h1>
         <h2 class="text-lg sm:text-xl mt-2 sm:mt-2 text-gray-600">
           Agents Come to You!

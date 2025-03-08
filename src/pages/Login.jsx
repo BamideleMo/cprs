@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { createSignal } from "solid-js";
 import { MetaProvider, Title, Meta, Link } from "@solidjs/meta";
-import { A } from "@solidjs/router";
+import { A, useNavigate } from "@solidjs/router";
 import { useFormHandler } from "solid-form-handler";
 import { zodSchema } from "solid-form-handler/zod";
 import { z } from "zod";
@@ -16,17 +16,61 @@ const schema = z.object({
 
 const VITE_API_URL = import.meta.env["VITE_API_URL"];
 
+const now = new Date();
+
 function Login() {
   const formHandler = useFormHandler(zodSchema(schema));
   const { formData } = formHandler;
 
+  const navigate = useNavigate();
+
   const [message, setMessage] = createSignal("");
   const [isProcessing, setIsProcessing] = createSignal(false);
+  const [data, setData] = createSignal("");
 
   const submit = async (event) => {
     event.preventDefault();
     setIsProcessing(true);
-    // await doLogin(formData().username, "1234");
+    await doLogin();
+  };
+
+  const doLogin = async () => {
+    try {
+      const response = await fetch(VITE_API_URL + "/auth/login", {
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        method: "POST",
+        body: JSON.stringify({
+          username: formData().email,
+          password: formData().password,
+        }),
+      });
+      const result = await response.json();
+      if (!result.success) {
+        setMessage(result.response);
+        setIsProcessing(false);
+      } else {
+        var store = {
+          custom_id: result.response.custom_id,
+          user_role: result.response.user_role,
+          username: result.response.username,
+          fulname: result.response.fulname,
+          company: result.response.company,
+          token: result.response.token,
+          status: result.response.status,
+          expiry: now.getTime() + 10800000,
+        };
+        setData(store);
+        localStorage.setItem("OffKUser", JSON.stringify(data()));
+
+        navigate("/");
+      }
+    } catch (error) {
+      console.error(error);
+    }
   };
   return (
     <MetaProvider>
@@ -79,6 +123,12 @@ function Login() {
                     />
                   </div>
                 </div>
+
+                <Show when={message() !== ""}>
+                  <div class="bg-purple-200 text-purple-900 p-3 text-center animate-pulse border-l-2 border-black">
+                    {message()}
+                  </div>
+                </Show>
                 <div class="text-white">
                   <Show
                     when={formHandler.isFormInvalid()}

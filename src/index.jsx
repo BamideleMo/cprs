@@ -10,6 +10,8 @@ import Login from "./pages/Login";
 import FAQs from "./pages/FAQs";
 import Terms from "./pages/Terms";
 import Safety from "./pages/Safety";
+import AccountCreated from "./pages/AccountCreated";
+import Dashboard from "./pages/Dashboard";
 
 const root = document.getElementById("root");
 
@@ -29,6 +31,8 @@ render(
       <Route path="/faqs" component={FAQs} />
       <Route path="/terms" component={Terms} />
       <Route path="/safety" component={Safety} />
+      <Route path="/account-created" component={AccountCreated} />
+      <Route path="/dashboard" component={Dashboard} />
     </Router>
   ),
   root

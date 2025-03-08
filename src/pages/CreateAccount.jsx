@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { createSignal } from "solid-js";
 import { MetaProvider, Title, Meta, Link } from "@solidjs/meta";
-import { A } from "@solidjs/router";
+import { A, useNavigate } from "@solidjs/router";
 import { useFormHandler } from "solid-form-handler";
 import { zodSchema } from "solid-form-handler/zod";
 import { z } from "zod";
@@ -34,14 +34,48 @@ function CreateAccount() {
   const formHandler = useFormHandler(zodSchema(schema));
   const { formData } = formHandler;
 
+  const navigate = useNavigate();
+
   const [message, setMessage] = createSignal("");
   const [isProcessing, setIsProcessing] = createSignal(false);
 
   const submit = async (event) => {
     event.preventDefault();
     setIsProcessing(true);
-    // await doLogin(formData().username, "1234");
+    await doRegister();
   };
+
+  const doRegister = async () => {
+    try {
+      const response = await fetch(VITE_API_URL + "/auth/register", {
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        method: "POST",
+        body: JSON.stringify({
+          fullname: formData().fullname,
+          company: formData().company,
+          username: formData().email,
+          phone: formData().phone,
+          password: formData().password,
+          uni: JSON.parse(localStorage.getItem("OffKUni")).uni,
+        }),
+      });
+      const result = await response.json();
+      if (!result.success) {
+        setMessage(result.response);
+        setIsProcessing(false);
+      } else {
+        setIsProcessing(false);
+        navigate("/account-created");
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <MetaProvider>
       <Title>Create Account - www.offk.ng</Title>
@@ -130,6 +164,12 @@ function CreateAccount() {
                     />
                   </div>
                 </div>
+
+                <Show when={message() !== ""}>
+                  <div class="bg-purple-200 text-purple-900 p-3 text-center animate-pulse border-l-2 border-black">
+                    {message()}
+                  </div>
+                </Show>
                 <div class="text-white">
                   <Show
                     when={formHandler.isFormInvalid()}
