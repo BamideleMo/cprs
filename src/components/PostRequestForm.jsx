@@ -5,6 +5,7 @@ import { z } from "zod";
 import TextInput from "./TextInput";
 import TextArea from "./TextArea";
 import { Select } from "./Select";
+import submittingImg from "../assets/submitting.gif";
 
 const schema = z.object({
   level: z.string().min(1, "*Invalid"),
@@ -63,7 +64,7 @@ function PostRequestForm() {
         <Match when={success()}>
           <div class="mt-4 space-y-4">
             <div class="h-16 w-16 text-3xl border-2 border-green-600 text-center rounded-full pt-3">
-              👋
+              👍🏽
             </div>
             <p>Your request has been successfully posted!</p>
             <p>
@@ -86,6 +87,9 @@ function PostRequestForm() {
               </span>
             </p>
           </div>
+        </Match>
+        <Match when={isProcessing()}>
+          <img src={submittingImg} class="mx-auto h-36" />
         </Match>
         <Match when={!success()}>
           <form autocomplete="off" onSubmit={submit} class="space-y-3 my-4">
