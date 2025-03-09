@@ -162,6 +162,12 @@ function Requests() {
                           <span class="uppercase">{resource.level}</span> level
                           student
                         </span>
+                        <span class="bg-gray-100 border border-gray-400 py-0.5 px-1 rounded flex space-x-1">
+                          <span class="-mt-0.5">🏫</span>
+                          <span class="uppercase">
+                            {JSON.parse(localStorage.getItem("OffKUni")).uni}
+                          </span>
+                        </span>
                       </div>
                       <div>{resource.request}</div>
                     </div>
