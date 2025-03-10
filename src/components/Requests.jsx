@@ -106,8 +106,8 @@ function Requests() {
                   </A>{" "}
                   now so you can connect with posters.
                 </p>
+                <p class="block">Don't have an account on OffK.ng?</p>
                 <p>
-                  <b class="block">Don't have an account on OffK.ng?</b>
                   <A
                     href="/create-account"
                     class="text-purple-700 hover:opacity-60"
