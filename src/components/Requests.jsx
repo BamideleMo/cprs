@@ -127,24 +127,10 @@ function Requests() {
             👋 Students Requests:
           </h2>
           <div>
-            {/* <svg
-              onClick={() => setShowSearch(true)}
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6 sm:size-8 sm:-mt-0.5 text-black cursor-pointer hover:opacity-60"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-              />
-            </svg> */}
+            &nbsp;
           </div>
         </div>
-        <div class="mx-4 space-y-4">
+        <div class="mx-4 mt-4 space-y-6">
           <Show
             when={resources.loading}
             fallback={
@@ -160,7 +146,7 @@ function Requests() {
                   {(resource, i) => (
                     <div
                       onClick={() => processPost(resource.id)}
-                      class="space-y-2 border border-gray-400 bg-gray-100 p-3 rounded-lg hover:bg-purple-100 cursor-pointer"
+                      class="space-y-2 border border-gray-400 border-dashed bg-gray-100 p-3 rounded-lg hover:bg-purple-100 cursor-pointer"
                     >
                       <div class="flex space-x-2 text-xs text-gray-600 lowercase">
                         <span class="bg-gray-100 border border-gray-400 py-0.5 px-1 rounded">
