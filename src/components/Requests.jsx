@@ -126,9 +126,7 @@ function Requests() {
           <h2 class="text-base sm:text-xl font-semibold">
             👋 Students Requests:
           </h2>
-          <div>
-            &nbsp;
-          </div>
+          <div>&nbsp;</div>
         </div>
         <div class="mx-4 mt-4 space-y-6">
           <Show
@@ -159,7 +157,7 @@ function Requests() {
                           )}
                         </span>
                         <span class="bg-gray-100 border border-gray-400 py-0.5 px-1 rounded">
-                          <span class="uppercase">{resource.level}</span> level
+                          <span class="uppercase">{resource.level}L</span>{" "}
                           student
                         </span>
                         <span class="bg-gray-100 border border-gray-400 py-0.5 px-1 rounded flex space-x-1">
