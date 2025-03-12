@@ -88,7 +88,7 @@ function PostRequestForm() {
             </p>
           </div>
         </Match>
-        <Match when={isProcessing()}>
+        <Match when={!isProcessing()}>
           <img src={submittingImg} class="mx-auto h-36" />
         </Match>
         <Match when={!success()}>
