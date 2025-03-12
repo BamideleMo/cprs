@@ -6,7 +6,10 @@ import Close from "./icons/Close";
 function Footer(props) {
   return (
     <>
-      <footer class="mt-10 py-10 mx-2 border-t mb-28">
+      <footer
+        class="mt-10 py-10 mx-2 border-t 
+      "
+      >
         <div class="w-full px-1 sm:w-[620px] flex justify-between mx-auto">
           <ul
             class="flex-1 flex flex-col space-x-0 space-y-4 md:flex-row 
@@ -48,7 +51,7 @@ function Footer(props) {
           </div>
         </div>
       </footer>
-      <div class="bg-blue-50 border-t border-blue-300 px-2 py-4 bottom-0 left-0 right-0 fixed h-28">
+      {/* <div class="bg-blue-50 border-t border-blue-300 px-2 py-4 bottom-0 left-0 right-0 fixed h-28">
         <div class="w-full px-1 sm:w-[620px] mx-auto">
           <div class="font-semibold">Ad:</div>
           <div>
@@ -60,7 +63,7 @@ function Footer(props) {
             .
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
