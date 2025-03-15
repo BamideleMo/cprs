@@ -26,14 +26,14 @@ function Agents() {
             <div class="my-12 space-x-3">
               <A
                 href="/create-account"
-                class="border border-gray-600 text-gray-600 p-2 rounded-lg hover:opacity-60"
+                class="border border-black bg-black text-white p-2 rounded-lg hover:opacity-60"
               >
                 Create Account
               </A>
               <span>or</span>
               <A
                 href="/login"
-                class="border border-gray-600 text-gray-600 p-2 rounded-lg hover:opacity-60"
+                class="border border-black bg-black text-white p-2 rounded-lg hover:opacity-60"
               >
                 Log In
               </A>
