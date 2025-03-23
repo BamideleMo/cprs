@@ -96,7 +96,7 @@ function Hero() {
             }}
             class="cursor-pointer border border-purple-800 bg-purple-800 text-white p-2 rounded-lg hover:opacity-60"
           >
-            Post Request
+            👋 Post Request
           </span>
           <span
             onClick={() => {
@@ -108,6 +108,20 @@ function Hero() {
             How it works
           </span>
         </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-8 text-gray-400 mx-auto mt-8"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
+          />
+        </svg>
       </div>
     </>
   );

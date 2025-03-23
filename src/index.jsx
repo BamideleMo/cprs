@@ -12,6 +12,7 @@ import Terms from "./pages/Terms";
 import Safety from "./pages/Safety";
 import AccountCreated from "./pages/AccountCreated";
 import Dashboard from "./pages/Dashboard";
+import Market from "./pages/Market";
 
 const root = document.getElementById("root");
 
@@ -33,6 +34,7 @@ render(
       <Route path="/safety" component={Safety} />
       <Route path="/account-created" component={AccountCreated} />
       <Route path="/dashboard" component={Dashboard} />
+      <Route path="/market" component={Market} />
     </Router>
   ),
   root

@@ -121,10 +121,10 @@ function Requests() {
           </div>
         </div>
       </Show>
-      <div class="mt-12 sm:mt-24">
+      <div class="mt-8 sm:mt-24">
         <div class="flex justify-between mx-4 mb-1">
-          <h2 class="text-base sm:text-xl font-semibold">
-            👋 Students Requests:
+          <h2 class="text-base sm:text-xl font-normal">
+            Recent Requests:
           </h2>
           <div>&nbsp;</div>
         </div>

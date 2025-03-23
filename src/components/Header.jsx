@@ -92,7 +92,7 @@ function Header() {
           <div>
             <Logo />
           </div>
-          <div class="w-fit space-x-3 pt-2 text-sm">
+          <div class="w-fit space-x-10 pt-2 text-sm flex">
             <Show
               when={JSON.parse(localStorage.getItem("OffKUser"))}
               fallback={
@@ -110,6 +110,7 @@ function Header() {
                 </span>
               </>
             </Show>
+            <A href="/market">Marketplace</A>
           </div>
         </div>
       </header>
