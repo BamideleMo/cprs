@@ -110,7 +110,7 @@ function Header() {
                 </span>
               </>
             </Show>
-            <A href="/market">Marketplace</A>
+            <A href="/buy-sell">Buy & Sell</A>
           </div>
         </div>
       </header>
