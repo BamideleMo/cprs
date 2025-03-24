@@ -121,7 +121,7 @@ function Requests() {
           </div>
         </div>
       </Show>
-      <div class="mt-8 sm:mt-24">
+      <div class="mt-8 sm:mt-12">
         <div class="flex justify-between mx-4 mb-1">
           <h2 class="text-base sm:text-xl font-normal">
             Recent Requests:
