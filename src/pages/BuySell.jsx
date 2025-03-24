@@ -21,8 +21,8 @@ function BuySell() {
               <div>Buy & Sell</div>
             </h1>
             <h2 class="text-lg sm:text-xl mt-4 sm:mt-4 text-gray-600 leading-tight">
-              A simple marketplace to buy & sell hostel-centric items for
-              students in{" "}
+              A simple table that shows hostel-centric items available for sale
+              to students in{" "}
               <span class="uppercase">
                 {JSON.parse(localStorage.getItem("OffKUni")).uni}
               </span>
@@ -34,29 +34,49 @@ function BuySell() {
                 Post it now
               </span>
             </h3>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-8 text-gray-400 mx-auto mt-8"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
+                />
+              </svg>
+            </div>
 
             <div class="mt-12 flex justify-between">
-              <h2 class="text-base sm:text-xl font-normal">Items for sale:</h2>
-              <span class="flex items-center text-xs bg-black text-white px-2 rounded hover:opacity-60 cursor-pointer">
-                Filter
-              </span>
+              <h2 class="text-base sm:text-lg font-normal">Items for sale:</h2>
+              <div class="flex space-x-6 pt-1">
+                <span class="flex items-center text-xs bg-black text-white px-2 rounded hover:opacity-60 cursor-pointer">
+                  Filter
+                </span>
+              </div>
             </div>
-            <div class="mt-2 space-y-6 text-xs">
+            <div class="mt-2 space-y-6 text-xs lg:text-sm">
               <table cellpadding="0" cellspacing="0" class="w-full">
                 <thead>
                   <tr class="font-normal bg-purple-700 text-white space-x-1">
-                    <td class="w-16 p-1 rounded-tl-lg">Posted</td>
-                    <td class="p-1 border-x border-dashed border-purple-400">
+                    <td class="w-16 lg:w-20 p-1 lg:p-3 rounded-tl-lg">
+                      Posted
+                    </td>
+                    <td class="p-1 lg:p-3 border-x border-dashed border-purple-400">
                       Item Desc.
                     </td>
-                    <td class="w-10 p-1 rounded-tr-lg">Chat</td>
+                    <td class="w-10 p-1 lg:p-3 rounded-tr-lg">Chat</td>
                   </tr>
                 </thead>
                 <tbody>
                   <tr class="border-b border-dashed border-purple-400">
-                    <td class="p-1">Today</td>
-                    <td class="p-1 pt-3 border-x border-dashed border-purple-400 space-y-2">
-                      <span class="block space-x-2">
+                    <td class="p-1 lg:p-3">Today</td>
+                    <td class="p-1 lg:p-3 pt-3 border-x border-dashed border-purple-400 space-y-2">
+                      <span class="block space-x-2 text-xs">
                         <span class="space-x-1 bg-gray-200 border border-gray-300 p-0.5 rounded">
                           <b>Gadget:</b>
                           <span>Phone</span>
@@ -66,11 +86,11 @@ function BuySell() {
                           <span>OffK1</span>
                         </span>
                       </span>
-                      <span class="block">
+                      <span class="block text-gray-600">
                         Bring 125k for Samsung S3. Clean and working perfectly.
                       </span>
                     </td>
-                    <td class="p-1">
+                    <td class="p-1 lg:p-3">
                       <a
                         href="#"
                         class="bg-green-300 text-green-900 p-1 rounded-md hover:opacity-60"
@@ -80,9 +100,9 @@ function BuySell() {
                     </td>
                   </tr>
                   <tr class="border-b border-dashed border-purple-400">
-                    <td class="p-1">3 days ago</td>
-                    <td class="p-1 pt-3 border-x border-dashed border-purple-400 space-y-2">
-                      <span class="block space-x-2">
+                    <td class="p-1 lg:p-3">3 days ago</td>
+                    <td class="p-1 lg:p-3 pt-3 border-x border-dashed border-purple-400 space-y-2">
+                      <span class="block space-x-2 text-xs">
                         <span class="space-x-1 bg-gray-200 border border-gray-300 p-0.5 rounded">
                           <b>Gadget:</b>
                           <span>Laptop</span>
@@ -92,12 +112,12 @@ function BuySell() {
                           <span>OffK2</span>
                         </span>
                       </span>
-                      <span class="block">
+                      <span class="block text-gray-600">
                         HP Probook is available for sale at student price. Chat
                         me for pictures & price
                       </span>
                     </td>
-                    <td class="p-1">
+                    <td class="p-1 lg:p-3">
                       <a
                         href="#"
                         class="bg-green-300 text-green-900 p-1 rounded-md hover:opacity-60"
@@ -107,9 +127,9 @@ function BuySell() {
                     </td>
                   </tr>
                   <tr class="border-b border-dashed border-purple-400">
-                    <td class="p-1">15 days ago</td>
-                    <td class="p-1 pt-3 border-x border-dashed border-purple-400 space-y-2">
-                      <span class="block space-x-2">
+                    <td class="p-1 lg:p-3">15 days ago</td>
+                    <td class="p-1 lg:p-3 pt-3 border-x border-dashed border-purple-400 space-y-2">
+                      <span class="block space-x-2 text-xs">
                         <span class="space-x-1 bg-gray-200 border border-gray-300 p-0.5 rounded">
                           <b>Furniture:</b>
                           <span>Mattress</span>
@@ -119,11 +139,11 @@ function BuySell() {
                           <span>OffK1</span>
                         </span>
                       </span>
-                      <span class="block">
+                      <span class="block text-gray-600">
                         I have 4 by 6 mattress in good condition. 40K
                       </span>
                     </td>
-                    <td class="p-1">
+                    <td class="p-1 lg:p-3">
                       <a
                         href="#"
                         class="bg-green-300 text-green-900 p-1 rounded-md hover:opacity-60"

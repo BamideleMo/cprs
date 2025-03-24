@@ -123,7 +123,7 @@ function Requests() {
       </Show>
       <div class="mt-8 sm:mt-12">
         <div class="flex justify-between mx-4 mb-1">
-          <h2 class="text-base sm:text-xl font-normal">
+          <h2 class="text-base sm:text-lg font-normal">
             Recent Requests:
           </h2>
           <div>&nbsp;</div>
@@ -144,7 +144,7 @@ function Requests() {
                   {(resource, i) => (
                     <div
                       onClick={() => processPost(resource.id)}
-                      class="space-y-2 border border-gray-400 border-dashed bg-gray-100 p-3 rounded-lg hover:bg-purple-100 cursor-pointer"
+                      class="space-y-2 border border-purple-400 border-dashed bg-gray-100 p-3 rounded-lg hover:bg-purple-100 cursor-pointer"
                     >
                       <div class="flex space-x-2 text-xs text-gray-600 lowercase">
                         <span class="bg-gray-100 border border-gray-400 py-0.5 px-1 rounded">

@@ -18,7 +18,7 @@ function Footer(props) {
             <li>
               <A
                 href="/faqs"
-                class="cursor-pointer hover:text-purple-800 border-b border-dashed border-purple-800"
+                class="cursor-pointer hover:opacity-60"
               >
                 FAQs
               </A>
@@ -26,7 +26,7 @@ function Footer(props) {
             <li>
               <A
                 href="/terms"
-                class="cursor-pointer hover:text-purple-800 border-b border-dashed border-purple-800"
+                class="cursor-pointer hover:opacity-60"
               >
                 Ts & Cs
               </A>
@@ -34,7 +34,7 @@ function Footer(props) {
             <li>
               <A
                 href="/safety"
-                class="cursor-pointer hover:text-purple-800 border-b border-dashed border-purple-800"
+                class="cursor-pointer hover:opacity-60"
               >
                 Safety Tips
               </A>
