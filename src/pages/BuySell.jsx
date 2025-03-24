@@ -51,7 +51,7 @@ function BuySell() {
               </svg>
             </div>
 
-            <div class="mt-12 flex justify-between">
+            <div class="mt-8 sm:mt-12 flex justify-between">
               <h2 class="text-base sm:text-lg font-normal">Items for sale:</h2>
               <div class="flex space-x-6 pt-1">
                 <span class="flex items-center text-xs bg-black text-white px-2 rounded hover:opacity-60 cursor-pointer">
