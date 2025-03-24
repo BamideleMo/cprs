@@ -21,7 +21,7 @@ function BuySell() {
               <div>Buy & Sell</div>
             </h1>
             <h2 class="text-lg sm:text-xl mt-4 sm:mt-4 text-gray-600 leading-tight">
-              A simple marketplace to buy & sell hostel-centric items posted by
+              A simple marketplace to buy & sell hostel-centric items for
               students in{" "}
               <span class="uppercase">
                 {JSON.parse(localStorage.getItem("OffKUni")).uni}
@@ -29,7 +29,7 @@ function BuySell() {
               :
             </h2>
             <h3 class="mt-4">
-              <b>PS:</b> Want to sell an item?{" "}
+              <b>Want to sell an item?</b>{" "}
               <span class="border-b-4 border-purple-700 hover:opacity-60 cursor-pointer">
                 Post it now
               </span>
@@ -45,7 +45,7 @@ function BuySell() {
               <table cellpadding="0" cellspacing="0" class="w-full">
                 <thead>
                   <tr class="font-normal bg-purple-700 text-white space-x-1">
-                    <td class="w-16 p-1 rounded-tl-lg">ID</td>
+                    <td class="w-16 p-1 rounded-tl-lg">Posted</td>
                     <td class="p-1 border-x border-dashed border-purple-400">
                       Item Desc.
                     </td>
