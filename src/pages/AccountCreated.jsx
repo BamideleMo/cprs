@@ -14,7 +14,7 @@ function AccountCreated() {
         <Header />
         <section class="w-full px-1 sm:w-[620px] mx-auto">
           <div class="my-6 sm:my-10 mx-2 text-left">
-            <h1 class="text-xl sm:text-3xl font-semibold space-y-0">
+            <h1 class="text-center text-xl sm:text-3xl font-semibold space-y-0">
               <div>Account Created</div>
             </h1>
             <h2 class="text-lg sm:text-xl mt-4 sm:mt-4 text-gray-600 leading-tight">

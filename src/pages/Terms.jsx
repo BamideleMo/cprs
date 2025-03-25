@@ -14,7 +14,7 @@ function Terms() {
         <Header />
         <section class="w-full px-1 sm:w-[620px] mx-auto">
           <div class="my-6 sm:my-10 mx-2 text-left">
-            <h1 class="text-xl sm:text-3xl font-semibold space-y-0">
+            <h1 class="text-center text-xl sm:text-3xl font-semibold space-y-0">
               Terms & Conditions
             </h1>
 

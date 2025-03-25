@@ -21,22 +21,16 @@ function Hero() {
             <div class="bg-white p-4  border-t-8 border-purple-800 py-4">
               <Switch>
                 <Match when={modalContent() === "request"}>
-                  <h2 class="font-semibold text-xl text-purple-800">
+                  <h2 class="font-normal text-xl text-purple-800">
                     Post Request:
                   </h2>
                   <PostRequestForm />
                 </Match>
                 <Match when={modalContent() === "how"}>
-                  <h2 class="font-semibold text-xl text-purple-800">
+                  <h2 class="font-normal text-xl text-purple-800">
                     How it Works:
                   </h2>
                   <div class="space-y-4 my-4">
-                    {/* <p>
-                      Finding off-campus accommodation has never been this
-                      simple! OffK.ng makes it fast, easy, and secure for you to
-                      connect with verified & vetted house agents who can help
-                      you find the right place to stay.
-                    </p> */}
                     <ul class="space-y-4">
                       <li class="flex flex-col space-y-1">
                         <b class="text-base">1️⃣ Post Your Request:</b>
@@ -52,8 +46,8 @@ function Hero() {
                         <b class="text-base">2️⃣ Wait for Agents to Chat You:</b>
                         <ul class="list-disc mx-8 space-y-1">
                           <li>
-                            Only verified & vetted agents can access your
-                            WhatsApp contact.
+                            Only verified & vetted house agents can access and contact you via
+                            WhatsApp.
                           </li>
                           <li>
                             If any of them has a suitable property, he/she will

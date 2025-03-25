@@ -5,6 +5,7 @@ import { createStore } from "solid-js/store";
 import Close from "./icons/Close";
 import TextInput from "./TextInput";
 import Logo from "./Logo";
+import Loading from "./Loading";
 
 const VITE_API_URL = import.meta.env["VITE_API_URL"];
 
@@ -123,9 +124,7 @@ function Requests() {
       </Show>
       <div class="mt-8 sm:mt-12">
         <div class="flex justify-between mx-4 mb-1">
-          <h2 class="text-base sm:text-lg font-normal">
-            Recent Requests:
-          </h2>
+          <h2 class="text-base sm:text-lg font-normal">Recent Requests:</h2>
           <div>&nbsp;</div>
         </div>
         <div class="mx-4 mt-4 space-y-6">
@@ -133,57 +132,54 @@ function Requests() {
             when={resources.loading}
             fallback={
               <>
-                <Show when={noData()}>
-                  <div class="pt-4">
-                    <span class="text-center p-2 bg-gray-100 text-slate-600">
-                      No data found.
-                    </span>
+                <Show
+                  when={noData()}
+                  fallback={
+                    <For each={resources().requests}>
+                      {(resource, i) => (
+                        <div
+                          onClick={() => processPost(resource.id)}
+                          class="space-y-2 border border-gray-400 border-dashed bg-gray-100 p-3 rounded-lg hover:bg-purple-100 cursor-pointer"
+                        >
+                          <div class="flex space-x-2 text-xs text-gray-600 lowercase">
+                            <span class="bg-gray-100 border border-gray-400 py-0.5 px-1 rounded">
+                              {resource.days === 0 ? (
+                                <span class="capitalize">Today</span>
+                              ) : resource.days <= 1 ? (
+                                resource.days + " Day ago"
+                              ) : (
+                                resource.days + " Days ago"
+                              )}
+                            </span>
+                            <span class="bg-gray-100 border border-gray-400 py-0.5 px-1 rounded">
+                              <span class="uppercase">{resource.level}L</span>{" "}
+                              student
+                            </span>
+                            <span class="bg-gray-100 border border-gray-400 py-0.5 px-1 rounded flex space-x-1">
+                              <span class="-mt-0.5">🏫</span>
+                              <span class="uppercase">
+                                {
+                                  JSON.parse(localStorage.getItem("OffKUni"))
+                                    .uni
+                                }
+                              </span>
+                            </span>
+                          </div>
+                          <div>{resource.request}</div>
+                        </div>
+                      )}
+                    </For>
+                  }
+                >
+                  <div class="pt-4 text-center p-2 border-t border-gray-100 text-slate-600">
+                    No data found.
                   </div>
                 </Show>
-                <For each={resources().requests}>
-                  {(resource, i) => (
-                    <div
-                      onClick={() => processPost(resource.id)}
-                      class="space-y-2 border border-gray-400 border-dashed bg-gray-100 p-3 rounded-lg hover:bg-purple-100 cursor-pointer"
-                    >
-                      <div class="flex space-x-2 text-xs text-gray-600 lowercase">
-                        <span class="bg-gray-100 border border-gray-400 py-0.5 px-1 rounded">
-                          {resource.days === 0 ? (
-                            <span class="capitalize">Today</span>
-                          ) : resource.days <= 1 ? (
-                            resource.days + " Day ago"
-                          ) : (
-                            resource.days + " Days ago"
-                          )}
-                        </span>
-                        <span class="bg-gray-100 border border-gray-400 py-0.5 px-1 rounded">
-                          <span class="uppercase">{resource.level}L</span>{" "}
-                          student
-                        </span>
-                        <span class="bg-gray-100 border border-gray-400 py-0.5 px-1 rounded flex space-x-1">
-                          <span class="-mt-0.5">🏫</span>
-                          <span class="uppercase">
-                            {JSON.parse(localStorage.getItem("OffKUni")).uni}
-                          </span>
-                        </span>
-                      </div>
-                      <div>{resource.request}</div>
-                    </div>
-                  )}
-                </For>
               </>
             }
           >
             <Show when={JSON.parse(localStorage.getItem("OffKUni"))}>
-              <div class="fixed z-40 bg-slate-900 bg-opacity-90 flex items-center h-screen w-screen top-0 bottom-0 left-0 right-0">
-                <div class="w-11/12 sm:w-[620px] mx-auto">
-                  <div class="w-28 h-28 rounded-full bg-white mx-auto animate-bounce flex items-center">
-                    <span class="w-fit mx-auto">
-                      <Logo />
-                    </span>
-                  </div>
-                </div>
-              </div>
+              <Loading />
             </Show>
           </Show>
         </div>
