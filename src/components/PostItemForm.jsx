@@ -107,8 +107,8 @@ function PostItemForm() {
                       label: "Furniture",
                     },
                     {
-                      value: "Kitchen Things",
-                      label: "Kitchen Things",
+                      value: "Kitchen",
+                      label: "Kitchen",
                     },
                   ]}
                   formHandler={formHandler}
@@ -188,7 +188,7 @@ function PostItemForm() {
                       formHandler={formHandler}
                     />
                   </Match>
-                  <Match when={formData().category === "Kitchen Things"}>
+                  <Match when={formData().category === "Kitchen"}>
                     <Select
                       label="Item:"
                       name="item"
@@ -196,8 +196,8 @@ function PostItemForm() {
                       options={[
                         { value: "", label: "Select" },
                         {
-                          value: "Cooking Pot",
-                          label: "Cooking Pot",
+                          value: "Pot",
+                          label: "Pot",
                         },
                         {
                           value: "Bucket",
@@ -212,8 +212,8 @@ function PostItemForm() {
                           label: "Gas Cylinder",
                         },
                         {
-                          value: "Cooking Stove",
-                          label: "Cooking Stove",
+                          value: "Stove",
+                          label: "Stove",
                         },
                       ]}
                       formHandler={formHandler}
