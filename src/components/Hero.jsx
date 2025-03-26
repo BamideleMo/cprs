@@ -26,47 +26,6 @@ function Hero() {
                   </h2>
                   <PostRequestForm />
                 </Match>
-                <Match when={modalContent() === "how"}>
-                  <h2 class="font-normal text-xl text-purple-800">
-                    How it Works:
-                  </h2>
-                  <div class="space-y-4 my-4">
-                    <ul class="space-y-4">
-                      <li class="flex flex-col space-y-1">
-                        <b class="text-base">1️⃣ Post Your Request:</b>
-                        <ul class="list-disc mx-8 space-y-1">
-                          <li>
-                            Click on the "Post Request" button, provide your
-                            WhatsApp contact & details like location, budget,
-                            preferences, etc.
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="flex flex-col space-y-1">
-                        <b class="text-base">2️⃣ Wait for Agents to Chat You:</b>
-                        <ul class="list-disc mx-8 space-y-1">
-                          <li>
-                            Only verified & vetted house agents can access and contact you via
-                            WhatsApp.
-                          </li>
-                          <li>
-                            If any of them has a suitable property, he/she will
-                            chat you on WhatsApp.
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="flex flex-col space-y-1">
-                        <b class="text-base">3️⃣ Finalize Your Accommodation:</b>
-                        <ul class="list-disc mx-8 space-y-1">
-                          <li>
-                            Review options from different agents. Choose the
-                            best option & secure your accommodation stress-free.
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </Match>
               </Switch>
             </div>
           </div>
@@ -82,7 +41,7 @@ function Hero() {
         <h2 class="text-sm sm:text-lg mt-2 sm:mt-2 text-gray-600">
           Verified & Vetted Agents Come to You!
         </h2>
-        <div class="pt-6 space-x-4">
+        <div class="pt-10 space-x-4">
           <span
             onClick={() => {
               setShowModal(true);
@@ -92,15 +51,7 @@ function Hero() {
           >
             👋 Post Request
           </span>
-          <span
-            onClick={() => {
-              setShowModal(true);
-              setModalContent("how");
-            }}
-            class="cursor-pointer border border-black text-black p-2 rounded-lg hover:opacity-60"
-          >
-            How it works
-          </span>
+          
         </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
