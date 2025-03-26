@@ -44,7 +44,7 @@ function Agents() {
               <h2 class="text-base font-semibold">
                 3 Reasons Why Agents Love OffK.ng
               </h2>
-              <ul class="space-y-4 my-4">
+              <ul class="space-y-8 my-4">
                 <li>
                   🛑 <u>Access to Ready-to-Rent Students:</u>
                   <br />
