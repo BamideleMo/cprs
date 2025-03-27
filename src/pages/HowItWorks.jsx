@@ -54,6 +54,33 @@ function HowItWorks() {
                 </li>
               </ul>
             </div>
+            <div class="mt-12 bg-purple-100 p-3 lg:p-6 rounded-lg">
+              <h2 class="text-base font-semibold">2 Core Principles:</h2>
+              <ul class="space-y-8 my-4">
+                <li>
+                  ✌🏾 <u>Simplicity:</u>
+                  <br />
+                  Remove the stress of searching through countless listings or
+                  dealing with unreliable sources. Instead simply post your
+                  accommodation requests, and verified & vetted agents will
+                  reach out if they have suitable options.
+                  <br />
+                  <br />
+                  No complicated processes, no unnecessary steps—just a
+                  straightforward way to find housing.
+                </li>
+                <li>
+                  ⛑️ <u>Safety:</u>
+                  <br />
+                  Unlike random online listings or unverified agents, OffK.ng
+                  ensures that only verified & vetted house agents can access
+                  student requests. This reduces the risk of scams, fraud, and
+                  unsafe housing arrangements. By prioritizing trust and
+                  security, we provide students with a safer way to find their
+                  ideal accommodation.
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
         <Footer />
