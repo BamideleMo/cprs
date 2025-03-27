@@ -16,7 +16,7 @@ function HowItWorks() {
           <div class="my-6 sm:my-10 mx-2">
             <div class="text-center">
               <h1 class="text-xl sm:text-3xl font-semibold space-y-0">
-                <div>How it works</div>
+                <div>Simple & Safe</div>
               </h1>
             </div>
             <div class="mt-12">
@@ -55,16 +55,15 @@ function HowItWorks() {
               </ul>
             </div>
             <div class="mt-12 bg-purple-100 p-3 lg:p-6 rounded-lg">
-              <h2 class="text-base font-semibold">2 Core Principles:</h2>
+              <h2 class="text-base font-semibold">2 Things:</h2>
               <ul class="space-y-8 my-4">
                 <li>
                   ✌🏾 <u>Simplicity:</u>
                   <br />
-                  Remove the stress of searching through countless listings or
+                  No more stress of searching through countless listings or
                   dealing with unreliable sources. Instead simply post your
-                  accommodation requests, and verified & vetted agents will
-                  reach out if they have suitable options.
-                  <br />
+                  accommodation requests, and verified & vetted agents with
+                  suitable options will reach out.
                   <br />
                   No complicated processes, no unnecessary steps—just a
                   straightforward way to find housing.
@@ -72,12 +71,14 @@ function HowItWorks() {
                 <li>
                   ⛑️ <u>Safety:</u>
                   <br />
-                  Unlike random online listings or unverified agents, OffK.ng
-                  ensures that only verified & vetted house agents can access
-                  student requests. This reduces the risk of scams, fraud, and
-                  unsafe housing arrangements. By prioritizing trust and
-                  security, we provide students with a safer way to find their
-                  ideal accommodation.
+                  OffK.ng ensures that only verified & vetted house agents can
+                  access student requests.
+                  <br />
+                  This reduces the risk of scams, fraud, and unsafe housing
+                  arrangements.
+                  <br />
+                  By prioritizing trust and security, we provide students with a
+                  safer way to find their ideal accommodation.
                 </li>
               </ul>
             </div>
