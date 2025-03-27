@@ -153,7 +153,7 @@ function PostRequestForm() {
                 required={true}
                 type="text"
                 formHandler={formHandler}
-                placeholder="Include details like the location you want, budget, accommodation type, urgency, etc."
+                placeholder="Include details like your gender, the location you want, budget, accommodation type, urgency, etc."
               />
             </div>
             <div class="text-white">

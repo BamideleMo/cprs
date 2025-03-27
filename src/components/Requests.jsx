@@ -93,14 +93,13 @@ function Requests() {
               </span>
             </div>
             <div class="bg-white p-4  border-t-8 border-purple-800 py-4">
-              <h2 class="font-semibold text-xl text-purple-800">
-                Access Denied:
-              </h2>
+              <h2 class="font-semibold text-xl text-purple-800">Oops!</h2>
               <div class="mt-6 space-y-4">
                 <p>
-                  Only verified and vetted agents can access posters for direct
-                  WhatsApp chat.
+                  Only verified and vetted agents can access posters & start
+                  direct WhatsApp chat.
                 </p>
+                <p class="font-semibold">A verified and vetted agent?</p>
                 <p>
                   <A href="/login" class="text-purple-700 hover:opacity-60">
                     Log in
@@ -115,7 +114,8 @@ function Requests() {
                   >
                     Create Account
                   </A>{" "}
-                  now for FREE. Start getting more clients, and make more money!
+                  now for FREE. Get verified & vetted. Start getting more
+                  clients, and make more money!
                 </p>
               </div>
             </div>
