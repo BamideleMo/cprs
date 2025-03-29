@@ -89,7 +89,26 @@ function PostRequestForm() {
           </div>
         </Match>
         <Match when={isProcessing()}>
-          <img src={submittingImg} class="mx-auto h-36" />
+          <div class="my-6 text-center text-gray-600 space-y-4 animate-pulse">
+            <div>Processing</div>
+            <div class="space-x-2">
+              <span class="inline-block bg-gray-400 h-1 w-8 rounded-full">
+                &nbsp;
+              </span>
+              <span class="inline-block bg-gray-400 h-1 w-6 rounded-full">
+                &nbsp;
+              </span>
+              <span class="inline-block bg-gray-400 h-1 w-4 rounded-full">
+                &nbsp;
+              </span>
+              <span class="inline-block bg-gray-400 h-1 w-2 rounded-full">
+                &nbsp;
+              </span>
+              <span class="inline-block bg-gray-400 h-1 w-1 rounded-full">
+                &nbsp;
+              </span>
+            </div>
+          </div>
         </Match>
         <Match when={!success()}>
           <form autocomplete="off" onSubmit={submit} class="space-y-3 my-4">
