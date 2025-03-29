@@ -40,7 +40,7 @@ function Agents() {
                 </A>
               </div>
             </div>
-            <div class="bg-purple-100 p-4 lg:p-6 rounded-lg">
+            <div class="bg-purple-100 border border-purple-300 p-4 lg:p-6 rounded-lg">
               <h2 class="text-base font-semibold">
                 3 Reasons Why Agents Love OffK.ng
               </h2>

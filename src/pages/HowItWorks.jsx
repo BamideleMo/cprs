@@ -57,7 +57,7 @@ function HowItWorks() {
                 </li>
               </ul>
             </div>
-            <div class="mt-12 bg-purple-100 p-4 lg:p-6 rounded-lg">
+            <div class="mt-12 bg-purple-100 border border-purple-200 p-4 lg:p-6 rounded-lg">
               <h2 class="text-base font-semibold">Just 2 Things:</h2>
               <ul class="space-y-8 my-4">
                 <li>
