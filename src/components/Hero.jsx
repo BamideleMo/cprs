@@ -21,7 +21,7 @@ function Hero() {
             <div class="bg-white p-4  border-t-8 border-purple-800 py-4">
               <Switch>
                 <Match when={modalContent() === "request"}>
-                  <h2 class="font-normal text-xl text-purple-800 text-center">
+                  <h2 class="font-normal text-xl text-purple-800 text-center mb-4">
                     Post Request
                   </h2>
                   <PostRequestForm />

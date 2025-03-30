@@ -2,6 +2,7 @@ import { A } from "@solidjs/router";
 import { Match, Show, Switch } from "solid-js";
 import Logo from "./Logo";
 import { createEffect, createSignal } from "solid-js";
+import ArrowRight from "./icons/ArrowRight";
 
 function Header() {
   const [showWhichUni, setShowWhichUni] = createSignal(false);
@@ -35,7 +36,9 @@ function Header() {
           <div class="w-11/12 sm:w-[620px] mx-auto bg-white p-4 rounded-lg">
             <Switch>
               <Match when={notAvailable()}>
-                <h2 class="font-semibold text-lg">We're yet to Launch:</h2>
+                <h2 class="font-normal text-xl text-purple-800 text-center mb-4">
+                  We're yet to Launch
+                </h2>
                 <div class="mt-4 space-y-4 text-gray-600">
                   <p>Hi,</p>
                   <p>
@@ -54,30 +57,35 @@ function Header() {
               </Match>
               <Match when={!notAvailable()}>
                 <>
-                  <h2 class="font-semibold text-lg">Select University:</h2>
+                  <h2 class="font-normal text-xl text-purple-800 text-center mb-4">
+                    Select University
+                  </h2>
                   <p class="text-gray-600">
-                    As a student select the university you're in. As an agent,
-                    select the university where you can provide services to
-                    students.
+                    <b>Student?</b> Select the university you're in.{" "}
+                    <b>House Agent?</b> Select the university where you can
+                    provide services to students.
                   </p>
                   <div class="border-t mt-2 space-y-6 py-6 h-60 overflow-y-auto">
                     <div
                       onClick={() => doUni("uniabuja", "yes")}
-                      class="bg-gray-200 border border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
+                      class="flex justify-between bg-gray-200 border border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
                     >
-                      University of Abuja (UNIABUJA)
+                      <span>University of Abuja (UNIABUJA)</span>
+                      <ArrowRight />
                     </div>
                     <div
                       onClick={() => doUni("nsuk", "no")}
-                      class="bg-gray-200 border border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
+                      class="flex justify-between bg-gray-200 border border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
                     >
-                      Nasarawa State University, Keffi (NSUK)
+                      <span>Nasarawa State University, Keffi (NSUK)</span>
+                      <ArrowRight />
                     </div>
                     <div
                       onClick={() => doUni("unijos", "no")}
-                      class="bg-gray-200 border border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
+                      class="flex justify-between bg-gray-200 border border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
                     >
-                      University of Jos (UNIJOS)
+                      <span>University of Jos (UNIJOS)</span>
+                      <ArrowRight />
                     </div>
                   </div>
                 </>
