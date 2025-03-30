@@ -36,7 +36,7 @@ function Header() {
           <div class="w-11/12 sm:w-[620px] mx-auto bg-white p-4 rounded-lg">
             <Switch>
               <Match when={notAvailable()}>
-                <h2 class="font-normal text-xl text-purple-800 text-center mb-4">
+                <h2 class="font-normal text-xl text-purple-800 text-center mb-4 border-b pb-4">
                   We're yet to Launch
                 </h2>
                 <div class="mt-4 space-y-4 text-gray-600">
@@ -57,7 +57,7 @@ function Header() {
               </Match>
               <Match when={!notAvailable()}>
                 <>
-                  <h2 class="font-normal text-xl text-purple-800 text-center mb-4">
+                  <h2 class="font-normal text-xl text-purple-800 text-center mb-4 border-b pb-4">
                     Select University
                   </h2>
                   <p class="text-gray-600">

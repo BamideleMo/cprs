@@ -93,7 +93,9 @@ function Requests() {
               </span>
             </div>
             <div class="bg-white p-4  border-t-8 border-purple-800 py-4">
-              <h2 class="font-semibold text-xl text-purple-800">Oops!</h2>
+              <h2 class="font-normal text-xl text-purple-800 text-center mb-4 border-b pb-4">
+                Oops!
+              </h2>
               <div class="mt-6 space-y-4">
                 <p>
                   Only verified and vetted agents can access posters & start
