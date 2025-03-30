@@ -126,7 +126,9 @@ function Requests() {
       </Show>
       <div class="mt-8 sm:mt-12">
         <div class="flex justify-between mx-4 mb-1">
-          <h2 class="text-base sm:text-lg font-normal">Recent Requests:</h2>
+          <h2 class="text-base sm:text-lg font-normal leading-snug">
+            You may tap/click on any request to chat with the poster:
+          </h2>
           <div>&nbsp;</div>
         </div>
         <div class="mx-4 mt-4 space-y-6">

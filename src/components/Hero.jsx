@@ -39,9 +39,9 @@ function Hero() {
           <br class="" />
           Off-Campus Accommodation.
         </h1>
-        <h2 class="text-sm sm:text-lg mt-2 sm:mt-2 text-gray-600">
+        {/* <h2 class="text-sm sm:text-lg mt-2 sm:mt-2 text-gray-600">
           Verified & Vetted Agents Come to You!
-        </h2>
+        </h2> */}
         <div class="pt-10 space-x-4">
           <span
             onClick={() => {

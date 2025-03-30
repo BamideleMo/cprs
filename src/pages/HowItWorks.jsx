@@ -59,27 +59,17 @@ function HowItWorks() {
             </div>
             <div class="mt-12 bg-purple-100 border border-purple-200 p-4 lg:p-6 rounded-lg">
               <h2 class="text-base font-semibold">Just 2 Things:</h2>
-              <ul class="space-y-8 my-4">
-                <li>
-                  ✌🏾 <u>Simplicity:</u>
-                  <br />
-                  Simply post your accommodation requests, and verified & vetted
-                  agents with suitable options will reach out.
+              <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
+                <li>✌🏾 <u>Simplicity:</u>
                   <br />
                   No complicated processes, no unnecessary steps—just a
-                  straightforward way to find off-campus housing.
+                  simple way to find off-campus housing.
                 </li>
                 <li>
                   ⛑️ <u>Safety:</u>
                   <br />
-                  Only verified & vetted house agents can
-                  access students who make requests.
-                  <br />
-                  Reducing the risk of scams, fraud, and unsafe housing
-                  arrangements.
-                  <br />
-                  By prioritizing trust and security, we provide students with a
-                  safer way to find their ideal off-campus accommodation.
+                  Only verified & vetted house agents can contact students who
+                  make requests prioritizing trust & security.
                 </li>
               </ul>
             </div>
