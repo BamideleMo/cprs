@@ -74,6 +74,20 @@ function Header() {
                       <ArrowRight />
                     </div>
                     <div
+                      onClick={() => doUni("baze", "no")}
+                      class="flex justify-between bg-gray-200 border border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
+                    >
+                      <span>Baze University</span>
+                      <ArrowRight />
+                    </div>
+                    <div
+                      onClick={() => doUni("nile", "no")}
+                      class="flex justify-between bg-gray-200 border border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
+                    >
+                      <span>Nile University</span>
+                      <ArrowRight />
+                    </div>
+                    <div
                       onClick={() => doUni("nsuk", "no")}
                       class="flex justify-between bg-gray-200 border border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
                     >
