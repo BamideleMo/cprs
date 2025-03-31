@@ -125,11 +125,14 @@ function Requests() {
         </div>
       </Show>
       <div class="mt-8 sm:mt-12">
-        <div class="flex justify-between mx-4 mb-1">
+        <div class="mx-4 mb-1 text-center">
           <h2 class="text-base sm:text-lg font-normal leading-snug">
             See recent requests by students:
           </h2>
-          <div>&nbsp;</div>
+          <div class="text-gray-500 text-xs">
+            You may click/tap on any request for direct WhatsApp chat with
+            poster.
+          </div>
         </div>
         <div class="mx-4 mt-4 space-y-6">
           <Show
