@@ -65,41 +65,36 @@ function Header() {
                     <b>House Agent?</b> Select the university where you can
                     provide services to students.
                   </p>
-                  <div class="border-t mt-2 space-y-6 py-6 h-60 overflow-y-auto">
+                  <div class="border-t mt-2 py-6 h-60 overflow-y-auto grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
                     <div
                       onClick={() => doUni("uniabuja", "yes")}
-                      class="flex justify-between bg-gray-200 border border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
+                      class="bg-gray-200 border flex items-center border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
                     >
                       <span>University of Abuja (UNIABUJA)</span>
-                      <ArrowRight />
                     </div>
                     <div
                       onClick={() => doUni("baze", "no")}
-                      class="flex justify-between bg-gray-200 border border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
+                      class="bg-gray-200 border flex items-center border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
                     >
-                      <span>Baze University</span>
-                      <ArrowRight />
+                      <span>Baze University, Abuja</span>
                     </div>
                     <div
                       onClick={() => doUni("nile", "no")}
-                      class="flex justify-between bg-gray-200 border border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
+                      class="bg-gray-200 border flex items-center border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
                     >
-                      <span>Nile University</span>
-                      <ArrowRight />
+                      <span>Nile University, Abuja</span>
                     </div>
                     <div
                       onClick={() => doUni("nsuk", "no")}
-                      class="flex justify-between bg-gray-200 border border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
+                      class="bg-gray-200 border flex items-center border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
                     >
                       <span>Nasarawa State University, Keffi (NSUK)</span>
-                      <ArrowRight />
                     </div>
                     <div
                       onClick={() => doUni("unijos", "no")}
-                      class="flex justify-between bg-gray-200 border border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
+                      class="bg-gray-200 border flex items-center border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
                     >
                       <span>University of Jos (UNIJOS)</span>
-                      <ArrowRight />
                     </div>
                   </div>
                 </>
@@ -108,14 +103,25 @@ function Header() {
           </div>
         </div>
       </Show>
-
+      <div class="bg-black py-3">
+        <div class="w-full px-1 sm:w-[620px] mx-auto">
+          <div class="text-xs text-center text-white">
+            Sweeeet Gists Every Saturday:{" "}
+            <A href="#" class="text-yellow-400 hover:text-purple-700">
+              gist.offk.ng
+            </A>
+          </div>
+        </div>
+      </div>
       <header class="border-b py-3 px-2">
         <div class="w-full px-1 sm:w-[620px] flex justify-between mx-auto">
           <div>
             <Logo />
           </div>
           <div class="w-fit space-x-10 pt-2 text-sm flex">
-            <A href="/how-it-works">How it works</A>
+            <A href="/how-it-works" class="hover:opacity-60">
+              How it works
+            </A>
             <Show
               when={JSON.parse(localStorage.getItem("OffKUser"))}
               fallback={
