@@ -22,8 +22,7 @@ function ChoosePlan() {
                 <div>Choose Plan</div>
               </h1>
               <h2 class="text-lg sm:text-xl mt-4 sm:mt-4 text-gray-600 leading-tight">
-                Choose a plan. Start helping students find their perfect place
-                today!
+                Start helping students find their perfect place today!
               </h2>
             </div>
             <div class="my-12 grid grid-cols-1 md:grid-cols-2 gap-6">

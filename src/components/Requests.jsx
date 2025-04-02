@@ -108,7 +108,7 @@ function Requests() {
                   </A>{" "}
                   now so you can connect with posters.
                 </p>
-                <p class="font-semibold">Don't have an account on OffK.ng?</p>
+                <p class="font-semibold">Or...</p>
                 <p>
                   <A
                     href="/create-account"
@@ -116,8 +116,8 @@ function Requests() {
                   >
                     Create Account
                   </A>{" "}
-                  now for FREE. Get verified & vetted. Start getting more
-                  clients, and make more money!
+                  now. Get verified & vetted. Start getting more clients, and
+                  make more money!
                 </p>
               </div>
             </div>
