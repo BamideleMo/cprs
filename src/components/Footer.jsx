@@ -44,7 +44,7 @@ function Footer(props) {
       </footer>
       <div>
         <div class="mt-20">&nbsp;</div>
-        <div class="bg-black text-gray-200 border-t px-2 flex items-center bottom-0 left-0 right-0 fixed h-20">
+        <div class="bg-black text-gray-200 border-t px-2 flex items-center bottom-0 left-0 right-0 fixed h-20 overflow-hidden">
           <div class="w-full px-1 sm:w-[620px] mx-auto">
             <div class=" text-yellow-400">Advertisement:</div>
             <div>
