@@ -126,7 +126,7 @@ function Requests() {
       </Show>
       <div class="mt-8 sm:mt-12">
         <div class="mx-4 mb-1 text-center">
-          <h2 class="text-base sm:text-lg font-normal leading-snug">
+          <h2 class="text-lg font-normal leading-snug">
             See recent requests by students:
           </h2>
           <div class="text-gray-500 text-xs">
