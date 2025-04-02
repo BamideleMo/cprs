@@ -16,26 +16,17 @@ function Footer(props) {
       md:space-y-0 md:space-x-4 lg:space-x-12"
           >
             <li>
-              <A
-                href="/faqs"
-                class="cursor-pointer hover:opacity-60"
-              >
+              <A href="/faqs" class="cursor-pointer hover:opacity-60">
                 FAQs
               </A>
             </li>
             <li>
-              <A
-                href="/terms"
-                class="cursor-pointer hover:opacity-60"
-              >
+              <A href="/terms" class="cursor-pointer hover:opacity-60">
                 Ts & Cs
               </A>
             </li>
             <li>
-              <A
-                href="/safety"
-                class="cursor-pointer hover:opacity-60"
-              >
+              <A href="/safety" class="cursor-pointer hover:opacity-60">
                 Safety Tips
               </A>
             </li>
@@ -51,19 +42,21 @@ function Footer(props) {
           </div>
         </div>
       </footer>
-      {/* <div class="bg-blue-50 border-t border-blue-300 px-2 py-4 bottom-0 left-0 right-0 fixed h-28">
-        <div class="w-full px-1 sm:w-[620px] mx-auto">
-          <div class="font-semibold">Ad:</div>
-          <div>
-            Read the latest news and interviews by students and for students
-            published every Saturday on{" "}
-            <a href="#" class="text-blue-600 font-semibold">
-              OffK Weekly
-            </a>
-            .
+      <div>
+        <div class="mt-20">&nbsp;</div>
+        <div class="bg-black text-gray-200 border-t px-2 flex items-center bottom-0 left-0 right-0 fixed h-28">
+          <div class="w-full px-1 sm:w-[620px] mx-auto">
+            <div class=" text-yellow-400">Advertisement:</div>
+            <div>
+              Sweet gist by students & for students of UNIABUJA every Saturday
+              on:{" "}
+              <a href="#" class="border-b border-yellow-400">
+                gist.offk.ng
+              </a>
+            </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 }

@@ -103,7 +103,7 @@ function Header() {
           </div>
         </div>
       </Show>
-      <div class="bg-black py-3">
+      {/* <div class="bg-black py-3">
         <div class="w-full px-1 sm:w-[620px] mx-auto">
           <div class="text-xs text-center text-white">
             Sweeeet Gists Every Saturday:{" "}
@@ -112,7 +112,7 @@ function Header() {
             </A>
           </div>
         </div>
-      </div>
+      </div> */}
       <header class="border-b py-3 px-2">
         <div class="w-full px-1 sm:w-[620px] flex justify-between mx-auto">
           <div>
