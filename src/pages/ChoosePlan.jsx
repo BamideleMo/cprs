@@ -43,7 +43,7 @@ function ChoosePlan() {
                   <p class="border-b pb-3">₦ 0 every year</p>
                   <p class="pt-2">
                     <A
-                      href="/create-account/starter-plan"
+                      href="/create-account/starter"
                       class="block w-fit mx-auto text-white bg-black p-3 rounded-xl hover:opacity-60"
                     >
                       Choose this plan
@@ -68,7 +68,7 @@ function ChoosePlan() {
                   <p class="border-b pb-3">₦ 5,000 every year</p>
                   <p class="pt-2">
                     <A
-                      href="/create-account/premium-plan"
+                      href="/create-account/premium"
                       class="block w-fit mx-auto text-white bg-black p-3 rounded-xl hover:opacity-60"
                     >
                       Choose this plan
