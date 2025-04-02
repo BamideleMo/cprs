@@ -58,7 +58,7 @@ function HowItWorks() {
               </ul>
             </div>
             <div class="mt-12 bg-purple-100 border border-purple-200 p-4 lg:p-6 rounded-lg">
-              <h2 class="text-base font-semibold">Just 2 Things:</h2>
+              <h2 class="text-base font-semibold">Our Focus:</h2>
               <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
                 <li>✌🏾 <u>Simplicity:</u>
                   <br />
