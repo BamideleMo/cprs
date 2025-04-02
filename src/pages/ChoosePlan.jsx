@@ -27,7 +27,7 @@ function ChoosePlan() {
               </h2>
             </div>
             <div class="my-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div class="rounded-2xl border border-black p-2 md:p-6">
+              <div class="rounded-2xl border border-black p-4 md:p-6">
                 <h2 class="font-normal text-xl text-purple-800 text-center mb-4 border-b pb-4">
                   Starter Plan
                 </h2>
@@ -52,7 +52,7 @@ function ChoosePlan() {
                   </p>
                 </div>
               </div>
-              <div class="rounded-2xl border border-black p-2 md:p-6">
+              <div class="rounded-2xl border border-black p-4 md:p-6">
                 <h2 class="font-normal text-xl text-purple-800 text-center mb-4 border-b pb-4">
                   Premium Plan
                 </h2>
