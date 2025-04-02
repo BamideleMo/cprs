@@ -50,7 +50,7 @@ function Footer(props) {
             <div>
               Sweet gist by students & for students of UNIABUJA every Saturday
               on:{" "}
-              <a href="#" class="border-b border-yellow-400">
+              <a href="#" class="border-b border-yellow-400 hover:opacity-100 opacity-60">
                 gist.offk.ng
               </a>
             </div>

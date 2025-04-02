@@ -26,7 +26,7 @@ function Agents() {
               </h2>
               <div class="my-12 space-x-3">
                 <A
-                  href="/create-account"
+                  href="/choose-plan"
                   class="border border-black bg-black text-white p-2 rounded-lg hover:opacity-60"
                 >
                   Create Account

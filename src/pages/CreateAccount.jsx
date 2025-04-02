@@ -42,7 +42,8 @@ function CreateAccount() {
   const submit = async (event) => {
     event.preventDefault();
     setIsProcessing(true);
-    await doRegister();
+    // await doRegister();
+    console.log("Yet to start");
   };
 
   const doRegister = async () => {

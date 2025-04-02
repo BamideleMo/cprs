@@ -14,6 +14,7 @@ import AccountCreated from "./pages/AccountCreated";
 import Dashboard from "./pages/Dashboard";
 import Market from "./pages/BuySell";
 import HowItWorks from "./pages/HowItWorks";
+import ChoosePlan from "./pages/ChoosePlan";
 
 const root = document.getElementById("root");
 
@@ -28,7 +29,7 @@ render(
     <Router>
       <Route path="/" component={App} />
       <Route path="/agents" component={Agents} />
-      <Route path="/create-account" component={CreateAccount} />
+      <Route path="/create-account/:plan" component={CreateAccount} />
       <Route path="/login" component={Login} />
       <Route path="/faqs" component={FAQs} />
       <Route path="/terms" component={Terms} />
@@ -37,6 +38,7 @@ render(
       <Route path="/dashboard" component={Dashboard} />
       {/* <Route path="/buy-sell" component={Market} /> */}
       <Route path="/how-it-works" component={HowItWorks} />
+      <Route path="/choose-plan" component={ChoosePlan} />
     </Router>
   ),
   root
