@@ -15,6 +15,7 @@ import Dashboard from "./pages/Dashboard";
 import Market from "./pages/BuySell";
 import HowItWorks from "./pages/HowItWorks";
 import ChoosePlan from "./pages/ChoosePlan";
+import NotFound from "./pages/NotFound";
 
 const root = document.getElementById("root");
 
@@ -39,6 +40,7 @@ render(
       {/* <Route path="/buy-sell" component={Market} /> */}
       <Route path="/how-it-works" component={HowItWorks} />
       <Route path="/choose-plan" component={ChoosePlan} />
+      <Route path="*" component={NotFound} />
     </Router>
   ),
   root

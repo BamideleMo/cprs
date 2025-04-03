@@ -9,7 +9,7 @@ function Dashboard() {
 
   const checkIfLoggedIn = () => {
     if (!JSON.parse(localStorage.getItem("OffKUser"))) {
-      navigate("/", { replace: true });
+      navigate("/login", { replace: true });
     }
   };
 
@@ -55,7 +55,9 @@ function Dashboard() {
                 <div class="space-x-2">
                   <b class="font-normal text-gray-600">Referral Code:</b>
                   <span>
-                    {JSON.parse(localStorage.getItem("OffKUser")).custom_id}
+                    {JSON.parse(localStorage.getItem("OffKUser"))
+                      ? JSON.parse(localStorage.getItem("OffKUser")).custom_id
+                      : ""}
                   </span>
                 </div>
                 <div class="space-x-2">

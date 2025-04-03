@@ -92,7 +92,7 @@ function CreateAccount() {
             <h1 class="text-center text-xl sm:text-3xl font-semibold space-y-0">
               Create Account
             </h1>
-            <h2 class="text-lg sm:text-xl mt-4 sm:mt-4 text-gray-600 leading-tight">
+            <h2 class="text-center text-lg sm:text-xl mt-4 sm:mt-4 text-gray-600 leading-tight">
               For FREE!
             </h2>
             <div class="sm:my-6 space-y-3">
@@ -115,6 +115,7 @@ function CreateAccount() {
                       required={true}
                       type="text"
                       formHandler={formHandler}
+                      placeholder="As on your means of Identification"
                     />
                   </div>
                   <div>

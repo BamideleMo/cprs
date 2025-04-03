@@ -43,7 +43,7 @@ function Footer(props) {
           </div>
         </div>
       </footer>
-      <Advert/>
+      {/* <Advert/> */}
     </>
   );
 }

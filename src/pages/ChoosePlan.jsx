@@ -28,25 +28,28 @@ function ChoosePlan() {
             <div class="my-12 grid grid-cols-1 md:grid-cols-2 gap-6">
               <div class="rounded-2xl border border-black p-8 md:p-6">
                 <h2 class="font-normal text-xl text-purple-800 text-center mb-4 border-b pb-4">
-                  Starter Plan
+                  Trial Plan
                 </h2>
                 <div class="mt-2 space-y-2">
+                  <p class="border-b pb-3">₦0</p>
                   <p class="border-b pb-3">Get verified & vetted.</p>
-                  <p class="border-b pb-3">
-                    Access contacts of up to <b>3 student requests per month</b>
+                  {/* <p class="border-b pb-3">
+                    Access contacts of up to <b>5 student requests per month</b>
                     .
+                  </p> */}
+                  <p class="border-b pb-3">
+                    2 months of direct access to contacts of posters.
                   </p>
                   <p class="border-b pb-3">
-                    Perfect for agents who are just getting started and want to
-                    test the platform!
+                    Perfect for house agents who are just getting started and
+                    want to test the platform!
                   </p>
-                  <p class="border-b pb-3">₦ 0 every year</p>
                   <p class="pt-2">
                     <A
-                      href="/create-account/starter"
+                      href="/create-account/trial"
                       class="block w-fit mx-auto text-white bg-black p-3 rounded-xl hover:opacity-60"
                     >
-                      Choose this plan
+                      Choose Trial
                     </A>
                   </p>
                 </div>
@@ -56,22 +59,25 @@ function ChoosePlan() {
                   Premium Plan
                 </h2>
                 <div class="mt-2 space-y-2">
+                  <p class="border-b pb-3">₦5,000 yearly</p>
                   <p class="border-b pb-3">Get verified & vetted.</p>
-                  <p class="border-b pb-3">
+                  {/* <p class="border-b pb-3">
                     Access contacts of{" "}
                     <b>unlimited number of students requests</b>.
+                  </p> */}
+                  <p class="border-b pb-3">
+                    1 year & 2 months of direct access to contacts of posters.
                   </p>
                   <p class="border-b pb-3">
-                    Best for serious agents looking to maximize their reach and
-                    business growth!
+                    Best for serious house agents looking to maximize their
+                    reach and business growth!
                   </p>
-                  <p class="border-b pb-3">₦ 5,000 every year</p>
                   <p class="pt-2">
                     <A
                       href="/create-account/premium"
                       class="block w-fit mx-auto text-white bg-black p-3 rounded-xl hover:opacity-60"
                     >
-                      Choose this plan
+                      Choose Premium
                     </A>
                   </p>
                 </div>
