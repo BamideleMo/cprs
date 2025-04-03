@@ -27,20 +27,20 @@ function Agents() {
               <div class="my-12 space-x-3">
                 <A
                   href="/choose-plan"
-                  class="border border-black bg-black text-white p-2 rounded-lg hover:opacity-60"
+                  class="bg-black text-white p-2 rounded-lg hover:opacity-60"
                 >
                   Create Account
                 </A>
                 <span>or</span>
                 <A
                   href="/login"
-                  class="border border-black bg-black text-white p-2 rounded-lg hover:opacity-60"
+                  class="bg-black text-white p-2 rounded-lg hover:opacity-60"
                 >
                   Log In
                 </A>
               </div>
             </div>
-            <div class="bg-purple-100 border border-purple-300 p-4 lg:p-6 rounded-lg">
+            <div class="bg-purple-100 border border-black p-4 lg:p-6 rounded-lg">
               <h2 class="text-base font-semibold">
                 3 Reasons Why Agents Love OffK.ng
               </h2>

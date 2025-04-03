@@ -57,9 +57,9 @@ function HowItWorks() {
                 </li>
               </ul>
             </div>
-            <div class="mt-12 bg-purple-100 border border-purple-200 p-4 lg:p-6 rounded-lg">
+            <div class="mt-12 bg-purple-100 border border-black p-4 lg:p-6 rounded-lg">
               <h2 class="text-base font-semibold">Our Focus:</h2>
-              <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
+              <ul class="grid grid-cols-1 lg:grid-cols-2 gap-6 my-4">
                 <li>✌🏾 <u>Simplicity:</u>
                   <br />
                   No complicated processes, no unnecessary steps—just a

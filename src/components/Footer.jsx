@@ -14,20 +14,25 @@ function Footer(props) {
         <div class="w-full px-1 sm:w-[620px] flex justify-between mx-auto">
           <ul
             class="flex-1 flex flex-col space-x-0 space-y-4 md:flex-row 
-      md:space-y-0 md:space-x-4 lg:space-x-12"
+      md:space-y-0 md:space-x-4 lg:space-x-8"
           >
             <li>
-              <A href="/faqs" class="cursor-pointer hover:opacity-60">
+              <A href="/faqs" class="bg-cyan-600 text-white px-2 py-1 rounded-2xl hover:opacity-60">
+                Gist
+              </A>
+            </li>
+            <li class="pt-3 md:pt-0">
+              <A href="/faqs" class="hover:opacity-60">
                 FAQs
               </A>
             </li>
             <li>
-              <A href="/terms" class="cursor-pointer hover:opacity-60">
+              <A href="/terms" class="hover:opacity-60">
                 Ts & Cs
               </A>
             </li>
             <li>
-              <A href="/safety" class="cursor-pointer hover:opacity-60">
+              <A href="/safety" class="hover:opacity-60">
                 Safety Tips
               </A>
             </li>
