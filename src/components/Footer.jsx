@@ -21,7 +21,7 @@ function Footer(props) {
                 Gist
               </A>
             </li>
-            <li class="pt-3 md:pt-0">
+            <li class="pt-2 md:pt-0">
               <A href="/faqs" class="hover:opacity-60">
                 FAQs
               </A>
@@ -29,11 +29,6 @@ function Footer(props) {
             <li>
               <A href="/terms" class="hover:opacity-60">
                 Ts & Cs
-              </A>
-            </li>
-            <li>
-              <A href="/safety" class="hover:opacity-60">
-                Safety Tips
               </A>
             </li>
           </ul>

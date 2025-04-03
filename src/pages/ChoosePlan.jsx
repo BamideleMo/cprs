@@ -31,8 +31,10 @@ function ChoosePlan() {
                   Trial Plan
                 </h2>
                 <div class="mt-2 space-y-2">
-                  <p class="border-b pb-3">₦0</p>
-                  <p class="border-b pb-3">Get verified & vetted.</p>
+                  <p class="border-b pb-3">₦0 for 2 months.</p>
+                  <p class="border-b pb-3">
+                    Get verified & vetted in 7 days max.
+                  </p>
                   {/* <p class="border-b pb-3">
                     Access contacts of up to <b>5 student requests per month</b>
                     .
@@ -59,8 +61,10 @@ function ChoosePlan() {
                   Premium Plan
                 </h2>
                 <div class="mt-2 space-y-2">
-                  <p class="border-b pb-3">₦5,000 yearly</p>
-                  <p class="border-b pb-3">Get verified & vetted.</p>
+                  <p class="border-b pb-3">₦5,000 for 1 year & 2 months.</p>
+                  <p class="border-b pb-3">
+                    Get verified & vetted in 2 days max.
+                  </p>
                   {/* <p class="border-b pb-3">
                     Access contacts of{" "}
                     <b>unlimited number of students requests</b>.
