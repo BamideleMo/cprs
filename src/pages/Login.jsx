@@ -90,7 +90,7 @@ function Login() {
             <h2 class="text-center text-lg sm:text-xl mt-4 sm:mt-4 text-gray-600 leading-tight">
               Please Log In!
             </h2>
-            <div class="sm:my-6 space-y-3">
+            <div class="text-center sm:my-6 space-y-3">
               <p>
                 Don't have an account?{" "}
                 <A href="/choose-plan" class="text-purple-600 hover:opacity-60">

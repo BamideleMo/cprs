@@ -17,8 +17,11 @@ function Footer(props) {
       md:space-y-0 md:space-x-4 lg:space-x-8"
           >
             <li>
-              <A href="/faqs" class="bg-cyan-600 text-white px-2 py-1 rounded-2xl hover:opacity-60">
-                Gist
+              <A
+                href="/faqs"
+                class="bg-cyan-600 text-white px-2 py-1 rounded-xl hover:opacity-60"
+              >
+                Saturday Gist
               </A>
             </li>
             <li class="pt-2 md:pt-0">

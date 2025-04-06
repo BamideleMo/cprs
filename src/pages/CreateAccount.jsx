@@ -95,7 +95,7 @@ function CreateAccount() {
             <h2 class="text-center text-lg sm:text-xl mt-4 sm:mt-4 text-gray-600 leading-tight">
               For FREE!
             </h2>
-            <div class="sm:my-6 space-y-3">
+            <div class="text-center sm:my-6 space-y-3">
               <p>
                 Already have an account?{" "}
                 <A href="/login" class="text-purple-600 hover:opacity-60">

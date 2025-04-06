@@ -148,7 +148,10 @@ function Terms() {
                     We are not responsible for any issues, losses, or damages
                     resulting from transactions made outside our platform.
                   </li>
-                  <li>Users interact at their own risk.</li>
+                  <li>
+                    Users interact at their own risk. You should also read our{" "}
+                    <A href="/safety" class="text-purple-700 hover:opacity-60">Safety Rules</A>.
+                  </li>
                 </ul>
               </div>
               <div>
