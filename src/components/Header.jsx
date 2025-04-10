@@ -2,7 +2,6 @@ import { A } from "@solidjs/router";
 import { Match, Show, Switch } from "solid-js";
 import Logo from "./Logo";
 import { createEffect, createSignal } from "solid-js";
-import ArrowRight from "./icons/ArrowRight";
 
 function Header() {
   const [showWhichUni, setShowWhichUni] = createSignal(false);
@@ -60,39 +59,34 @@ function Header() {
                   <h2 class="font-normal text-xl text-purple-800 text-center mb-4 border-b pb-4">
                     Select University
                   </h2>
-                  <p class="text-gray-600">
-                    <b>Student?</b> Select the university you're in.{" "}
-                    <b>House Agent?</b> Select the university where you can
-                    provide services to students.
-                  </p>
-                  <div class="border-t mt-2 py-6 h-60 overflow-y-auto grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                  <div class="mt-2 max-h-80 overflow-y-auto space-y-6 text-center">
                     <div
                       onClick={() => doUni("uniabuja", "yes")}
-                      class="bg-gray-200 border flex items-center border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
+                      class="bg-gray-200 border flex justify-between border-gray-300 p-3 md:p-5 rounded-lg cursor-pointer hover:opacity-60"
                     >
                       <span>University of Abuja (UNIABUJA)</span>
                     </div>
                     <div
                       onClick={() => doUni("baze", "no")}
-                      class="bg-gray-200 border flex items-center border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
+                      class="bg-gray-200 border flex justify-between border-gray-300 p-3 md:p-5 rounded-lg cursor-pointer hover:opacity-60"
                     >
                       <span>Baze University, Abuja</span>
                     </div>
                     <div
                       onClick={() => doUni("nile", "no")}
-                      class="bg-gray-200 border flex items-center border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
+                      class="bg-gray-200 border flex justify-between border-gray-300 p-3 md:p-5 rounded-lg cursor-pointer hover:opacity-60"
                     >
                       <span>Nile University, Abuja</span>
                     </div>
                     <div
                       onClick={() => doUni("nsuk", "no")}
-                      class="bg-gray-200 border flex items-center border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
+                      class="bg-gray-200 border flex justify-between border-gray-300 p-3 md:p-5 rounded-lg cursor-pointer hover:opacity-60"
                     >
                       <span>Nasarawa State University, Keffi (NSUK)</span>
                     </div>
                     <div
                       onClick={() => doUni("unijos", "no")}
-                      class="bg-gray-200 border flex items-center border-gray-300 p-3 rounded-lg cursor-pointer hover:opacity-60"
+                      class="bg-gray-200 border flex justify-between border-gray-300 p-3 md:p-5 rounded-lg cursor-pointer hover:opacity-60"
                     >
                       <span>University of Jos (UNIJOS)</span>
                     </div>
@@ -103,16 +97,6 @@ function Header() {
           </div>
         </div>
       </Show>
-      {/* <div class="bg-black py-3">
-        <div class="w-full px-1 sm:w-[620px] mx-auto">
-          <div class="text-xs text-center text-white">
-            Sweeeet Gists Every Saturday:{" "}
-            <A href="#" class="text-yellow-400 hover:text-purple-700">
-              gist.offk.ng
-            </A>
-          </div>
-        </div>
-      </div> */}
       <header class="border-b py-3 px-2">
         <div class="w-full px-1 sm:w-[620px] flex justify-between mx-auto">
           <div>

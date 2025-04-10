@@ -62,17 +62,23 @@ function Requests() {
       const todayString = today.toISOString().slice(0, 10);
 
       for (let i = 0; i < arr.length; i++) {
-        var obj = {
-          level: arr[i].level,
-          request: arr[i].request,
-          id: arr[i].id,
-          days: daysBetweenDates(
-            arr[i].created_at.substring(0, 10),
-            todayString
-          ),
-        };
+        var numOfDays = daysBetweenDates(
+          arr[i].created_at.substring(0, 10),
+          todayString
+        );
+        if (numOfDays <= 30) {
+          var obj = {
+            level: arr[i].level,
+            request: arr[i].request,
+            id: arr[i].id,
+            days: daysBetweenDates(
+              arr[i].created_at.substring(0, 10),
+              todayString
+            ),
+          };
 
-        arrObj.push(obj);
+          arrObj.push(obj);
+        }
       }
       setRequests(arrObj);
     }

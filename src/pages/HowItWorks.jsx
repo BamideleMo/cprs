@@ -57,13 +57,14 @@ function HowItWorks() {
                 </li>
               </ul>
             </div>
-            <div class="mt-12 bg-purple-100 border border-black p-4 lg:p-6 rounded-lg">
+            <div class="mt-12 bg-purple-100 border-2 border-black p-4 lg:p-6">
               <h2 class="text-base font-semibold">Our Focus:</h2>
               <ul class="grid grid-cols-1 lg:grid-cols-2 gap-6 my-4">
-                <li>✌🏾 <u>Simplicity:</u>
+                <li>
+                  ✌🏾 <u>Simplicity:</u>
                   <br />
-                  No complicated processes, no unnecessary steps—just a
-                  simple way to find off-campus housing.
+                  No complicated processes, no unnecessary steps—just a simple
+                  way to find off-campus housing.
                 </li>
                 <li>
                   ⛑️ <u>Safety:</u>

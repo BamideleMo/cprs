@@ -1,8 +1,5 @@
 import { A } from "@solidjs/router";
-import { Show } from "solid-js";
 import Logo from "./Logo";
-import Close from "./icons/Close";
-import Advert from "./Advert";
 
 function Footer(props) {
   return (
@@ -14,14 +11,14 @@ function Footer(props) {
         <div class="w-full px-1 sm:w-[620px] flex justify-between mx-auto">
           <ul
             class="flex-1 flex flex-col space-x-0 space-y-4 md:flex-row 
-      md:space-y-0 md:space-x-4 lg:space-x-8"
+      md:space-y-0 md:space-x-6 lg:space-x-8"
           >
             <li>
               <A
                 href="/faqs"
-                class="bg-cyan-600 text-white px-2 py-1 rounded-xl hover:opacity-60"
+                class="border border-black px-2 py-1 rounded hover:opacity-60"
               >
-                Saturday Gist
+                convos.offk.ng
               </A>
             </li>
             <li class="pt-2 md:pt-0">

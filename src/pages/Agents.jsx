@@ -27,20 +27,20 @@ function Agents() {
               <div class="my-12 space-x-3">
                 <A
                   href="/choose-plan"
-                  class="bg-black text-white p-2 rounded-lg hover:opacity-60"
+                  class="w-fit mx-auto text-white bg-black p-3 rounded-xl hover:opacity-60"
                 >
                   Create Account
                 </A>
                 <span>or</span>
                 <A
                   href="/login"
-                  class="bg-black text-white p-2 rounded-lg hover:opacity-60"
+                  class="w-fit mx-auto text-white bg-black p-3 rounded-xl hover:opacity-60"
                 >
                   Log In
                 </A>
               </div>
             </div>
-            <div class="bg-purple-100 border border-black p-4 lg:p-6 rounded-lg">
+            <div class="mt-12 bg-purple-100 border-2 border-black p-4 lg:p-6">
               <h2 class="text-base font-semibold">
                 3 Reasons Why Agents Love OffK.ng
               </h2>
@@ -52,7 +52,7 @@ function Agents() {
                   off-campus accommodation.
                 </li>
                 <li>
-                  🛑 <u>Save Time & Effort:</u>
+                  🛑 <u>Saves Time & Effort:</u>
                   <br />
                   No need to scout for tenants—simply browse student requests
                   that match your available listings.

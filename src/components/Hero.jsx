@@ -34,8 +34,8 @@ function Hero() {
 
       <div class="my-10 text-center">
         <h1 class="text-[1.2rem] sm:text-3xl font-semibold leading-normal lg:leading-10">
-          The <span class="bg-purple-200 px-1">Simplest</span> &{" "}
-          <span class="bg-purple-200 px-1">Safest</span> Way To Find
+          The <span>Simplest</span> &{" "}
+          <span>Safest</span> Way To Find
           <br class="" />
           Off-Campus Accommodation.
         </h1>
