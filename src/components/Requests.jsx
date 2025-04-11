@@ -130,7 +130,7 @@ function Requests() {
           </div>
         </div>
       </Show>
-      <div class="mt-8 sm:mt-12">
+      <div class="mt-0 sm:mt-12">
         <div class="mx-4 mb-1 text-center">
           <h2 class="text-lg font-normal leading-snug">
             See recent requests by students:

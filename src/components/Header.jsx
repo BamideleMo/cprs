@@ -62,31 +62,31 @@ function Header() {
                   <div class="mt-2 max-h-80 overflow-y-auto space-y-6 text-center">
                     <div
                       onClick={() => doUni("uniabuja", "yes")}
-                      class="bg-gray-200 border flex justify-between border-gray-300 p-3 md:p-5 rounded-lg cursor-pointer hover:opacity-60"
+                      class="bg-gray-200 border  border-gray-300 p-3 md:p-5 rounded-lg cursor-pointer hover:opacity-60"
                     >
                       <span>University of Abuja (UNIABUJA)</span>
                     </div>
                     <div
                       onClick={() => doUni("baze", "no")}
-                      class="bg-gray-200 border flex justify-between border-gray-300 p-3 md:p-5 rounded-lg cursor-pointer hover:opacity-60"
+                      class="bg-gray-200 border  border-gray-300 p-3 md:p-5 rounded-lg cursor-pointer hover:opacity-60"
                     >
                       <span>Baze University, Abuja</span>
                     </div>
                     <div
                       onClick={() => doUni("nile", "no")}
-                      class="bg-gray-200 border flex justify-between border-gray-300 p-3 md:p-5 rounded-lg cursor-pointer hover:opacity-60"
+                      class="bg-gray-200 border  border-gray-300 p-3 md:p-5 rounded-lg cursor-pointer hover:opacity-60"
                     >
                       <span>Nile University, Abuja</span>
                     </div>
                     <div
                       onClick={() => doUni("nsuk", "no")}
-                      class="bg-gray-200 border flex justify-between border-gray-300 p-3 md:p-5 rounded-lg cursor-pointer hover:opacity-60"
+                      class="bg-gray-200 border  border-gray-300 p-3 md:p-5 rounded-lg cursor-pointer hover:opacity-60"
                     >
                       <span>Nasarawa State University, Keffi (NSUK)</span>
                     </div>
                     <div
                       onClick={() => doUni("unijos", "no")}
-                      class="bg-gray-200 border flex justify-between border-gray-300 p-3 md:p-5 rounded-lg cursor-pointer hover:opacity-60"
+                      class="bg-gray-200 border  border-gray-300 p-3 md:p-5 rounded-lg cursor-pointer hover:opacity-60"
                     >
                       <span>University of Jos (UNIJOS)</span>
                     </div>
@@ -98,7 +98,7 @@ function Header() {
         </div>
       </Show>
       <header class="border-b py-3 px-2">
-        <div class="w-full px-1 sm:w-[620px] flex justify-between mx-auto">
+        <div class="w-full px-1 sm:w-[620px]  mx-auto">
           <div>
             <Logo />
           </div>
