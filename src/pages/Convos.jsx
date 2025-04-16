@@ -3,12 +3,16 @@ import Footer from "../components/Footer";
 import { createSignal } from "solid-js";
 import { MetaProvider, Title, Meta, Link } from "@solidjs/meta";
 import { A } from "@solidjs/router";
+import oops from "../assets/404.jpg";
 
-function HowItWorks() {
+function Convos() {
   return (
     <MetaProvider>
-      <Title>How it works - www.hostelsell.ng</Title>
-      <Meta name="description" content="How hostelsell.ng works."></Meta>
+      <Title>Convos - www.hostelsell.ng</Title>
+      <Meta
+        name="description"
+        content="Oops! The page you're looking for was not found."
+      ></Meta>
       <Link rel="preload" as="image" href={screen}></Link>
       <div class="bg-white text-sm">
         <Header />
@@ -84,26 +88,6 @@ function HowItWorks() {
                 </li>
               </ul>
             </div>
-            <div class="mt-12 bg-purple-100 border-2 border-black p-4 lg:p-6">
-              <h2 class="text-base font-semibold border-b-2 border-black pb-3 text-cyan-800">
-                🧼 Why HostelSell?
-              </h2>
-              <ul class="space-y-6 my-4">
-                <li>
-                  <b>🕓 Fast</b> – Post item in under 2 minutes.
-                </li>
-                <li>
-                  <b>🧾 Simple</b> – No logins, no photos, no clutter.
-                </li>
-                <li>
-                  <b>📱 Direct</b> – Straight to WhatsApp chats.
-                </li>
-                <li>
-                  <b>🧘🏽‍♀️ Stress-Free</b> – Your post disappears in 30 days
-                  automatically.
-                </li>
-              </ul>
-            </div>
           </div>
         </section>
         <Footer />
@@ -112,4 +96,4 @@ function HowItWorks() {
   );
 }
 
-export default HowItWorks;
+export default Convos;

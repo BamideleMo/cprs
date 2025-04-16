@@ -4,18 +4,11 @@ import { Router, Route } from "@solidjs/router";
 
 import "./index.css";
 import App from "./App";
-import Agents from "./pages/Agents";
-import CreateAccount from "./pages/CreateAccount";
-import Login from "./pages/Login";
-import FAQs from "./pages/FAQs";
 import Terms from "./pages/Terms";
 import Safety from "./pages/Safety";
-import AccountCreated from "./pages/AccountCreated";
-import Dashboard from "./pages/Dashboard";
-import Market from "./pages/BuySell";
 import HowItWorks from "./pages/HowItWorks";
-import ChoosePlan from "./pages/ChoosePlan";
 import NotFound from "./pages/NotFound";
+import Convos from "./pages/Convos";
 
 const root = document.getElementById("root");
 
@@ -29,17 +22,10 @@ render(
   () => (
     <Router>
       <Route path="/" component={App} />
-      <Route path="/agents" component={Agents} />
-      <Route path="/create-account/:plan" component={CreateAccount} />
-      <Route path="/login" component={Login} />
-      <Route path="/faqs" component={FAQs} />
       <Route path="/terms" component={Terms} />
       <Route path="/safety" component={Safety} />
-      <Route path="/account-created" component={AccountCreated} />
-      <Route path="/dashboard" component={Dashboard} />
-      {/* <Route path="/buy-sell" component={Market} /> */}
       <Route path="/how-it-works" component={HowItWorks} />
-      <Route path="/choose-plan" component={ChoosePlan} />
+      <Route path="/convos" component={Convos} />
       <Route path="*" component={NotFound} />
     </Router>
   ),

@@ -2,25 +2,25 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { createSignal } from "solid-js";
 import Hero from "./components/Hero";
-import Requests from "./components/Requests";
 import { MetaProvider, Title, Meta, Link } from "@solidjs/meta";
+import PostedItems from "./components/PostedItems";
 
 function App() {
   return (
     <MetaProvider>
       <Title>
-        The Simplest Way to Find Off-Campus Accommodation - www.offk.ng
+        A Simple Notice Board for Hostel Items on Sale - www.hostelsell.ng
       </Title>
       <Meta
         name="description"
-        content="The Simplest Way to Find Off-Campus Accommodation."
+        content="A Simple Notice Board for Hostel Items on Sale."
       ></Meta>
       <Link rel="preload" as="image" href={screen}></Link>
       <div class="bg-white text-sm">
         <Header />
         <section class="w-full px-1 sm:w-[620px] mx-auto">
           <Hero />
-          <Requests />
+          <PostedItems />
         </section>
         <Footer />
       </div>

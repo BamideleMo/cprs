@@ -13,17 +13,14 @@ function Footer(props) {
             class="flex-1 flex flex-col space-x-0 space-y-4 md:flex-row 
       md:space-y-0 md:space-x-6 lg:space-x-8"
           >
-            <li>
-              <A
-                href="/faqs"
-                class="border border-black px-2 py-1 rounded hover:opacity-60"
-              >
-                convos.offk.ng
+            <li class="md:pt-0">
+              <A href="/how-it-works" class="hover:opacity-60">
+                How it works
               </A>
             </li>
-            <li class="pt-2 md:pt-0">
-              <A href="/faqs" class="hover:opacity-60">
-                FAQs
+            <li class="md:pt-0">
+              <A href="/safety" class="hover:opacity-60">
+                Safety Rules
               </A>
             </li>
             <li>
@@ -33,7 +30,7 @@ function Footer(props) {
             </li>
           </ul>
           <div class="flex-1 text-right space-x-1 text-gray-400">
-            <div class="md:hidden mb-6">
+            <div class="md:hidden -mt-1 mb-6">
               <Logo />
             </div>
             <span class="block md:inline">All rights reserved.</span>
@@ -43,7 +40,6 @@ function Footer(props) {
           </div>
         </div>
       </footer>
-      {/* <Advert/> */}
     </>
   );
 }

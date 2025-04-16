@@ -2,7 +2,7 @@ import { A } from "@solidjs/router";
 import { Match, Show, Switch } from "solid-js";
 import Close from "./icons/Close";
 import { createSignal } from "solid-js";
-import PostRequestForm from "./PostRequestForm";
+import PostItemForm from "./PostItemForm";
 
 function Hero() {
   const [showModal, setShowModal] = createSignal(false);
@@ -18,13 +18,13 @@ function Hero() {
                 <Close />
               </span>
             </div>
-            <div class="bg-white p-4  border-t-8 border-purple-800 py-4">
+            <div class="bg-white p-4  border-t-8 border-cyan-800 py-4">
               <Switch>
                 <Match when={modalContent() === "request"}>
-                  <h2 class="font-normal text-xl text-purple-800 text-center mb-4 border-b pb-4">
-                    Post Request
+                  <h2 class="font-normal text-xl text-cyan-800 text-center mb-4 border-b pb-4">
+                    Post Item for Sale
                   </h2>
-                  <PostRequestForm />
+                  <PostItemForm />
                 </Match>
               </Switch>
             </div>
@@ -32,25 +32,22 @@ function Hero() {
         </div>
       </Show>
 
-      <div class="my-10 text-center">
-        <h1 class="text-[1.2rem] sm:text-3xl font-semibold leading-normal lg:leading-10">
-          The <span>Simplest</span> &{" "}
-          <span>Safest</span> Way To Find
-          <br class="" />
-          Off-Campus Accommodation.
+      <div class="mt-10 text-center">
+        <h1 class="text-slate-800 text-2xl sm:text-3xl font-semibold leading-tight lg:leading-10 lg:w-[400px] lg:mx-auto">
+          A Simple Notice Board
+          <br />
+          for Hostel Items on Sale.
         </h1>
-        {/* <h2 class="text-sm sm:text-lg mt-2 sm:mt-2 text-gray-600">
-          Verified & Vetted Agents Come to You!
-        </h2> */}
+        <h2 class="text-lg">Fast, Easy, No Stress.</h2>
         <div class="pt-10 space-x-4">
           <span
             onClick={() => {
               setShowModal(true);
               setModalContent("request");
             }}
-            class="cursor-pointer border border-purple-800 bg-purple-800 text-white p-2 rounded-lg hover:opacity-60"
+            class="cursor-pointer bg-cyan-800 text-white p-2.5 rounded-lg hover:opacity-60"
           >
-            👋 Post Request
+            👋 Post Item
           </span>
         </div>
         <svg

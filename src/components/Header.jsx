@@ -2,26 +2,27 @@ import { A } from "@solidjs/router";
 import { Match, Show, Switch } from "solid-js";
 import Logo from "./Logo";
 import { createEffect, createSignal } from "solid-js";
+import { Select } from "./Select";
 
 function Header() {
   const [showWhichUni, setShowWhichUni] = createSignal(false);
   const [notAvailable, setNotAvailable] = createSignal(false);
 
-  const doUni = (val, val2) => {
-    if (val2 === "yes") {
+  const doUni = (val) => {
+    if (val === "no") {
+      setNotAvailable(true);
+    } else {
       var store = {
         uni: val,
       };
 
-      localStorage.setItem("OffKUni", JSON.stringify(store));
+      localStorage.setItem("HostelSell", JSON.stringify(store));
       window.location.reload();
-    } else {
-      setNotAvailable(true);
     }
   };
 
   createEffect(() => {
-    if (JSON.parse(localStorage.getItem("OffKUni"))) {
+    if (JSON.parse(localStorage.getItem("HostelSell"))) {
       console.log("Yes uni");
       setShowWhichUni(true);
     } else {
@@ -41,8 +42,8 @@ function Header() {
                 <div class="mt-4 space-y-4 text-gray-600">
                   <p>Hi,</p>
                   <p>
-                    We are yet to launch our services in your university. But
-                    we'll launch soon. We're working on it.
+                    We are yet to launch in your university. But we'll launch
+                    soon. We're working on it.
                   </p>
                   <p class="pb-4 pt-2">
                     <span
@@ -60,36 +61,25 @@ function Header() {
                     Select University
                   </h2>
                   <div class="mt-2 max-h-80 overflow-y-auto space-y-6 text-center">
-                    <div
-                      onClick={() => doUni("uniabuja", "yes")}
-                      class="bg-gray-200 border  border-gray-300 p-3 md:p-5 rounded-lg cursor-pointer hover:opacity-60"
-                    >
-                      <span>University of Abuja (UNIABUJA)</span>
-                    </div>
-                    <div
-                      onClick={() => doUni("baze", "no")}
-                      class="bg-gray-200 border  border-gray-300 p-3 md:p-5 rounded-lg cursor-pointer hover:opacity-60"
-                    >
-                      <span>Baze University, Abuja</span>
-                    </div>
-                    <div
-                      onClick={() => doUni("nile", "no")}
-                      class="bg-gray-200 border  border-gray-300 p-3 md:p-5 rounded-lg cursor-pointer hover:opacity-60"
-                    >
-                      <span>Nile University, Abuja</span>
-                    </div>
-                    <div
-                      onClick={() => doUni("nsuk", "no")}
-                      class="bg-gray-200 border  border-gray-300 p-3 md:p-5 rounded-lg cursor-pointer hover:opacity-60"
-                    >
-                      <span>Nasarawa State University, Keffi (NSUK)</span>
-                    </div>
-                    <div
-                      onClick={() => doUni("unijos", "no")}
-                      class="bg-gray-200 border  border-gray-300 p-3 md:p-5 rounded-lg cursor-pointer hover:opacity-60"
-                    >
-                      <span>University of Jos (UNIJOS)</span>
-                    </div>
+                    <Select
+                      onChange={(e) => {
+                        doUni(e.currentTarget.value);
+                      }}
+                      label="Select your university:"
+                      name="item"
+                      required={true}
+                      options={[
+                        { value: "", label: "Select" },
+                        {
+                          value: "no",
+                          label: "University of Jos",
+                        },
+                        {
+                          value: "UNIABUJA",
+                          label: "University of Abuja",
+                        },
+                      ]}
+                    />
                   </div>
                 </>
               </Match>
@@ -102,28 +92,10 @@ function Header() {
           <div>
             <Logo />
           </div>
-          <div class="w-fit space-x-10 pt-2 text-sm flex">
-            <A href="/how-it-works" class="hover:opacity-60">
-              How it works
+          <div class="w-fit space-x-10 pt-1.5 text-sm flex">
+            <A href="/convos" class="hover:opacity-60 text-orange-500">
+              Convos
             </A>
-            <Show
-              when={JSON.parse(localStorage.getItem("OffKUser"))}
-              fallback={
-                <A href="/agents" class="hover:opacity-60">
-                  For Agents
-                </A>
-              }
-            >
-              <>
-                <span class="space-x-1">
-                  <span class="text-gray-400">U</span>
-                  <A href="/dashboard" class="hover:opacity-60">
-                    Dashboard
-                  </A>
-                </span>
-              </>
-            </Show>
-            {/* <A href="/buy-sell">Buy & Sell</A> */}
           </div>
         </div>
       </header>

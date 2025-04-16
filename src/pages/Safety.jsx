@@ -7,10 +7,10 @@ import { A } from "@solidjs/router";
 function Safety() {
   return (
     <MetaProvider>
-      <Title>Safety Tips - www.offk.ng</Title>
+      <Title>Safety Rules - www.hostelsell.ng</Title>
       <Meta
         name="description"
-        content="While we verify and vet all agents before granting them access to student requests, it is still important to take precautions when searching for housing."
+        content="While HostelSell.ng makes it super easy to buy and sell hostel items, we care deeply about your safety."
       ></Meta>
       <Link rel="preload" as="image" href={screen}></Link>
       <div class="bg-white text-sm">
@@ -18,85 +18,101 @@ function Safety() {
         <section class="w-full px-1 sm:w-[620px] mx-auto">
           <div class="my-6 sm:my-10 mx-2 text-left">
             <h1 class="text-center text-xl sm:text-3xl font-semibold space-y-0">
-              Safety Tips
+              Safety Rules
             </h1>
             <div class="my-6 space-y-6">
               <p>
-                At OffK.ng, we prioritize your safety and security when
-                connecting with house agents for off-campus accommodation. While
-                we verify and vet all agents before granting them access to
-                student requests, it is still important to take precautions when
-                searching for housing.
+                While HostelSell.ng makes it super easy to buy and sell hostel
+                items, we care deeply about your safety.
               </p>
+              <p>
+                <b>Note:</b>
+                <br />
+                HostelSell is just a notice board, so it’s up to you to stay
+                sharp when making deals.
+              </p>
+              <p>Here are a few simple but important rules to follow:</p>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
-                  <span class="text-gray-400 block">#1.</span>
-                  <u>Always Meet in a Public Place First</u>
+                  <span class="text-gray-400 block">🚫 1.</span>
+                  <u>No Meetups in Secluded Places</u>
                 </h2>
                 <p>
-                  Before visiting any property, arrange to meet the agent in a
-                  public location to discuss details. Avoid going to unfamiliar
-                  places alone.
+                  Always meet in public or well-lit hostel areas. Avoid dark
+                  corners, uncompleted buildings, or "just come to my room"
+                  arrangements if you don’t know the person.
                 </p>
               </div>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
-                  <span class="text-gray-400 block">#2.</span>
-                  <u>Inspect the Property Before Making Payments</u>
+                  <span class="text-gray-400 block">👫 2.</span>
+                  <u>Don’t Go Alone for First-Time Meetups</u>
+                </h2>
+                <p>Going to inspect or pick up an item? Take a friend along.</p>
+              </div>
+              <div>
+                <h2 class="text-base mb-1 leading-tight">
+                  <span class="text-gray-400 block">💸 3.</span>
+                  <u>No Upfront Payments to Strangers</u>
                 </h2>
                 <p>
-                  Never make any payment before physically inspecting the
-                  property. Ensure it meets your expectations and verify
-                  ownership.
+                  Never send money before seeing the item in person. If a seller
+                  insists, walk away. Legit sellers know buyers want to confirm
+                  first.
                 </p>
               </div>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
-                  <span class="text-gray-400 block">#3.</span>
-                  <u>Avoid Sharing Personal & Financial Information</u>
+                  <span class="text-gray-400 block">📲 4.</span>
+                  <u>Stick to WhatsApp</u>
                 </h2>
                 <p>
-                  Do not share sensitive information like your bank details,
-                  passwords, or home address with any agent or third party.
+                  All chats happen through WhatsApp. If someone wants to move
+                  the conversation elsewhere, be cautious — especially if they
+                  ask for personal info or try to rush you.
                 </p>
               </div>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
-                  <span class="text-gray-400 block">#4.</span>
-                  <u>Bring Someone Along for Inspections</u>
+                  <span class="text-gray-400 block">📷 5.</span>
+                  <u>Ask for Pictures</u>
                 </h2>
                 <p>
-                  If possible, visit the property with a friend or family member
-                  for added security and a second opinion.
+                  You can request photos of the item directly on WhatsApp. Don’t
+                  be afraid to ask for clear pictures or even a short video if
+                  needed.
                 </p>
               </div>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
-                  <span class="text-gray-400 block">#5.</span>
-                  <u>Verify the Property Ownership</u>
+                  <span class="text-gray-400 block">🚩 6.</span>
+                  <u>Report Suspicious Activity</u>
                 </h2>
                 <p>
-                  Ask the agent for proof of ownership or the landlord’s contact
-                  details or meet the landlord in person before making any
-                  commitments.
+                  If someone is acting shady or trying to scam you, report the
+                  listing immediately. We take reports seriously and will remove
+                  any suspicious posts fast.
                 </p>
               </div>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
-                  <span class="text-gray-400 block">#6.</span>
-                  <u>Report Suspicious Activities</u>
+                  <span class="text-gray-400 block">👤 7.</span>
+                  <u>Use Common Sense</u>
                 </h2>
                 <p>
-                  Trust your instincts—if something feels off, reconsider
-                  proceeding.
+                  If it sounds too good to be true, it probably is. Trust your
+                  gut — if something feels off, it probably is.
                 </p>
+              </div>
+              <div>
+                <h2 class="text-base mb-1 leading-tight">
+                  <span class="text-gray-400 block">🛑 8.</span>
+                  <u>HostelSell.ng Is Not a Middleman</u>
+                </h2>
                 <p>
-                  Confirm agreements in writing—get a receipt or contract for
-                  any payments made.
-                </p>
-                <p>
-                  Report suspicious agents or requets to OffK.ng to help
-                  maintain a safe platform for everyone.
+                  We don’t verify items or monitor transactions. We're just a
+                  notice board. So always deal responsibly, just like you would
+                  on any hostel wall or WhatsApp group.
                 </p>
               </div>
             </div>

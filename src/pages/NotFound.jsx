@@ -8,7 +8,7 @@ import oops from "../assets/404.jpg";
 function NotFound() {
   return (
     <MetaProvider>
-      <Title>Not Found - www.offk.ng</Title>
+      <Title>Not Found - www.hostelsell.ng</Title>
       <Meta
         name="description"
         content="Oops! The page you're looking for was not found."

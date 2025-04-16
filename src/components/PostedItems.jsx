@@ -1,0 +1,226 @@
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Close from "../components/icons/Close";
+import { createSignal, createResource, Show } from "solid-js";
+import { MetaProvider, Title, Meta, Link } from "@solidjs/meta";
+import { A } from "@solidjs/router";
+import PostItemForm from "../components/PostItemForm";
+import Loading from "../components/Loading";
+import { createStore } from "solid-js/store";
+import PostTr from "./PostTr";
+import PromotedTr from "./PromotedTr";
+
+const VITE_API_URL = import.meta.env["VITE_API_URL"];
+
+function PostedItems() {
+  const [showModal, setShowModal] = createSignal(false);
+  const [noData, setNoData] = createSignal(false);
+  const [listings1, setListings1] = createStore([]);
+  const [listings2, setListings2] = createStore([]);
+  const [listings3, setListings3] = createStore([]);
+
+  const [showRestriction, setShowRestriction] = createSignal(false);
+
+  const daysBetweenDates = (date1, date2) => {
+    const d1 = new Date(date1);
+    const d2 = new Date(date2);
+
+    const diffInMs = Math.abs(d2 - d1);
+    const diffInDays = Math.ceil(diffInMs / (1000 * 60 * 60 * 24));
+    return diffInDays;
+  };
+
+  const getListings = async () => {
+    const response = await fetch(
+      VITE_API_URL +
+        "/open/api/view-listings?uni=" +
+        JSON.parse(localStorage.getItem("OffKUni")).uni,
+      {
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        method: "GET",
+      }
+    );
+    const result = await response.json();
+    if (!result.success) {
+      setMessage(result.response);
+      setIsProcessing(false);
+    } else {
+      if (result.response.length < 1) {
+        setNoData(true);
+      }
+
+      var arrObj1 = [];
+      var arrObj2 = [];
+      var arrObj3 = [];
+
+      var arr = result.response;
+
+      const today = new Date();
+      const todayString = today.toISOString().slice(0, 10);
+
+      // for (let i = 0; i < arr.length; i++)
+      for (let i = 0; i < 3; i++) {
+        var numOfDays = daysBetweenDates(
+          arr[i].created_at.substring(0, 10),
+          todayString
+        );
+        if (numOfDays <= 30) {
+          var obj1 = {
+            category: arr[i].category,
+            item: arr[i].item,
+            description: arr[i].description,
+            id: arr[i].id,
+            days: daysBetweenDates(
+              arr[i].created_at.substring(0, 10),
+              todayString
+            ),
+          };
+          arrObj1.push(obj1);
+        }
+      }
+      for (let i = 3; i < 8; i++) {
+        var numOfDays = daysBetweenDates(
+          arr[i].created_at.substring(0, 10),
+          todayString
+        );
+        if (numOfDays <= 30) {
+          var obj2 = {
+            category: arr[i].category,
+            item: arr[i].item,
+            description: arr[i].description,
+            id: arr[i].id,
+            days: daysBetweenDates(
+              arr[i].created_at.substring(0, 10),
+              todayString
+            ),
+          };
+          arrObj2.push(obj2);
+        }
+      }
+      for (let i = 8; i < arr.length; i++) {
+        var numOfDays = daysBetweenDates(
+          arr[i].created_at.substring(0, 10),
+          todayString
+        );
+        if (numOfDays <= 30) {
+          var obj3 = {
+            category: arr[i].category,
+            item: arr[i].item,
+            description: arr[i].description,
+            id: arr[i].id,
+            days: daysBetweenDates(
+              arr[i].created_at.substring(0, 10),
+              todayString
+            ),
+          };
+          arrObj3.push(obj3);
+        }
+      }
+
+      setListings1(arrObj1);
+      setListings2(arrObj2);
+      setListings3(arrObj3);
+    }
+    return {
+      listings1,
+      listings2,
+      listings3,
+    };
+  };
+
+  const [resources] = createResource(getListings);
+  return (
+    <>
+      <div class="mt-0 sm:mt-6 flex justify-between text-base sm:text-lg ">
+        <h2 class="font-normal">Items for sale:</h2>
+        <div class="">
+          <span class="flex space-x-1 items-center text-gray-600 hover:opacity-60 cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5 -mt-0.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 0 1-.659 1.591l-5.432 5.432a2.25 2.25 0 0 0-.659 1.591v2.927a2.25 2.25 0 0 1-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 0 0-.659-1.591L3.659 7.409A2.25 2.25 0 0 1 3 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0 1 12 3Z"
+              />
+            </svg>
+            <span>Filter</span>
+          </span>
+        </div>
+      </div>
+      <div class="mt-1 space-y-6 text-sm md:text-sm">
+        <Show
+          when={resources.loading}
+          fallback={
+            <>
+              <Show
+                when={noData()}
+                fallback={
+                  <table
+                    cellpadding="0"
+                    cellspacing="0"
+                    class="w-full border-x border-cyan-800 border-dashed"
+                  >
+                    <thead>
+                      <tr class="font-normal bg-slate-300 text-black border-y border-dashed border-cyan-800 space-x-1">
+                        <td class="w-14 md:w-20 p-1 md:px-3">Posted</td>
+                        <td class="p-1 md:px-3 border-l border-dashed border-cyan-800">
+                          Item + Description
+                        </td>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <For each={resources().listings1}>
+                        {(resource, i) => <PostTr rsc={resource} />}
+                      </For>
+                      <PromotedTr
+                        link="#"
+                        bg="yellow"
+                        topic="eBook for Sale:"
+                        text="How to Start & Run a Profitable Business on a
+                            University Campus: A Step-by-step Guide for Nigerian
+                            University Students."
+                      />
+                      <For each={resources().listings2}>
+                        {(resource, i) => <PostTr rsc={resource} />}
+                      </For>
+                      <PromotedTr
+                        link="#"
+                        topic="Love Hostel Convos?"
+                        text="See intriguing conversations between 2 students discussing life, love,
+            and hustle on campus. It’s like a podcast — but all in text format."
+                      />
+                      <For each={resources().listings3}>
+                        {(resource, i) => <PostTr rsc={resource} />}
+                      </For>
+                    </tbody>
+                  </table>
+                }
+              >
+                <div class="pt-4 text-center p-2 border-t border-gray-100 text-slate-600">
+                  No data found.
+                </div>
+              </Show>
+            </>
+          }
+        >
+          <Show when={JSON.parse(localStorage.getItem("OffKUni"))}>
+            <Loading />
+          </Show>
+        </Show>
+      </div>
+    </>
+  );
+}
+
+export default PostedItems;

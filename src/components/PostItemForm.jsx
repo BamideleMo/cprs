@@ -138,6 +138,10 @@ function PostItemForm() {
                           label: "Phone",
                         },
                         {
+                          value: "Extension Box",
+                          label: "Extension Box",
+                        },
+                        {
                           value: "Standing Fan",
                           label: "Standing Fan",
                         },
