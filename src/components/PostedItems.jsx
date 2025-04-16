@@ -34,7 +34,7 @@ function PostedItems() {
     const response = await fetch(
       VITE_API_URL +
         "/open/api/view-listings?uni=" +
-        JSON.parse(localStorage.getItem("OffKUni")).uni,
+        JSON.parse(localStorage.getItem("HostelSell")).uni,
       {
         mode: "cors",
         headers: {
@@ -214,7 +214,7 @@ function PostedItems() {
             </>
           }
         >
-          <Show when={JSON.parse(localStorage.getItem("OffKUni"))}>
+          <Show when={JSON.parse(localStorage.getItem("HostelSell"))}>
             <Loading />
           </Show>
         </Show>

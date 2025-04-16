@@ -44,7 +44,7 @@ function PostItemForm() {
           item: formData().item,
           number: formData().number,
           description: formData().description,
-          uni: JSON.parse(localStorage.getItem("OffKUni")).uni,
+          uni: JSON.parse(localStorage.getItem("HostelSell")).uni,
         }),
       });
       const result = await response.json();
