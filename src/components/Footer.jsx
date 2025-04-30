@@ -14,11 +14,6 @@ function Footer(props) {
       md:space-y-0 md:space-x-6 lg:space-x-8"
           >
             <li class="md:pt-0">
-              <A href="/how-it-works" class="hover:opacity-60">
-                How it works
-              </A>
-            </li>
-            <li class="md:pt-0">
               <A href="/safety" class="hover:opacity-60">
                 Safety Rules
               </A>

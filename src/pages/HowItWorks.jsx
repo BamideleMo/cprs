@@ -16,10 +16,10 @@ function HowItWorks() {
           <div class="my-6 sm:my-10 mx-2">
             <div class="text-center">
               <h1 class="text-xl sm:text-3xl font-semibold space-y-0">
-                <div>No stress.</div>
+                <div>A simple way to sell & buy hostel stuff!</div>
               </h1>
               <h2 class="text-lg sm:text-xl sm:mt-2 text-gray-600 leading-tight">
-                Just a simple way to sell and buy hostel stuff!
+                Fast, Simple, & Direct.
               </h2>
             </div>
             <div class="mt-8 md:mt-12">
@@ -81,26 +81,6 @@ function HowItWorks() {
                     Just a clean notice board that connects students to
                     students.
                   </p>
-                </li>
-              </ul>
-            </div>
-            <div class="mt-12 bg-purple-100 border-2 border-black p-4 lg:p-6">
-              <h2 class="text-base font-semibold border-b-2 border-black pb-3 text-cyan-800">
-                🧼 Why HostelSell?
-              </h2>
-              <ul class="space-y-6 my-4">
-                <li>
-                  <b>🕓 Fast</b> – Post item in under 2 minutes.
-                </li>
-                <li>
-                  <b>🧾 Simple</b> – No logins, no photos, no clutter.
-                </li>
-                <li>
-                  <b>📱 Direct</b> – Straight to WhatsApp chats.
-                </li>
-                <li>
-                  <b>🧘🏽‍♀️ Stress-Free</b> – Your post disappears in 30 days
-                  automatically.
                 </li>
               </ul>
             </div>

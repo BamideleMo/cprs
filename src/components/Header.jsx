@@ -93,8 +93,8 @@ function Header() {
             <Logo />
           </div>
           <div class="w-fit space-x-10 pt-1.5 text-sm flex">
-            <A href="/convos" class="hover:opacity-60 text-orange-500">
-              Convos
+            <A href="/how-it-works" class="hover:opacity-60">
+              How it works
             </A>
           </div>
         </div>
