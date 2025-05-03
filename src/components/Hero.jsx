@@ -48,7 +48,7 @@ function Hero() {
         <h2 class="text-lg leading-tight mt-2 text-gray-600">
           Fast, Easy, No Stress!
         </h2>
-        <div class="pt-10 space-x-4">
+        <div class="pt-6 space-x-4">
           <span
             onClick={() => {
               setShowModal(true);

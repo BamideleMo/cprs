@@ -20,7 +20,7 @@ function WhatIsOffK() {
               </h2>
             </div>
             <div class="mt-8 md:mt-12">
-              <p>OffK.ng is a simple website for hostel deals. Students can:</p>
+              <p>OffK.ng is a simple website where students can:</p>
               <ul class="space-y-8 m-8 list-decimal">
                 <li>
                   Find or post <u>hostel items for sale</u> (like beds, chairs,

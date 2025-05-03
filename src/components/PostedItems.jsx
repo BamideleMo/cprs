@@ -174,7 +174,7 @@ function PostedItems() {
                       <tr class="font-normal bg-slate-300 text-black border-y border-dashed border-cyan-800 space-x-1">
                         <td class="w-14 md:w-20 p-1 md:px-3">Posted</td>
                         <td class="p-1 md:px-3 border-l border-dashed border-cyan-800">
-                          Item + Description
+                          Description
                         </td>
                       </tr>
                     </thead>

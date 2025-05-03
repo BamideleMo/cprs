@@ -91,7 +91,7 @@ function PostItemForm() {
         </Match>
         <Match when={!success()}>
           <form autocomplete="off" onSubmit={submit} class="space-y-3 my-4">
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
               <div>
                 <Select
                   label="Type:"
@@ -306,18 +306,18 @@ function PostItemForm() {
                   </Match>
                 </Switch>
               </div>
-            </div>
-            <div>
-              <TextInput
-                label="WhatsApp Number:"
-                name="number"
-                required={true}
-                type="number"
-                formHandler={formHandler}
-                placeholder="You'll be contacted via WhatsApp"
-                pattern="[0-9]*"
-                inputmode="numeric"
-              />
+              <div class="sm:col-span-3">
+                <TextInput
+                  label="WhatsApp Number:"
+                  name="number"
+                  required={true}
+                  type="number"
+                  formHandler={formHandler}
+                  placeholder="You'll be contacted via WhatsApp"
+                  pattern="[0-9]*"
+                  inputmode="numeric"
+                />
+              </div>
             </div>
             <div>
               <TextArea

@@ -5,7 +5,7 @@ function PromotedTr(props) {
   return (
     <tr class="border-b border-dashed border-cyan-800 bg-yellow-200">
       <td colSpan={2} class="">
-        <a href={props.link} class="block p-1 md:p-3 hover:bg-cyan-50">
+        <a href={props.link} class="block p-2 md:p-3 hover:bg-cyan-50">
           <b class="text-cyan-600">{props.topic}</b>
           <br />
           <span>
