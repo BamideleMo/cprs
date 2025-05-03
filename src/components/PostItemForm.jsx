@@ -6,9 +6,9 @@ import TextInput from "./TextInput";
 import TextArea from "./TextArea";
 import { Select } from "./Select";
 import submittingImg from "../assets/submitting.gif";
+import ProcessingAnimation from "./ProcessingAnimation";
 
 const schema = z.object({
-  type: z.string().min(1, "*Invalid"),
   category: z.string().min(1, "*Invalid"),
   item: z.string().min(1, "*Invalid"),
   number: z.string().length(11, "*Invalid"),
@@ -87,85 +87,37 @@ function PostItemForm() {
           </div>
         </Match>
         <Match when={isProcessing()}>
-          <img src={submittingImg} class="mx-auto h-36" />
+          <ProcessingAnimation />
         </Match>
         <Match when={!success()}>
           <form autocomplete="off" onSubmit={submit} class="space-y-3 my-4">
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
                 <Select
-                  label="Type:"
-                  name="type"
+                  label="Category:"
+                  name="category"
                   required={true}
                   options={[
                     { value: "", label: "Select" },
                     {
-                      value: "sale",
-                      label: "Item for Sale",
+                      value: "Gadget",
+                      label: "Gadget",
                     },
                     {
-                      value: "rent",
-                      label: "Hostel for Rent",
+                      value: "Furniture",
+                      label: "Furniture",
+                    },
+                    {
+                      value: "Kitchen",
+                      label: "Kitchen",
+                    },
+                    {
+                      value: "Accommodation",
+                      label: "Accommodation",
                     },
                   ]}
                   formHandler={formHandler}
                 />
-              </div>
-              <div>
-                <Switch>
-                  <Match when={formData().type === ""}>
-                    <Select
-                      label="Category:"
-                      name="category"
-                      placeholder="Select"
-                      required={true}
-                      options={[]}
-                      formHandler={formHandler}
-                    />
-                  </Match>
-                  <Match when={formData().type === "sale"}>
-                    <Select
-                      label="Category:"
-                      name="category"
-                      required={true}
-                      options={[
-                        { value: "", label: "Select" },
-                        {
-                          value: "Gadget",
-                          label: "Gadget",
-                        },
-                        {
-                          value: "Furniture",
-                          label: "Furniture",
-                        },
-                        {
-                          value: "Kitchen",
-                          label: "Kitchen",
-                        },
-                      ]}
-                      formHandler={formHandler}
-                    />
-                  </Match>
-                  <Match when={formData().type === "rent"}>
-                    <Select
-                      label="Category:"
-                      name="category"
-                      required={true}
-                      options={[
-                        { value: "", label: "Select" },
-                        {
-                          value: "Short Let",
-                          label: "Short Let",
-                        },
-                        {
-                          value: "Normal Rent",
-                          label: "Normal Rent",
-                        },
-                      ]}
-                      formHandler={formHandler}
-                    />
-                  </Match>
-                </Switch>
               </div>
               <div>
                 <Switch>
@@ -276,12 +228,7 @@ function PostItemForm() {
                       formHandler={formHandler}
                     />
                   </Match>
-                  <Match
-                    when={
-                      formData().category === "Short Let" ||
-                      formData().category === "Normal Rent"
-                    }
-                  >
+                  <Match when={formData().category === "Accommodation"}>
                     <Select
                       label="Item:"
                       name="item"
@@ -293,12 +240,12 @@ function PostItemForm() {
                           label: "1 Room",
                         },
                         {
-                          value: "Shared Space",
-                          label: "Shared Space",
-                        },
-                        {
                           value: "Flat",
                           label: "Flat",
+                        },
+                        {
+                          value: "Shared Space",
+                          label: "Shared Space",
                         },
                       ]}
                       formHandler={formHandler}
@@ -306,7 +253,7 @@ function PostItemForm() {
                   </Match>
                 </Switch>
               </div>
-              <div class="sm:col-span-3">
+              <div class="sm:col-span-2">
                 <TextInput
                   label="WhatsApp Number:"
                   name="number"

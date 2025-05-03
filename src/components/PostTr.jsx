@@ -1,5 +1,5 @@
 import { A } from "@solidjs/router";
-import { Show } from "solid-js";
+import { Match, Show, Switch } from "solid-js";
 
 function PostTr(props) {
   const getWhatsApp = (id) => {
@@ -22,6 +22,18 @@ function PostTr(props) {
       </td>
       <td class="p-2 md:p-3 pt-3 border-l border-dashed border-cyan-800 space-y-2">
         <span class="block space-x-2 text-xs">
+          <Switch>
+            <Match when={props.rsc.type === "For Rent"}>
+            <span class="bg-purple-300 border border-purple-600 p-0.5 rounded">
+                {props.rsc.type}
+              </span>
+            </Match>
+            <Match when={props.rsc.type === "For Sale"}>
+              <span class="bg-orange-300 border border-orange-600 p-0.5 rounded">
+                {props.rsc.type}
+              </span>
+            </Match>
+          </Switch>
           <span class="space-x-1 bg-gray-300 border border-gray-400 p-0.5 rounded">
             <b>{props.rsc.category}:</b>
             <span>{props.rsc.item}</span>

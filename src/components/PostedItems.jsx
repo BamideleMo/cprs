@@ -1,10 +1,4 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Close from "../components/icons/Close";
 import { createSignal, createResource, Show } from "solid-js";
-import { MetaProvider, Title, Meta, Link } from "@solidjs/meta";
-import { A } from "@solidjs/router";
-import PostItemForm from "../components/PostItemForm";
 import Loading from "../components/Loading";
 import { createStore } from "solid-js/store";
 import PostTr from "./PostTr";
@@ -13,13 +7,10 @@ import PromotedTr from "./PromotedTr";
 const VITE_API_URL = import.meta.env["VITE_API_URL"];
 
 function PostedItems() {
-  const [showModal, setShowModal] = createSignal(false);
   const [noData, setNoData] = createSignal(false);
   const [listings1, setListings1] = createStore([]);
   const [listings2, setListings2] = createStore([]);
   const [listings3, setListings3] = createStore([]);
-
-  const [showRestriction, setShowRestriction] = createSignal(false);
 
   const daysBetweenDates = (date1, date2) => {
     const d1 = new Date(date1);
@@ -70,6 +61,7 @@ function PostedItems() {
         );
         if (numOfDays <= 30) {
           var obj1 = {
+            type: arr[i].category === "Accommodation" ? "For Rent" : "For Sale",
             category: arr[i].category,
             item: arr[i].item,
             description: arr[i].description,
@@ -89,6 +81,7 @@ function PostedItems() {
         );
         if (numOfDays <= 30) {
           var obj2 = {
+            type: arr[i].category === "Accommodation" ? "For Rent" : "For Sale",
             category: arr[i].category,
             item: arr[i].item,
             description: arr[i].description,
@@ -108,6 +101,7 @@ function PostedItems() {
         );
         if (numOfDays <= 30) {
           var obj3 = {
+            type: arr[i].category === "Accommodation" ? "For Rent" : "For Sale",
             category: arr[i].category,
             item: arr[i].item,
             description: arr[i].description,
