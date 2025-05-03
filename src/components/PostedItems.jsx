@@ -135,7 +135,7 @@ function PostedItems() {
   const [resources] = createResource(getListings);
   return (
     <>
-      <div class="mt-0 sm:mt-6 flex justify-between text-base sm:text-sm ">
+      <div class="mt-0 sm:mt-6 flex justify-between text-sm sm:text-sm ">
         <h2 class="font-normal">📍 See Recent Posts:</h2>
         <div class="-mt-2">
           <span class="flex mr-0 py-0.5 px-2 rounded-full border bg-gray-100 shadow-sm space-x-1 items-center text-gray-600 hover:opacity-60 cursor-pointer">
