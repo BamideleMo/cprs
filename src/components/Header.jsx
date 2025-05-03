@@ -65,7 +65,7 @@ function Header() {
                       onChange={(e) => {
                         doUni(e.currentTarget.value);
                       }}
-                      label="Select your university:"
+                      label="Select Your University:"
                       name="item"
                       required={true}
                       options={[
@@ -93,8 +93,8 @@ function Header() {
             <Logo />
           </div>
           <div class="w-fit space-x-10 pt-1.5 text-sm flex">
-            <A href="/how-it-works" class="hover:opacity-60">
-              How it works
+            <A href="/what-is-offk" class="hover:opacity-60">
+              What is OffK?
             </A>
           </div>
         </div>

@@ -136,7 +136,7 @@ function PostedItems() {
   return (
     <>
       <div class="mt-0 sm:mt-6 flex justify-between text-base sm:text-lg ">
-        <h2 class="font-normal">Items for sale:</h2>
+        <h2 class="font-normal">📍 See Recent Posts:</h2>
         <div class="">
           <span class="flex space-x-1 items-center text-gray-600 hover:opacity-60 cursor-pointer">
             <svg

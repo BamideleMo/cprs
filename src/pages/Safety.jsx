@@ -17,9 +17,11 @@ function Safety() {
         <Header />
         <section class="w-full px-1 sm:w-[620px] mx-auto">
           <div class="my-6 sm:my-10 mx-2 text-left">
-            <h1 class="text-center text-xl sm:text-3xl font-semibold space-y-0">
-              Safety Rules
-            </h1>
+            <div class="text-center">
+              <h2 class="text-lg sm:text-xl sm:mt-2 text-gray-600 leading-tight">
+                Safety Rules
+              </h2>
+            </div>
             <div class="my-6 space-y-6">
               <p>
                 While HostelSell.ng makes it super easy to buy and sell hostel

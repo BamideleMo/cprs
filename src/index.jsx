@@ -6,9 +6,10 @@ import "./index.css";
 import App from "./App";
 import Terms from "./pages/Terms";
 import Safety from "./pages/Safety";
-import HowItWorks from "./pages/HowItWorks";
 import NotFound from "./pages/NotFound";
 import Convos from "./pages/Convos";
+import WhatIsOffK from "./pages/WhatIsOffK";
+import FAQs from "./pages/FAQs";
 
 const root = document.getElementById("root");
 
@@ -24,7 +25,8 @@ render(
       <Route path="/" component={App} />
       <Route path="/terms" component={Terms} />
       <Route path="/safety" component={Safety} />
-      <Route path="/how-it-works" component={HowItWorks} />
+      <Route path="/faqs" component={FAQs} />
+      <Route path="/what-is-offk" component={WhatIsOffK} />
       <Route path="/convos" component={Convos} />
       <Route path="*" component={NotFound} />
     </Router>

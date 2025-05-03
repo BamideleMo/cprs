@@ -8,6 +8,7 @@ import { Select } from "./Select";
 import submittingImg from "../assets/submitting.gif";
 
 const schema = z.object({
+  type: z.string().min(1, "*Invalid"),
   category: z.string().min(1, "*Invalid"),
   item: z.string().min(1, "*Invalid"),
   number: z.string().length(11, "*Invalid"),
@@ -68,12 +69,12 @@ function PostItemForm() {
             <div class="h-16 w-16 text-3xl border-2 border-green-600 text-center rounded-full pt-3">
               👍🏽
             </div>
-            <p>Item successfully posted!</p>
+            <p>Deal successfully posted!</p>
             <p>
               <b>What next?</b>
             </p>
             <p>
-              Wait for students in need of the item to Chat you on WhatsApp.
+              Wait for students in need of the deal to Chat you on WhatsApp.
             </p>
             <p class="pb-4 pt-2">
               <span
@@ -90,29 +91,81 @@ function PostItemForm() {
         </Match>
         <Match when={!success()}>
           <form autocomplete="off" onSubmit={submit} class="space-y-3 my-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div>
                 <Select
-                  label="Category of Item:"
-                  name="category"
+                  label="Type:"
+                  name="type"
                   required={true}
                   options={[
                     { value: "", label: "Select" },
                     {
-                      value: "Gadget",
-                      label: "Gadget",
+                      value: "sale",
+                      label: "Item for Sale",
                     },
                     {
-                      value: "Furniture",
-                      label: "Furniture",
-                    },
-                    {
-                      value: "Kitchen",
-                      label: "Kitchen",
+                      value: "rent",
+                      label: "Hostel for Rent",
                     },
                   ]}
                   formHandler={formHandler}
                 />
+              </div>
+              <div>
+                <Switch>
+                  <Match when={formData().type === ""}>
+                    <Select
+                      label="Category:"
+                      name="category"
+                      placeholder="Select"
+                      required={true}
+                      options={[]}
+                      formHandler={formHandler}
+                    />
+                  </Match>
+                  <Match when={formData().type === "sale"}>
+                    <Select
+                      label="Category:"
+                      name="category"
+                      required={true}
+                      options={[
+                        { value: "", label: "Select" },
+                        {
+                          value: "Gadget",
+                          label: "Gadget",
+                        },
+                        {
+                          value: "Furniture",
+                          label: "Furniture",
+                        },
+                        {
+                          value: "Kitchen",
+                          label: "Kitchen",
+                        },
+                      ]}
+                      formHandler={formHandler}
+                    />
+                  </Match>
+                  <Match when={formData().type === "rent"}>
+                    <Select
+                      label="Category:"
+                      name="category"
+                      required={true}
+                      options={[
+                        { value: "", label: "Select" },
+                        {
+                          value: "Short Let",
+                          label: "Short Let",
+                        },
+                        {
+                          value: "Normal Rent",
+                          label: "Normal Rent",
+                        },
+                      ]}
+                      formHandler={formHandler}
+                    />
+                  </Match>
+                </Switch>
               </div>
               <div>
                 <Switch>
@@ -223,6 +276,34 @@ function PostItemForm() {
                       formHandler={formHandler}
                     />
                   </Match>
+                  <Match
+                    when={
+                      formData().category === "Short Let" ||
+                      formData().category === "Normal Rent"
+                    }
+                  >
+                    <Select
+                      label="Item:"
+                      name="item"
+                      required={true}
+                      options={[
+                        { value: "", label: "Select" },
+                        {
+                          value: "1 Room",
+                          label: "1 Room",
+                        },
+                        {
+                          value: "Shared Space",
+                          label: "Shared Space",
+                        },
+                        {
+                          value: "Flat",
+                          label: "Flat",
+                        },
+                      ]}
+                      formHandler={formHandler}
+                    />
+                  </Match>
                 </Switch>
               </div>
             </div>
@@ -245,7 +326,7 @@ function PostItemForm() {
                 required={true}
                 type="text"
                 formHandler={formHandler}
-                placeholder="Include useful details about the item."
+                placeholder="Include useful details about the deal."
               />
             </div>
             <div class="text-white">

@@ -4,7 +4,7 @@ import { Show } from "solid-js";
 function Logo(props) {
   return (
     <A href="/" class="text-black font-semibold text-2xl">
-      Hostel<span class="text-cyan-800">Sell</span>
+      Off<span class="text-cyan-800">K</span>
     </A>
   );
 }

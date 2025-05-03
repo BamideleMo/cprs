@@ -18,11 +18,11 @@ function Hero() {
                 <Close />
               </span>
             </div>
-            <div class="bg-white p-4  border-t-8 border-cyan-800 py-4">
+            <div class="bg-white p-2 sm:p-4 border-t-8 border-cyan-800 py-4">
               <Switch>
                 <Match when={modalContent() === "request"}>
                   <h2 class="font-normal text-xl text-cyan-800 text-center mb-4 border-b pb-4">
-                    Post Item for Sale
+                    Make Post
                   </h2>
                   <PostItemForm />
                 </Match>
@@ -33,12 +33,21 @@ function Hero() {
       </Show>
 
       <div class="mt-10 text-center">
-        <h1 class="text-slate-800 text-2xl sm:text-3xl font-semibold leading-tight lg:leading-10 lg:w-[400px] lg:mx-auto">
-          A Simple Notice Board
+        <h1 class="text-slate-500 text-2xl sm:text-2xl font-semibold leading-tight lg:leading-8 lg:w-[400px] lg:mx-auto">
+          FIND or POST
           <br />
-          for Hostel Items on Sale.
+          <span class="text-black">
+            Hostel Items for Sale
+          </span>{" "}
+          and
+          <br />
+          <span class="text-black">
+            Hostels for Rent
+          </span>
         </h1>
-        <h2 class="text-lg">Fast, Easy, No Stress.</h2>
+        <h2 class="text-lg leading-tight mt-2 text-gray-600">
+          Fast, Easy, No Stress!
+        </h2>
         <div class="pt-10 space-x-4">
           <span
             onClick={() => {
@@ -47,7 +56,7 @@ function Hero() {
             }}
             class="cursor-pointer bg-cyan-800 text-white p-2.5 rounded-lg hover:opacity-60"
           >
-            👋 Post Item
+            👋 Make Post
           </span>
         </div>
         <svg

@@ -32,9 +32,10 @@ function PostTr(props) {
           </span>
         </span>
         <span class="block text-gray-600">
-          {props.rsc.description}
-          <br />
-          <span class="text-blue-600 text-xs">Tap to Chat</span>
+          <span>{props.rsc.description}</span>
+          <span class="block text-right text-blue-600 text-xs">
+            Chat on WhatsApp
+          </span>
         </span>
       </td>
     </tr>
