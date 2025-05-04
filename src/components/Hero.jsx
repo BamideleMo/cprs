@@ -38,7 +38,7 @@ function Hero() {
           <br />
           <span class="text-black">Hostel Items for Sale</span> &
           <br />
-          <span class="text-black">Off-Campus Accommodation</span>.
+          <span class="text-black">Off-Campus Hostels for Rent</span>.
         </h1>
         <h2 class="text-lg leading-tight mt-2 text-gray-600">
           Fast, Easy, No Stress!

@@ -113,7 +113,7 @@ function PostItemForm() {
                     },
                     {
                       value: "Accommodation",
-                      label: "Accommodation",
+                      label: "Hostel/Accommodation for Rent",
                     },
                   ]}
                   formHandler={formHandler}
@@ -244,8 +244,8 @@ function PostItemForm() {
                           label: "Flat",
                         },
                         {
-                          value: "Shared Space",
-                          label: "Shared Space",
+                          value: "Shared",
+                          label: "Shared",
                         },
                       ]}
                       formHandler={formHandler}
