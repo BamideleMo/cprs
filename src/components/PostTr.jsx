@@ -24,7 +24,7 @@ function PostTr(props) {
         <span class="block space-x-2 text-xs">
           <Switch>
             <Match when={props.rsc.type === "For Rent"}>
-            <span class="bg-purple-300 border border-purple-600 p-0.5 rounded">
+              <span class="bg-purple-300 border border-purple-600 p-0.5 rounded">
                 {props.rsc.type}
               </span>
             </Match>
@@ -35,7 +35,11 @@ function PostTr(props) {
             </Match>
           </Switch>
           <span class="space-x-1 bg-gray-300 border border-gray-400 p-0.5 rounded">
-            <b>{props.rsc.category}:</b>
+            <b>
+              {props.rsc.category === "Accommodation"
+                ? "🛌"
+                : props.rsc.category + ":"}
+            </b>
             <span>{props.rsc.item}</span>
           </span>
           <span class="space-x-1 bg-gray-300 border border-gray-400 p-0.5 rounded">

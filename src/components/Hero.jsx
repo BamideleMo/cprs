@@ -33,17 +33,12 @@ function Hero() {
       </Show>
 
       <div class="mt-10 text-center">
-        <h1 class="text-slate-500 text-2xl sm:text-2xl font-semibold leading-tight lg:leading-8 lg:w-[400px] lg:mx-auto">
+        <h1 class="text-slate-500 text-xl sm:text-2xl font-semibold leading-tight lg:leading-8 lg:w-[400px] lg:mx-auto">
           FIND or POST
           <br />
-          <span class="text-black">
-            Hostel Items for Sale
-          </span>{" "}
-          and
+          <span class="text-black">Hostel Items for Sale</span> &
           <br />
-          <span class="text-black">
-            Hostels for Rent
-          </span>
+          <span class="text-black">Off-Campus Accommodation</span>.
         </h1>
         <h2 class="text-lg leading-tight mt-2 text-gray-600">
           Fast, Easy, No Stress!
