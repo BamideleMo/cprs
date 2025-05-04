@@ -36,9 +36,11 @@ function PostTr(props) {
           </Switch>
           <span class="space-x-1 bg-gray-300 border border-gray-400 p-0.5 rounded">
             <b>
-              {props.rsc.category === "Accommodation"
-                ? <b class="text-lg">🛌</b>
-                : props.rsc.category + ":"}
+              {props.rsc.category === "Accommodation" ? (
+                <b class="text-lg -mt-0.5">🛌</b>
+              ) : (
+                props.rsc.category + ":"
+              )}
             </b>
             <span>{props.rsc.item}</span>
           </span>
