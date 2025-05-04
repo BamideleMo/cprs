@@ -7,7 +7,10 @@ function PostTr(props) {
   };
 
   return (
-    <tr class="border-b border-dashed border-cyan-800">
+    <tr
+      onClick={() => getWhatsApp(props.rsc.id)}
+      class="border-b border-dashed border-cyan-800 hover:bg-cyan-50 cursor-pointer"
+    >
       <td class="p-2 md:p-3 text-xs">
         {props.rsc.days === 0 ? (
           <span class="capitalize">Today</span>
@@ -61,12 +64,7 @@ function PostTr(props) {
         </span>
         <span class="block text-gray-600">
           <span>{props.rsc.description}</span>
-          <span
-            onClick={() => getWhatsApp(props.rsc.id)}
-            class="block text-blue-600 text-xs hover:text-cyan-500 cursor-pointer"
-          >
-            Chat on WhatsApp
-          </span>
+          <span class="block text-blue-600 text-xs">Chat on WhatsApp</span>
         </span>
       </td>
     </tr>

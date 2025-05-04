@@ -244,8 +244,8 @@ function PostItemForm() {
                           label: "Flat",
                         },
                         {
-                          value: "Shared",
-                          label: "Shared",
+                          value: "Shared Space",
+                          label: "Shared Space",
                         },
                       ]}
                       formHandler={formHandler}
