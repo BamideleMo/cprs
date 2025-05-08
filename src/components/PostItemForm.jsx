@@ -113,7 +113,11 @@ function PostItemForm() {
                     },
                     {
                       value: "Accommodation",
-                      label: "Hostel/Accommodation",
+                      label: "Accommodation",
+                    },
+                    {
+                      value: "Food",
+                      label: "Food",
                     },
                   ]}
                   formHandler={formHandler}
@@ -213,10 +217,6 @@ function PostItemForm() {
                           label: "Bucket",
                         },
                         {
-                          value: "Foodstuff",
-                          label: "Foodstuff",
-                        },
-                        {
                           value: "Gas Cylinder",
                           label: "Gas Cylinder",
                         },
@@ -250,6 +250,25 @@ function PostItemForm() {
                         {
                           value: "Shared Space",
                           label: "Shared Space",
+                        },
+                      ]}
+                      formHandler={formHandler}
+                    />
+                  </Match>
+                  <Match when={formData().category === "Food"}>
+                    <Select
+                      label="Item:"
+                      name="item"
+                      required={true}
+                      options={[
+                        { value: "", label: "Select" },
+                        {
+                          value: "Cooked Food",
+                          label: "Cooked Food",
+                        },
+                        {
+                          value: "Foodstuff",
+                          label: "Foodstuff",
                         },
                       ]}
                       formHandler={formHandler}
