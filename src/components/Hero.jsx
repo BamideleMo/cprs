@@ -21,10 +21,10 @@ function Hero() {
                 <Close />
               </span>
             </div>
-            <div class="bg-white p-2 sm:p-4 border-t-8 border-cyan-800 py-4">
+            <div class="bg-white p-2 sm:p-4 border-t-8 border-purple-800 py-4">
               <Switch>
                 <Match when={modalContent() === "request"}>
-                  <h2 class="font-normal text-xl text-cyan-800 text-center mb-4 border-b pb-4">
+                  <h2 class="font-normal text-xl text-purple-800 text-center mb-4 border-b pb-4">
                     Make Post
                   </h2>
                   <PostItemForm />
@@ -38,10 +38,6 @@ function Hero() {
       <div class="mt-10 text-center">
         <h1 class="text-slate-500 text-xl sm:text-2xl font-semibold leading-tight lg:leading-8 lg:w-[400px] lg:mx-auto">
           FIND or POST
-          {/* <div class="slider">
-            <div class="text-black">Hostel Items for Sale</div>
-            <div class="text-black">Off-Campus Hostels for Rent</div>
-          </div> */}
           <VerticalTextSlider />
         </h1>
         <h2 class="text-base leading-tight mt-2 text-gray-600">
@@ -53,7 +49,7 @@ function Hero() {
               setShowModal(true);
               setModalContent("request");
             }}
-            class="cursor-pointer bg-cyan-800 text-white p-2.5 rounded-lg hover:opacity-60"
+            class="cursor-pointer bg-purple-800 text-white p-2.5 rounded-lg hover:opacity-60"
           >
             👋 Make Post
           </span>

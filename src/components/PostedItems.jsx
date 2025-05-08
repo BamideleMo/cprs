@@ -162,12 +162,12 @@ function PostedItems() {
                   <table
                     cellpadding="0"
                     cellspacing="0"
-                    class="w-full border-x border-cyan-800 border-dashed"
+                    class="w-full border-x border-purple-800 border-dashed"
                   >
                     <thead>
-                      <tr class="font-normal bg-slate-300 text-black border-y border-dashed border-cyan-800 space-x-1">
+                      <tr class="font-normal bg-slate-300 text-black border-y border-dashed border-purple-800 space-x-1">
                         <td class="w-14 md:w-20 p-1 md:px-3">Posted</td>
-                        <td class="p-1 md:px-3 border-l border-dashed border-cyan-800">
+                        <td class="p-1 md:px-3 border-l border-dashed border-purple-800">
                           Description
                         </td>
                       </tr>

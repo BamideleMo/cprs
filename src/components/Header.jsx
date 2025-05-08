@@ -92,7 +92,7 @@ function Header() {
           <div>
             <Logo />
           </div>
-          <div class="w-fit space-x-10 pt-1.5 text-sm flex">
+          <div class="w-fit space-x-10 pt-2.5 text-sm flex">
             <A href="/what-is-offk" class="hover:opacity-60">
               What is OffK?
             </A>

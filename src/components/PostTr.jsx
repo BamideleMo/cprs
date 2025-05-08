@@ -9,7 +9,7 @@ function PostTr(props) {
   return (
     <tr
       onClick={() => getWhatsApp(props.rsc.id)}
-      class="border-b border-dashed border-cyan-800 hover:bg-cyan-50 cursor-pointer"
+      class="border-b border-dashed border-purple-800 hover:bg-purple-50 cursor-pointer"
     >
       <td class="p-2 md:p-3 text-xs">
         {props.rsc.days === 0 ? (
@@ -20,12 +20,12 @@ function PostTr(props) {
           props.rsc.days + " days ago"
         )}
       </td>
-      <td class="p-2 md:p-3 pt-3 border-l border-dashed border-cyan-800 space-y-2">
+      <td class="p-2 md:p-3 pt-4 md:pt-5 border-l border-dashed border-purple-800 space-y-2">
         <span class="flex justify-between">
           <span class="block space-x-2 text-xs">
             <Switch>
               <Match when={props.rsc.type === "Accommodation"}>
-                <span class="bg-purple-300 border border-purple-600 p-0.5 rounded">
+                <span class="bg-blue-300 border border-blue-600 p-0.5 rounded">
                   {props.rsc.type}
                 </span>
               </Match>
@@ -58,16 +58,14 @@ function PostTr(props) {
               </b>
               <span>{props.rsc.item}</span>
             </span>
-            {/* <span class="space-x-1 bg-gray-300 border border-gray-400 p-0.5 rounded">
-            <b>ID:</b>
-            <span></span>
-          </span> */}
           </span>
-          <span class="text-[13px] -mt-0.5 text-cyan-800">OffK{props.rsc.id}</span>
+          <span class="text-[13px] -mt-0.5 text-purple-800">
+            OffK{props.rsc.id}
+          </span>
         </span>
         <span class="block text-gray-600">
           <span>{props.rsc.description}</span>
-          <span class="block text-blue-600 text-xs">Chat on WhatsApp</span>
+          <span class="block text-purple-600 text-xs">Chat on WhatsApp</span>
         </span>
       </td>
     </tr>
