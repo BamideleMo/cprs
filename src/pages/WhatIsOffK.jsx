@@ -23,17 +23,17 @@ function WhatIsOffK() {
               <p>OffK.ng is a simple website where students can:</p>
               <ul class="space-y-8 m-8 list-decimal">
                 <li>
-                  Find or post <u>hostel items for sale</u> (like beds, chairs,
+                  POST or FIND <u>hostel items for sale</u> (like beds, chairs,
                   gas cookers, etc.)
                 </li>
                 <li>
-                  Find or post <u>hostels for rent</u> (on or around campus).
+                  POST or FIND <u>student accommodation</u> (on or around campus).
                 </li>
               </ul>
               <p>No login. No long process. Just a simple table of listings.</p>
               <p class="py-10">
                 <span class="block bg-cyan-100 p-4 rounded-lg text-xl text-cyan-900">
-                  If you want to sell an hostel item or have hostel for rent, OffK.ng
+                  If you want to sell an hostel item or have student accommodation for rent, OffK.ng
                   is the fastest way to share your deal.
                 </span>
               </p>

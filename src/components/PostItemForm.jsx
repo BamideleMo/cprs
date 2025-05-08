@@ -113,7 +113,7 @@ function PostItemForm() {
                     },
                     {
                       value: "Accommodation",
-                      label: "Hostel/Accommodation for Rent",
+                      label: "Hostel/Accommodation",
                     },
                   ]}
                   formHandler={formHandler}
@@ -235,6 +235,10 @@ function PostItemForm() {
                       required={true}
                       options={[
                         { value: "", label: "Select" },
+                        {
+                          value: "Bedspace",
+                          label: "Bedspace",
+                        },
                         {
                           value: "1 Room",
                           label: "1 Room",
