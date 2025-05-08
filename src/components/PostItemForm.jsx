@@ -240,16 +240,12 @@ function PostItemForm() {
                           label: "Bedspace",
                         },
                         {
-                          value: "1 Room",
-                          label: "1 Room",
+                          value: "Room(s)",
+                          label: "Room(s)",
                         },
                         {
                           value: "Flat",
                           label: "Flat",
-                        },
-                        {
-                          value: "Shared Space",
-                          label: "Shared Space",
                         },
                       ]}
                       formHandler={formHandler}
