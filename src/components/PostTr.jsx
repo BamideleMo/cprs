@@ -20,7 +20,7 @@ function PostTr(props) {
           props.rsc.days + " days ago"
         )}
       </td>
-      <td class="p-2 md:p-3 pt-4 md:pt-3 border-l border-dashed border-purple-800 space-y-2">
+      <td class="p-2 md:p-3 border-l border-dashed border-purple-800 space-y-2">
         <span class="text-[11px] text-gray-400">
           <b>ID:</b> OffK{props.rsc.id}
         </span>
