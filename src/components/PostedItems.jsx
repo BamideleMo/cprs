@@ -61,7 +61,7 @@ function PostedItems() {
         );
         if (numOfDays <= 30) {
           var obj1 = {
-            type: arr[i].category === "Accommodation" ? "For Rent" : "For Sale",
+            type: arr[i].category === "Accommodation" ? "Accommodation" : "For Sale",
             category: arr[i].category,
             item: arr[i].item,
             description: arr[i].description,

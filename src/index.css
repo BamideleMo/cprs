@@ -37,3 +37,22 @@ body {
   max-height: 60vh;
 }
 
+/* VerticalTextSlider.css */
+#text-slider {
+  height: 30px;
+  overflow: hidden;
+  width: 300px;
+  border: 1px solid #ccc;
+}
+
+#text-items {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}

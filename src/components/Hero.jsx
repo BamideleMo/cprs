@@ -1,12 +1,15 @@
 import { A } from "@solidjs/router";
 import { Match, Show, Switch } from "solid-js";
 import Close from "./icons/Close";
-import { createSignal } from "solid-js";
+import { createSignal, createEffect, onMount } from "solid-js";
 import PostItemForm from "./PostItemForm";
+import VerticalTextSlider from "./VerticalTextSlider";
 
 function Hero() {
   const [showModal, setShowModal] = createSignal(false);
   const [modalContent, setModalContent] = createSignal("");
+
+  createEffect(() => {});
 
   return (
     <>
@@ -35,12 +38,13 @@ function Hero() {
       <div class="mt-10 text-center">
         <h1 class="text-slate-500 text-xl sm:text-2xl font-semibold leading-tight lg:leading-8 lg:w-[400px] lg:mx-auto">
           FIND or POST
-          <br />
-          <span class="text-black">Hostel Items for Sale</span> &
-          <br />
-          <span class="text-black">Off-Campus Hostels for Rent</span>.
+          {/* <div class="slider">
+            <div class="text-black">Hostel Items for Sale</div>
+            <div class="text-black">Off-Campus Hostels for Rent</div>
+          </div> */}
+          <VerticalTextSlider />
         </h1>
-        <h2 class="text-lg leading-tight mt-2 text-gray-600">
+        <h2 class="text-base leading-tight mt-2 text-gray-600">
           Fast, Easy, No Stress!
         </h2>
         <div class="pt-6 space-x-4">
