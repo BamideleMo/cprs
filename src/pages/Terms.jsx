@@ -7,7 +7,7 @@ import { A } from "@solidjs/router";
 function Terms() {
   return (
     <MetaProvider>
-      <Title>Terms & Conditions - www.hostelsell.ng</Title>
+      <Title>Terms & Conditions - www.offk.ng</Title>
       <Meta name="description" content="Our Terms & Conditions."></Meta>
       <Link rel="preload" as="image" href={screen}></Link>
       <div class="bg-white text-sm">
@@ -23,132 +23,139 @@ function Terms() {
             <div class="my-6 space-y-6">
               <p>Last Updated: Thu 6 Mar 2025</p>
               <p>
-                Welcome to HostelSell.ng! By using this website, you agree to
-                follow the terms below. Please read them carefully.
+                Welcome to OffK.ng — a simple platform created to help
+                university students post or find hostel items for sale and post
+                or find student accommodation. By using this website, you agree
+                to abide by the following terms and conditions.
               </p>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
                   <span class="text-gray-400 block">#1.</span>
-                  <u>About HostelSell.ng</u>
+                  <u>Use of the Platform</u>
                 </h2>
-                <p>
-                  HostelSell.ng is a simple digital notice board that allows
-                  university students to post hostel-related items for sale.
-                </p>
-                <p>
-                  We are not a marketplace, middleman, or payment processor. We
-                  do not verify, inspect, or take responsibility for any items
-                  listed on the platform.
-                </p>
+                <ul class="list-disc mx-8 space-y-4">
+                  <li>
+                    OffK.ng is strictly for student-related hostel items and
+                    accommodation listings.
+                  </li>
+                  <li>
+                    Users may post or browse listings without creating an
+                    account.
+                  </li>
+                  <li>
+                    By posting a listing, you agree that the information you
+                    provide is accurate, honest, and not misleading.
+                  </li>
+                </ul>
               </div>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
                   <span class="text-gray-400 block">#2.</span>
-                  <u>Posting Items</u>
+                  <u>Content Responsibility</u>
                 </h2>
                 <ul class="list-disc mx-8 space-y-4">
                   <li>
-                    You may only post hostel-related items (e.g., mattresses,
-                    tables, fans, gadgets, gas cookers, etc.).
+                    All listings are user-generated. OffK.ng does not own,
+                    verify, or guarantee any listing posted on the site.
                   </li>
                   <li>
-                    All items must be legal, safe, and in your possession.
+                    Users are solely responsible for any interactions,
+                    negotiations, or transactions arising from listings.
                   </li>
-                  <li>Each listing automatically expires after 30 days.</li>
                   <li>
-                    We reserve the right to edit, reject, or remove any listing
-                    that violates these terms or looks suspicious.
+                    OffK.ng will not be held liable for any losses, fraud, or
+                    damages resulting from deals between users.
                   </li>
                 </ul>
               </div>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
                   <span class="text-gray-400 block">#3.</span>
-                  <u>WhatsApp Use</u>
+                  <u>Prohibited Content</u>
                 </h2>
+                <p>Users must NOT post:</p>
                 <ul class="list-disc mx-8 space-y-4">
                   <li>
-                    You are required to provide a valid WhatsApp number when
-                    posting an item.
+                    Items or listings unrelated to student accommodation or
+                    hostel-related items.
                   </li>
-                  <li>Your number will not be publicly displayed.</li>
+                  <li>Inappropriate, offensive, or misleading content.</li>
                   <li>
-                    Interested buyers will initiate a WhatsApp chat
-                    tapping/clicking on your post.
+                    Listings for items or properties they do not own or have
+                    legal rights to post.
                   </li>
                 </ul>
               </div>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
                   <span class="text-gray-400 block">#4.</span>
-                  <u>Buyer-Seller Responsibility</u>
+                  <u>Post Expiry</u>
                 </h2>
                 <ul class="list-disc mx-8 space-y-4">
                   <li>
-                    All transactions are between the buyer and the seller only.
+                    All listings automatically expire after 30 days to keep the
+                    platform clean and relevant.
                   </li>
                   <li>
-                    HostelSell.ng does not guarantee the quality, safety,
-                    accuracy, or legitimacy of items listed.
-                  </li>
-                  <li>We do not handle payments, deliveries, or refunds.</li>
-                  <li>
-                    Always meet in safe, public locations and take necessary
-                    safety precautions.
+                    Users may repost items after expiry if they are still
+                    available.
                   </li>
                 </ul>
               </div>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
                   <span class="text-gray-400 block">#5.</span>
-                  <u>Prohibited Listings</u>
+                  <u>Privacy and Contact</u>
                 </h2>
-                <p class="pb-2">You must not list:</p>
                 <ul class="list-disc mx-8 space-y-4">
-                  <li>Stolen, illegal, or harmful items.</li>
-                  <li>Weapons, drugs, or banned substances.</li>
-                  <li>Academic materials meant to promote cheating</li>
-                  <li>Scam attempts or fake listings</li>
+                  <li>
+                    Phone numbers (WhatsApp only) are required when posting a
+                    listing.
+                  </li>
+                  <li>
+                    These numbers are not displayed openly—buyers must click a
+                    button to initiate a WhatsApp chat.
+                  </li>
+                  <li>We do not share or sell user data.</li>
                 </ul>
-
-                <p class="py-2">
-                  Violating these rules may result in your listings being
-                  deleted, your number being permanently blocked and we may
-                  report you to relevant authorities like the police.
-                </p>
               </div>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
                   <span class="text-gray-400 block">#6.</span>
-                  <u>Ads & Sponsored Listings</u>
+                  <u>Platform Modifications</u>
                 </h2>
-                <p>
-                  We may display ads or offer sponsored listing options for
-                  sellers. Use of these features may be governed by additional
-                  guidelines.
-                </p>
+                <ul class="list-disc mx-8 space-y-4">
+                  <li>
+                    OffK.ng reserves the right to update or change these terms,
+                    features, or policies at any time without prior notice.
+                  </li>
+                  <li>
+                    Continued use of the site after changes implies acceptance
+                    of the updated terms.
+                  </li>
+                </ul>
               </div>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
                   <span class="text-gray-400 block">#7.</span>
-                  <u>Changes to These Terms</u>
+                  <u>Reporting Abuse</u>
                 </h2>
-                <p>
-                  We may update these terms occasionally. Continued use of
-                  HostelSell.ng means you accept the latest version.
-                </p>
+                <ul class="list-disc mx-8 space-y-4">
+                  <li>
+                    Users are encouraged to report suspicious listings or
+                    behavior.
+                  </li>
+                  <li>
+                    OffK.ng reserves the right to remove any listing or ban
+                    users who violate these terms.
+                  </li>
+                </ul>
               </div>
               <div>
-                <h2 class="text-base mb-1 leading-tight">
-                  <span class="text-gray-400 block">#8.</span>
-                  <u>Your Confirmation</u>
-                </h2>
                 <p>
-                  By using HostelSell.ng, you confirm that you are a university
-                  student (or acting responsibly on behalf of one) and that you
-                  agree to follow these terms.
+                  By using OffK.ng, you accept these terms and agree to use the
+                  platform responsibly and ethically.
                 </p>
-                <p>Thanks for keeping it simple, safe, and smart!</p>
               </div>
             </div>
           </div>

@@ -4,14 +4,11 @@ import { createSignal } from "solid-js";
 import { MetaProvider, Title, Meta, Link } from "@solidjs/meta";
 import { A } from "@solidjs/router";
 
-function Safety() {
+function Terms() {
   return (
     <MetaProvider>
-      <Title>Safety Rules - www.hostelsell.ng</Title>
-      <Meta
-        name="description"
-        content="While HostelSell.ng makes it super easy to buy and sell hostel items, we care deeply about your safety."
-      ></Meta>
+      <Title>Safety Rules - www.offk.ng</Title>
+      <Meta name="description" content="Our Safety Rules."></Meta>
       <Link rel="preload" as="image" href={screen}></Link>
       <div class="bg-white text-sm">
         <Header />
@@ -22,100 +19,107 @@ function Safety() {
                 Safety Rules
               </h2>
             </div>
+
             <div class="my-6 space-y-6">
               <p>
-                While HostelSell.ng makes it super easy to buy and sell hostel
-                items, we care deeply about your safety.
+                At OffK.ng, your safety is our top priority. While we strive to
+                keep the platform simple and useful, we strongly encourage all
+                users to follow these safety guidelines when using this
+                platform:
               </p>
-              <p>
-                <b>Note:</b>
-                <br />
-                HostelSell is just a notice board, so it’s up to you to stay
-                sharp when making deals.
-              </p>
-              <p>Here are a few simple but important rules to follow:</p>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
-                  <span class="text-gray-400 block">🚫 1.</span>
-                  <u>No Meetups in Secluded Places</u>
+                  <span class="text-gray-400 block">#1.</span>
+                  <u>Always Verify Before You Pay</u>
                 </h2>
-                <p>
-                  Always meet in public or well-lit hostel areas. Avoid dark
-                  corners, uncompleted buildings, or "just come to my room"
-                  arrangements if you don’t know the person.
-                </p>
+                <ul class="list-disc mx-8 space-y-4">
+                  <li>
+                    Never send money in advance without physically inspecting
+                    the item or apartment.
+                  </li>
+                  <li>Be cautious of deals that seem too good to be true.</li>
+                </ul>
               </div>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
-                  <span class="text-gray-400 block">👫 2.</span>
-                  <u>Don’t Go Alone for First-Time Meetups</u>
+                  <span class="text-gray-400 block">#2.</span>
+                  <u>Meet in Safe, Public Places</u>
                 </h2>
-                <p>Going to inspect or pick up an item? Take a friend along.</p>
+                <ul class="list-disc mx-8 space-y-4">
+                  <li>
+                    When buying or selling hostel items, always meet in a public
+                    and well-lit area on campus..
+                  </li>
+                  <li>Avoid isolated locations or late-night meetups.</li>
+                </ul>
               </div>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
-                  <span class="text-gray-400 block">💸 3.</span>
-                  <u>No Upfront Payments to Strangers</u>
+                  <span class="text-gray-400 block">#3.</span>
+                  <u>Use WhatsApp to Communicate</u>
                 </h2>
-                <p>
-                  Never send money before seeing the item in person. If a seller
-                  insists, walk away. Legit sellers know buyers want to confirm
-                  first.
-                </p>
+                <ul class="list-disc mx-8 space-y-4">
+                  <li>
+                    All conversations happen directly through WhatsApp. Keep
+                    chats there for transparency and reference.
+                  </li>
+                  <li>
+                    If someone asks to move to another platform or act
+                    suspiciously, proceed with caution.
+                  </li>
+                </ul>
               </div>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
-                  <span class="text-gray-400 block">📲 4.</span>
-                  <u>Stick to WhatsApp</u>
+                  <span class="text-gray-400 block">#4.</span>
+                  <u>Inspect Accommodation in Person</u>
                 </h2>
-                <p>
-                  All chats happen through WhatsApp. If someone wants to move
-                  the conversation elsewhere, be cautious — especially if they
-                  ask for personal info or try to rush you.
-                </p>
+                <ul class="list-disc mx-8 space-y-4">
+                  <li>Don’t rent based on photos or descriptions alone.</li>
+                  <li>
+                    Visit the apartment, check the surroundings, and confirm the
+                    details with the landlord or agent before committing.
+                  </li>
+                </ul>
               </div>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
-                  <span class="text-gray-400 block">📷 5.</span>
-                  <u>Ask for Pictures</u>
+                  <span class="text-gray-400 block">#5.</span>
+                  <u>Report Suspicious Listings or Behavior</u>
                 </h2>
-                <p>
-                  You can request photos of the item directly on WhatsApp. Don’t
-                  be afraid to ask for clear pictures or even a short video if
-                  needed.
-                </p>
+                <ul class="list-disc mx-8 space-y-4">
+                  <li>
+                    If you come across any suspicious post or behavior, report
+                    it immediately so we can investigate and take action.
+                  </li>
+                  <li>We take community safety seriously.</li>
+                </ul>
               </div>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
-                  <span class="text-gray-400 block">🚩 6.</span>
-                  <u>Report Suspicious Activity</u>
+                  <span class="text-gray-400 block">#6.</span>
+                  <u>Use Your Judgment</u>
                 </h2>
-                <p>
-                  If someone is acting shady or trying to scam you, report the
-                  listing immediately. We take reports seriously and will remove
-                  any suspicious posts fast.
-                </p>
+                <ul class="list-disc mx-8 space-y-4">
+                  <li>
+                    OffK.ng does not guarantee the accuracy of listings. Users
+                    are expected to use common sense and discretion when
+                    interacting with others on the platform.
+                  </li>
+                </ul>
               </div>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
-                  <span class="text-gray-400 block">👤 7.</span>
-                  <u>Use Common Sense</u>
+                  <span class="text-gray-400 block">#7.</span>
+                  <u>We’re Counting On You</u>
                 </h2>
-                <p>
-                  If it sounds too good to be true, it probably is. Trust your
-                  gut — if something feels off, it probably is.
-                </p>
-              </div>
-              <div>
-                <h2 class="text-base mb-1 leading-tight">
-                  <span class="text-gray-400 block">🛑 8.</span>
-                  <u>HostelSell.ng Is Not a Middleman</u>
-                </h2>
-                <p>
-                  We don’t verify items or monitor transactions. We're just a
-                  notice board. So always deal responsibly, just like you would
-                  on any hostel wall or WhatsApp group.
-                </p>
+                <ul class="list-disc mx-8 space-y-4">
+                  <li>
+                    OffK.ng is built as a helpful, trustworthy tool for
+                    students. Help us keep the platform clean and safe by
+                    following these rules and encouraging others to do the same.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -126,4 +130,4 @@ function Safety() {
   );
 }
 
-export default Safety;
+export default Terms;

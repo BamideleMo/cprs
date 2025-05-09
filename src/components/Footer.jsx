@@ -14,17 +14,26 @@ function Footer(props) {
       md:space-y-0 md:space-x-6 lg:space-x-8"
           >
             <li class="md:pt-0">
-              <A href="/faqs" class="hover:opacity-60">
+              <A
+                href="/faqs"
+                class="hover:opacity-60 underline decoration-dashed decoration-purple-600"
+              >
                 FAQs
               </A>
             </li>
             <li class="">
-              <A href="/safety" class="hover:opacity-60">
+              <A
+                href="/safety"
+                class="hover:opacity-60 underline decoration-dashed decoration-purple-600"
+              >
                 Safety Rules
               </A>
             </li>
             <li>
-              <A href="/terms" class="hover:opacity-60">
+              <A
+                href="/terms"
+                class="hover:opacity-60 underline decoration-dashed decoration-purple-600"
+              >
                 Ts & Cs
               </A>
             </li>
