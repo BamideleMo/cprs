@@ -31,9 +31,9 @@ function FAQs() {
                 </h2>
                 <p>
                   OffK.ng is a super-simple website where university students
-                  can find or post student accommodations for rent and
-                  hostel-related items for sale (like beds, chairs, gas cookers,
-                  etc.). No login, no app — just a simple table of listings.
+                  can find or post hostel-related items for sale (like Mattress,
+                  chairs, gas cylinder, etc.) and student accommodations for
+                  rent. No login — just a simple table of listings.
                 </p>
               </div>
               <div>
@@ -65,14 +65,10 @@ function FAQs() {
                   <u>What kind of things can I list for sale?</u>
                 </h2>
                 <p class="my-2">You can list hostel-related items such as:</p>
-                <ul class="list-disc mx-8 space-y-4">
-                  <li>Mattress or bedframe</li>
-                  <li>Chair or table</li>
-                  <li>Reading lamp</li>
-                  <li>Gas cooker</li>
-                  <li>Wardrobe or shelves</li>
-                  <li>Bucket, fan, rugs, etc.</li>
-                </ul>
+                <p>
+                  Food, Mattress, Chair, Table, Reading lamp, Gas cooker,
+                  Wardrobe, Shelves, Bucket, Fan, Rugs, etc.
+                </p>
                 <p class="my-2">
                   We keep it focused on items that are commonly bought or sold
                   around campus.
@@ -95,9 +91,9 @@ function FAQs() {
                   <u>How does someone contact me after I post a listing?</u>
                 </h2>
                 <p>
-                  When you post a listing, buyers or renters will see a WhatsApp
-                  button next to your listing. Clicking it starts a chat with
-                  you directly. Your phone number is never publicly displayed.
+                  When you post a listing, interested persons will click on the
+                  listing to start a WhatsApp chat with you directly. Your phone
+                  number is never publicly displayed.
                 </p>
               </div>
               <div>
@@ -128,7 +124,14 @@ function FAQs() {
                 <p>
                   No. All listings are peer-to-peer, meaning anyone can post. We
                   do not verify items or posters. Always exercise caution and
-                  meet in public when transacting.
+                  meet in public when transacting. You can read our{" "}
+                  <A
+                    href="/safety"
+                    class="hover:opacity-60 underline decoration-dashed decoration-purple-600"
+                  >
+                    safety rules
+                  </A>
+                  .
                 </p>
               </div>
             </div>

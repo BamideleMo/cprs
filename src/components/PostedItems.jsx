@@ -8,6 +8,8 @@ const VITE_API_URL = import.meta.env["VITE_API_URL"];
 
 function PostedItems() {
   const [noData, setNoData] = createSignal(false);
+  const [advert1, setAdvert1] = createSignal();
+  const [advert2, setAdvert2] = createSignal();
   const [listings1, setListings1] = createStore([]);
   const [listings2, setListings2] = createStore([]);
   const [listings3, setListings3] = createStore([]);
@@ -22,10 +24,11 @@ function PostedItems() {
   };
 
   const getListings = async () => {
+    getAdverts();
     const response = await fetch(
       VITE_API_URL +
         "/open/api/view-listings?uni=" +
-        JSON.parse(localStorage.getItem("HostelSell")).uni,
+        JSON.parse(localStorage.getItem("OffK")).uni,
       {
         mode: "cors",
         headers: {
@@ -135,13 +138,38 @@ function PostedItems() {
     };
   };
 
+  const getAdverts = async () => {
+    const response = await fetch(
+      VITE_API_URL +
+        "/open/api/view-adverts-where?uni=" +
+        JSON.parse(localStorage.getItem("OffK")).uni,
+      {
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        method: "GET",
+      }
+    );
+    const result = await response.json();
+    if (!result.success) {
+      setMessage(result.response);
+      setIsProcessing(false);
+    } else {
+      console.log(result.response[0].title);
+      setAdvert2(result.response[0]);
+      setAdvert1(result.response[1]);
+    }
+  };
+
   const [resources] = createResource(getListings);
   return (
     <>
       <div class="mt-0 sm:mt-6 flex justify-between text-sm sm:text-sm ">
         <h2 class="font-normal">📍 See Recent Posts:</h2>
-        <div class="-mt-2">
-          <span class="flex mr-0 py-0.5 px-2 rounded-full border bg-gray-100 shadow-sm space-x-1 items-center text-gray-600 hover:opacity-60 cursor-pointer">
+        <div class="-mt-0">
+          <span class="text-xs flex mr-0 py-0.5 px-2 rounded border border-purple-600 bg-gray-100 shadow-sm space-x-1 items-center text-purple-600 hover:opacity-60 cursor-pointer">
             <span>Filter</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -187,21 +215,17 @@ function PostedItems() {
                         {(resource, i) => <PostTr rsc={resource} />}
                       </For>
                       <PromotedTr
-                        link="#"
-                        bg="yellow"
-                        topic="eBook for Sale:"
-                        text="How to Start & Run a Profitable Business on a
-                            University Campus: A Step-by-step Guide for Nigerian
-                            University Students."
+                        link={advert1().link}
+                        topic={advert1().title}
+                        text={advert1().description}
                       />
                       <For each={resources().listings2}>
                         {(resource, i) => <PostTr rsc={resource} />}
                       </For>
                       <PromotedTr
-                        link="#"
-                        topic="Love Hostel Convos?"
-                        text="See intriguing conversations between 2 students discussing life, love,
-            and hustle on campus. It’s like a podcast — but all in text format."
+                        link={advert2().link}
+                        topic={advert2().title}
+                        text={advert2().description}
                       />
                       <For each={resources().listings3}>
                         {(resource, i) => <PostTr rsc={resource} />}
@@ -217,7 +241,7 @@ function PostedItems() {
             </>
           }
         >
-          <Show when={JSON.parse(localStorage.getItem("HostelSell"))}>
+          <Show when={JSON.parse(localStorage.getItem("OffK"))}>
             <Loading />
           </Show>
         </Show>

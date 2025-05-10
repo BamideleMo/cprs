@@ -16,14 +16,13 @@ function Header() {
         uni: val,
       };
 
-      localStorage.setItem("HostelSell", JSON.stringify(store));
+      localStorage.setItem("OffK", JSON.stringify(store));
       window.location.reload();
     }
   };
 
   createEffect(() => {
-    if (JSON.parse(localStorage.getItem("HostelSell"))) {
-      console.log("Yes uni");
+    if (JSON.parse(localStorage.getItem("OffK"))) {
       setShowWhichUni(true);
     } else {
       console.log("No uni");
@@ -71,12 +70,16 @@ function Header() {
                       options={[
                         { value: "", label: "Select" },
                         {
-                          value: "no",
-                          label: "University of Jos",
+                          value: "NSUK",
+                          label: "Nassarawa State University, Keffi",
                         },
                         {
                           value: "UNIABUJA",
                           label: "University of Abuja",
+                        },
+                        {
+                          value: "no",
+                          label: "University of Jos",
                         },
                       ]}
                     />

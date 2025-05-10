@@ -5,14 +5,13 @@ import { z } from "zod";
 import TextInput from "./TextInput";
 import TextArea from "./TextArea";
 import { Select } from "./Select";
-import submittingImg from "../assets/submitting.gif";
 import ProcessingAnimation from "./ProcessingAnimation";
 
 const schema = z.object({
   category: z.string().min(1, "*Invalid"),
   item: z.string().min(1, "*Invalid"),
   number: z.string().length(11, "*Invalid"),
-  description: z.string().min(60, "*Too short").max(100, "*Too much"),
+  description: z.string().min(60, "*Too short").max(160, "*Too much"),
 });
 
 const VITE_API_URL = import.meta.env["VITE_API_URL"];
@@ -45,7 +44,7 @@ function PostItemForm() {
           item: formData().item,
           number: formData().number,
           description: formData().description,
-          uni: JSON.parse(localStorage.getItem("HostelSell")).uni,
+          uni: JSON.parse(localStorage.getItem("OffK")).uni,
         }),
       });
       const result = await response.json();
@@ -170,6 +169,10 @@ function PostItemForm() {
                           value: "Home Theater",
                           label: "Home Theater",
                         },
+                        {
+                          value: "Refridgerator",
+                          label: "Refridgerator",
+                        },
                       ]}
                       formHandler={formHandler}
                     />
@@ -196,6 +199,14 @@ function PostItemForm() {
                         {
                           value: "Wardrobe",
                           label: "Wardrobe",
+                        },
+                        {
+                          value: "Rug",
+                          label: "Rug",
+                        },
+                        {
+                          value: "Reading Lamp",
+                          label: "Reading Lamp",
                         },
                       ]}
                       formHandler={formHandler}

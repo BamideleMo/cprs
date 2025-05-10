@@ -113,8 +113,8 @@ function Terms() {
                     listing.
                   </li>
                   <li>
-                    These numbers are not displayed openly—buyers must click a
-                    button to initiate a WhatsApp chat.
+                    These numbers are not displayed openly—buyers must click the
+                    listing to initiate a WhatsApp chat.
                   </li>
                   <li>We do not share or sell user data.</li>
                 </ul>

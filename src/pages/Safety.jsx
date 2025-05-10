@@ -22,9 +22,8 @@ function Terms() {
 
             <div class="my-6 space-y-6">
               <p>
-                At OffK.ng, your safety is our top priority. While we strive to
-                keep the platform simple and useful, we strongly encourage all
-                users to follow these safety guidelines when using this
+                While we strive to keep OffK.ng simple and useful, we strongly
+                encourage you to follow these safety guidelines when using this
                 platform:
               </p>
               <div>
