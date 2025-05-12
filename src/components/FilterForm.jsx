@@ -10,13 +10,11 @@ import ProcessingAnimation from "./ProcessingAnimation";
 const schema = z.object({
   category: z.string().min(1, "*Invalid"),
   item: z.string().min(1, "*Invalid"),
-  number: z.string().length(11, "*Invalid"),
-  description: z.string().min(60, "*Too short").max(160, "*Too much"),
 });
 
 const VITE_API_URL = import.meta.env["VITE_API_URL"];
 
-function PostItemForm() {
+function FilterForm() {
   const formHandler = useFormHandler(zodSchema(schema));
   const { formData } = formHandler;
 
@@ -27,34 +25,35 @@ function PostItemForm() {
   const submit = async (event) => {
     event.preventDefault();
     setIsProcessing(true);
-    await doPost();
+    await doFilter();
   };
 
-  const doPost = async () => {
+  const doFilter = async () => {
     try {
-      const response = await fetch(VITE_API_URL + "/open/api/create-listing", {
-        mode: "cors",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        method: "POST",
-        body: JSON.stringify({
-          category: formData().category,
-          item: formData().item,
-          number: formData().number,
-          description: formData().description,
-          uni: JSON.parse(localStorage.getItem("OffK")).uni,
-        }),
-      });
+      const response = await fetch(
+        VITE_API_URL +
+          "/open/api/filter-listings?category=" +
+          formData().category +
+          "&item=" +
+          formData().item,
+        {
+          mode: "cors",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          method: "GET",
+        }
+      );
       const result = await response.json();
-      if (!result.success) {
-        setMessage(result.response);
-        setIsProcessing(false);
-      } else {
-        setIsProcessing(false);
-        setSuccess(true);
-      }
+      console.log(result.response);
+      //   if (!result.success) {
+      //     setMessage(result.response);
+      //     setIsProcessing(false);
+      //   } else {
+      //     setIsProcessing(false);
+      //     setSuccess(true);
+      //   }
     } catch (error) {
       console.error(error);
     }
@@ -251,12 +250,8 @@ function PostItemForm() {
                           label: "Bedspace",
                         },
                         {
-                          value: "1 Room",
-                          label: "1 Room",
-                        },
-                        {
-                          value: "Rooms",
-                          label: "Rooms",
+                          value: "Room(s)",
+                          label: "Room(s)",
                         },
                         {
                           value: "Flat",
@@ -287,28 +282,6 @@ function PostItemForm() {
                   </Match>
                 </Switch>
               </div>
-              <div class="sm:col-span-2">
-                <TextInput
-                  label="WhatsApp Number:"
-                  name="number"
-                  required={true}
-                  type="number"
-                  formHandler={formHandler}
-                  placeholder="You'll be contacted via WhatsApp"
-                  pattern="[0-9]*"
-                  inputmode="numeric"
-                />
-              </div>
-            </div>
-            <div>
-              <TextArea
-                label="Description:"
-                name="description"
-                required={true}
-                type="text"
-                formHandler={formHandler}
-                placeholder="Include useful details about the deal."
-              />
             </div>
             <div class="text-white">
               <Show
@@ -351,4 +324,4 @@ function PostItemForm() {
   );
 }
 
-export default PostItemForm;
+export default FilterForm;

@@ -3,11 +3,14 @@ import Loading from "../components/Loading";
 import { createStore } from "solid-js/store";
 import PostTr from "./PostTr";
 import PromotedTr from "./PromotedTr";
+import Close from "./icons/Close";
+import FilterForm from "./FilterForm";
 
 const VITE_API_URL = import.meta.env["VITE_API_URL"];
 
 function PostedItems() {
   const [noData, setNoData] = createSignal(false);
+  const [showModal, setShowModal] = createSignal(false);
   const [advert1, setAdvert1] = createSignal();
   const [advert2, setAdvert2] = createSignal();
   const [listings1, setListings1] = createStore([]);
@@ -157,7 +160,6 @@ function PostedItems() {
       setMessage(result.response);
       setIsProcessing(false);
     } else {
-      console.log(result.response[0].title);
       setAdvert2(result.response[0]);
       setAdvert1(result.response[1]);
     }
@@ -166,11 +168,30 @@ function PostedItems() {
   const [resources] = createResource(getListings);
   return (
     <>
+      <Show when={showModal()}>
+        <div class="fixed z-40 bg-slate-900 bg-opacity-90 flex items-center h-screen w-screen top-0 bottom-0 left-0 right-0">
+          <div class="w-11/12 sm:w-[620px] mx-auto">
+            <div class="text-right mb-1 -mt-20">
+              <span onClick={() => setShowModal(false)}>
+                <Close />
+              </span>
+            </div>
+            <div class="bg-white p-2 sm:p-4 border-t-8 border-purple-800 py-4">
+              <h2 class="font-normal text-xl text-purple-800 text-center mb-4 border-b pb-4">
+                Filter List
+              </h2>
+              <FilterForm />
+            </div>
+          </div>
+        </div>
+      </Show>
       <div class="mt-0 sm:mt-6 flex justify-between text-sm sm:text-sm ">
         <h2 class="font-normal">📍 See Recent Posts:</h2>
-        <div class="-mt-0">
-          <span class="text-xs flex mr-0 py-0.5 px-2 rounded border border-purple-600 bg-gray-100 shadow-sm space-x-1 items-center text-purple-600 hover:opacity-60 cursor-pointer">
-            <span>Filter</span>
+        <div class="-mt-1.5">
+          <span
+            onClick={() => setShowModal(true)}
+            class="block w-fit p-2 rounded bg-gray-900 text-white hover:opacity-60 cursor-pointer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

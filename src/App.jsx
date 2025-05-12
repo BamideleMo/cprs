@@ -9,11 +9,13 @@ function App() {
   return (
     <MetaProvider>
       <Title>
-        A Simple Notice Board for Hostel Items on Sale - www.hostelsell.ng
+        Find and Post Hostel Items for Sale and Student Accommodation for rent:
+        Fast, Easy, No Stress! - www.offk.ng
       </Title>
       <Meta
         name="description"
-        content="A Simple Notice Board for Hostel Items on Sale."
+        content="Find and Post Hostel Items for Sale and Student Accommodation for rent:
+        Fast, Easy, No Stress!"
       ></Meta>
       <Link rel="preload" as="image" href={screen}></Link>
       <div class="bg-white text-sm">
