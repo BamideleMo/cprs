@@ -95,7 +95,7 @@ function Header() {
           <div class="flex space-x-1">
             <Logo />
             <Show when={JSON.parse(localStorage.getItem("OffK"))}>
-              <A href="/" class="pt-2 md:pt-2 text-gray-400">
+              <A href="/" class="pt-2.5 md:pt-2 text-gray-400">
                 {JSON.parse(localStorage.getItem("OffK")).uni}
               </A>
             </Show>
