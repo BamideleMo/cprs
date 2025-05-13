@@ -235,19 +235,28 @@ function PostedItems() {
                       <For each={resources().listings1}>
                         {(resource, i) => <PostTr rsc={resource} />}
                       </For>
-                      <PromotedTr
-                        link={advert1().link}
-                        topic={advert1().title}
-                        text={advert1().description}
-                      />
+                      {advert1() ? (
+                        <PromotedTr
+                          link={advert1().link}
+                          topic={advert1().title}
+                          text={advert1().description}
+                        />
+                      ) : (
+                        ""
+                      )}
+
                       <For each={resources().listings2}>
                         {(resource, i) => <PostTr rsc={resource} />}
                       </For>
-                      <PromotedTr
-                        link={advert2().link}
-                        topic={advert2().title}
-                        text={advert2().description}
-                      />
+                      {advert1() ? (
+                        <PromotedTr
+                          link={advert2().link}
+                          topic={advert2().title}
+                          text={advert2().description}
+                        />
+                      ) : (
+                        ""
+                      )}
                       <For each={resources().listings3}>
                         {(resource, i) => <PostTr rsc={resource} />}
                       </For>
