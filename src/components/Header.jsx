@@ -92,10 +92,15 @@ function Header() {
       </Show>
       <header class="border-b py-3 px-2">
         <div class="w-full px-1 sm:w-[620px] flex justify-between mx-auto">
-          <div>
+          <div class="flex space-x-1">
             <Logo />
+            <Show when={JSON.parse(localStorage.getItem("OffK"))}>
+              <A href="/" class="pt-2 md:pt-2 text-gray-400">
+                {JSON.parse(localStorage.getItem("OffK")).uni}
+              </A>
+            </Show>
           </div>
-          <div class="w-fit space-x-10 pt-2.5 text-sm flex">
+          <div class="w-fit space-x-10 pt-2 md:pt-2 text-sm flex">
             <A
               href="/what-is-offk"
               class="hover:opacity-60 underline decoration-dashed decoration-purple-600"

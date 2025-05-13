@@ -107,8 +107,8 @@ function PostItemForm() {
                       label: "Furniture",
                     },
                     {
-                      value: "Kitchen",
-                      label: "Kitchen",
+                      value: "Kitchen Items",
+                      label: "Kitchen Items",
                     },
                     {
                       value: "Accommodation",
@@ -212,7 +212,7 @@ function PostItemForm() {
                       formHandler={formHandler}
                     />
                   </Match>
-                  <Match when={formData().category === "Kitchen"}>
+                  <Match when={formData().category === "Kitchen Items"}>
                     <Select
                       label="Item:"
                       name="item"
@@ -322,7 +322,7 @@ function PostItemForm() {
                           type="submit"
                           class="bg-black rounded-lg w-full px-2 h-12 text-center hover:opacity-60"
                         >
-                          Submit
+                          Post
                         </button>
                       }
                     >
@@ -340,7 +340,7 @@ function PostItemForm() {
                   disabled
                   class="bg-gray-600 rounded-lg w-full px-2 h-12 text-center cursor-not-allowed"
                 >
-                  Submit
+                  Post
                 </button>
               </Show>
             </div>
