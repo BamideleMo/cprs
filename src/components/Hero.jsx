@@ -38,7 +38,8 @@ function Hero() {
       <div class="mt-10 text-center">
         <h1 class="text-slate-500 text-xl sm:text-2xl font-semibold leading-tight lg:leading-8 lg:w-[400px] lg:mx-auto">
           FIND or POST
-          <VerticalTextSlider />
+          {/* <VerticalTextSlider /> */}
+          <div class="text-2xl text-black">Hostel Items for Sale</div>
         </h1>
         <h2 class="text-base leading-tight mt-2 text-gray-600">
           Fast, Easy, No Stress!

@@ -50,10 +50,10 @@ function FilterForm() {
                   value: "Kitchen Items",
                   label: "Kitchen Items",
                 },
-                {
-                  value: "Accommodation",
-                  label: "Accommodation",
-                },
+                // {
+                //   value: "Accommodation",
+                //   label: "Accommodation",
+                // },
                 {
                   value: "Food",
                   label: "Food",
@@ -179,7 +179,7 @@ function FilterForm() {
                   formHandler={formHandler}
                 />
               </Match>
-              <Match when={formData().category === "Accommodation"}>
+              {/* <Match when={formData().category === "Accommodation"}>
                 <Select
                   label="Item:"
                   name="item"
@@ -201,7 +201,7 @@ function FilterForm() {
                   ]}
                   formHandler={formHandler}
                 />
-              </Match>
+              </Match> */}
               <Match when={formData().category === "Food"}>
                 <Select
                   label="Item:"

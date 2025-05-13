@@ -24,9 +24,9 @@ function Terms() {
               <p>Last Updated: Thu 6 Mar 2025</p>
               <p>
                 Welcome to OffK.ng — a simple platform created to help
-                university students post or find hostel items for sale and post
-                or find student accommodation. By using this website, you agree
-                to abide by the following terms and conditions.
+                university students post or find hostel items for sale. By using
+                this website, you agree to abide by the following terms and
+                conditions.
               </p>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
@@ -35,8 +35,8 @@ function Terms() {
                 </h2>
                 <ul class="list-disc mx-8 space-y-4">
                   <li>
-                    OffK.ng is strictly for student-related hostel items and
-                    accommodation listings.
+                    OffK.ng is strictly for student-related hostel items
+                    listings.
                   </li>
                   <li>
                     Users may post or browse listings without creating an
@@ -75,10 +75,7 @@ function Terms() {
                 </h2>
                 <p>Users must NOT post:</p>
                 <ul class="list-disc mx-8 space-y-4">
-                  <li>
-                    Items or listings unrelated to student accommodation or
-                    hostel-related items.
-                  </li>
+                  <li>Items or listings unrelated to hostel-related items.</li>
                   <li>Inappropriate, offensive, or misleading content.</li>
                   <li>
                     Listings for items or properties they do not own or have

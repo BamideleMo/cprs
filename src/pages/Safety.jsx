@@ -71,19 +71,6 @@ function Terms() {
               <div>
                 <h2 class="text-base mb-1 leading-tight">
                   <span class="text-gray-400 block">#4.</span>
-                  <u>Inspect Accommodation in Person</u>
-                </h2>
-                <ul class="list-disc mx-8 space-y-4">
-                  <li>Don’t rent based on photos or descriptions alone.</li>
-                  <li>
-                    Visit the apartment, check the surroundings, and confirm the
-                    details with the landlord or agent before committing.
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h2 class="text-base mb-1 leading-tight">
-                  <span class="text-gray-400 block">#5.</span>
                   <u>Report Suspicious Listings or Behavior</u>
                 </h2>
                 <ul class="list-disc mx-8 space-y-4">
@@ -96,7 +83,7 @@ function Terms() {
               </div>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
-                  <span class="text-gray-400 block">#6.</span>
+                  <span class="text-gray-400 block">#5.</span>
                   <u>Use Your Judgment</u>
                 </h2>
                 <ul class="list-disc mx-8 space-y-4">
@@ -109,7 +96,7 @@ function Terms() {
               </div>
               <div>
                 <h2 class="text-base mb-1 leading-tight">
-                  <span class="text-gray-400 block">#7.</span>
+                  <span class="text-gray-400 block">#6.</span>
                   <u>We’re Counting On You</u>
                 </h2>
                 <ul class="list-disc mx-8 space-y-4">

@@ -32,8 +32,7 @@ function FAQs() {
                 <p>
                   OffK.ng is a super-simple website where university students
                   can find or post hostel-related items for sale (like Mattress,
-                  chairs, gas cylinder, etc.) and student accommodations for
-                  rent. No login — just a simple table of listings.
+                  chairs, gas cylinder, etc.). No login — just a simple table of listings.
                 </p>
               </div>
               <div>

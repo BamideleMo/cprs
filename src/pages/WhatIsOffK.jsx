@@ -19,9 +19,13 @@ function WhatIsOffK() {
                 What is OffK.ng?
               </h2>
             </div>
-            <div class="mt-8 md:mt-12">
+            <div class="mt-8 md:mt-12 space-y-8">
               <p>OffK.ng is a simple website where students can:</p>
-              <ul class="space-y-8 m-8 list-decimal">
+              <p>
+                POST or FIND <u>hostel items for sale</u> (like beds, chairs,
+                gas cookers, etc.)
+              </p>
+              {/* <ul class="space-y-8 m-8 list-decimal">
                 <li>
                   POST or FIND <u>hostel items for sale</u> (like beds, chairs,
                   gas cookers, etc.)
@@ -30,7 +34,7 @@ function WhatIsOffK() {
                   POST or FIND <u>student accommodation</u> (on or around
                   campus).
                 </li>
-              </ul>
+              </ul> */}
               <p>No login. No long process. Just a simple table of listings.</p>
               <p class="py-10">
                 <span class="block border border-purple-600 bg-purple-100 p-4 rounded-lg text-black leading-loose">
