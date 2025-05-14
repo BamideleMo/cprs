@@ -38,9 +38,8 @@ function WhatIsOffK() {
               <p>No login. No long process. Just a simple table of listings.</p>
               <p class="py-10">
                 <span class="block border border-purple-600 bg-purple-100 p-4 rounded-lg text-black leading-loose">
-                  If you want to sell an hostel item or have student
-                  accommodation for rent, OffK.ng is the fastest way to share
-                  your deal.
+                  If you want to sell an hostel item OffK.ng is the fastest way
+                  to sell to other students.
                 </span>
               </p>
             </div>
