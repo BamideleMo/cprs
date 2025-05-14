@@ -22,7 +22,7 @@ function WhatIsOffK() {
             <div class="mt-8 md:mt-12 space-y-8">
               <p>OffK.ng is a simple website where students can:</p>
               <p>
-                POST or FIND <u>hostel items for sale</u> (like beds, chairs,
+                ✅ POST or FIND <u>hostel items for sale</u> (like beds, chairs,
                 gas cookers, etc.)
               </p>
               {/* <ul class="space-y-8 m-8 list-decimal">

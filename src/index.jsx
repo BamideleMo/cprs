@@ -7,7 +7,6 @@ import App from "./App";
 import Terms from "./pages/Terms";
 import Safety from "./pages/Safety";
 import NotFound from "./pages/NotFound";
-import Convos from "./pages/Convos";
 import WhatIsOffK from "./pages/WhatIsOffK";
 import FAQs from "./pages/FAQs";
 import PostAd1 from "./pages/post-ad/PostAd1";
@@ -30,7 +29,6 @@ render(
       <Route path="/safety" component={Safety} />
       <Route path="/faqs" component={FAQs} />
       <Route path="/what-is-offk" component={WhatIsOffK} />
-      <Route path="/convos" component={Convos} />
       <Route path="/post-ad/1" component={PostAd1} />
       <Route path="/post-ad/2" component={PostAd2} />
       <Route path="/filtered" component={Filtered} />

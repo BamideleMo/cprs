@@ -30,7 +30,6 @@ function FilterForm() {
   return (
     <>
       <form autocomplete="off" onSubmit={submit} class="space-y-3 my-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
             <Select
               label="Category:"
@@ -223,7 +222,6 @@ function FilterForm() {
               </Match>
             </Switch>
           </div>
-        </div>
         <div class="text-white">
           <Show
             when={formHandler.isFormInvalid()}

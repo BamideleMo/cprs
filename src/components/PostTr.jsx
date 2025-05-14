@@ -43,7 +43,7 @@ function PostTr(props) {
     <>
       <Show when={showModal()}>
         <div class="fixed z-40 bg-slate-900 bg-opacity-90 flex items-center h-screen w-screen top-0 bottom-0 left-0 right-0">
-          <div class="w-11/12 sm:w-[620px] mx-auto">
+          <div class="w-11/12 sm:w-[320px] mx-auto">
             <div class="text-right mb-1 -mt-20">
               <span onClick={() => setShowModal(false)}>
                 <Close />
@@ -51,7 +51,7 @@ function PostTr(props) {
             </div>
             <div class="bg-white p-2 sm:p-4 border-t-8 border-purple-800 py-4">
               <h2 class="font-normal text-xl text-purple-800 text-center mb-4 border-b pb-4">
-                Initiate WhatsApp Chat
+                Contact Poster
               </h2>
               <div>
                 <Show
