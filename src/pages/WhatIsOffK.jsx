@@ -25,21 +25,16 @@ function WhatIsOffK() {
                 ✅ POST or FIND <u>hostel items for sale</u> (like beds, chairs,
                 gas cookers, etc.)
               </p>
-              {/* <ul class="space-y-8 m-8 list-decimal">
-                <li>
-                  POST or FIND <u>hostel items for sale</u> (like beds, chairs,
-                  gas cookers, etc.)
-                </li>
-                <li>
-                  POST or FIND <u>student accommodation</u> (on or around
-                  campus).
-                </li>
-              </ul> */}
+              {/* <p>
+                ✅ POST or FIND <u>student accommodation</u> (on or around
+                campus).
+              </p> */}
+
               <p>No login. No long process. Just a simple table of listings.</p>
               <p class="py-10">
                 <span class="block border border-purple-600 bg-purple-100 p-4 rounded-lg text-black leading-loose">
-                  If you want to sell an hostel item OffK.ng is the fastest way
-                  to sell to other students.
+                  If you want to sell an hostel item OffK.ng is the fastest and
+                  simplest way to sell to other students.
                 </span>
               </p>
             </div>

@@ -109,10 +109,10 @@ function PostItemForm() {
                     value: "Kitchen Items",
                     label: "Kitchen Items",
                   },
-                  // {
-                  //   value: "Accommodation",
-                  //   label: "Accommodation",
-                  // },
+                  {
+                    value: "Accommodation",
+                    label: "Accommodation",
+                  },
                   {
                     value: "Food",
                     label: "Food",
@@ -219,8 +219,8 @@ function PostItemForm() {
                     options={[
                       { value: "", label: "Select" },
                       {
-                        value: "Pot",
-                        label: "Pot",
+                        value: "Cooking Pot",
+                        label: "Cooking Pot",
                       },
                       {
                         value: "Bucket",
@@ -238,33 +238,33 @@ function PostItemForm() {
                     formHandler={formHandler}
                   />
                 </Match>
-                {/* <Match when={formData().category === "Accommodation"}>
-                    <Select
-                      label="Item:"
-                      name="item"
-                      required={true}
-                      options={[
-                        { value: "", label: "Select" },
-                        {
-                          value: "Bedspace",
-                          label: "Bedspace",
-                        },
-                        {
-                          value: "1 Room",
-                          label: "1 Room",
-                        },
-                        {
-                          value: "Rooms",
-                          label: "Rooms",
-                        },
-                        {
-                          value: "Flat",
-                          label: "Flat",
-                        },
-                      ]}
-                      formHandler={formHandler}
-                    />
-                  </Match> */}
+                <Match when={formData().category === "Accommodation"}>
+                  <Select
+                    label="Item:"
+                    name="item"
+                    required={true}
+                    options={[
+                      { value: "", label: "Select" },
+                      {
+                        value: "Bedspace",
+                        label: "Bedspace",
+                      },
+                      {
+                        value: "1 Room",
+                        label: "1 Room",
+                      },
+                      {
+                        value: "Rooms",
+                        label: "Rooms",
+                      },
+                      {
+                        value: "Flat",
+                        label: "Flat",
+                      },
+                    ]}
+                    formHandler={formHandler}
+                  />
+                </Match>
                 <Match when={formData().category === "Food"}>
                   <Select
                     label="Item:"

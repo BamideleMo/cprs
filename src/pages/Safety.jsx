@@ -47,7 +47,7 @@ function Terms() {
                 <ul class="list-disc mx-8 space-y-4">
                   <li>
                     When buying or selling hostel items, always meet in a public
-                    and well-lit area on campus..
+                    and well-lit area on campus.
                   </li>
                   <li>Avoid isolated locations or late-night meetups.</li>
                 </ul>
