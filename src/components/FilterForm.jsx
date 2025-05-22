@@ -159,8 +159,8 @@ function FilterForm() {
                 options={[
                   { value: "", label: "Select" },
                   {
-                    value: "Pot",
-                    label: "Pot",
+                    value: "Cooking Pot",
+                    label: "Cooking Pot",
                   },
                   {
                     value: "Bucket",
@@ -190,8 +190,12 @@ function FilterForm() {
                     label: "Bedspace",
                   },
                   {
-                    value: "Room(s)",
-                    label: "Room(s)",
+                    value: "1 Room",
+                    label: "1 Room",
+                  },
+                  {
+                    value: "Rooms",
+                    label: "Rooms",
                   },
                   {
                     value: "Flat",

@@ -9,7 +9,7 @@ import PostTr from "../components/PostTr";
 
 const VITE_API_URL = import.meta.env["VITE_API_URL"];
 
-function Filtered() {
+function Searched() {
   const [isFetching, setIsFetching] = createSignal(false);
   const [noData, setNoData] = createSignal(false);
   const [listings, setListings] = createStore([]);
@@ -25,14 +25,12 @@ function Filtered() {
   };
 
   var arrObj = [];
-  const doFilter = async () => {
+  const doSearch = async () => {
     try {
       const response = await fetch(
         VITE_API_URL +
-          "/open/api/filter-listings?category=" +
-          searchParams.category +
-          "&item=" +
-          searchParams.item +
+          "/open/api/search-listings?search=" +
+          searchParams.search +
           "&uni=" +
           JSON.parse(localStorage.getItem("OffK")).uni,
         {
@@ -92,17 +90,15 @@ function Filtered() {
 
   createEffect(() => {
     setIsFetching(true);
-    doFilter();
+    doSearch();
   });
   return (
     <MetaProvider>
       <Title>
         {" "}
-        {searchParams.item
-          ? "Results for: " + searchParams.item + " in " + searchParams.category
-          : "Filtering"}
+        {searchParams.item ? "Results for: " + searchParams.item : "Searching"}
       </Title>
-      <Meta name="description" content="Filtered List on off.ng?"></Meta>
+      <Meta name="description" content="Searched List on off.ng?"></Meta>
       <Link rel="preload" as="image" href={screen}></Link>
       <div class="bg-white text-sm">
         <Header />
@@ -110,12 +106,12 @@ function Filtered() {
           <div class="my-6 sm:my-10 mx-2">
             <div class="text-center">
               <h2 class="text-lg sm:text-xl sm:mt-2 text-gray-600 leading-tight">
-                Filtered List
+                Searched List
               </h2>
             </div>
             <div class="mt-8 flex justify-between text-sm sm:text-sm ">
               <h2 class="font-normal">
-                Filtered for:{" "}
+                Searched for:{" "}
                 <span class="text-gray-700">{searchParams.item}</span>
               </h2>
               <div class="-mt-1.5">
@@ -186,4 +182,4 @@ function Filtered() {
   );
 }
 
-export default Filtered;
+export default Searched;

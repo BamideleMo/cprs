@@ -38,7 +38,7 @@ function PostAdvertForm(props) {
             "Content-Type": "application/json",
             Accept: "application/json",
           },
-          method: "POST",
+          method: "PATCH",
           body: JSON.stringify({
             uni: props.id.slice(0, -1),
             link: formData().link,

@@ -51,7 +51,7 @@ function PostTr(props) {
             </div>
             <div class="bg-white p-2 sm:p-4 border-t-8 border-purple-800 py-4">
               <h2 class="font-normal text-xl text-purple-800 text-center mb-4 border-b pb-4">
-                Chat Poster
+                Chat With Poster
               </h2>
               <div>
                 <Show
@@ -98,35 +98,21 @@ function PostTr(props) {
           )}
         </td>
         <td class="p-2 md:p-3 border-l border-dashed border-purple-800 space-y-2">
-          <span class="text-[11px] text-gray-400">
-            <b>ID:</b> OffK{props.rsc.id}
-          </span>
-          <span class="block space-x-2 text-xs">
-            <span class="bg-orange-300 border border-orange-600 p-0.5 rounded">
+          {/* <span class="text-[11px] text-gray-400">
+            <b>ID:</b> {JSON.parse(localStorage.getItem("OffK")).uni}
+            {props.rsc.id}
+          </span> */}
+          <span class="block mt-2 space-x-2 text-xs">
+            {/* <span class="bg-orange-300 border border-orange-600 p-0.5 rounded">
               {props.rsc.type}
-            </span>
-            <span class="space-x-1 bg-gray-300 border border-gray-400 p-0.5 rounded">
-              <b>
-                {props.rsc.category === "Accommodation" ? (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-4 inline -mt-0.5 text-gray-500"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819"
-                    />
-                  </svg>
-                ) : (
-                  props.rsc.category + ":"
-                )}
-              </b>
+            </span> */}
+            <span class="space-x-1 bg-orange-300 border border-orange-600 p-0.5 rounded">
+              <b>{props.rsc.category + ":"}</b>
               <span>{props.rsc.item}</span>
+            </span>
+            <span class="text-[11px] bg-gray-300 border border-gray-600 p-0.5 rounded">
+              <b>ID:</b> {JSON.parse(localStorage.getItem("OffK")).uni}
+              {props.rsc.id}
             </span>
           </span>
           <span class="block text-gray-600">

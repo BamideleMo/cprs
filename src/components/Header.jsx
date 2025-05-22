@@ -32,7 +32,7 @@ function Header() {
     <>
       <Show when={!showWhichUni()}>
         <div class="fixed z-40 bg-slate-900 bg-opacity-90 flex items-center h-screen w-screen top-0 bottom-0 left-0 right-0">
-          <div class="w-11/12 sm:w-[620px] mx-auto bg-white p-4 rounded-lg">
+          <div class="w-11/12 sm:w-[320px] mx-auto bg-white p-4 rounded-lg">
             <Switch>
               <Match when={notAvailable()}>
                 <h2 class="font-normal text-xl text-purple-800 text-center mb-4 border-b pb-4">
@@ -70,7 +70,7 @@ function Header() {
                       options={[
                         { value: "", label: "Select" },
                         {
-                          value: "NSUK",
+                          value: "no",
                           label: "Nassarawa State University, Keffi",
                         },
                         {
@@ -78,7 +78,7 @@ function Header() {
                           label: "University of Abuja",
                         },
                         {
-                          value: "no",
+                          value: "UNIJOS",
                           label: "University of Jos",
                         },
                       ]}

@@ -68,12 +68,13 @@ function PostItemForm() {
             <div class="h-16 w-16 text-3xl border-2 border-green-600 text-center rounded-full pt-3">
               👍🏽
             </div>
-            <p>Deal successfully posted!</p>
+            <p>Item successfully posted!</p>
             <p>
               <b>What next?</b>
             </p>
             <p>
-              Wait for students in need of the deal to Chat you on WhatsApp.
+              Wait a bit... students in need of the item wil Chat you on
+              WhatsApp.
             </p>
             <p class="pb-4 pt-2">
               <span

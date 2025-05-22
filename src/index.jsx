@@ -12,6 +12,7 @@ import FAQs from "./pages/FAQs";
 import PostAd1 from "./pages/post-ad/PostAd1";
 import PostAd2 from "./pages/post-ad/PostAd2";
 import Filtered from "./pages/Filtered";
+import Searched from "./pages/Searched";
 
 const root = document.getElementById("root");
 
@@ -32,6 +33,7 @@ render(
       <Route path="/post-ad/1" component={PostAd1} />
       <Route path="/post-ad/2" component={PostAd2} />
       <Route path="/filtered" component={Filtered} />
+      <Route path="/searched" component={Searched} />
       <Route path="*" component={NotFound} />
     </Router>
   ),
