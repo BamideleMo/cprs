@@ -231,7 +231,7 @@ function PostedItems() {
                           <div class="flex justify-between">
                             <h2 class="font-normal mt-2 flex">
                               <span>📍</span>{" "}
-                              <span class="-mt-0.5">Recent Posts:</span>
+                              <span class="md:-mt-0.5">Recent Posts:</span>
                             </h2>
 
                             <div class="-mt-0 flex space-x-4 md:space-x-4">
