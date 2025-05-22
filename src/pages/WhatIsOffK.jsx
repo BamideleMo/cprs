@@ -41,10 +41,11 @@ function WhatIsOffK() {
                 Want to make enquiries? Make report or raise observations? Send
                 admin a WhatsApp chat now:{" "}
                 <a
-                  href="/"
+                  href="https://wa.me/23407036935026"
+                  target="_blank"
                   class="hover:opacity-60 underline decoration-dashed decoration-purple-600"
                 >
-                  09098989898
+                  070 3693 5026
                 </a>
               </p>
             </div>
