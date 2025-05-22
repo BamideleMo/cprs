@@ -15,7 +15,7 @@ function Hero() {
     <>
       <Show when={showModal()}>
         <div class="fixed z-40 bg-slate-900 bg-opacity-90 flex items-center h-screen w-screen top-0 bottom-0 left-0 right-0">
-          <div class="w-11/12 sm:w-[320px] mx-auto">
+          <div class="w-11/12 sm:w-[360px] mx-auto">
             <div class="text-right mb-1 -mt-20">
               <span onClick={() => setShowModal(false)}>
                 <Close />
