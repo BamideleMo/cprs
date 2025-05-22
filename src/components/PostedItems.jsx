@@ -227,7 +227,7 @@ function PostedItems() {
                   >
                     <thead>
                       <tr class="border-t border-dashed border-purple-800">
-                        <td colspan="2" class="md:px-2 py-3">
+                        <td colspan="2" class="px-2 py-3">
                           <div class="flex justify-between">
                             <h2 class="font-normal mt-2 flex">
                               <span>📍</span>{" "}
