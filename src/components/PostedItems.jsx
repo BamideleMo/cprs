@@ -231,7 +231,9 @@ function PostedItems() {
                           <div class="flex justify-between">
                             <h2 class="font-normal mt-2 -ml-1 flex">
                               <span>📍</span>{" "}
-                              <span class="md:-mt-0.5 font-semibold">Recent Posts:</span>
+                              <span class="md:-mt-0.5 font-semibold text-slate-800">
+                                Recent Posts:
+                              </span>
                             </h2>
 
                             <div class="-mt-0 flex space-x-4 md:space-x-4">
@@ -240,7 +242,7 @@ function PostedItems() {
                                   setShowModal(true);
                                   setModalContent("search");
                                 }}
-                                class="block w-fit p-2 rounded-full bg-white border-purple-800 border border-dashed hover:opacity-60 cursor-pointer"
+                                class="block w-fit p-2 rounded-full text-white bg-slate-800 hover:opacity-60 cursor-pointer"
                               >
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
@@ -262,7 +264,7 @@ function PostedItems() {
                                   setShowModal(true);
                                   setModalContent("filter");
                                 }}
-                                class="block w-fit p-2 rounded-full bg-white border-purple-800 border border-dashed hover:opacity-60 cursor-pointer"
+                                class="block w-fit p-2 rounded-full text-white bg-slate-800 hover:opacity-60 cursor-pointer"
                               >
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"

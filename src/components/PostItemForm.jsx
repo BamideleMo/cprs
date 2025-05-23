@@ -163,14 +163,6 @@ function PostItemForm() {
                           label: "Laptop",
                         },
                         {
-                          value: "Bluetooth Speaker",
-                          label: "Bluetooth Speaker",
-                        },
-                        {
-                          value: "Home Theater",
-                          label: "Home Theater",
-                        },
-                        {
                           value: "Refridgerator",
                           label: "Refridgerator",
                         },
