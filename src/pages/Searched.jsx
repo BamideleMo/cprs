@@ -164,25 +164,25 @@ function Searched() {
                 <Show
                   when={isFetching()}
                   fallback={
-                    <Show
-                      when={noData()}
-                      fallback={
-                        <tbody>
+                    <tbody>
+                      <Show
+                        when={noData()}
+                        fallback={
                           <For each={listings}>
                             {(listing, i) => <PostTr rsc={listing} />}
                           </For>
-                        </tbody>
-                      }
-                    >
-                      <tr class="border-b border-dashed border-purple-800 hover:bg-purple-50 cursor-pointer">
-                        <td
-                          colspan={2}
-                          class="p-2 md:p-3 text-xs text-center text-gray-600"
-                        >
-                          0 posts found.
-                        </td>
-                      </tr>
-                    </Show>
+                        }
+                      >
+                        <tr class="border-b border-dashed border-purple-800 hover:bg-purple-50 cursor-pointer">
+                          <td
+                            colspan={2}
+                            class="p-2 md:p-3 text-xs text-center text-gray-600"
+                          >
+                            0 posts found.
+                          </td>
+                        </tr>
+                      </Show>
+                    </tbody>
                   }
                 >
                   <Loading />

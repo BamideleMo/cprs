@@ -217,119 +217,124 @@ function PostedItems() {
           when={resources.loading}
           fallback={
             <>
-              <Show
-                when={noData()}
-                fallback={
-                  <table
-                    cellpadding="0"
-                    cellspacing="0"
-                    class="w-full border-x border-purple-800 border-dashed"
-                  >
-                    <thead>
-                      <tr class="border-t border-dashed border-purple-800">
-                        <td colspan="2" class="px-2 py-3">
-                          <div class="flex justify-between">
-                            <h2 class="font-normal mt-2 -ml-1 flex">
-                              <span>📍</span>{" "}
-                              <span class="md:-mt-0.5 font-semibold text-slate-800">
-                                Recent Posts:
-                              </span>
-                            </h2>
-
-                            <div class="-mt-0 flex space-x-4 md:space-x-4">
-                              <span
-                                onClick={() => {
-                                  setShowModal(true);
-                                  setModalContent("search");
-                                }}
-                                class="block w-fit p-2 rounded-full text-white bg-slate-800 hover:opacity-60 cursor-pointer"
-                              >
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  fill="none"
-                                  viewBox="0 0 24 24"
-                                  stroke-width="1.5"
-                                  stroke="currentColor"
-                                  class="size-4"
-                                >
-                                  <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-                                  />
-                                </svg>
-                              </span>
-                              <span
-                                onClick={() => {
-                                  setShowModal(true);
-                                  setModalContent("filter");
-                                }}
-                                class="block w-fit p-2 rounded-full text-white bg-slate-800 hover:opacity-60 cursor-pointer"
-                              >
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  fill="none"
-                                  viewBox="0 0 24 24"
-                                  stroke-width="1.5"
-                                  stroke="currentColor"
-                                  class="size-4"
-                                >
-                                  <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 0 1-.659 1.591l-5.432 5.432a2.25 2.25 0 0 0-.659 1.591v2.927a2.25 2.25 0 0 1-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 0 0-.659-1.591L3.659 7.409A2.25 2.25 0 0 1 3 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0 1 12 3Z"
-                                  />
-                                </svg>
-                              </span>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="font-normal bg-slate-300 text-black border-y border-dashed border-purple-800 space-x-1">
-                        <td class="w-14 md:w-20 p-1 md:px-3">Posted</td>
-                        <td class="p-1 md:px-3 border-l border-dashed border-purple-800">
-                          Description
-                        </td>
-                      </tr>
-                    </thead>
-
-                    <tbody>
-                      <For each={resources().listings1}>
-                        {(resource, i) => <PostTr rsc={resource} />}
-                      </For>
-                      {advert1() ? (
-                        <PromotedTr
-                          link={advert1().link}
-                          topic={advert1().title}
-                          text={advert1().description}
-                        />
-                      ) : (
-                        ""
-                      )}
-
-                      <For each={resources().listings2}>
-                        {(resource, i) => <PostTr rsc={resource} />}
-                      </For>
-                      {advert1() ? (
-                        <PromotedTr
-                          link={advert2().link}
-                          topic={advert2().title}
-                          text={advert2().description}
-                        />
-                      ) : (
-                        ""
-                      )}
-                      <For each={resources().listings3}>
-                        {(resource, i) => <PostTr rsc={resource} />}
-                      </For>
-                    </tbody>
-                  </table>
-                }
+              <table
+                cellpadding="0"
+                cellspacing="0"
+                class="w-full border-x border-purple-800 border-dashed"
               >
-                <div class="pt-4 text-center p-2 border-t border-gray-100 text-slate-600">
-                  No data found.
-                </div>
-              </Show>
+                <thead>
+                  <tr class="border-t border-dashed border-purple-800">
+                    <td colspan="2" class="px-2 py-3">
+                      <div class="flex justify-between">
+                        <h2 class="font-normal mt-2 -ml-1 flex">
+                          <span>📍</span>{" "}
+                          <span class="md:-mt-0.5 font-semibold text-slate-800">
+                            Recent Posts:
+                          </span>
+                        </h2>
+
+                        <div class="-mt-0 flex space-x-4 md:space-x-4">
+                          <span
+                            onClick={() => {
+                              setShowModal(true);
+                              setModalContent("search");
+                            }}
+                            class="block w-fit p-2 rounded-full text-white bg-slate-800 hover:opacity-60 cursor-pointer"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="size-4"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                              />
+                            </svg>
+                          </span>
+                          <span
+                            onClick={() => {
+                              setShowModal(true);
+                              setModalContent("filter");
+                            }}
+                            class="block w-fit p-2 rounded-full text-white bg-slate-800 hover:opacity-60 cursor-pointer"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="size-4"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 0 1-.659 1.591l-5.432 5.432a2.25 2.25 0 0 0-.659 1.591v2.927a2.25 2.25 0 0 1-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 0 0-.659-1.591L3.659 7.409A2.25 2.25 0 0 1 3 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0 1 12 3Z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="font-normal bg-slate-300 text-black border-y border-dashed border-purple-800 space-x-1">
+                    <td class="w-14 md:w-20 p-1 md:px-3">Posted</td>
+                    <td class="p-1 md:px-3 border-l border-dashed border-purple-800">
+                      Description
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <Show
+                    when={noData()}
+                    fallback={
+                      <>
+                        <For each={resources().listings1}>
+                          {(resource, i) => <PostTr rsc={resource} />}
+                        </For>
+                        {advert1() ? (
+                          <PromotedTr
+                            link={advert1().link}
+                            topic={advert1().title}
+                            text={advert1().description}
+                          />
+                        ) : (
+                          ""
+                        )}
+                        <For each={resources().listings2}>
+                          {(resource, i) => <PostTr rsc={resource} />}
+                        </For>
+                        {advert1() ? (
+                          <PromotedTr
+                            link={advert2().link}
+                            topic={advert2().title}
+                            text={advert2().description}
+                          />
+                        ) : (
+                          ""
+                        )}
+                        <For each={resources().listings3}>
+                          {(resource, i) => <PostTr rsc={resource} />}
+                        </For>
+                      </>
+                    }
+                  >
+                    <tr class="border-b border-dashed border-purple-800 hover:bg-purple-50 cursor-pointer">
+                      <td
+                        colspan={2}
+                        class="p-2 md:p-3 text-xs text-center text-gray-600"
+                      >
+                        No data found.
+                      </td>
+                    </tr>
+                  </Show>
+                </tbody>
+              </table>
             </>
           }
         >

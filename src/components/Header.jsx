@@ -57,28 +57,28 @@ function Header() {
               <Match when={!notAvailable()}>
                 <>
                   <h2 class="font-normal text-xl text-purple-800 text-center mb-4 border-b pb-4">
-                    Select University
+                    Select Your University
                   </h2>
                   <div class="mt-2 max-h-80 overflow-y-auto space-y-6 text-center">
                     <Select
                       onChange={(e) => {
                         doUni(e.currentTarget.value);
                       }}
-                      label="Select Your University:"
+                      label="University:"
                       name="item"
                       required={true}
                       options={[
                         { value: "", label: "Select" },
                         {
-                          value: "no",
+                          value: "NSUK",
                           label: "Nassarawa State University, Keffi",
                         },
                         {
-                          value: "UNIABUJA",
+                          value: "no",
                           label: "University of Abuja",
                         },
                         {
-                          value: "UNIJOS",
+                          value: "no",
                           label: "University of Jos",
                         },
                       ]}
