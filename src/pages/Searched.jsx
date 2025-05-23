@@ -111,78 +111,83 @@ function Searched() {
             </div>
 
             <div class="mt-4 space-y-6 text-sm md:text-sm">
-              <Show
-                when={isFetching()}
-                fallback={
-                  <Show
-                    when={noData()}
-                    fallback={
-                      <table
-                        cellpadding="0"
-                        cellspacing="0"
-                        class="w-full border-x border-purple-800 border-dashed"
-                      >
-                        <thead>
-                          <tr class="border-t border-dashed border-purple-800">
-                            <td colspan="2" class="px-2 py-3">
-                              <div class="flex justify-between">
-                                <h2 class="font-normal mt-2 -ml-1 flex">
-                                  <span>📍</span>{" "}
-                                  <span class="md:-mt-0.5 font-semibold text-slate-800">
-                                    Searched for:{" "}
-                                    <span class="text-purple-700 font-normal">
-                                      {searchParams.search}
-                                    </span>
-                                  </span>
-                                </h2>
+              <table
+                cellpadding="0"
+                cellspacing="0"
+                class="w-full border-x border-purple-800 border-dashed"
+              >
+                <thead>
+                  <tr class="border-t border-dashed border-purple-800">
+                    <td colspan="2" class="px-2 py-3">
+                      <div class="flex justify-between">
+                        <h2 class="font-normal mt-2 -ml-1 flex">
+                          <span>📍</span>{" "}
+                          <span class="md:-mt-0.5 font-semibold text-slate-800">
+                            Searched for:{" "}
+                            <span class="text-purple-700 font-normal">
+                              {searchParams.search}
+                            </span>
+                          </span>
+                        </h2>
 
-                                <div class="-mt-0 flex space-x-4 md:space-x-4">
-                                  <A
-                                    href="/"
-                                    class="block w-fit p-2 rounded-full text-white bg-slate-800 hover:opacity-60 cursor-pointer"
-                                  >
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      fill="none"
-                                      viewBox="0 0 24 24"
-                                      stroke-width="1.5"
-                                      stroke="currentColor"
-                                      class="size-4"
-                                    >
-                                      <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"
-                                      />
-                                    </svg>
-                                  </A>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="font-normal bg-slate-300 text-black border-y border-dashed border-purple-800 space-x-1">
-                            <td class="w-14 md:w-20 p-1 md:px-3">Posted</td>
-                            <td class="p-1 md:px-3 border-l border-dashed border-purple-800">
-                              Description
-                            </td>
-                          </tr>
-                        </thead>
+                        <div class="-mt-0 flex space-x-4 md:space-x-4">
+                          <A
+                            href="/"
+                            class="block w-fit p-2 rounded-full text-white bg-slate-800 hover:opacity-60 cursor-pointer"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="size-4"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"
+                              />
+                            </svg>
+                          </A>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="font-normal bg-slate-300 text-black border-y border-dashed border-purple-800 space-x-1">
+                    <td class="w-14 md:w-20 p-1 md:px-3">Posted</td>
+                    <td class="p-1 md:px-3 border-l border-dashed border-purple-800">
+                      Description
+                    </td>
+                  </tr>
+                </thead>
+                <Show
+                  when={isFetching()}
+                  fallback={
+                    <Show
+                      when={noData()}
+                      fallback={
                         <tbody>
                           <For each={listings}>
                             {(listing, i) => <PostTr rsc={listing} />}
                           </For>
                         </tbody>
-                      </table>
-                    }
-                  >
-                    <div class="pt-4 text-center p-2 border-t border-gray-100 text-slate-600">
-                      0 posts found.
-                    </div>
-                  </Show>
-                }
-              >
-                <Loading />
-              </Show>
+                      }
+                    >
+                      <tr class="border-b border-dashed border-purple-800 hover:bg-purple-50 cursor-pointer">
+                        <td
+                          colspan={2}
+                          class="p-2 md:p-3 text-xs text-center text-gray-600"
+                        >
+                          0 posts found.
+                        </td>
+                      </tr>
+                    </Show>
+                  }
+                >
+                  <Loading />
+                </Show>
+              </table>
             </div>
           </div>
         </section>

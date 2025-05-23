@@ -38,6 +38,16 @@ function WhatIsOffK() {
                 </span>
               </p>
               <p>
+                See Frequently Asked Questions & answers:{" "}
+                <A
+                  href="/faqs"
+                  class="hover:opacity-60 underline decoration-dashed decoration-purple-600"
+                >
+                  click here
+                </A>
+                .
+              </p>
+              <p>
                 Want to make enquiries? Make report or raise observations? Send
                 admin a WhatsApp chat now:{" "}
                 <a
