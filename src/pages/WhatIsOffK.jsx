@@ -33,8 +33,9 @@ function WhatIsOffK() {
               <p>Very easy. No login. No long process.</p>
               <p class="py-10">
                 <span class="block border border-purple-600 bg-purple-100 p-4 rounded-lg text-black md:leading-loose">
-                  If you want to sell an hostel item OffK.ng is the fastest and
-                  simplest way to sell to other students.
+                  If you want to sell or buy an hostel item, OffK.ng is the
+                  fastest and simplest way to sell to or buy from other
+                  students.
                 </span>
               </p>
               <p>
