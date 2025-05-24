@@ -213,7 +213,7 @@ function PostItemForm() {
                       formHandler={formHandler}
                     />
                   </Match>
-                  <Match when={formData().category === "Kitchen Items"}>
+                  <Match when={formData().category === "Kitchen Item"}>
                     <Select
                       label="Item:"
                       name="item"
