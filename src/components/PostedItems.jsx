@@ -309,7 +309,7 @@ function PostedItems() {
                         <For each={resources().listings2}>
                           {(resource, i) => <PostTr rsc={resource} />}
                         </For>
-                        {advert1() ? (
+                        {/* {advert2() ? (
                           <PromotedTr
                             link={advert2().link}
                             topic={advert2().title}
@@ -317,7 +317,7 @@ function PostedItems() {
                           />
                         ) : (
                           ""
-                        )}
+                        )} */}
                         <For each={resources().listings3}>
                           {(resource, i) => <PostTr rsc={resource} />}
                         </For>
