@@ -49,15 +49,19 @@ function WhatIsOffK() {
               </p>
               <p>
                 Want to make enquiries? Make report or raise observations? Send
-                admin a WhatsApp chat now:{" "}
-                <a
-                  href="https://wa.me/23407036935026"
-                  target="_blank"
-                  class="hover:opacity-60 underline decoration-dashed decoration-purple-600"
-                >
-                  070 3693 5026
-                </a>
+                admin a WhatsApp chat now:
               </p>
+              <div class="my-8">
+                <p>
+                  <a
+                    href="https://wa.me/23407036935026"
+                    target="_blank"
+                    class="bg-green-700 text-white hover:opacity-60 p-3 rounded-lg"
+                  >
+                    070 3693 5026
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </section>
