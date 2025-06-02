@@ -121,7 +121,7 @@ function PostTr(props) {
                   </svg>
                 </span>
               </div>
-              <span class="block text-gray-600">
+              <span class="block mt-2 text-gray-600">
                 <span>{props.rsc.description}</span>
               </span>
             </div>
