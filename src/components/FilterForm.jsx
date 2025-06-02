@@ -46,7 +46,7 @@ function FilterForm() {
                 label: "Furniture",
               },
               {
-                value: "Kitchen Item",
+                value: "Kitchen",
                 label: "Kitchen Item",
               },
               {
@@ -151,7 +151,7 @@ function FilterForm() {
                 formHandler={formHandler}
               />
             </Match>
-            <Match when={formData().category === "Kitchen Item"}>
+            <Match when={formData().category === "Kitchen"}>
               <Select
                 label="Item:"
                 name="item"
