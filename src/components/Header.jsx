@@ -70,11 +70,11 @@ function Header() {
                       options={[
                         { value: "", label: "Select" },
                         {
-                          value: "NSUK",
+                          value: "no",
                           label: "Nassarawa State University, Keffi",
                         },
                         {
-                          value: "no",
+                          value: "UNIABUJA",
                           label: "University of Abuja",
                         },
                         {
