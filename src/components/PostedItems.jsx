@@ -224,7 +224,7 @@ function PostedItems() {
               >
                 <thead>
                   <tr class="border-t border-dashed border-purple-800">
-                    <td colspan="2" class="px-2 py-3">
+                    <td colspan="3" class="px-2 py-3">
                       <div class="flex justify-between">
                         <h2 class="font-normal mt-2 -ml-1 flex">
                           <span>📍</span>{" "}
@@ -284,8 +284,24 @@ function PostedItems() {
                   </tr>
                   <tr class="font-normal bg-slate-300 text-black border-y border-dashed border-purple-800 space-x-1">
                     <td class="w-14 md:w-20 p-1 md:px-3">Posted</td>
-                    <td class="p-1 md:px-3 border-l border-dashed border-purple-800">
+                    <td class="p-1 md:px-3 border-x border-dashed border-purple-800">
                       Description
+                    </td>
+                    <td class="p-1 md:px-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z"
+                        />
+                      </svg>
                     </td>
                   </tr>
                 </thead>
@@ -309,15 +325,6 @@ function PostedItems() {
                         <For each={resources().listings2}>
                           {(resource, i) => <PostTr rsc={resource} />}
                         </For>
-                        {/* {advert2() ? (
-                          <PromotedTr
-                            link={advert2().link}
-                            topic={advert2().title}
-                            text={advert2().description}
-                          />
-                        ) : (
-                          ""
-                        )} */}
                         <For each={resources().listings3}>
                           {(resource, i) => <PostTr rsc={resource} />}
                         </For>
