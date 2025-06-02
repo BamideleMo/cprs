@@ -61,10 +61,6 @@ function FilterForm() {
                 value: "Book",
                 label: "Book/Handout",
               },
-              {
-                value: "Clothing",
-                label: "Clothing",
-              },
             ]}
             formHandler={formHandler}
           />
@@ -109,12 +105,8 @@ function FilterForm() {
                     label: "Laptop",
                   },
                   {
-                    value: "Bluetooth Speaker",
-                    label: "Bluetooth Speaker",
-                  },
-                  {
-                    value: "Home Theater",
-                    label: "Home Theater",
+                    value: "Power Bank",
+                    label: "Power Bank",
                   },
                   {
                     value: "Refridgerator",
@@ -246,37 +238,6 @@ function FilterForm() {
                   {
                     value: "Academic",
                     label: "Academic Book",
-                  },
-                ]}
-                formHandler={formHandler}
-              />
-            </Match>
-            <Match when={formData().category === "Clothing"}>
-              <Select
-                label="Item:"
-                name="item"
-                required={true}
-                options={[
-                  { value: "", label: "Select" },
-                  {
-                    value: "Top",
-                    label: "Top",
-                  },
-                  {
-                    value: "Gown",
-                    label: "Gown",
-                  },
-                  {
-                    value: "Trouser",
-                    label: "Trouser",
-                  },
-                  {
-                    value: "Skirt",
-                    label: "Skirt",
-                  },
-                  {
-                    value: "Shoe",
-                    label: "Shoe",
                   },
                 ]}
                 formHandler={formHandler}

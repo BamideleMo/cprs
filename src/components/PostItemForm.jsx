@@ -123,10 +123,6 @@ function PostItemForm() {
                       value: "Book",
                       label: "Book/Handout",
                     },
-                    {
-                      value: "Clothing",
-                      label: "Clothing",
-                    },
                   ]}
                   formHandler={formHandler}
                 />
@@ -304,37 +300,6 @@ function PostItemForm() {
                         {
                           value: "Academic",
                           label: "Academic Book",
-                        },
-                      ]}
-                      formHandler={formHandler}
-                    />
-                  </Match>
-                  <Match when={formData().category === "Clothing"}>
-                    <Select
-                      label="Item:"
-                      name="item"
-                      required={true}
-                      options={[
-                        { value: "", label: "Select" },
-                        {
-                          value: "Top",
-                          label: "Top",
-                        },
-                        {
-                          value: "Gown",
-                          label: "Gown",
-                        },
-                        {
-                          value: "Trouser",
-                          label: "Trouser",
-                        },
-                        {
-                          value: "Skirt",
-                          label: "Skirt",
-                        },
-                        {
-                          value: "Shoe",
-                          label: "Shoe",
                         },
                       ]}
                       formHandler={formHandler}
