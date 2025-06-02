@@ -287,7 +287,7 @@ function PostedItems() {
                     <td class="p-1 md:px-3 border-x border-dashed border-purple-800">
                       Description
                     </td>
-                    <td class="p-1 md:px-3">
+                    <td class="p-3 md:px-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
