@@ -171,6 +171,10 @@ function PostItemForm() {
                           label: "Laptop",
                         },
                         {
+                          value: "Power Bank",
+                          label: "Power Bank",
+                        },
+                        {
                           value: "Refridgerator",
                           label: "Refridgerator",
                         },
