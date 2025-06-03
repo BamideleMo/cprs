@@ -118,7 +118,7 @@ function Searched() {
               >
                 <thead>
                   <tr class="border-t border-dashed border-purple-800">
-                    <td colspan="2" class="px-2 py-3">
+                    <td colspan="3" class="px-2 py-3">
                       <div class="flex justify-between">
                         <h2 class="font-normal mt-2 -ml-1 flex">
                           <span>📍</span>{" "}
@@ -175,7 +175,7 @@ function Searched() {
                       >
                         <tr class="border-b border-dashed border-purple-800 hover:bg-purple-50 cursor-pointer">
                           <td
-                            colspan={2}
+                            colspan={3}
                             class="p-2 md:p-3 text-xs text-center text-gray-600"
                           >
                             0 posts found.
