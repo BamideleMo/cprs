@@ -3,6 +3,7 @@ import { Show, Switch, createSignal } from "solid-js";
 import Loading from "./Loading";
 import ProcessingAnimation from "./ProcessingAnimation";
 import Close from "./icons/Close";
+import chat from "../assets/whatsapp.png";
 
 const VITE_API_URL = import.meta.env["VITE_API_URL"];
 
@@ -127,17 +128,20 @@ function PostTr(props) {
             </div>
           </div>
         </td>
-        <td class="p-3 md:px-3">
+        <td class="p-3 md:px-3 text-xs">
+          <span class="block text-center">Chat</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
+            fill="none"
             viewBox="0 0 24 24"
-            fill="currentColor"
-            class="size-5 text-green-600"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-5 mx-auto"
           >
             <path
-              fill-rule="evenodd"
-              d="M4.804 21.644A6.707 6.707 0 0 0 6 21.75a6.721 6.721 0 0 0 3.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 0 1-.814 1.686.75.75 0 0 0 .44 1.223ZM8.25 10.875a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25ZM10.875 12a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875-1.125a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z"
-              clip-rule="evenodd"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
             />
           </svg>
         </td>
