@@ -112,8 +112,8 @@ function PostItemForm() {
                       label: "Kitchen Item",
                     },
                     {
-                      value: "Accommodation",
-                      label: "Accommodation",
+                      value: "Hostel",
+                      label: "Hostel",
                     },
                     {
                       value: "Food",
@@ -240,7 +240,7 @@ function PostItemForm() {
                       formHandler={formHandler}
                     />
                   </Match>
-                  <Match when={formData().category === "Accommodation"}>
+                  <Match when={formData().category === "Hostel"}>
                     <Select
                       label="Item:"
                       name="item"
