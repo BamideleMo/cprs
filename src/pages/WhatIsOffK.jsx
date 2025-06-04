@@ -24,22 +24,22 @@ function WhatIsOffK() {
                 OffK.ng is a super-simple website where university students can:
               </p>
               <p class="flex space-x-1.5">
-                <span>🔴</span>
-                <span class="-mt-[1px]">
+                {/* <span>🔴</span> */}
+                <b class="-mt-[1px]">
                   POST or FIND hostel-related items for sale!
-                </span>
+                </b>
               </p>
               <p>
-                Items like mattress, chairs, gas cylinder, foodstuff, wardrobes,
-                etc.
+                Items like mattress, chairs, gas cylinder, foodstuff, wardrobe,
+                bedspace, etc.
               </p>
 
               <p>Very easy. No login. No long process.</p>
               <p class="py-10">
-                <span class="block border-2 border-purple-600 bg-purple-100 p-4 rounded-lg text-black md:leading-loose">
-                  If you want to sell or buy an hostel item, OffK.ng is the
-                  fastest and simplest way to sell to or buy from other students
-                  on your campus.
+                <span class="block border-2 border-purple-600 bg-purple-100 p-4 rounded-lg text-black md:leading-6">
+                  If you want to sell or buy an hostel-related item, OffK.ng is
+                  the fastest and simplest way to sell to or buy from other
+                  students on your campus.
                 </span>
               </p>
               <p>

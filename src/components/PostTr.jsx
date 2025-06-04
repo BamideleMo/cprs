@@ -3,7 +3,6 @@ import { Show, Switch, createSignal } from "solid-js";
 import Loading from "./Loading";
 import ProcessingAnimation from "./ProcessingAnimation";
 import Close from "./icons/Close";
-import chat from "../assets/whatsapp.png";
 
 const VITE_API_URL = import.meta.env["VITE_API_URL"];
 
