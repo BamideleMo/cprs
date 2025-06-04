@@ -100,8 +100,8 @@ function PostTr(props) {
         <td class="p-2 md:p-3 border-x border-dashed border-purple-800 space-y-2">
           <div class="flex flex-col md:flex-row md:justify-between">
             <div>
-              <div class="flex justify-between">
-                <span class="block w-fit mt-2 space-x-1 text-[11px]">
+              <div class="flex space-x-1">
+                <span class="block mt-0 space-x-1 text-[11px]">
                   <span class="space-x-1 bg-orange-300 border border-orange-600 p-0.5 rounded">
                     <b>{props.rsc.category + ":"}</b>
                     <span>{props.rsc.item}</span>
@@ -110,17 +110,19 @@ function PostTr(props) {
                     <b>ID:</b> OffK{props.rsc.id}
                   </span>
                 </span>
-                <span>
+                <span class="w-fit">
                   {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
                     viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="size-6 text-green-600 mt-1 -mr-1"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 text-green-600"
                   >
                     <path
-                      fill-rule="evenodd"
-                      d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
-                      clip-rule="evenodd"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
                     />
                   </svg> */}
                   <svg
@@ -129,12 +131,12 @@ function PostTr(props) {
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="size-6 text-gray-400 mt-1.5 -mb-1 -mr-1"
+                    class="size-5 text-gray-600"
                   >
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      d="M12 9v3.75m0-10.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.25-8.25-3.286Zm0 13.036h.008v.008H12v-.008Z"
+                      d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
                     />
                   </svg>
                 </span>

@@ -6,7 +6,6 @@ import PromotedTr from "./PromotedTr";
 import Close from "./icons/Close";
 import FilterForm from "./FilterForm";
 import SearchForm from "./SearchForm";
-import chat from "../assets/whatsapp.png";
 
 const VITE_API_URL = import.meta.env["VITE_API_URL"];
 
