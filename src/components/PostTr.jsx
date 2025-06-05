@@ -144,7 +144,7 @@ function PostTr(props) {
             </div>
           </div>
         </td>
-        <td class="p-3 md:px-3 text-xs">
+        <td class="p-3 md:px-3 text-xs -space-y-0.5">
           <span class="block text-center">Chat</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
