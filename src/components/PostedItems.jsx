@@ -197,7 +197,7 @@ function PostedItems() {
               <Match when={modalContent() === "filter"}>
                 <div class="bg-white p-2 sm:p-4 border-t-8 border-purple-800 py-4">
                   <h2 class="font-normal text-xl text-purple-800 text-center mb-4 border-b pb-4">
-                    Filter List
+                    Filter by Category
                   </h2>
                   <FilterForm />
                 </div>
@@ -231,7 +231,7 @@ function PostedItems() {
                       <div class="flex justify-between">
                         <h2 class="font-normal mt-2 -ml-1 flex">
                           <span>📍</span>{" "}
-                          <span class="md:-mt-0.5 font-semibold text-slate-800">
+                          <span class="lg:-mt-0.5 font-semibold text-slate-800">
                             Recent Posts:
                           </span>
                         </h2>

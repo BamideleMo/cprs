@@ -102,7 +102,7 @@ function Header() {
           </div>
           <div class="w-fit space-x-6 md:space-x-10 pt-3 md:pt-3 text-sm flex">
             <A
-              href="/what-is-offk"
+              href="/gists"
               class="hover:opacity-60 underline decoration-dashed decoration-purple-600"
             >
               Gists

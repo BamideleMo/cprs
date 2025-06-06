@@ -8,7 +8,7 @@ function WhatIsOffK() {
   return (
     <MetaProvider>
       <Title>What is OffK? - www.offk.ng</Title>
-      <Meta name="description" content="What is off.ng?"></Meta>
+      <Meta name="description" content="What is offk.ng?"></Meta>
       <Link rel="preload" as="image" href={screen}></Link>
       <div class="bg-white text-sm">
         <Header />

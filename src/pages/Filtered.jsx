@@ -100,7 +100,7 @@ function Filtered() {
           ? "Results for: " + searchParams.item + " in " + searchParams.category
           : "Filtering"}
       </Title>
-      <Meta name="description" content="Filtered List on off.ng?"></Meta>
+      <Meta name="description" content="Filtered List on offk.ng?"></Meta>
       <Link rel="preload" as="image" href={screen}></Link>
       <div class="bg-white text-sm">
         <Header />

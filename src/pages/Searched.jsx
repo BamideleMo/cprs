@@ -98,7 +98,7 @@ function Searched() {
         {" "}
         {searchParams.item ? "Results for: " + searchParams.item : "Searching"}
       </Title>
-      <Meta name="description" content="Searched List on off.ng?"></Meta>
+      <Meta name="description" content="Searched List on offk.ng?"></Meta>
       <Link rel="preload" as="image" href={screen}></Link>
       <div class="bg-white text-sm">
         <Header />
