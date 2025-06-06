@@ -126,6 +126,7 @@ function PostItemForm() {
                 formHandler={formHandler}
               />
             </div>
+            <div class="grid grid-cols-2 gap-1">
             <div>
               <TextInput
                 label="Name of Item:"
@@ -133,18 +134,19 @@ function PostItemForm() {
                 required={true}
                 type="text"
                 formHandler={formHandler}
-                placeholder="e.g. Used Mini Gas Cooker"
+                placeholder="e.g. 6kg Gas Cylinder"
               />
             </div>
             <div>
               <TextInput
-                label="Price of Item:"
+                label="Price:"
                 name="price"
                 required={true}
                 type="text"
                 formHandler={formHandler}
                 placeholder="e.g. 25k - Negotiable"
               />
+            </div>
             </div>
             <div>
               <TextInput

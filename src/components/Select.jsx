@@ -53,7 +53,7 @@ export const Select = (props) => {
               "is-invalid": field.helpers.error,
               "form-control": true,
             }}
-            class="text-slate-800 w-full block border border-black outline-none bg-white mt-0 px-2 h-12"
+            class="text-slate-800 w-full block border border-black outline-none bg-white mt-0 px-1 h-10 text-xs"
           >
             <For each={options()}>
               {(option) => (
