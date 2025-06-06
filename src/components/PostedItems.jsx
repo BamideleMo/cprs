@@ -351,7 +351,7 @@ function PostedItems() {
                   >
                     <tr class="border-b border-dashed border-purple-800 hover:bg-purple-50 cursor-pointer">
                       <td
-                        colspan={2}
+                        colspan={3}
                         class="p-2 md:p-3 text-xs text-center text-gray-600"
                       >
                         No data found.

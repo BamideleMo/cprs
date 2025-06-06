@@ -31,8 +31,6 @@ function Filtered() {
         VITE_API_URL +
           "/open/api/filter-listings?category=" +
           searchParams.category +
-          "&item=" +
-          searchParams.item +
           "&uni=" +
           JSON.parse(localStorage.getItem("OffK")).uni,
         {

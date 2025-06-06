@@ -8,7 +8,6 @@ import ProcessingAnimation from "./ProcessingAnimation";
 
 const schema = z.object({
   category: z.string().min(1, "*Invalid"),
-  item: z.string().min(1, "*Invalid"),
 });
 
 const VITE_API_URL = import.meta.env["VITE_API_URL"];
@@ -21,10 +20,7 @@ function FilterForm() {
 
   const submit = async (event) => {
     event.preventDefault();
-    navigate(
-      "/filtered?category=" + formData().category + "&item=" + formData().item,
-      { replace: true }
-    );
+    navigate("/filtered?category=" + formData().category, { replace: true });
   };
 
   return (
@@ -38,212 +34,36 @@ function FilterForm() {
             options={[
               { value: "", label: "Select" },
               {
-                value: "Gadget",
-                label: "Gadget",
+                value: "Gadgets & Electronics",
+                label: "Gadgets & Electronics",
               },
               {
                 value: "Furniture",
                 label: "Furniture",
               },
               {
-                value: "Kitchen",
-                label: "Kitchen Item",
+                value: "Kitchen Items",
+                label: "Kitchen Items",
               },
               {
-                value: "Hostel",
-                label: "Hostel",
+                value: "Foodstuff",
+                label: "Foodstuff",
               },
               {
-                value: "Food",
-                label: "Food",
+                value: "Books & Study",
+                label: "Books & Study",
               },
               {
-                value: "Book",
-                label: "Book/Handout",
+                value: "Accommodation",
+                label: "Accommodation",
+              },
+              {
+                value: "Other Hostel Items",
+                label: "Other Hostel Items",
               },
             ]}
             formHandler={formHandler}
           />
-        </div>
-        <div>
-          <Switch>
-            <Match when={formData().category === ""}>
-              <Select
-                label="Item:"
-                name="item"
-                placeholder="Select"
-                required={true}
-                options={[]}
-                formHandler={formHandler}
-              />
-            </Match>
-            <Match when={formData().category === "Gadget"}>
-              <Select
-                label="Item:"
-                name="item"
-                required={true}
-                options={[
-                  { value: "", label: "Select" },
-                  {
-                    value: "Phone",
-                    label: "Phone",
-                  },
-                  {
-                    value: "Extension Box",
-                    label: "Extension Box",
-                  },
-                  {
-                    value: "Standing Fan",
-                    label: "Standing Fan",
-                  },
-                  {
-                    value: "TV",
-                    label: "TV",
-                  },
-                  {
-                    value: "Laptop",
-                    label: "Laptop",
-                  },
-                  {
-                    value: "Power Bank",
-                    label: "Power Bank",
-                  },
-                  {
-                    value: "Refridgerator",
-                    label: "Refridgerator",
-                  },
-                ]}
-                formHandler={formHandler}
-              />
-            </Match>
-            <Match when={formData().category === "Furniture"}>
-              <Select
-                label="Item:"
-                name="item"
-                required={true}
-                options={[
-                  { value: "", label: "Select" },
-                  {
-                    value: "Mattress",
-                    label: "Mattress",
-                  },
-                  {
-                    value: "Chair",
-                    label: "Chair",
-                  },
-                  {
-                    value: "Table",
-                    label: "Table",
-                  },
-                  {
-                    value: "Wardrobe",
-                    label: "Wardrobe",
-                  },
-                  {
-                    value: "Rug",
-                    label: "Rug",
-                  },
-                  {
-                    value: "Reading Lamp",
-                    label: "Reading Lamp",
-                  },
-                ]}
-                formHandler={formHandler}
-              />
-            </Match>
-            <Match when={formData().category === "Kitchen"}>
-              <Select
-                label="Item:"
-                name="item"
-                required={true}
-                options={[
-                  { value: "", label: "Select" },
-                  {
-                    value: "Cooking Pot",
-                    label: "Cooking Pot",
-                  },
-                  {
-                    value: "Bucket",
-                    label: "Bucket",
-                  },
-                  {
-                    value: "Gas Cylinder",
-                    label: "Gas Cylinder",
-                  },
-                  {
-                    value: "Stove",
-                    label: "Stove",
-                  },
-                ]}
-                formHandler={formHandler}
-              />
-            </Match>
-            <Match when={formData().category === "Hostel"}>
-              <Select
-                label="Item:"
-                name="item"
-                required={true}
-                options={[
-                  { value: "", label: "Select" },
-                  {
-                    value: "Bedspace",
-                    label: "Bedspace",
-                  },
-                  {
-                    value: "1 Room",
-                    label: "1 Room",
-                  },
-                  {
-                    value: "Rooms",
-                    label: "Rooms",
-                  },
-                  {
-                    value: "Flat",
-                    label: "Flat",
-                  },
-                ]}
-                formHandler={formHandler}
-              />
-            </Match>
-            <Match when={formData().category === "Food"}>
-              <Select
-                label="Item:"
-                name="item"
-                required={true}
-                options={[
-                  { value: "", label: "Select" },
-                  {
-                    value: "Cooked Food",
-                    label: "Cooked Food",
-                  },
-                  {
-                    value: "Foodstuff",
-                    label: "Foodstuff",
-                  },
-                ]}
-                formHandler={formHandler}
-              />
-            </Match>
-            <Match when={formData().category === "Book"}>
-              <Select
-                label="Item:"
-                name="item"
-                required={true}
-                options={[
-                  { value: "", label: "Select" },
-                  {
-                    value: "Personal Dev.",
-                    label: "Personal Development Book",
-                  },
-                  {
-                    value: "Academic",
-                    label: "Academic Book",
-                  },
-                ]}
-                formHandler={formHandler}
-              />
-            </Match>
-          </Switch>
         </div>
         <div class="text-white">
           <Show
