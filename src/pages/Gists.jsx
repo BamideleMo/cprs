@@ -29,18 +29,21 @@ function Gists() {
               </p>
               <p>
                 If you're interested in campus journalism and will love to
-                intern with us as a <u>student-content-curator</u>, please send a
-                WhatsApp chat to admin:{" "}
-                <a
-                  href="https://wa.me/23407036935026"
-                  target="_blank"
-                  class="text-green-700 hover:opacity-60"
-                >
-                  07036935026
-                </a>
-                .
+                intern with us as a <u>student-content-curator</u>, please send
+                a WhatsApp chat to admin:
               </p>
-              <p>And YES! It's a paid internship.</p>
+              <div class="my-8">
+                <p>
+                  <a
+                    href="https://wa.me/23407036935026"
+                    target="_blank"
+                    class="bg-green-700 text-white hover:opacity-60 p-3 rounded-lg"
+                  >
+                    070 3693 5026
+                  </a>
+                </p>
+              </div>
+              <p>And YES! It's a paid internship role.</p>
             </div>
           </div>
         </section>
