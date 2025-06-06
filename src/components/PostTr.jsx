@@ -102,9 +102,8 @@ function PostTr(props) {
             <div>
               <div class="flex space-x-1">
                 <span class="block mt-0 space-x-1 text-[11px]">
-                  <span class="space-x-1 bg-orange-300 border border-orange-600 p-0.5 rounded">
-                    <b>{props.rsc.category + ":"}</b>
-                    <span>{props.rsc.item}</span>
+                  <span class="bg-orange-300 border border-orange-600 p-0.5 rounded">
+                    {props.rsc.category}
                   </span>
                   <span class=" bg-gray-300 border border-gray-600 p-0.5 rounded">
                     <b>ID:</b> OffK{props.rsc.id}
@@ -138,9 +137,10 @@ function PostTr(props) {
                   </svg>
                 </span>
               </div>
-              <span class="block mt-2 text-gray-600">
+              <div class="block mt-1 text-gray-600 space-x-1">
+                <b class="text-purple-900">{props.rsc.item}:</b>
                 <span>{props.rsc.description}</span>
-              </span>
+              </div>
             </div>
           </div>
         </td>
