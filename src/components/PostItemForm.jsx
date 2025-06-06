@@ -10,6 +10,7 @@ import ProcessingAnimation from "./ProcessingAnimation";
 const schema = z.object({
   category: z.string().min(1, "*Invalid"),
   item: z.string().min(1, "*Invalid"),
+  price: z.string().min(1, "*Invalid"),
   number: z.string().length(11, "*Invalid"),
   description: z.string().min(60, "*Too short").max(160, "*Too much"),
 });
@@ -41,9 +42,10 @@ function PostItemForm() {
         method: "POST",
         body: JSON.stringify({
           category: formData().category,
-          item: formData().item,
-          number: formData().number,
+          item: formData().item.trimEnd(),
+          number: formData().number.trimEnd(),
           description: formData().description,
+          price: formData().price,
           uni: JSON.parse(localStorage.getItem("OffK")).uni,
         }),
       });
@@ -103,16 +105,20 @@ function PostItemForm() {
                     label: "Gadget",
                   },
                   {
+                    value: "Electronics",
+                    label: "Electronics",
+                  },
+                  {
                     value: "Furniture",
                     label: "Furniture",
                   },
                   {
-                    value: "Kitchen",
-                    label: "Kitchen Item",
+                    value: "Kitchenware",
+                    label: "Kitchenware",
                   },
                   {
-                    value: "Hostel",
-                    label: "Hostel",
+                    value: "Accommodation",
+                    label: "Accommodation",
                   },
                   {
                     value: "Food",
@@ -127,26 +133,26 @@ function PostItemForm() {
               />
             </div>
             <div class="grid grid-cols-2 gap-1">
-            <div>
-              <TextInput
-                label="Name of Item:"
-                name="item"
-                required={true}
-                type="text"
-                formHandler={formHandler}
-                placeholder="e.g. 6kg Gas Cylinder"
-              />
-            </div>
-            <div>
-              <TextInput
-                label="Price:"
-                name="price"
-                required={true}
-                type="text"
-                formHandler={formHandler}
-                placeholder="e.g. 25k - Negotiable"
-              />
-            </div>
+              <div>
+                <TextInput
+                  label="Item:"
+                  name="item"
+                  required={true}
+                  type="text"
+                  formHandler={formHandler}
+                  placeholder="e.g. 6kg Gas Cylinder"
+                />
+              </div>
+              <div>
+                <TextInput
+                  label="Price:"
+                  name="price"
+                  required={true}
+                  type="text"
+                  formHandler={formHandler}
+                  placeholder="e.g. 25k - Negotiable"
+                />
+              </div>
             </div>
             <div>
               <TextInput
@@ -167,7 +173,7 @@ function PostItemForm() {
                 required={true}
                 type="text"
                 formHandler={formHandler}
-                placeholder="Include useful details about the deal."
+                placeholder="Include useful details about the deal"
               />
             </div>
             <div class="text-white">
