@@ -42,7 +42,7 @@ export default function TextArea(props) {
             }}
             maxlength={props.max}
             type={props.type}
-            class="text-slate-600 w-full block border border-black outline-none bg-white p-1.5 h-16 placeholder:text-slate-500 text-xs"
+            class="text-slate-600 w-full block border border-black outline-none bg-white p-1.5 h-16 placeholder:text-slate-300 text-xs"
           ></textarea>
         </div>
       )}

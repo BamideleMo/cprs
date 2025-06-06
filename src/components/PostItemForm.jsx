@@ -101,32 +101,32 @@ function PostItemForm() {
                 options={[
                   { value: "", label: "Select" },
                   {
-                    value: "Gadget",
-                    label: "Gadget",
-                  },
-                  {
-                    value: "Electronics",
-                    label: "Electronics",
+                    value: "Gadgets & Electronics",
+                    label: "Gadgets & Electronics",
                   },
                   {
                     value: "Furniture",
                     label: "Furniture",
                   },
                   {
-                    value: "Kitchenware",
-                    label: "Kitchenware",
+                    value: "Kitchen Items",
+                    label: "Kitchen Items",
+                  },
+                  {
+                    value: "Foodstuff",
+                    label: "Foodstuff",
+                  },
+                  {
+                    value: "Books & Study",
+                    label: "Books & Study",
                   },
                   {
                     value: "Accommodation",
                     label: "Accommodation",
                   },
                   {
-                    value: "Food",
-                    label: "Food",
-                  },
-                  {
-                    value: "Book",
-                    label: "Book/Handout",
+                    value: "Other Hostel Items",
+                    label: "Other Hostel Items",
                   },
                 ]}
                 formHandler={formHandler}

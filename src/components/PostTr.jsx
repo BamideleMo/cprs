@@ -139,7 +139,9 @@ function PostTr(props) {
               </div>
               <div class="block mt-1 text-gray-600 space-x-1">
                 <b class="text-purple-900">{props.rsc.item}:</b>
-                <span>{props.rsc.description}</span>
+                <span>
+                  {props.rsc.description} 💰<b>{props.rsc.price}</b>
+                </span>
               </div>
             </div>
           </div>
