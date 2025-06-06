@@ -1,8 +1,8 @@
 import { A } from "@solidjs/router";
 import { Show, Switch, createSignal } from "solid-js";
-import Loading from "./Loading";
 import ProcessingAnimation from "./ProcessingAnimation";
 import Close from "./icons/Close";
+import naira from "../assets/naira.png";
 
 const VITE_API_URL = import.meta.env["VITE_API_URL"];
 
@@ -137,10 +137,16 @@ function PostTr(props) {
                   </svg>
                 </span>
               </div>
-              <div class="block mt-1 text-gray-600 space-x-1">
+              <div class="block my-1.5 text-gray-600 space-x-1">
                 <b class="text-purple-900">{props.rsc.item}:</b>
+                <span>{props.rsc.description}</span>
+              </div>
+              <div class="space-x-1 flex">
                 <span>
-                  {props.rsc.description} 💰<b>{props.rsc.price}</b>
+                  <img src={naira} class="h-5"/>
+                </span>
+                <span class="text-black mt-0 font-semibold">
+                  {props.rsc.price}
                 </span>
               </div>
             </div>
