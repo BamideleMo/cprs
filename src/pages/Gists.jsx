@@ -20,13 +20,13 @@ function Gists() {
             </div>
             <div class="mt-8 md:mt-12 space-y-8">
               <p>
-                Imagine campus lifestyle news, updates, interviews and
-                interesting gists happening on this campus, published every
-                Saturday!
+                Campus news, updates, interviews & interesting gists happening
+                on this campus, published every Saturday!
               </p>
               <p>
                 <b>That's coming here SOON.</b>
               </p>
+              <p>So...</p>
               <p>
                 If you're interested in campus journalism and will love to
                 intern with us as a <u>student-content-curator</u>, please send
