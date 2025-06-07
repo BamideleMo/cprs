@@ -131,10 +131,10 @@ function Searched() {
                           </span>
                         </h2>
 
-                        <div class="-mt-0 flex space-x-4 md:space-x-4">
+                        <div class="mt-0.5">
                           <A
                             href="/"
-                            class="block w-fit p-2 rounded-full text-white bg-slate-800 hover:opacity-60 cursor-pointer"
+                            class="block w-fit p-1.5 rounded-full text-white bg-slate-800 hover:opacity-60 cursor-pointer"
                           >
                             <svg
                               xmlns="http://www.w3.org/2000/svg"

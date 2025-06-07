@@ -24,7 +24,7 @@ function Gists() {
                 on campus, published every Saturday!
               </p>
               <p>
-                <b>That's coming here SOON.</b>
+                <b>Coming to this page SOON.</b>
               </p>
               <p>So...</p>
               <p>
@@ -37,7 +37,7 @@ function Gists() {
                   <a
                     href="https://wa.me/23407036935026"
                     target="_blank"
-                    class="bg-green-700 text-white hover:opacity-60 p-3 rounded-lg"
+                    class="bg-purple-700 text-white hover:opacity-60 p-3 rounded-lg"
                   >
                     070 3693 5026
                   </a>
