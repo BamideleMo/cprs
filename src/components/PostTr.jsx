@@ -88,7 +88,7 @@ function PostTr(props) {
         onClick={() => getWhatsApp(props.rsc.id)}
         class="border-b border-dashed border-purple-800 hover:bg-purple-200 cursor-pointer"
       >
-        <td class="p-2 md:p-3 text-xs leading-none">
+        <td class="p-1 md:p-3 text-xs leading-none">
           {props.rsc.days === 0 ? (
             <span class="capitalize">Today</span>
           ) : props.rsc.days <= 1 ? (
