@@ -286,7 +286,7 @@ function PostedItems() {
                     </td>
                   </tr>
                   <tr class="font-normal bg-slate-300 text-black border-y border-dashed border-purple-800 space-x-1">
-                    <td class="w-10 md:w-16 p-1 md:px-3">
+                    <td class="w-10 md:w-24 p-1 md:px-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -305,7 +305,7 @@ function PostedItems() {
                     <td class="p-1 md:px-3 border-x border-dashed border-purple-800">
                       Description
                     </td>
-                    <td class="p-1 md:px-3">
+                    <td class="lg:w-24 p-1 md:px-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
