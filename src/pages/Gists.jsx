@@ -21,7 +21,7 @@ function Gists() {
             <div class="mt-8 md:mt-12 space-y-8">
               <p>
                 Campus news, updates, interviews & interesting gists happening
-                on this campus, published every Saturday!
+                on campus, published every Saturday!
               </p>
               <p>
                 <b>That's coming here SOON.</b>

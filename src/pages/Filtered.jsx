@@ -67,6 +67,7 @@ function Filtered() {
               item: arr[i].item,
               description: arr[i].description,
               id: arr[i].id,
+              price: arr[i].price,
               days: daysBetweenDates(
                 arr[i].created_at.substring(0, 10),
                 todayString

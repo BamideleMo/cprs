@@ -124,10 +124,6 @@ function PostItemForm() {
                     value: "Accommodation",
                     label: "Accommodation",
                   },
-                  {
-                    value: "Other Hostel Items",
-                    label: "Other Hostel Items",
-                  },
                 ]}
                 formHandler={formHandler}
               />

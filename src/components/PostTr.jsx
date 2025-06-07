@@ -32,6 +32,9 @@ function PostTr(props) {
     setDescription(
       encodeURIComponent(
         "Found you on OffK.ng. Is this still available: *" +
+          "_" +
+          result.response.item +
+          "_" +
           result.response.description +
           "*"
       )
@@ -143,7 +146,7 @@ function PostTr(props) {
               </div>
               <div class="space-x-1 flex">
                 <span>
-                  <img src={naira} class="h-5"/>
+                  <img src={naira} class="h-5" />
                 </span>
                 <span class="text-black mt-0 font-semibold">
                   {props.rsc.price}

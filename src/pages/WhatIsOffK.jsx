@@ -43,7 +43,7 @@ function WhatIsOffK() {
                 </span>
               </p>
               <p>
-                See Frequently Asked Questions & answers:{" "}
+                Have questions? See the FAQs page:{" "}
                 <A
                   href="/faqs"
                   class="hover:opacity-60 underline decoration-dashed decoration-purple-600"
@@ -53,8 +53,8 @@ function WhatIsOffK() {
                 .
               </p>
               <p>
-                Want to make enquiries? Make report or raise observations? Send
-                admin a WhatsApp chat now:
+                Want to make enquiries? Report a post, or raise observations?
+                Send admin a WhatsApp chat now:
               </p>
               <div class="my-8">
                 <p>
