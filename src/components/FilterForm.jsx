@@ -1,10 +1,8 @@
-import { createSignal, Match, Switch } from "solid-js";
 import { useFormHandler } from "solid-form-handler";
 import { zodSchema } from "solid-form-handler/zod";
 import { z } from "zod";
 import { A, useNavigate } from "@solidjs/router";
 import { Select } from "./Select";
-import ProcessingAnimation from "./ProcessingAnimation";
 
 const schema = z.object({
   category: z.string().min(1, "*Invalid"),
@@ -58,8 +56,8 @@ function FilterForm() {
                 label: "Accommodation",
               },
               {
-                value: "Other Hostel Items",
-                label: "Other Hostel Items",
+                value: "Others",
+                label: "Others",
               },
             ]}
             formHandler={formHandler}

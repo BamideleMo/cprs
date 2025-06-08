@@ -124,6 +124,10 @@ function PostItemForm() {
                     value: "Accommodation",
                     label: "Accommodation",
                   },
+                  {
+                    value: "Others",
+                    label: "Others",
+                  },
                 ]}
                 formHandler={formHandler}
               />
