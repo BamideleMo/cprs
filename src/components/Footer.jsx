@@ -9,9 +9,23 @@ function Footer(props) {
       "
       >
         <div class="w-full px-1 sm:w-[620px] flex justify-between mx-auto">
+          <div class="w-40 space-x-1 text-gray-400">
+            <div class="md:hidden -mt-1 mb-0">
+              <Logo />
+            </div>
+            <span class="block mb-4 md:hidden leading-tight">
+              <span class="text-black">
+                FIND or POST Hostel Items for Sale:
+              </span>{" "}
+              <span class="">Fast, Easy, No Stress!</span>
+            </span>
+            <span class="block md:inline">
+              Copyright &copy; {new Date().getUTCFullYear()}.
+            </span>
+          </div>
           <ul
-            class="flex-1 flex flex-col space-x-0 space-y-4 md:flex-row 
-      md:space-y-0 md:space-x-6 lg:space-x-8"
+            class="w-fit flex flex-col space-x-0 space-y-4 md:flex-row 
+      md:space-y-0 md:space-x-6 lg:space-x-8  text-right"
           >
             <li class="md:pt-0">
               <A
@@ -29,6 +43,14 @@ function Footer(props) {
                 Safety Rules
               </A>
             </li>
+            <li class="">
+              <A
+                href="/social-impact"
+                class="hover:opacity-60 underline decoration-dashed decoration-purple-600"
+              >
+                Social Impact
+              </A>
+            </li>
             <li>
               <A
                 href="/terms"
@@ -38,15 +60,6 @@ function Footer(props) {
               </A>
             </li>
           </ul>
-          <div class="flex-1 text-right space-x-1 text-gray-400">
-            <div class="md:hidden -mt-1 mb-6">
-              <Logo />
-            </div>
-            <span class="block md:inline">All rights reserved.</span>
-            <span class="block md:inline">
-              Copyright &copy; {new Date().getUTCFullYear()}.
-            </span>
-          </div>
         </div>
       </footer>
     </>

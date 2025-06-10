@@ -14,6 +14,7 @@ import PostAd2 from "./pages/post-ad/PostAd2";
 import Filtered from "./pages/Filtered";
 import Searched from "./pages/Searched";
 import Gists from "./pages/Gists";
+import SocialImpact from "./pages/SocialImpact";
 
 const root = document.getElementById("root");
 
@@ -36,6 +37,7 @@ render(
       <Route path="/filtered" component={Filtered} />
       <Route path="/searched" component={Searched} />
       <Route path="/gists" component={Gists} />
+      <Route path="/social-impact" component={SocialImpact} />
       <Route path="*" component={NotFound} />
     </Router>
   ),
