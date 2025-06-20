@@ -37,7 +37,7 @@ function Hero() {
 
       <section class="purple-bg -mt-4">
         <div class="w-full px-1 sm:w-[620px] mx-auto">
-          <div class="mesh-bg py-16 text-center">
+          <div class="mesh-bg pt-16 text-center">
             <h1 class="text-slate-500 text-xl sm:text-2xl font-semibold leading-tight lg:leading-8 lg:w-[400px] lg:mx-auto">
               FIND or POST
               {/* <VerticalTextSlider /> */}
