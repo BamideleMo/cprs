@@ -8,7 +8,7 @@ function Footer(props) {
         class="mt-10 py-10 mx-2 border-t 
       "
       >
-        <div class="w-full px-1 sm:w-[620px] flex justify-between mx-auto">
+        <div class="w-full px-1 sm:w-[620px] 2xl:w-[900px] flex justify-between mx-auto">
           <div class="w-40 space-x-1 text-gray-400">
             <div class="md:hidden -mt-1 mb-0">
               <Logo />

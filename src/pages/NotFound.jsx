@@ -16,7 +16,7 @@ function NotFound() {
       <Link rel="preload" as="image" href={screen}></Link>
       <div class="bg-white text-sm">
         <Header />
-        <section class="w-full px-1 sm:w-[620px] mx-auto">
+        <section class="w-full px-1 sm:w-[620px] 2xl:w-[900px] mx-auto">
           <div class="my-6 sm:my-10 mx-2">
             <div class="text-center">
               <h1 class="text-xl sm:text-3xl font-semibold space-y-0">

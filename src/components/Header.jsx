@@ -91,7 +91,7 @@ function Header() {
         </div>
       </Show>
       <header class=" py-3 px-2">
-        <div class="w-full px-1 sm:w-[620px] flex justify-between mx-auto">
+        <div class="w-full px-1 sm:w-[620px] 2xl:w-[900px] flex justify-between mx-auto">
           <div class="flex flex-col -space-y-2">
             <Logo />
             <Show when={JSON.parse(localStorage.getItem("OffK"))}>
