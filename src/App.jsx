@@ -9,8 +9,8 @@ function App() {
   return (
     <MetaProvider>
       <Title>
-        Find and Post Hostel Items for Sale:
-        Fast, Easy, No Stress! - www.offk.ng
+        Find and Post Hostel Items for Sale: Fast, Easy, No Stress! -
+        www.offk.ng
       </Title>
       <Meta
         name="description"
@@ -20,8 +20,9 @@ function App() {
       <Link rel="preload" as="image" href={screen}></Link>
       <div class="bg-white text-sm">
         <Header />
+        <Hero />
         <section class="w-full px-1 sm:w-[620px] mx-auto">
-          <Hero />
+          {/* <Hero /> */}
           <PostedItems />
         </section>
         <Footer />

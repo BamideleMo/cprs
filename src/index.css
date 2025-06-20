@@ -37,6 +37,17 @@ body {
   max-height: 60vh;
 }
 
+.purple-bg{
+  background: linear-gradient(180deg, rgba(117,44,231,0) 0%, rgba(116, 44, 231, 0.083) 41%, rgba(117,44,231,0) 100%);
+}
+
+.mesh-bg{
+  background-image: url(assets/t-pt-bg2.svg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* VerticalTextSlider.css */
 #text-slider {
   height: 30px;

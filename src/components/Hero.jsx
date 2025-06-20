@@ -35,41 +35,45 @@ function Hero() {
         </div>
       </Show>
 
-      <div class="mt-10 text-center">
-        <h1 class="text-slate-500 text-xl sm:text-2xl font-semibold leading-tight lg:leading-8 lg:w-[400px] lg:mx-auto">
-          FIND or POST
-          {/* <VerticalTextSlider /> */}
-          <div class="text-2xl text-black">Hostel Items for Sale</div>
-        </h1>
-        <h2 class="text-base leading-tight mt-2 text-gray-600">
-          Fast, Easy, No Stress!
-        </h2>
-        <div class="pt-6 space-x-4">
-          <span
-            onClick={() => {
-              setShowModal(true);
-              setModalContent("request");
-            }}
-            class="cursor-pointer bg-purple-800 text-white p-2.5 rounded-lg hover:opacity-60"
-          >
-            👋 Make Post
-          </span>
+      <section class="purple-bg -mt-4">
+        <div class="w-full px-1 sm:w-[620px] mx-auto">
+          <div class="mesh-bg py-16 text-center">
+            <h1 class="text-slate-500 text-xl sm:text-2xl font-semibold leading-tight lg:leading-8 lg:w-[400px] lg:mx-auto">
+              FIND or POST
+              {/* <VerticalTextSlider /> */}
+              <div class="text-2xl text-black">Hostel Items for Sale</div>
+            </h1>
+            <h2 class="text-base leading-tight mt-2 text-gray-600">
+              Fast, Easy, No Stress!
+            </h2>
+            <div class="pt-6 space-x-4">
+              <span
+                onClick={() => {
+                  setShowModal(true);
+                  setModalContent("request");
+                }}
+                class="cursor-pointer bg-purple-800 text-white p-2.5 rounded-lg hover:opacity-60"
+              >
+                👋 Make Post
+              </span>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-8 text-gray-400 mx-auto mt-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
+              />
+            </svg>
+          </div>
         </div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="size-8 text-gray-400 mx-auto mt-8"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
-          />
-        </svg>
-      </div>
+      </section>
     </>
   );
 }

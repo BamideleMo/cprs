@@ -90,7 +90,7 @@ function Header() {
           </div>
         </div>
       </Show>
-      <header class="border-b py-3 px-2">
+      <header class=" py-3 px-2">
         <div class="w-full px-1 sm:w-[620px] flex justify-between mx-auto">
           <div class="flex flex-col -space-y-2">
             <Logo />
