@@ -35,30 +35,6 @@ function WhatIsOffK() {
               </p>
 
               <p>Very easy. No login. No long process.</p>
-              <p class="py-0">
-                <span class="block border-2 border-purple-600 bg-purple-100 p-4 pb-6 rounded-lg text-black md:leading-6">
-                  <span class="block text-purple-800 font-semibold leading-tight">
-                    Social Impact:
-                  </span>
-                  {/* If you want to sell or buy an hostel-related item, OffK.ng is
-                  the fastest and simplest way to sell to or buy from other
-                  students on your campus. */}
-                  <span class="block pt-2 pb-6">
-                    We're more than just Nigeria's simplest
-                    marketplace for university students; we are a social impact
-                    enterprise committed to fostering economic resilience and
-                    environmental sustainability within university communities.
-                  </span>
-                  <span class="block">
-                    <A
-                      href="/social-impact"
-                      class="bg-purple-800 text-white p-2 rounded-lg"
-                    >
-                      Learn more
-                    </A>
-                  </span>
-                </span>
-              </p>
               <p>
                 Have questions? See the FAQs page:{" "}
                 <A
@@ -84,6 +60,7 @@ function WhatIsOffK() {
                   </a>
                 </p>
               </div>
+              
             </div>
           </div>
         </section>

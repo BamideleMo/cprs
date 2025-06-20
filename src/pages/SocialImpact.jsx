@@ -23,10 +23,16 @@ function SocialImpact() {
             </div>
             <div class="mt-8 md:mt-12 space-y-8">
               <p>
-                OffK.ng is a social impact enterprise driving{" "}
+                OffK.ng is more than just Nigeria's simplest marketplace for
+                university students; we are a social impact enterprise committed
+                to fostering economic resilience and environmental
+                sustainability within university communities.
+              </p>
+              <p>
+                OffK.ng is driving{" "}
                 <u>financial empowerment</u> and{" "}
-                <u>environmental sustainability</u>{" "}
-                within Nigerian university communities.
+                <u>environmental sustainability</u> within Nigerian university
+                communities.
               </p>
               <p>
                 We directly address the economic vulnerability of students by
