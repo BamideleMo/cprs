@@ -13,7 +13,7 @@ function Footer(props) {
             <div class="md:hidden -mt-1 mb-0">
               <Logo />
             </div>
-            <span class="block mb-4 md:hidden leading-tight">
+            <span class="block mb-6 md:hidden leading-tight">
               <span class="text-black">
                 FIND or POST Hostel Items for Sale:
               </span>{" "}

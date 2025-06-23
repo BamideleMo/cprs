@@ -29,8 +29,7 @@ function SocialImpact() {
                 sustainability within university communities.
               </p>
               <p>
-                OffK.ng is driving{" "}
-                <u>financial empowerment</u> and{" "}
+                OffK.ng is driving <u>financial empowerment</u> and{" "}
                 <u>environmental sustainability</u> within Nigerian university
                 communities.
               </p>
@@ -52,10 +51,12 @@ function SocialImpact() {
               <p>
                 Our data-friendly, no-stress model further ensures{" "}
                 <u>digital accessibility</u> and <u>inclusion</u>, bridging the
-                gap for students facing high data costs. OffK.ng fosters a
-                self-reliant, community-driven ecosystem where students mutually
-                benefit, making it a powerful force for both economic resilience
-                and environmental responsibility.
+                gap for students facing high data costs.
+              </p>
+              <p>
+                OffK.ng fosters a self-reliant, community-driven ecosystem where
+                students mutually benefit, making it a powerful force for both
+                economic resilience and environmental responsibility.
               </p>
               <p>
                 <b>Contributing to the Sustainable Development Goals (SDGs)</b>
