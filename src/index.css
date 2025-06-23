@@ -42,7 +42,7 @@ body {
 }
 
 .mesh-bg{
-  background-image: url(assets/t-pt-bg2.svg);
+  background-image: url(assets/mesh-bg.svg);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
