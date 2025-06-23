@@ -3,7 +3,6 @@ import { Match, Show, Switch } from "solid-js";
 import Close from "./icons/Close";
 import { createSignal, createEffect, onMount } from "solid-js";
 import PostItemForm from "./PostItemForm";
-import VerticalTextSlider from "./VerticalTextSlider";
 
 function Hero() {
   const [showModal, setShowModal] = createSignal(false);
@@ -38,12 +37,11 @@ function Hero() {
       <section class="-mt-4">
         <div class="w-full px-1 sm:w-[620px] 2xl:w-[900px] mx-auto">
           <div class="mesh-bg pt-16 text-center">
-            <h1 class="text-slate-500 text-xl sm:text-2xl font-semibold leading-tight lg:leading-8 lg:w-[400px] lg:mx-auto">
+            <h1 class="text-slate-500 text-xl sm:text-2xl 2xl:text-4xl font-semibold leading-tight lg:leading-8 lg:w-[400px] lg:mx-auto">
               FIND or POST
-              {/* <VerticalTextSlider /> */}
               <div class="text-2xl text-black">Hostel Items for Sale</div>
             </h1>
-            <h2 class="text-base leading-tight mt-2 text-gray-600">
+            <h2 class="text-base 2xl:text-lg leading-tight mt-2 text-gray-600">
               Fast, Easy, No Stress!
             </h2>
             <div class="pt-6 space-x-4">
