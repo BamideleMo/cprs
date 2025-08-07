@@ -113,16 +113,16 @@ function Header() {
             >
               What is OffK?
             </A> */}
-            <div class="grid grid-cols-3 gap-2">
+            <div class="grid grid-cols-3 gap-2 hover:opacity-60 cursor-pointer">
               <div class="w-1 h-1 bg-gray-500 rounded-full">&nbsp;</div>
               <div class="w-1 h-1 bg-gray-500 rounded-full">&nbsp;</div>
               <div class="w-1 h-1 bg-gray-500 rounded-full">&nbsp;</div>
-              <div class="w-1 h-1 bg-gray-400 rounded-full">&nbsp;</div>
-              <div class="w-1 h-1 bg-gray-400 rounded-full">&nbsp;</div>
-              <div class="w-1 h-1 bg-gray-400 rounded-full">&nbsp;</div>
-              <div class="w-1 h-1 bg-gray-400 rounded-full">&nbsp;</div>
-              <div class="w-1 h-1 bg-gray-400 rounded-full">&nbsp;</div>
-              <div class="w-1 h-1 bg-gray-400 rounded-full">&nbsp;</div>
+              <div class="w-1 h-1 bg-gray-500 rounded-full">&nbsp;</div>
+              <div class="w-1 h-1 bg-gray-500 rounded-full">&nbsp;</div>
+              <div class="w-1 h-1 bg-gray-500 rounded-full">&nbsp;</div>
+              <div class="w-1 h-1 bg-gray-500 rounded-full">&nbsp;</div>
+              <div class="w-1 h-1 bg-gray-500 rounded-full">&nbsp;</div>
+              <div class="w-1 h-1 bg-gray-500 rounded-full">&nbsp;</div>
             </div>
           </div>
         </div>
