@@ -100,8 +100,8 @@ function Header() {
               </A>
             </Show>
           </div>
-          <div class="w-fit space-x-6 md:space-x-10 pt-3 md:pt-3 text-sm flex">
-            <A
+          <div class="w-fit space-x-6 md:space-x-10 pt-0 md:pt-0 text-sm flex">
+            {/* <A
               href="/gists"
               class="hover:opacity-60 underline decoration-dashed decoration-purple-600"
             >
@@ -112,7 +112,21 @@ function Header() {
               class="hover:opacity-60 underline decoration-dashed decoration-purple-600"
             >
               What is OffK?
-            </A>
+            </A> */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-10"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+              />
+            </svg>
           </div>
         </div>
       </header>

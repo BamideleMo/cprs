@@ -74,8 +74,8 @@ function PostTr(props) {
                         Begin WhatsApp Chat
                       </a>
                       <p>
-                        Click the green button above to start a WhatsApp chat
-                        with the poster.
+                        Click the green button above to start a direct WhatsApp
+                        chat with the poster.
                       </p>
                     </div>
                   }
