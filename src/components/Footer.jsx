@@ -17,7 +17,7 @@ function Footer(props) {
               <span class="text-black">
                 FIND or POST Hostel Items for Sale:
               </span>{" "}
-              <span class="">Fast, Easy, No Stress!</span>
+              <span class="block">Fast, Easy, No Stress!</span>
             </span>
             <span class="block md:inline">
               Copyright &copy; {new Date().getUTCFullYear()}.

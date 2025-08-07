@@ -102,10 +102,10 @@ function PostTr(props) {
             )}
           </div>
         </td> */}
-        <td class="p-2 md:p-3 border-x border-dashed border-purple-800 space-y-2">
+        <td class="p-2 md:p-4 border-x border-dashed border-purple-800 space-y-2">
           <div class="flex flex-col md:flex-row md:justify-between">
             <div>
-              <div class="flex space-x-1">
+              <div class="flex space-x-1 md:space-x-2">
                 <div class="text-[11px] text-gray-600">
                   {props.rsc.days === 0 ? (
                     <span class="capitalize">Today</span>
@@ -115,7 +115,7 @@ function PostTr(props) {
                     props.rsc.days + " Days Ago"
                   )}
                 </div>
-                <span class="block mt-0 space-x-1 text-[11px]">
+                <span class="block mt-0 space-x-1 md:space-x-2 text-[11px]">
                   <span class="bg-orange-300 border border-orange-600 p-0.5 rounded">
                     {props.rsc.category}
                   </span>

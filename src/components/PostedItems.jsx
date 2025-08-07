@@ -236,7 +236,7 @@ function PostedItems() {
                           </span>
                         </h2>
 
-                        <div class="mt-0.5 flex space-x-4 md:space-x-4">
+                        <div class="mt-0.5 flex space-x-6 md:space-x-6">
                           <div>
                             <span
                               onClick={() => {
