@@ -91,19 +91,30 @@ function PostTr(props) {
         onClick={() => getWhatsApp(props.rsc.id)}
         class="border-b border-dashed border-purple-800 hover:bg-purple-200 cursor-pointer"
       >
-        <td class="p-1 md:p-3 text-xs leading-none">
-          {props.rsc.days === 0 ? (
-            <span class="capitalize">Today</span>
-          ) : props.rsc.days <= 1 ? (
-            props.rsc.days + " day ago"
-          ) : (
-            props.rsc.days + " days ago"
-          )}
-        </td>
+        {/* <td class="p-1 md:p-3 text-xs leading-none flex items-start">
+          <div>
+            {props.rsc.days === 0 ? (
+              <span class="capitalize">Today</span>
+            ) : props.rsc.days <= 1 ? (
+              props.rsc.days + " day ago"
+            ) : (
+              props.rsc.days + " days ago"
+            )}
+          </div>
+        </td> */}
         <td class="p-2 md:p-3 border-x border-dashed border-purple-800 space-y-2">
           <div class="flex flex-col md:flex-row md:justify-between">
             <div>
               <div class="flex space-x-1">
+                <div class="text-[11px] text-gray-600">
+                  {props.rsc.days === 0 ? (
+                    <span class="capitalize">Today</span>
+                  ) : props.rsc.days <= 1 ? (
+                    props.rsc.days + " Day Ago"
+                  ) : (
+                    props.rsc.days + " Days Ago"
+                  )}
+                </div>
                 <span class="block mt-0 space-x-1 text-[11px]">
                   <span class="bg-orange-300 border border-orange-600 p-0.5 rounded">
                     {props.rsc.category}
@@ -142,7 +153,7 @@ function PostTr(props) {
             </div>
           </div>
         </td>
-        <td class="p-1 md:px-3 text-xs -space-y-0.5">
+        {/* <td class="p-1 md:px-3 text-xs -space-y-0.5">
           <div class="w-fit mx-auto flex flex-col lg:flex-row lg:space-x-1">
             <span class="block text-center lg:inline">Chat</span>
             <svg
@@ -160,7 +171,7 @@ function PostTr(props) {
               />
             </svg>
           </div>
-        </td>
+        </td> */}
       </tr>
     </>
   );
