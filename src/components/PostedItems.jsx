@@ -227,17 +227,20 @@ function PostedItems() {
               >
                 <thead>
                   <tr class="border-t border-dashed border-purple-800">
-                    <td colspan="3" class="px-2 py-3">
+                    <td
+                      colspan="3"
+                      class="px-2 py-3 bg-slate-100 text-black border-y border-dashed border-purple-800"
+                    >
                       <div class="flex justify-between">
-                        <h2 class="font-normal mt-2 -ml-1 flex">
+                        <h2 class="font-normal -ml-1 flex">
                           <span>📍</span>{" "}
                           <span class="lg:-mt-0.5 font-semibold text-slate-800">
                             Recent Posts:
                           </span>
                         </h2>
 
-                        <div class="mt-0.5 flex space-x-6 md:space-x-6">
-                          <div>
+                        <div class="pt-0 flex">
+                          {/* <div>
                             <span
                               onClick={() => {
                                 setShowModal(true);
@@ -284,13 +287,31 @@ function PostedItems() {
                                 />
                               </svg>
                             </span>
+                          </div> */}
+                          <div
+                            onClick={() => {
+                              setShowModal(true);
+                              setModalContent("search");
+                            }}
+                            class="cursor-pointer text-purple-600 hover:opacity-60 border-r border-dashed border-purple-800 pr-4"
+                          >
+                            Search
+                          </div>
+                          <div
+                            onClick={() => {
+                              setShowModal(true);
+                              setModalContent("filter");
+                            }}
+                            class="cursor-pointer text-purple-600 hover:opacity-60 pl-4"
+                          >
+                            Filter
                           </div>
                         </div>
                       </div>
                     </td>
                   </tr>
-                  <tr class="font-normal bg-slate-300 text-black border-y border-dashed border-purple-800 space-x-1">
-                    {/* <td class="w-10 md:w-24 p-1 md:px-3">
+                  {/* <tr class="font-normal bg-slate-300 text-black border-y border-dashed border-purple-800 space-x-1"> */}
+                  {/* <td class="w-10 md:w-24 p-1 md:px-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -306,10 +327,10 @@ function PostedItems() {
                         />
                       </svg>
                     </td> */}
-                    <td class="p-1 md:px-3 border-x border-dashed border-purple-800">
+                  {/* <td class="p-1 md:px-3 border-x border-dashed border-purple-800">
                       Description
-                    </td>
-                    {/* <td class="lg:w-24 p-1 md:px-3">
+                    </td> */}
+                  {/* <td class="lg:w-24 p-1 md:px-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -325,7 +346,7 @@ function PostedItems() {
                         />
                       </svg>
                     </td> */}
-                  </tr>
+                  {/* </tr> */}
                 </thead>
                 <tbody>
                   <Show
