@@ -6,6 +6,7 @@ import { Select } from "./Select";
 
 function Header() {
   const [showWhichUni, setShowWhichUni] = createSignal(false);
+  const [showMenu, setShowMenu] = createSignal(false);
   const [notAvailable, setNotAvailable] = createSignal(false);
 
   const doUni = (val) => {
@@ -90,6 +91,54 @@ function Header() {
           </div>
         </div>
       </Show>
+      <Show when={showMenu()}>
+        <div class="fixed z-40 bg-slate-900 bg-opacity-90 flex items-center h-screen w-screen top-0 bottom-0 left-0 right-0">
+          <div class="w-11/12 sm:w-[360px] mx-auto bg-white p-4 rounded-lg">
+            <h2 class="font-normal mb-4 border-b pb-4 flex justify-between">
+              <div class="text-xl text-purple-800">&nbsp;</div>
+              <div
+                onClick={() => setShowMenu(false)}
+                class="-mt-0.5 text-gray-400 hover:opacity-60 cursor-pointer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+              </div>
+            </h2>
+            <div class="space-y-6">
+              <A
+                href="/what-is-offk"
+                class="block bg-purple-50 hover:opacity-60 p-2 rounded border"
+              >
+                <b>About OffK.ng</b>
+                <br />
+                OffK.ng is a simple website where students can post and find
+                hostel items for sale. <u>Learn more</u>.
+              </A>
+              <A
+                href="/gists"
+                class="block bg-purple-50 hover:opacity-60 p-2 rounded border"
+              >
+                <b>OffK Convos</b>
+                <br />
+                Interesting and informative conversations about happenings on
+                campus. <u>See latest episode</u>.
+              </A>
+            </div>
+          </div>
+        </div>
+      </Show>
       <header class=" py-3 px-2">
         <div class="w-full px-1 sm:w-[620px] 2xl:w-[900px] flex justify-between mx-auto">
           <div class="flex flex-col -space-y-2">
@@ -113,7 +162,10 @@ function Header() {
             >
               What is OffK?
             </A> */}
-            <div class="grid grid-cols-3 gap-2 hover:opacity-60 cursor-pointer">
+            <div
+              onClick={() => setShowMenu(true)}
+              class="grid grid-cols-3 gap-2 hover:opacity-60 cursor-pointer"
+            >
               <div class="w-1 h-1 bg-gray-500 rounded-full">&nbsp;</div>
               <div class="w-1 h-1 bg-gray-500 rounded-full">&nbsp;</div>
               <div class="w-1 h-1 bg-gray-500 rounded-full">&nbsp;</div>
