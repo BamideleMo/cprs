@@ -121,7 +121,7 @@ function Header() {
                 href="/what-is-offk"
                 class="block bg-purple-50 hover:opacity-60 p-2 rounded border"
               >
-                <b>About OffK.ng</b>
+                <b class="text-purple-800">About OffK.ng</b>
                 <br />
                 OffK.ng is a simple website where students can post and find
                 hostel items for sale. <u>Learn more</u>.
@@ -130,7 +130,7 @@ function Header() {
                 href="/gists"
                 class="block bg-purple-50 hover:opacity-60 p-2 rounded border"
               >
-                <b>OffK Convos</b>
+                <b class="text-purple-800">OffK Convos</b>
                 <br />
                 Interesting and informative conversations about happenings on
                 campus. <u>See latest episode</u>.
