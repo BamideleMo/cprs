@@ -21,7 +21,7 @@ function App() {
       <div class="bg-white text-sm">
         <Header />
         <Hero />
-        <section class="w-full px-1 sm:w-[620px] 2xl:w-[900px] mx-auto">
+        <section class="w-full px-2 sm:w-[620px] 2xl:w-[900px] mx-auto">
           <PostedItems />
         </section>
         <Footer />

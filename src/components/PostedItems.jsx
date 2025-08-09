@@ -214,7 +214,6 @@ function PostedItems() {
           </div>
         </div>
       </Show>
-
       <div class="mt-3 space-y-6 text-sm md:text-sm">
         <Show
           when={resources.loading}
@@ -223,13 +222,13 @@ function PostedItems() {
               <table
                 cellpadding="0"
                 cellspacing="0"
-                class="w-full border-x border-black border-dashed"
+                class="w-full border-x border-black "
               >
                 <thead>
-                  <tr class="border-t border-dashed border-black">
+                  <tr class="border-t  border-black">
                     <td
                       colspan="3"
-                      class="px-2 py-3 bg-black text-white border-y border-dashed border-black"
+                      class="px-2 py-3 bg-black text-white border-y border-black"
                     >
                       <div class="flex justify-between">
                         <h2 class="font-normal -ml-1 flex">
@@ -245,7 +244,7 @@ function PostedItems() {
                               setShowModal(true);
                               setModalContent("search");
                             }}
-                            class="cursor-pointer hover:opacity-60 border-r border-dashed border-white pr-4"
+                            class="cursor-pointer hover:opacity-60 border-r  border-white pr-4"
                           >
                             Search
                           </div>
@@ -289,7 +288,7 @@ function PostedItems() {
                       </>
                     }
                   >
-                    <tr class="border-b border-dashed border-black hover:bg-purple-50 cursor-pointer">
+                    <tr class="border-b  border-black hover:bg-purple-50 cursor-pointer">
                       <td
                         colspan={3}
                         class="p-2 md:p-3 text-xs text-center text-gray-600"

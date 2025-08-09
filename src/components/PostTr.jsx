@@ -89,9 +89,9 @@ function PostTr(props) {
       </Show>
       <tr
         onClick={() => getWhatsApp(props.rsc.id)}
-        class="border-b border-dashed border-black hover:bg-purple-100 cursor-pointer"
+        class="border-b  border-black hover:bg-purple-100 cursor-pointer"
       >
-        <td class="p-2 md:p-4 border-x border-dashed border-black space-y-2">
+        <td class="p-2 md:p-4 border-x  border-black space-y-2">
           <div class="flex flex-col md:flex-row md:justify-between">
             <div>
               <div class="flex space-x-1 md:space-x-2">
