@@ -52,7 +52,7 @@ function PostTr(props) {
                 <Close />
               </span>
             </div>
-            <div class="bg-white p-2 sm:p-4 border-t-8 border-purple-800 py-4">
+            <div class="bg-white p-2 sm:p-4 border-t-8 border-black py-4">
               <h2 class="font-normal text-xl text-purple-800 text-center mb-4 border-b pb-4">
                 Chat With Poster
               </h2>
@@ -89,10 +89,10 @@ function PostTr(props) {
       </Show>
       <tr
         onClick={() => getWhatsApp(props.rsc.id)}
-        class="border-b-2 border-dashed border-purple-800 hover:bg-purple-100 cursor-pointer"
+        class="border-b-2 border-dashed border-black hover:bg-purple-100 cursor-pointer"
       >
         
-        <td class="p-2 md:p-4 border-x-2 border-dashed border-purple-800 space-y-2">
+        <td class="p-2 md:p-4 border-x-2 border-dashed border-black space-y-2">
           <div class="flex flex-col md:flex-row md:justify-between">
             <div>
               <div class="flex space-x-1 md:space-x-2">

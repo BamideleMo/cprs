@@ -195,7 +195,7 @@ function PostedItems() {
             </div>
             <Switch>
               <Match when={modalContent() === "filter"}>
-                <div class="bg-white p-2 sm:p-4 border-t-8 border-purple-800 py-4">
+                <div class="bg-white p-2 sm:p-4 border-t-8 border-black py-4">
                   <h2 class="font-normal text-xl text-purple-800 text-center mb-4 border-b pb-4">
                     Filter by Category
                   </h2>
@@ -203,7 +203,7 @@ function PostedItems() {
                 </div>
               </Match>
               <Match when={modalContent() === "search"}>
-                <div class="bg-white p-2 sm:p-4 border-t-8 border-purple-800 py-4">
+                <div class="bg-white p-2 sm:p-4 border-t-8 border-black py-4">
                   <h2 class="font-normal text-xl text-purple-800 text-center mb-4 border-b pb-4">
                     Search List
                   </h2>
@@ -223,77 +223,29 @@ function PostedItems() {
               <table
                 cellpadding="0"
                 cellspacing="0"
-                class="w-full border-x-2 border-purple-800 border-dashed"
+                class="w-full border-x-2 border-black border-dashed"
               >
                 <thead>
-                  <tr class="border-t-2 border-dashed border-purple-800">
+                  <tr class="border-t-2 border-dashed border-black">
                     <td
                       colspan="3"
-                      class="px-2 py-3 bg-slate-100 text-black border-y-2 border-dashed border-purple-800"
+                      class="px-2 py-3 bg-black text-white border-y-2 border-dashed border-black"
                     >
                       <div class="flex justify-between">
                         <h2 class="font-normal -ml-1 flex">
                           <span>📍</span>{" "}
-                          <span class="lg:-mt-0.5 font-semibold text-slate-800">
+                          <span class="lg:-mt-0.5 font-semibold">
                             Recent Posts:
                           </span>
                         </h2>
 
                         <div class="pt-0 flex">
-                          {/* <div>
-                            <span
-                              onClick={() => {
-                                setShowModal(true);
-                                setModalContent("search");
-                              }}
-                              class="block w-fit p-1.5 rounded-full text-white bg-slate-800 hover:opacity-60 cursor-pointer"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="size-4"
-                              >
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-                                />
-                              </svg>
-                            </span>
-                          </div>
-                          <div>
-                            <span
-                              onClick={() => {
-                                setShowModal(true);
-                                setModalContent("filter");
-                              }}
-                              class="block w-fit p-1.5 rounded-full text-white bg-slate-800 hover:opacity-60 cursor-pointer"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="size-4"
-                              >
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 0 1-.659 1.591l-5.432 5.432a2.25 2.25 0 0 0-.659 1.591v2.927a2.25 2.25 0 0 1-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 0 0-.659-1.591L3.659 7.409A2.25 2.25 0 0 1 3 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0 1 12 3Z"
-                                />
-                              </svg>
-                            </span>
-                          </div> */}
                           <div
                             onClick={() => {
                               setShowModal(true);
                               setModalContent("search");
                             }}
-                            class="cursor-pointer text-purple-600 hover:opacity-60 border-r border-dashed border-purple-800 pr-4"
+                            class="cursor-pointer hover:opacity-60 border-r border-dashed border-white pr-4"
                           >
                             Search
                           </div>
@@ -302,7 +254,7 @@ function PostedItems() {
                               setShowModal(true);
                               setModalContent("filter");
                             }}
-                            class="cursor-pointer text-purple-600 hover:opacity-60 pl-4"
+                            class="cursor-pointer hover:opacity-60 pl-4"
                           >
                             Filter
                           </div>
@@ -338,7 +290,7 @@ function PostedItems() {
                       </>
                     }
                   >
-                    <tr class="border-b-2 border-dashed border-purple-800 hover:bg-purple-50 cursor-pointer">
+                    <tr class="border-b-2 border-dashed border-black hover:bg-purple-50 cursor-pointer">
                       <td
                         colspan={3}
                         class="p-2 md:p-3 text-xs text-center text-gray-600"
