@@ -223,13 +223,13 @@ function PostedItems() {
               <table
                 cellpadding="0"
                 cellspacing="0"
-                class="w-full border-x-2 border-black border-dashed"
+                class="w-full border-x border-black border-dashed"
               >
                 <thead>
-                  <tr class="border-t-2 border-dashed border-black">
+                  <tr class="border-t border-dashed border-black">
                     <td
                       colspan="3"
-                      class="px-2 py-3 bg-black text-white border-y-2 border-dashed border-black"
+                      class="px-2 py-3 bg-black text-white border-y border-dashed border-black"
                     >
                       <div class="flex justify-between">
                         <h2 class="font-normal -ml-1 flex">
@@ -262,7 +262,6 @@ function PostedItems() {
                       </div>
                     </td>
                   </tr>
-                  
                 </thead>
                 <tbody>
                   <Show
@@ -290,7 +289,7 @@ function PostedItems() {
                       </>
                     }
                   >
-                    <tr class="border-b-2 border-dashed border-black hover:bg-purple-50 cursor-pointer">
+                    <tr class="border-b border-dashed border-black hover:bg-purple-50 cursor-pointer">
                       <td
                         colspan={3}
                         class="p-2 md:p-3 text-xs text-center text-gray-600"
