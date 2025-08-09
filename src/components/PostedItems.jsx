@@ -228,12 +228,12 @@ function PostedItems() {
                   <tr class="border-t  border-black">
                     <td
                       colspan="3"
-                      class="px-2 py-3 bg-black text-white border-y border-black"
+                      class="px-2 py-3 bg-slate-700 text-white border-y border-black"
                     >
                       <div class="flex justify-between">
                         <h2 class="font-normal -ml-1 flex">
                           <span>📍</span>{" "}
-                          <span class="lg:-mt-0.5 font-semibold">
+                          <span class="lg:-mt-0.5 uppercase">
                             Recent Posts:
                           </span>
                         </h2>

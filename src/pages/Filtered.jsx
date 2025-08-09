@@ -118,15 +118,15 @@ function Filtered() {
                   <tr class="border-t border-black">
                     <td
                       colspan="3"
-                      class="px-2 py-3 bg-slate-100 text-black border-y border-black"
+                      class="px-2 py-3 bg-slate-700 text-white border-y border-black"
                     >
                       <div class="flex justify-between">
                         <h2 class="font-normal mt-2 -ml-1 flex">
                           <span>📍</span>{" "}
-                          <span class="md:-mt-0.5 font-semibold text-slate-800">
-                            Filtered for:{" "}
-                            <span class="text-purple-700 font-normal">
-                              {searchParams.item}
+                          <span class="md:-mt-0.5">
+                            <span class="uppercase">Filtered for:</span>{" "}
+                            <span class="text-gray-400 font-normal">
+                              {searchParams.category}
                             </span>
                           </span>
                         </h2>
@@ -134,7 +134,7 @@ function Filtered() {
                         <div class="mt-0.5">
                           <A
                             href="/"
-                            class="block w-fit p-1.5 rounded-full text-white bg-slate-800 hover:opacity-60 cursor-pointer"
+                            class="block w-fit p-1.5 rounded-full text-white bg-black hover:opacity-60 cursor-pointer"
                           >
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
