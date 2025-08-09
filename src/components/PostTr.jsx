@@ -89,20 +89,10 @@ function PostTr(props) {
       </Show>
       <tr
         onClick={() => getWhatsApp(props.rsc.id)}
-        class="border-b border-dashed border-purple-800 hover:bg-purple-100 cursor-pointer"
+        class="border-b-2 border-dashed border-purple-800 hover:bg-purple-100 cursor-pointer"
       >
-        {/* <td class="p-1 md:p-3 text-xs leading-none flex items-start">
-          <div>
-            {props.rsc.days === 0 ? (
-              <span class="capitalize">Today</span>
-            ) : props.rsc.days <= 1 ? (
-              props.rsc.days + " day ago"
-            ) : (
-              props.rsc.days + " days ago"
-            )}
-          </div>
-        </td> */}
-        <td class="p-2 md:p-4 border-x border-dashed border-purple-800 space-y-2">
+        
+        <td class="p-2 md:p-4 border-x-2 border-dashed border-purple-800 space-y-2">
           <div class="flex flex-col md:flex-row md:justify-between">
             <div>
               <div class="flex space-x-1 md:space-x-2">

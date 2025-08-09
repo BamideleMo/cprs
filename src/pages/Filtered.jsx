@@ -112,13 +112,13 @@ function Filtered() {
               <table
                 cellpadding="0"
                 cellspacing="0"
-                class="w-full border-x border-purple-800 border-dashed"
+                class="w-full border-x-2 border-purple-800 border-dashed"
               >
                 <thead>
-                  <tr class="border-t border-dashed border-purple-800">
+                  <tr class="border-t-2 border-dashed border-purple-800">
                     <td
                       colspan="3"
-                      class="px-2 py-3 bg-slate-100 text-black border-y border-dashed border-purple-800"
+                      class="px-2 py-3 bg-slate-100 text-black border-y-2 border-dashed border-purple-800"
                     >
                       <div class="flex justify-between">
                         <h2 class="font-normal mt-2 -ml-1 flex">
@@ -168,7 +168,7 @@ function Filtered() {
                           </For>
                         }
                       >
-                        <tr class="border-b border-dashed border-purple-800 hover:bg-purple-50 cursor-pointer">
+                        <tr class="border-b-2 border-dashed border-purple-800 hover:bg-purple-50 cursor-pointer">
                           <td
                             colspan={3}
                             class="p-2 md:p-3 text-xs text-center text-gray-600"
