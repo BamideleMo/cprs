@@ -52,7 +52,7 @@ function PostTr(props) {
                 <Close />
               </span>
             </div>
-            <div class="bg-white p-2 sm:p-4 border-t-8 border-black py-4">
+            <div class="bg-white p-2 sm:p-4 border-t-8 border-purple-800 py-4">
               <h2 class="font-normal text-xl text-purple-800 text-center mb-4 border-b pb-4">
                 Chat With Poster
               </h2>
