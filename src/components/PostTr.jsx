@@ -89,13 +89,13 @@ function PostTr(props) {
       </Show>
       <tr
         onClick={() => getWhatsApp(props.rsc.id)}
-        class="border-b  border-black hover:bg-purple-100 cursor-pointer"
+        class="hover:bg-purple-100 cursor-pointer border-b border-dashed border-gray-600"
       >
-        <td class="p-2 md:p-4 border-x  border-black space-y-2">
+        <td class="py-4 space-y-2">
           <div class="flex flex-col md:flex-row md:justify-between">
             <div>
-              <div class="flex space-x-1 md:space-x-2">
-                <span class="block mt-0 space-x-1 md:space-x-2 text-[11px]">
+              <div class="flex justify-between md:space-x-2 text-[11px]">
+                <span class="block mt-0 space-x-1 md:space-x-2">
                   <span class="bg-white text-gray-600 border border-gray-800 p-0.5 rounded">
                     {props.rsc.days === 0 ? (
                       <span class="capitalize">Today</span>
@@ -108,23 +108,25 @@ function PostTr(props) {
                   <span class="bg-orange-300 border border-orange-600 p-0.5 rounded">
                     {props.rsc.category}
                   </span>
-                  <span class=" bg-gray-300 border border-gray-600 p-0.5 rounded">
+                </span>
+                <span class="-mt-0 flex space-x-1">
+                  <span class="">
                     <b>ID:</b> K{props.rsc.id}
                   </span>
-                </span>
-                <span class="w-fit">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="size-5 text-gray-600"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-5 text-gray-600"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
                 </span>
               </div>
               <div class="block my-1.5 text-gray-600 space-x-1">

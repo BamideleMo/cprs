@@ -222,16 +222,16 @@ function PostedItems() {
               <table
                 cellpadding="0"
                 cellspacing="0"
-                class="w-full border-x border-black "
+                class="w-full"
               >
                 <thead>
-                  <tr class="border-t  border-black">
+                  <tr class="">
                     <td
                       colspan="3"
-                      class="px-2 py-3 bg-slate-700 text-white border-y border-black"
+                      class="py-3 font-bold text-slate-900 border-y border-black"
                     >
                       <div class="flex justify-between">
-                        <h2 class="font-normal -ml-1 flex">
+                        <h2 class="-ml-1 flex">
                           <span>📍</span>{" "}
                           <span class="lg:-mt-0.5 uppercase">
                             Recent Posts:
@@ -244,7 +244,7 @@ function PostedItems() {
                               setShowModal(true);
                               setModalContent("search");
                             }}
-                            class="cursor-pointer hover:opacity-60 border-r  border-white pr-4"
+                            class="cursor-pointer hover:opacity-60 border-r  border-slate-900 pr-4"
                           >
                             Search
                           </div>
