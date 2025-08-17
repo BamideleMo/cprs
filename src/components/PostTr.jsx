@@ -130,16 +130,19 @@ function PostTr(props) {
                 </span>
               </div>
               <div class="block my-1.5 text-gray-600 space-x-1">
-                <b class="text-purple-900">{props.rsc.item}:</b>
+                <b class="text-purple-800">{props.rsc.item}:</b>
                 <span>{props.rsc.description}</span>
               </div>
-              <div class="space-x-1 flex">
-                <span>
-                  <img src={naira} class="h-5" />
-                </span>
-                <span class="text-black mt-0 font-semibold">
-                  {props.rsc.price}
-                </span>
+              <div class="flex justify-between">
+                <div class="space-x-1 flex">
+                  <span>
+                    <img src={naira} class="h-5" />
+                  </span>
+                  <span class="text-black mt-0 font-semibold">
+                    {props.rsc.price}
+                  </span>
+                </div>
+                <div class="text-xs text-green-600 pt-0.5">WhatsApp Chat</div>
               </div>
             </div>
           </div>
