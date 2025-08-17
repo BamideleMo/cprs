@@ -133,8 +133,8 @@ function PostTr(props) {
                 <b class="text-purple-800">{props.rsc.item}:</b>
                 <span>{props.rsc.description}</span>
               </div>
-              <div class="flex justify-between">
-                <div class="space-x-1 flex">
+              <div class="flex justify-between space-x-2">
+                <div class="w-2/3 overflow-hidden space-x-1 flex">
                   <span>
                     <img src={naira} class="h-5" />
                   </span>
@@ -142,7 +142,7 @@ function PostTr(props) {
                     {props.rsc.price}
                   </span>
                 </div>
-                <div class="text-xs text-green-600 pt-0.5">WhatsApp Chat</div>
+                <div class="w-1/3 text-xs text-green-600 pt-0.5">WhatsApp Chat</div>
               </div>
             </div>
           </div>
