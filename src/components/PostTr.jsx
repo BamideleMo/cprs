@@ -142,7 +142,7 @@ function PostTr(props) {
                     {props.rsc.price}
                   </span>
                 </div>
-                <div class="w-1/3 text-xs text-green-600 pt-0.5">
+                <div class="w-1/3 text-xs font-semibold text-green-600 pt-0.5">
                   WhatsApp Chat
                 </div>
               </div>
