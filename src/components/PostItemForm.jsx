@@ -12,7 +12,7 @@ const schema = z.object({
   item: z.string().min(1, "*Invalid"),
   price: z.string().min(1, "*Invalid"),
   number: z.string().length(11, "*Invalid"),
-  description: z.string().min(100, "*Too short").max(100, "*Too much"),
+  description: z.string().min(60, "*Too short").max(100, "*Too much"),
 });
 
 const VITE_API_URL = import.meta.env["VITE_API_URL"];
