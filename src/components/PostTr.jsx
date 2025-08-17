@@ -89,7 +89,7 @@ function PostTr(props) {
       </Show>
       <tr
         onClick={() => getWhatsApp(props.rsc.id)}
-        class="hover:bg-purple-100 cursor-pointer border-b border-dashed border-gray-600"
+        class="hover:bg-purple-100 cursor-pointer border-b border-dashed border-black"
       >
         <td class="py-4 space-y-2">
           <div class="flex flex-col md:flex-row md:justify-between">
@@ -142,7 +142,9 @@ function PostTr(props) {
                     {props.rsc.price}
                   </span>
                 </div>
-                <div class="w-1/3 text-xs text-green-600 pt-0.5">WhatsApp Chat</div>
+                <div class="w-1/3 text-xs text-green-600 pt-0.5">
+                  WhatsApp Chat
+                </div>
               </div>
             </div>
           </div>
