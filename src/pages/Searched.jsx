@@ -109,40 +109,33 @@ function Searched() {
             </div>
 
             <div class="mt-4 space-y-6 text-sm md:text-sm">
-              <table
-                cellpadding="0"
-                cellspacing="0"
-                class="w-full border-x border-black "
-              >
+              <table cellpadding="0" cellspacing="0" class="w-full">
                 <thead>
-                  <tr class="border-t border-black">
+                  <tr class="">
                     <td
                       colspan="3"
-                      class="px-2 py-3 bg-slate-700 text-white border-y border-black"
+                      class="py-3 font-bold text-slate-900 border-t border-black"
                     >
                       <div class="flex justify-between">
-                        <h2 class="font-normal mt-2 -ml-1 flex">
+                        <h2 class="-ml-1 flex">
                           <span>📍</span>{" "}
-                          <span class="md:-mt-0.5">
+                          <span class="md:-mt-0.5 flex space-x-2">
                             <span class="uppercase">Searched for:</span>{" "}
-                            <span class="text-gray-400 font-normal">
+                            <span class="text-gray-600 font-normal -mt-0.5">
                               {searchParams.search}
                             </span>
                           </span>
                         </h2>
 
-                        <div class="mt-0.5">
-                          <A
-                            href="/"
-                            class="block w-fit p-1.5 rounded-full text-white bg-black hover:opacity-60 cursor-pointer"
-                          >
+                        <div class="pt-0 flex">
+                          <A href="/" class="hover:opacity-60 cursor-pointer">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
                               viewBox="0 0 24 24"
                               stroke-width="1.5"
                               stroke="currentColor"
-                              class="size-4"
+                              class="size-4 text-black"
                             >
                               <path
                                 stroke-linecap="round"

@@ -89,85 +89,75 @@ function PostTr(props) {
       </Show>
       <tr
         onClick={() => getWhatsApp(props.rsc.id)}
-        class="hover:bg-purple-100 cursor-pointer border-b border-dashed border-black"
+        class="hover:underline cursor-pointer border-t border-dashed border-black"
       >
-        <td class="py-4 space-y-2">
-          <div class="flex flex-col md:flex-row md:justify-between">
-            <div>
-              <div class="flex justify-between md:space-x-2 text-[11px]">
-                <span class="block mt-0 space-x-1 md:space-x-2">
-                  <span class="bg-white text-gray-600 border border-gray-800 p-0.5 rounded">
-                    {props.rsc.days === 0 ? (
-                      <span class="capitalize">Today</span>
-                    ) : props.rsc.days <= 1 ? (
-                      props.rsc.days + " Day Ago"
-                    ) : (
-                      props.rsc.days + " Days Ago"
-                    )}
-                  </span>
-                  <span class="bg-orange-300 border border-orange-600 p-0.5 rounded">
-                    {props.rsc.category}
-                  </span>
+        <td class="py-5 space-y-2">
+          <div class="text-gray-600">
+            <div class="flex justify-between text-xs">
+              <span class="bg-yellow-100 py-1.5 px-2 rounded-full">
+                {props.rsc.category}
+              </span>
+              <div class="flex space-x-1">
+                <span class="bg-blue-100 py-1.5 px-2 rounded-full">
+                  <b>ID:</b> K{props.rsc.id}
                 </span>
-                <span class="-mt-0 flex space-x-1">
-                  <span class="">
-                    <b>ID:</b> K{props.rsc.id}
-                  </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="mt-1 size-5 text-gray-600"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="py-2">
+              <div class="flex justify-between">
+                <h2 class="text-base text-red-600">{props.rsc.item}</h2>
+              </div>
+              <div class="text-gray-600 text-sm">{props.rsc.description}</div>
+            </div>
+            <div class="flex justify-between mt-3 text-xs text-gray-600">
+              <div class="flex space-x-2">
+                <span class="bg-gray-200 py-1.5 px-2 rounded-full">
+                  {props.rsc.days === 0 ? (
+                    <span class="capitalize">Today</span>
+                  ) : props.rsc.days <= 1 ? (
+                    props.rsc.days + " Day Ago"
+                  ) : (
+                    props.rsc.days + " Days Ago"
+                  )}
+                </span>
+                <span class="flex space-x-1 bg-green-200 py-1.5 px-2 rounded-full">
                   <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="size-5 text-gray-600"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
+                    <img src={naira} class="h-4" />
                   </span>
+                  <span>{props.rsc.price}</span>
                 </span>
               </div>
-              <div class="block my-1.5 text-gray-600 space-x-1">
-                <b class="text-purple-800">{props.rsc.item}:</b>
-                <span>{props.rsc.description}</span>
-              </div>
-              <div class="flex justify-between space-x-2">
-                <div class="w-2/3 overflow-hidden space-x-1 flex">
-                  <span>
-                    <img src={naira} class="h-5" />
-                  </span>
-                  <span class="text-black mt-0 font-semibold">
-                    {props.rsc.price}
-                  </span>
-                </div>
-                <div class="w-1/3 text-xs font-semibold text-green-600 pt-0.5">
-                  WhatsApp Chat
-                </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="mt-0.5 size-6 text-gray-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
               </div>
             </div>
           </div>
         </td>
-        {/* <td class="p-1 md:px-3 text-xs -space-y-0.5">
-          <div class="w-fit mx-auto flex flex-col lg:flex-row lg:space-x-1">
-            <span class="block text-center lg:inline">Chat</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-5 mx-auto"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
-              />
-            </svg>
-          </div>
-        </td> */}
       </tr>
     </>
   );

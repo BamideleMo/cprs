@@ -61,8 +61,11 @@ function PostedItems() {
       const today = new Date();
       const todayString = today.toISOString().slice(0, 10);
 
-      // for (let i = 0; i < arr.length; i++)
-      for (let i = 0; i < 3; i++) {
+      for (
+        let i = 0;
+        i < arr.length;
+        i++ // for (let i = 0; i < 3; i++)
+      ) {
         if (arr[i]) {
           var numOfDays = daysBetweenDates(
             arr[i].created_at.substring(0, 10),
@@ -219,16 +222,12 @@ function PostedItems() {
           when={resources.loading}
           fallback={
             <>
-              <table
-                cellpadding="0"
-                cellspacing="0"
-                class="w-full"
-              >
+              <table cellpadding="0" cellspacing="0" class="w-full">
                 <thead>
                   <tr class="">
                     <td
                       colspan="3"
-                      class="py-3 font-bold text-slate-900 border-y border-black"
+                      class="py-3 font-bold text-slate-900 border-t border-black"
                     >
                       <div class="flex justify-between">
                         <h2 class="-ml-1 flex">
@@ -267,9 +266,6 @@ function PostedItems() {
                     when={noData()}
                     fallback={
                       <>
-                        <For each={resources().listings1}>
-                          {(resource, i) => <PostTr rsc={resource} />}
-                        </For>
                         {advert1() ? (
                           <PromotedTr
                             link={advert1().link}
@@ -279,12 +275,16 @@ function PostedItems() {
                         ) : (
                           ""
                         )}
-                        <For each={resources().listings2}>
+                        <For each={resources().listings1}>
                           {(resource, i) => <PostTr rsc={resource} />}
                         </For>
-                        <For each={resources().listings3}>
+
+                        {/* <For each={resources().listings2}>
                           {(resource, i) => <PostTr rsc={resource} />}
-                        </For>
+                        </For> */}
+                        {/* <For each={resources().listings3}>
+                          {(resource, i) => <PostTr rsc={resource} />}
+                        </For> */}
                       </>
                     }
                   >
