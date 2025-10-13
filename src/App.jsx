@@ -31,7 +31,7 @@ function App() {
             <div class="w-full sm:w-[230px] lg:w-[280px] xl:w-[300px]">
               <div class=" bg-blue-100 rounded-lg p-2">
                 <div class="flex justify-between">
-                  <h2>Advertisement</h2>
+                  <h2>Sponsored</h2>
                   <div class="space-x-3">
                     <span class="text-slate-500 cursor-pointer hover:opacity-60 ">
                       <Question />
