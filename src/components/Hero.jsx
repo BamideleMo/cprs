@@ -37,12 +37,29 @@ function Hero() {
       <section class="-mt-4">
         <div class="w-full px-1 sm:w-[620px] 2xl:w-[900px] mx-auto">
           <div class="mesh-bg pt-16 text-center">
-            <h1 class="text-slate-500 text-xl sm:text-2xl 2xl:text-4xl font-semibold leading-tight lg:leading-8 lg:w-[400px] lg:mx-auto">
-              FIND or POST
-              <div class="text-2xl text-black">Hostel Items for Sale</div>
+            <h1 class="text-slate-500 text-xl sm:text-3xl 2xl:text-4xl font-semibold leading-tight lg:leading-8 lg:w-[400px] lg:mx-auto">
+              FIND & POST
+              <div class="sm:text-3xl text-black">
+                <span class="underline decoration-green-400 decoration-1">
+                  Accommodation
+                </span>
+                ,{" "}
+                <span class="underline decoration-blue-400 decoration-1">
+                  Events
+                </span>
+                ,<br /> &{" "}
+                <span class="underline decoration-red-400 decoration-1">
+                  Items for Sale
+                </span>
+                .
+              </div>
             </h1>
             <h2 class="text-base 2xl:text-lg leading-tight mt-2 text-gray-600">
-              Fast, Easy, No Stress!
+              For{" "}
+              <Show when={JSON.parse(localStorage.getItem("OffK"))}>
+                <span class="bg-purple-100">{JSON.parse(localStorage.getItem("OffK")).uni}</span>
+              </Show>{" "}
+              Students! Easy & Fast.
             </h2>
             <div class="pt-6 space-x-4">
               <span

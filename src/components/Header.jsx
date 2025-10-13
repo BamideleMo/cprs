@@ -139,43 +139,23 @@ function Header() {
           </div>
         </div>
       </Show>
-      <header class=" py-3 px-2">
-        <div class="w-full px-1 sm:w-[620px] 2xl:w-[900px] flex justify-between mx-auto">
+      <header class="py-3 px-2">
+        <div class="w-full px-1 sm:w-[620px] lg:w-[900px] xl:w-[1000px] flex justify-between mx-auto">
           <div class="flex flex-col -space-y-2">
             <Logo />
             <Show when={JSON.parse(localStorage.getItem("OffK"))}>
-              <A href="/" class="text-black text-xs font-semibold">
+              <A href="/" class="mt-2 text-black text-xs font-normal">
                 {JSON.parse(localStorage.getItem("OffK")).uni}
               </A>
             </Show>
           </div>
           <div class="w-fit space-x-6 md:space-x-10 pt-0 md:pt-0 text-sm flex items-center">
-            {/* <A
-              href="/gists"
-              class="hover:opacity-60 underline decoration-dashed decoration-purple-600"
-            >
-              Gists
-            </A>
             <A
-              href="/what-is-offk"
-              class="hover:opacity-60 underline decoration-dashed decoration-purple-600"
+              href="https://newsletter.offk.ng"
+              class="hover:opacity-60 uppercase"
             >
-              What is OffK?
-            </A> */}
-            <div
-              onClick={() => setShowMenu(true)}
-              class="grid grid-cols-3 gap-2 hover:opacity-60 cursor-pointer"
-            >
-              <div class="w-1 h-1 bg-gray-500 rounded-full">&nbsp;</div>
-              <div class="w-1 h-1 bg-gray-500 rounded-full">&nbsp;</div>
-              <div class="w-1 h-1 bg-gray-500 rounded-full">&nbsp;</div>
-              <div class="w-1 h-1 bg-gray-500 rounded-full">&nbsp;</div>
-              <div class="w-1 h-1 bg-gray-500 rounded-full">&nbsp;</div>
-              <div class="w-1 h-1 bg-gray-500 rounded-full">&nbsp;</div>
-              <div class="w-1 h-1 bg-gray-500 rounded-full">&nbsp;</div>
-              <div class="w-1 h-1 bg-gray-500 rounded-full">&nbsp;</div>
-              <div class="w-1 h-1 bg-gray-500 rounded-full">&nbsp;</div>
-            </div>
+              Newsletter
+            </A>
           </div>
         </div>
       </header>

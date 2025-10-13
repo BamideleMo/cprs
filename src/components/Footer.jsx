@@ -8,16 +8,16 @@ function Footer(props) {
         class="mt-10 py-10 mx-2 border-t 
       "
       >
-        <div class="w-full px-1 sm:w-[620px] 2xl:w-[900px] flex justify-between mx-auto">
-          <div class="w-40 space-x-1 text-gray-400">
+        <div class="w-full px-1 sm:w-[620px] lg:w-[900px] xl:w-[1000px] flex justify-between mx-auto">
+          <div class="w-44 space-x-1 text-gray-400">
             <div class="md:hidden -mt-1 mb-0">
               <Logo />
             </div>
             <span class="block mb-6 md:hidden leading-tight">
               <span class="text-black">
-                FIND or POST Hostel Items for Sale:
+                FIND & POST Accommodation, Events, & Items for Sale.
               </span>{" "}
-              <span class="block">Fast, Easy, No Stress!</span>
+              <span class="block">For {JSON.parse(localStorage.getItem("OffK")).uni} Students. <br/>Easy & Fast!</span>
             </span>
             <span class="block md:inline">
               Copyright &copy; {new Date().getUTCFullYear()}.
