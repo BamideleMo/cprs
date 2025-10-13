@@ -31,7 +31,7 @@ function App() {
             <div class="w-full sm:w-[230px] lg:w-[280px] xl:w-[300px]">
               <div class=" bg-blue-100 rounded-lg p-2">
                 <div class="flex justify-between">
-                  <h2>Sponsored</h2>
+                  <h2>Sponsored Post</h2>
                   <div class="space-x-3">
                     <span class="text-slate-500 cursor-pointer hover:opacity-60 ">
                       <Question />
@@ -40,8 +40,10 @@ function App() {
                 </div>
                 <div class="space-y-4 mt-2">
                   <div class="bg-white text-slate-600 text-sm p-3 rounded-lg border border-slate-200">
-                    <h3 class="text-blue-600">Internship Oppurtunity:</h3>
-                    <div>
+                    <h3 class="text-pink-400">
+                      <span class="">Internship Oppurtunity</span>:
+                    </h3>
+                    <div class="">
                       Will you want to work with OnK.ng remotely as a campus
                       content curator and get paid?
                     </div>
@@ -61,31 +63,31 @@ function App() {
               <div class="bg-slate-200 rounded-lg p-2">
                 <div class="flex justify-between">
                   <h2>Latest Post</h2>
-                  <div class="space-x-3 text-slate-600">
-                    <span class="text-purple-800 cursor-pointer hover:opacity-60">
-                      Search
-                    </span>
-                    <span>|</span>
+                  <div class="space-x-3 text-slate-400">
                     <span class="text-purple-800 cursor-pointer hover:opacity-60">
                       Sort
                     </span>
+                    <span>|</span>
+                    <span class="text-purple-800 cursor-pointer hover:opacity-60">
+                      Search
+                    </span>
                   </div>
                 </div>
-                <div class="space-y-4 mt-2">
+                <div class="space-y-2 mt-2">
                   <div class="bg-white text-slate-600 text-sm p-3 rounded-lg border border-slate-200">
                     <div class="flex justify-between">
                       <h3 class="text-green-600">
-                        Available <u>Accommodation</u>:
+                        <span class="">Available Accommodation</span>:
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl p-0.5 cursor-pointer hover:opacity-60">
-                        <Badge bgColor="blue" />
+                      <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
+                        <Badge bgColor="purple" />
                         <User />
                       </div>
                     </div>
-                    <div class="my-2">
+                    <div class="">
                       1 room self-con available very close to main campus.
                     </div>
-                    <div class="flex justify-between">
+                    <div class="flex justify-between mt-1">
                       <span class="bg-yellow-200 border border-yellow-300  px-1 rounded text-xs cursor-pointer hover:opacity-60">
                         450,000
                       </span>
@@ -100,18 +102,18 @@ function App() {
                   <div class="bg-white text-slate-600 text-sm p-3 rounded-lg border border-slate-200">
                     <div class="flex justify-between">
                       <h3 class="text-red-600">
-                        Fashion Item <u>For Sale</u>:
+                        <span class="">Fashion Item For Sale</span>:
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl p-0.5 cursor-pointer hover:opacity-60">
-                        <Badge bgColor="gray" />
+                      <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
+                        <Badge bgColor="white" />
                         <User />
                       </div>
                     </div>
-                    <div class="my-2">
+                    <div class="">
                       Beautiful Polo shirts available for sale at student price.
                     </div>
                     <div>
-                      <div class="flex justify-between">
+                      <div class="flex justify-between mt-1">
                         <span class="bg-yellow-200 border border-yellow-300  px-1 rounded text-xs cursor-pointer hover:opacity-60">
                           4,500
                         </span>
@@ -126,21 +128,47 @@ function App() {
                   </div>
                   <div class="bg-white text-slate-600 text-sm p-3 rounded-lg border border-slate-200">
                     <div class="flex justify-between">
-                      <h3 class="text-cyan-600">
-                        Religious <u>Event</u>:
+                      <h3 class="text-green-600">
+                        <span class="">Request for Accommodation</span>:
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl p-0.5 cursor-pointer hover:opacity-60">
-                        <Badge bgColor="blue" />
+                      <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
+                        <Badge bgColor="purple" />
                         <User />
                       </div>
                     </div>
-                    <div class="my-2">
+                    <div class="">
+                      I need 1 room (not self-con) anywhere around school gate
+                      urgently.
+                    </div>
+                    <div class="flex justify-between mt-1">
+                      <span class="bg-yellow-200 border border-yellow-300  px-1 rounded text-xs cursor-pointer hover:opacity-60">
+                        Budget 250k
+                      </span>
+                      <div class="flex space-x-2 text-xs">
+                        <span class="text-gray-400">15 days ago</span>
+                        <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
+                          Chat Poster
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-white text-slate-600 text-sm p-3 rounded-lg border border-slate-200">
+                    <div class="flex justify-between">
+                      <h3 class="text-blue-600">
+                        <span class="">Religious Event</span>:
+                      </h3>
+                      <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
+                        <Badge bgColor="purple" />
+                        <User />
+                      </div>
+                    </div>
+                    <div class="">
                       Join us at Celebration Victory Assembly for a memorable
                       service this Sunday. There'll be free package for 1st
                       timers.
                     </div>
                     <div>
-                      <div class="flex justify-between">
+                      <div class="flex justify-between mt-1">
                         <span class="bg-yellow-200 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
                           FREE
                         </span>

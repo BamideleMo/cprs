@@ -7,8 +7,8 @@ function Badge(props) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"
-      class="size-4"
-      style={{color:props.bgColor}}
+      class="size-5"
+      style={{ color: props.bgColor }}
     >
       <path
         fill-rule="evenodd"

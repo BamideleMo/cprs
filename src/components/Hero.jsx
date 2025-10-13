@@ -41,27 +41,27 @@ function Hero() {
               FIND & POST
               <div class="sm:text-3xl text-black">
                 <span class="underline decoration-green-400 decoration-1">
-                  Accommodation
+                  Student Accommodation
                 </span>
-                ,{" "}
+                , <br class="sm:hidden" />
                 <span class="underline decoration-blue-400 decoration-1">
                   Events
                 </span>
-                ,<br /> &{" "}
+                , &{" "}
                 <span class="underline decoration-red-400 decoration-1">
-                  Items for Sale
+                  Items For Sale
                 </span>
                 .
               </div>
             </h1>
-            <h2 class="text-base 2xl:text-lg leading-tight mt-2 text-gray-600">
-              For{" "}
+            <h2 class="text-sm 2xl:text-lg leading-tight mt-2 text-gray-600">
+              Created for{" "}
               <Show when={JSON.parse(localStorage.getItem("OffK"))}>
                 <span class="bg-purple-100">
                   {JSON.parse(localStorage.getItem("OffK")).uni}
                 </span>
               </Show>{" "}
-              Students! Easy & Fast.
+              Students!
             </h2>
             <div class="pt-6 space-x-4">
               <span
