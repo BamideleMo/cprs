@@ -29,7 +29,7 @@ function App() {
           {/* <PostedItems /> */}
           <div class="flex flex-col space-y-4 sm:space-y-0 sm:flex-row-reverse justify-between">
             <div class="w-full sm:w-[230px] lg:w-[280px] xl:w-[300px]">
-              <div class=" bg-blue-100 rounded-lg p-2">
+              <div class="bg-blue-100 rounded-lg p-2">
                 <div class="flex justify-between">
                   <h2>Sponsored Post</h2>
                   <div class="space-x-3">
@@ -39,21 +39,32 @@ function App() {
                   </div>
                 </div>
                 <div class="space-y-4 mt-2">
-                  <div class="bg-white text-slate-600 text-sm p-3 rounded-lg border border-slate-200">
-                    <h3 class="text-pink-400">
-                      <span class="">Internship Oppurtunity</span>:
-                    </h3>
-                    <div class="">
-                      Will you want to work with OnK.ng remotely as a campus
-                      content curator and get paid?
+                  <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
+                    <div class="flex justify-between">
+                      <h3 class="text-black">
+                        <span class="text-red-600">For Sale</span>: Handout
+                      </h3>
+                      <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
+                        <Badge bgColor="purple" />
+                        <User />
+                      </div>
                     </div>
-                    <div class="pt-2 text-xs">
-                      <A
-                        href="/"
-                        class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60"
-                      >
-                        See Details
-                      </A>
+                    <div class="text-xs sm:text-sm">
+                      How a university student in Nigeria can start a business
+                      with very little (or no) capital
+                    </div>
+                    <div>
+                      <div class="flex justify-between mt-1 text-xs">
+                        <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
+                          1K for softcopy
+                        </span>
+                        <div class="flex space-x-1">
+                          <span class="text-gray-400">15 days ago</span>
+                          <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
+                            Chat Poster
+                          </span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -62,7 +73,7 @@ function App() {
             <div class="w-full sm:w-[360px] lg:w-[400px] xl:w-[450px]">
               <div class="bg-slate-200 rounded-lg p-2">
                 <div class="flex justify-between">
-                  <h2>Latest Post</h2>
+                  <h2>All Posts</h2>
                   <div class="space-x-3 text-slate-400">
                     <span class="text-purple-800 cursor-pointer hover:opacity-60">
                       Sort
@@ -74,24 +85,25 @@ function App() {
                   </div>
                 </div>
                 <div class="space-y-2 mt-2">
-                  <div class="bg-white text-slate-600 text-sm p-3 rounded-lg border border-slate-200">
+                  <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
                     <div class="flex justify-between">
-                      <h3 class="text-green-600">
-                        <span class="">Available Accommodation</span>:
+                      <h3 class="text-black">
+                        <span class="text-green-600">Accommodation</span>:
+                        Available
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
                         <Badge bgColor="purple" />
                         <User />
                       </div>
                     </div>
-                    <div class="">
+                    <div class="text-xs sm:text-sm">
                       1 room self-con available very close to main campus.
                     </div>
-                    <div class="flex justify-between mt-1">
-                      <span class="bg-yellow-200 border border-yellow-300  px-1 rounded text-xs cursor-pointer hover:opacity-60">
+                    <div class="flex justify-between mt-1 text-xs">
+                      <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
                         450,000
                       </span>
-                      <div class="flex space-x-2 text-xs">
+                      <div class="flex space-x-1">
                         <span class="text-gray-400">15 days ago</span>
                         <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                           Chat Poster
@@ -99,25 +111,25 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  <div class="bg-white text-slate-600 text-sm p-3 rounded-lg border border-slate-200">
+                  <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
                     <div class="flex justify-between">
-                      <h3 class="text-red-600">
-                        <span class="">Fashion Item For Sale</span>:
+                      <h3 class="text-black">
+                        <span class="text-red-600">For Sale</span>: Fashion Item
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
                         <Badge bgColor="white" />
                         <User />
                       </div>
                     </div>
-                    <div class="">
+                    <div class="text-xs sm:text-sm">
                       Beautiful Polo shirts available for sale at student price.
                     </div>
                     <div>
-                      <div class="flex justify-between mt-1">
-                        <span class="bg-yellow-200 border border-yellow-300  px-1 rounded text-xs cursor-pointer hover:opacity-60">
+                      <div class="flex justify-between mt-1 text-xs">
+                        <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
                           4,500
                         </span>
-                        <div class="flex space-x-2 text-xs">
+                        <div class="flex space-x-1">
                           <span class="text-gray-400">5 days ago</span>
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                             Chat Poster
@@ -126,25 +138,26 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  <div class="bg-white text-slate-600 text-sm p-3 rounded-lg border border-slate-200">
+                  <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
                     <div class="flex justify-between">
-                      <h3 class="text-green-600">
-                        <span class="">Request for Accommodation</span>:
+                      <h3 class="text-black">
+                        <span class="text-green-600">Accommodation</span>:
+                        Request
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
                         <Badge bgColor="purple" />
                         <User />
                       </div>
                     </div>
-                    <div class="">
+                    <div class="text-xs sm:text-sm">
                       I need 1 room (not self-con) anywhere around school gate
                       urgently.
                     </div>
-                    <div class="flex justify-between mt-1">
-                      <span class="bg-yellow-200 border border-yellow-300  px-1 rounded text-xs cursor-pointer hover:opacity-60">
+                    <div class="flex justify-between mt-1 text-xs">
+                      <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
                         Budget 250k
                       </span>
-                      <div class="flex space-x-2 text-xs">
+                      <div class="flex space-x-1">
                         <span class="text-gray-400">15 days ago</span>
                         <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                           Chat Poster
@@ -152,27 +165,27 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  <div class="bg-white text-slate-600 text-sm p-3 rounded-lg border border-slate-200">
+                  <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
                     <div class="flex justify-between">
-                      <h3 class="text-blue-600">
-                        <span class="">Religious Event</span>:
+                      <h3 class="text-black">
+                        <span class="text-blue-600">Event</span>: Religious
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
                         <Badge bgColor="purple" />
                         <User />
                       </div>
                     </div>
-                    <div class="">
+                    <div class="text-xs sm:text-sm">
                       Join us at Celebration Victory Assembly for a memorable
                       service this Sunday. There'll be free package for 1st
                       timers.
                     </div>
                     <div>
-                      <div class="flex justify-between mt-1">
-                        <span class="bg-yellow-200 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
+                      <div class="flex justify-between mt-1 text-xs">
+                        <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
                           FREE
                         </span>
-                        <div class="flex space-x-2 text-xs">
+                        <div class="flex space-x-1">
                           <span class="text-gray-400">1 day ago</span>
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                             Chat Poster
