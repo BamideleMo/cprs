@@ -30,58 +30,42 @@ function App() {
           <div class="flex flex-col space-y-4 sm:space-y-0 sm:flex-row-reverse justify-between">
             <div class="w-full sm:w-[230px] lg:w-[280px] xl:w-[300px]">
               <div class="bg-blue-100 rounded-lg p-2">
-                <div>
-                  <div class="flex justify-between">
-                    <h2>Sponsored Post</h2>
-                    <div class="space-x-3">
-                      <span class="text-slate-500 cursor-pointer hover:opacity-60 ">
-                        <Question />
-                      </span>
-                    </div>
-                  </div>
-                  <div class="space-y-4 mt-2">
-                    <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
-                      <div class="flex justify-between">
-                        <h3 class="text-black">
-                          <span class="text-red-600">For Sale</span>: Handout
-                        </h3>
-                        <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
-                          <Badge bgColor="purple" />
-                          <User />
-                        </div>
-                      </div>
-                      <div class="text-xs sm:text-sm">
-                        How a university student in Nigeria can start a business
-                        with very little (or no) capital. Softcopy
-                      </div>
-                      <div>
-                        <div class="flex justify-between mt-1 text-xs">
-                          <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
-                            1K
-                          </span>
-                          <div class="flex space-x-1">
-                            <span class="text-gray-400 capitalize">
-                              12 days
-                            </span>
-                            <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
-                              Chat Poster
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                <div class="flex justify-between">
+                  <h2>Sponsored Post</h2>
+                  <div class="space-x-3">
+                    <span class="text-slate-500 cursor-pointer hover:opacity-60 ">
+                      <Question />
+                    </span>
                   </div>
                 </div>
-
-                <div class="bg-cyan-800 p-2 mt-4 rounded-lg text-white">
-                  <div>
-                    <b>STORY</b>:
-                  </div>
-                  <div class="leading-tight">
-                    <A href="/">
-                      A student discovered OffK.ng & became a student
-                      entrepreneur
-                    </A>
+                <div class="space-y-4 mt-2">
+                  <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
+                    <div class="flex justify-between">
+                      <h3 class="text-black">
+                        <span class="text-red-600">For Sale</span>: Handout
+                      </h3>
+                      <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
+                        <Badge bgColor="purple" />
+                        <User />
+                      </div>
+                    </div>
+                    <div class="text-xs sm:text-sm">
+                      How a university student in Nigeria can start a business
+                      with very little (or no) capital [Softcopy].
+                    </div>
+                    <div>
+                      <div class="flex justify-between mt-1 text-xs">
+                        <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
+                          1K
+                        </span>
+                        <div class="flex space-x-1">
+                          <span class="text-gray-400 capitalize">12 days</span>
+                          <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
+                            Chat Poster
+                          </span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
