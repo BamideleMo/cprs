@@ -37,9 +37,9 @@ function Hero() {
       <section class="-mt-4">
         <div class="w-full px-1 sm:w-[620px] 2xl:w-[900px] mx-auto">
           <div class="mesh-bg pt-16 text-center">
-            <h1 class="boldTxt text-slate-500 text-xl sm:text-2xl 2xl:text-4xl font-semibold leading-tight lg:leading-8 lg:w-[400px] lg:mx-auto">
+            <h1 class="boldTxt text-slate-500 text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl font-semibold leading-tight lg:leading-8 lg:w-[400px] lg:mx-auto">
               FIND & POST
-              <div class="sm:text-2xl text-black">
+              <div class="sm:text-2xl lg:text-3xl 2xl:text-4xl text-black">
                 <span class="underline decoration-green-400 decoration-1">
                   Student Accommodation
                 </span>

@@ -45,7 +45,7 @@ function App() {
                         <span class="text-red-600">For Sale</span>: Handout
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
-                        <Badge bgColor="purple" />
+                        <Badge bgColor="#52adf2" />
                         <User />
                       </div>
                     </div>
@@ -88,7 +88,7 @@ function App() {
                         Available
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
-                        <Badge bgColor="purple" />
+                        <Badge bgColor="#52adf2" />
                         <User />
                       </div>
                     </div>
@@ -141,7 +141,7 @@ function App() {
                         Request
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
-                        <Badge bgColor="purple" />
+                        <Badge bgColor="#52adf2" />
                         <User />
                       </div>
                     </div>
@@ -167,7 +167,7 @@ function App() {
                         <span class="text-blue-600">Event</span>: Religious
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
-                        <Badge bgColor="purple" />
+                        <Badge bgColor="#52adf2" />
                         <User />
                       </div>
                     </div>
