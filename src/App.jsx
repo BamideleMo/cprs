@@ -45,7 +45,7 @@ function App() {
                         <span class="text-red-600 boldTxt">For Sale</span>:
                         &nbsp;<u>Handout</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-50 border border-gray-100 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
+                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
                         <Badge bgColor="#04b076" />
                         <User />
                       </div>
@@ -88,7 +88,7 @@ function App() {
                         <span class="text-cyan-700 boldTxt">Accommodation</span>
                         : &nbsp;<u>For Rent</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-50 border border-gray-100 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
+                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
                         <Badge bgColor="#04b076" />
                         <User />
                       </div>
@@ -115,7 +115,7 @@ function App() {
                         :&nbsp;
                         <u>Fashion Item</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-50 border border-gray-100 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
+                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
                         <Badge bgColor="#000000" />
                         <User />
                       </div>
@@ -143,7 +143,7 @@ function App() {
                         <span class="text-cyan-700 boldTxt">Accommodation</span>
                         : &nbsp;<u>Request</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-50 border border-gray-100 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
+                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
                         <Badge bgColor="#04b076" />
                         <User />
                       </div>
@@ -170,7 +170,7 @@ function App() {
                         <span class="text-blue-600 boldTxt">Event</span>: &nbsp;
                         <u>Religious</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-50 border border-gray-100 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
+                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
                         <Badge bgColor="#04b076" />
                         <User />
                       </div>
