@@ -29,7 +29,7 @@ function App() {
           {/* <PostedItems /> */}
           <div class="flex flex-col space-y-4 sm:space-y-0 sm:flex-row-reverse justify-between">
             <div class="w-full sm:w-[230px] lg:w-[280px] xl:w-[300px]">
-              <div class="bg-blue-100 rounded-lg p-2">
+              <div class="bg-blue-50 rounded-lg p-2">
                 <div class="flex justify-between">
                   <h2>Sponsored Post</h2>
                   <div class="space-x-3">
@@ -72,7 +72,7 @@ function App() {
               </div>
             </div>
             <div class="w-full sm:w-[360px] lg:w-[400px] xl:w-[450px]">
-              <div class="bg-slate-200 rounded-lg p-2">
+              <div class="bg-blue-50 rounded-lg p-2">
                 <div class="flex justify-between">
                   <h2>All Posts</h2>
                   <div class="space-x-3 text-slate-400">
