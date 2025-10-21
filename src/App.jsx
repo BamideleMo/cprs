@@ -55,7 +55,7 @@ function App() {
                       with very little (or no) capital.
                     </div>
                     <div>
-                      <div class="flex justify-between mt-1 text-xs">
+                      <div class="flex justify-between mt-1 lg:mt-3 text-xs">
                         <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
                           1,000 Naira
                         </span>
@@ -96,7 +96,7 @@ function App() {
                     <div class="text-sm">
                       1 room self-con available very close to main campus.
                     </div>
-                    <div class="flex justify-between mt-1 text-xs">
+                    <div class="flex justify-between mt-1 lg:mt-3 text-xs">
                       <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
                         450,000
                       </span>
@@ -123,7 +123,7 @@ function App() {
                       Beautiful Polo shirts available for sale at student price.
                     </div>
                     <div>
-                      <div class="flex justify-between mt-1 text-xs">
+                      <div class="flex justify-between mt-1 lg:mt-3 text-xs">
                         <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
                           4,500
                         </span>
@@ -151,7 +151,7 @@ function App() {
                       I need 1 room (not self-con) anywhere around school gate
                       urgently.
                     </div>
-                    <div class="flex justify-between mt-1 text-xs">
+                    <div class="flex justify-between mt-1 lg:mt-3 text-xs">
                       <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
                         Budget 250k
                       </span>
@@ -180,7 +180,7 @@ function App() {
                       timers.
                     </div>
                     <div>
-                      <div class="flex justify-between mt-1 text-xs">
+                      <div class="flex justify-between mt-1 lg:mt-3 text-xs">
                         <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
                           FREE
                         </span>
