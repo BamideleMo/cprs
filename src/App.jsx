@@ -45,8 +45,8 @@ function App() {
                         <span class="text-red-600 boldTxt">For Sale</span>:
                         &nbsp;<u>Handout</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded px-0.5">
-                        <span class="text-gray-400 text-xs">5 days ago</span>
+                      <div class="w-fit">
+                        <span class="text-gray-400 text-xs bg-gray-100 border border-gray-200 rounded px-0.5">5 days ago</span>
                       </div>
                     </div>
                     <div class="text-sm">
@@ -86,8 +86,8 @@ function App() {
                         <span class="text-cyan-700 boldTxt">Accommodation</span>
                         : &nbsp;<u>For Rent</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded px-0.5">
-                        <span class="text-gray-400 text-xs">8 days ago</span>
+                      <div class="w-fit">
+                        <span class="text-gray-400 text-xs bg-gray-100 border border-gray-200 rounded px-0.5">8 days ago</span>
                       </div>
                     </div>
                     <div class="text-sm">
@@ -111,8 +111,8 @@ function App() {
                         :&nbsp;
                         <u>Fashion Item</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded px-0.5">
-                        <span class="text-gray-400 text-xs">10 days ago</span>
+                      <div class="w-fit">
+                        <span class="text-gray-400 text-xs bg-gray-100 border border-gray-200 rounded px-0.5">10 days ago</span>
                       </div>
                     </div>
                     <div class="text-sm">
@@ -137,8 +137,8 @@ function App() {
                         <span class="text-cyan-700 boldTxt">Accommodation</span>
                         : &nbsp;<u>Request</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded px-0.5">
-                        <span class="text-gray-400 text-xs">12 days ago</span>
+                      <div class="w-fit">
+                        <span class="text-gray-400 text-xs bg-gray-100 border border-gray-200 rounded px-0.5">12 days ago</span>
                       </div>
                     </div>
                     <div class="text-sm">
@@ -162,8 +162,8 @@ function App() {
                         <span class="text-blue-600 boldTxt">Event</span>: &nbsp;
                         <u>Religious</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded px-0.5">
-                        <span class="text-gray-400 text-xs">15 days ago</span>
+                      <div class="w-fit">
+                        <span class="text-gray-400 text-xs bg-gray-100 border border-gray-200 rounded px-0.5">15 days ago</span>
                       </div>
                     </div>
                     <div class="text-sm">
