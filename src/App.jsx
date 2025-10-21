@@ -76,7 +76,7 @@ function App() {
                 <div class="flex justify-between">
                   <h2>All Posts</h2>
                   <div class="space-x-3 text-slate-400">
-                    <span class="text-purple-800 cursor-pointer hover:opacity-60 underline decoration-dashed decoration-purple-600">
+                    <span class="text-purple-800 cursor-pointer hover:opacity-60 underline decoration-dotted decoration-purple-600">
                       SORT
                     </span>
                   </div>
