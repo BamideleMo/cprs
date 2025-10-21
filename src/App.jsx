@@ -46,7 +46,7 @@ function App() {
                         &nbsp;<u>Handout</u>
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
-                        <Badge bgColor="#52adf2" />
+                        <Badge bgColor="#04b076" />
                         <User />
                       </div>
                     </div>
@@ -89,7 +89,7 @@ function App() {
                         : &nbsp;<u>For Rent</u>
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
-                        <Badge bgColor="#52adf2" />
+                        <Badge bgColor="#04b076" />
                         <User />
                       </div>
                     </div>
@@ -144,7 +144,7 @@ function App() {
                         : &nbsp;<u>Request</u>
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
-                        <Badge bgColor="#52adf2" />
+                        <Badge bgColor="#04b076" />
                         <User />
                       </div>
                     </div>
@@ -171,7 +171,7 @@ function App() {
                         <u>Religious</u>
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
-                        <Badge bgColor="#52adf2" />
+                        <Badge bgColor="#04b076" />
                         <User />
                       </div>
                     </div>
