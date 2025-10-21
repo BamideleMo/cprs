@@ -45,9 +45,8 @@ function App() {
                         <span class="text-red-600 boldTxt">For Sale</span>:
                         &nbsp;<u>Handout</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
-                        <Badge bgColor="#04b076" />
-                        <User />
+                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded px-0.5 cursor-pointer hover:opacity-60">
+                        <span class="text-gray-400 text-xs">5 days ago</span>
                       </div>
                     </div>
                     <div class="text-sm">
@@ -60,7 +59,6 @@ function App() {
                           1,000 Naira
                         </span>
                         <div class="flex space-x-1">
-                          <span class="text-gray-400 capitalize">12 days</span>
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                             Chat with poster
                           </span>
@@ -88,9 +86,8 @@ function App() {
                         <span class="text-cyan-700 boldTxt">Accommodation</span>
                         : &nbsp;<u>For Rent</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
-                        <Badge bgColor="#04b076" />
-                        <User />
+                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded px-0.5 cursor-pointer hover:opacity-60">
+                        <span class="text-gray-400 text-xs">8 days ago</span>
                       </div>
                     </div>
                     <div class="text-sm">
@@ -101,7 +98,6 @@ function App() {
                         450,000
                       </span>
                       <div class="flex space-x-1">
-                        <span class="text-gray-400 capitalize">15 days</span>
                         <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                           Chat with poster
                         </span>
@@ -115,9 +111,8 @@ function App() {
                         :&nbsp;
                         <u>Fashion Item</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
-                        <Badge bgColor="#000000" />
-                        <User />
+                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded px-0.5 cursor-pointer hover:opacity-60">
+                        <span class="text-gray-400 text-xs">10 days ago</span>
                       </div>
                     </div>
                     <div class="text-sm">
@@ -129,7 +124,6 @@ function App() {
                           4,500
                         </span>
                         <div class="flex space-x-1">
-                          <span class="text-gray-400 capitalize">5 days</span>
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                             Chat with poster
                           </span>
@@ -143,9 +137,8 @@ function App() {
                         <span class="text-cyan-700 boldTxt">Accommodation</span>
                         : &nbsp;<u>Request</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
-                        <Badge bgColor="#04b076" />
-                        <User />
+                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded px-0.5 cursor-pointer hover:opacity-60">
+                        <span class="text-gray-400 text-xs">12 days ago</span>
                       </div>
                     </div>
                     <div class="text-sm">
@@ -157,7 +150,6 @@ function App() {
                         Budget 250k
                       </span>
                       <div class="flex space-x-1">
-                        <span class="text-gray-400 capitalize">15 days</span>
                         <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                           Chat with poster
                         </span>
@@ -170,9 +162,8 @@ function App() {
                         <span class="text-blue-600 boldTxt">Event</span>: &nbsp;
                         <u>Religious</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
-                        <Badge bgColor="#04b076" />
-                        <User />
+                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded px-0.5 cursor-pointer hover:opacity-60">
+                        <span class="text-gray-400 text-xs">15 days ago</span>
                       </div>
                     </div>
                     <div class="text-sm">
@@ -186,7 +177,6 @@ function App() {
                           FREE
                         </span>
                         <div class="flex space-x-1">
-                          <span class="text-gray-400 capitalize">1 day</span>
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                             Chat with poster
                           </span>
