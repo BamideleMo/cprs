@@ -42,10 +42,8 @@ function App() {
                   <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
                     <div class="flex justify-between">
                       <h3 class="text-black">
-                        <span class="text-red-600">
-                          <b>For Sale</b>
-                        </span>
-                        : Handout
+                        <span class="text-red-600 boldTxt">For Sale</span>:
+                        Handout
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
                         <Badge bgColor="#52adf2" />
@@ -87,9 +85,7 @@ function App() {
                   <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
                     <div class="flex justify-between">
                       <h3 class="text-black">
-                        <span class="text-cyan-700">
-                          <b>Accommodation</b>
-                        </span>
+                        <span class="text-cyan-700 boldTxt">Accommodation</span>
                         : For Rent
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
@@ -115,10 +111,8 @@ function App() {
                   <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
                     <div class="flex justify-between">
                       <h3 class="text-black">
-                        <span class="text-red-600">
-                          <b>For Sale</b>
-                        </span>
-                        : Fashion Item
+                        <span class="text-red-600 boldTxt">For Sale</span>:
+                        Fashion Item
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
                         <Badge bgColor="white" />
@@ -145,9 +139,7 @@ function App() {
                   <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
                     <div class="flex justify-between">
                       <h3 class="text-black">
-                        <span class="text-cyan-700">
-                          <b>Accommodation</b>
-                        </span>
+                        <span class="text-cyan-700 boldTxt">Accommodation</span>
                         : Request
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
@@ -174,10 +166,8 @@ function App() {
                   <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
                     <div class="flex justify-between">
                       <h3 class="text-black">
-                        <span class="text-blue-600">
-                          <b>Event</b>
-                        </span>
-                        : Religious
+                        <span class="text-blue-600 boldTxt">Event</span>:
+                        Religious
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
                         <Badge bgColor="#52adf2" />
