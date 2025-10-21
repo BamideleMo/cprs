@@ -45,7 +45,7 @@ function App() {
                         <span class="text-red-600 boldTxt">For Sale</span>:
                         &nbsp;<u>Handout</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
+                      <div class="w-fit flex space-x-1 bg-gray-50 border border-gray-100 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
                         <Badge bgColor="#04b076" />
                         <User />
                       </div>
@@ -62,7 +62,7 @@ function App() {
                         <div class="flex space-x-1">
                           <span class="text-gray-400 capitalize">12 days</span>
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
-                            Chat Poster
+                            Chat With Poster
                           </span>
                         </div>
                       </div>
@@ -88,7 +88,7 @@ function App() {
                         <span class="text-cyan-700 boldTxt">Accommodation</span>
                         : &nbsp;<u>For Rent</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
+                      <div class="w-fit flex space-x-1 bg-gray-50 border border-gray-100 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
                         <Badge bgColor="#04b076" />
                         <User />
                       </div>
@@ -103,7 +103,7 @@ function App() {
                       <div class="flex space-x-1">
                         <span class="text-gray-400 capitalize">15 days</span>
                         <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
-                          Chat Poster
+                          Chat With Poster
                         </span>
                       </div>
                     </div>
@@ -115,8 +115,8 @@ function App() {
                         :&nbsp;
                         <u>Fashion Item</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
-                        <Badge bgColor="white" />
+                      <div class="w-fit flex space-x-1 bg-gray-50 border border-gray-100 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
+                        <Badge bgColor="#000000" />
                         <User />
                       </div>
                     </div>
@@ -131,7 +131,7 @@ function App() {
                         <div class="flex space-x-1">
                           <span class="text-gray-400 capitalize">5 days</span>
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
-                            Chat Poster
+                            Chat With Poster
                           </span>
                         </div>
                       </div>
@@ -143,7 +143,7 @@ function App() {
                         <span class="text-cyan-700 boldTxt">Accommodation</span>
                         : &nbsp;<u>Request</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
+                      <div class="w-fit flex space-x-1 bg-gray-50 border border-gray-100 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
                         <Badge bgColor="#04b076" />
                         <User />
                       </div>
@@ -159,7 +159,7 @@ function App() {
                       <div class="flex space-x-1">
                         <span class="text-gray-400 capitalize">15 days</span>
                         <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
-                          Chat Poster
+                          Chat With Poster
                         </span>
                       </div>
                     </div>
@@ -170,7 +170,7 @@ function App() {
                         <span class="text-blue-600 boldTxt">Event</span>: &nbsp;
                         <u>Religious</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
+                      <div class="w-fit flex space-x-1 bg-gray-50 border border-gray-100 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
                         <Badge bgColor="#04b076" />
                         <User />
                       </div>
@@ -188,7 +188,7 @@ function App() {
                         <div class="flex space-x-1">
                           <span class="text-gray-400 capitalize">1 day</span>
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
-                            Chat Poster
+                            Chat With Poster
                           </span>
                         </div>
                       </div>
