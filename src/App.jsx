@@ -29,7 +29,7 @@ function App() {
           {/* <PostedItems /> */}
           <div class="flex flex-col space-y-4 sm:space-y-0 sm:flex-row-reverse justify-between">
             <div class="w-full sm:w-[230px] lg:w-[280px] xl:w-[300px]">
-              <div class="bg-blue-50 rounded-lg p-2">
+              <div class="bg-green-50 rounded-lg p-2">
                 <div class="flex justify-between">
                   <h2>Sponsored Post</h2>
                   <div class="space-x-3">
@@ -45,7 +45,7 @@ function App() {
                         <span class="text-red-600 boldTxt">For Sale</span>:
                         &nbsp;<u>Handout</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded px-0.5 cursor-pointer hover:opacity-60">
+                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded px-0.5">
                         <span class="text-gray-400 text-xs">5 days ago</span>
                       </div>
                     </div>
@@ -70,7 +70,7 @@ function App() {
               </div>
             </div>
             <div class="w-full sm:w-[360px] lg:w-[400px] xl:w-[450px]">
-              <div class="bg-blue-50 rounded-lg p-2">
+              <div class="bg-green-50 rounded-lg p-2">
                 <div class="flex justify-between">
                   <h2>All Posts</h2>
                   <div class="space-x-3 text-slate-400">
@@ -86,7 +86,7 @@ function App() {
                         <span class="text-cyan-700 boldTxt">Accommodation</span>
                         : &nbsp;<u>For Rent</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded px-0.5 cursor-pointer hover:opacity-60">
+                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded px-0.5">
                         <span class="text-gray-400 text-xs">8 days ago</span>
                       </div>
                     </div>
@@ -111,7 +111,7 @@ function App() {
                         :&nbsp;
                         <u>Fashion Item</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded px-0.5 cursor-pointer hover:opacity-60">
+                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded px-0.5">
                         <span class="text-gray-400 text-xs">10 days ago</span>
                       </div>
                     </div>
@@ -137,7 +137,7 @@ function App() {
                         <span class="text-cyan-700 boldTxt">Accommodation</span>
                         : &nbsp;<u>Request</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded px-0.5 cursor-pointer hover:opacity-60">
+                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded px-0.5">
                         <span class="text-gray-400 text-xs">12 days ago</span>
                       </div>
                     </div>
@@ -162,7 +162,7 @@ function App() {
                         <span class="text-blue-600 boldTxt">Event</span>: &nbsp;
                         <u>Religious</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded px-0.5 cursor-pointer hover:opacity-60">
+                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded px-0.5">
                         <span class="text-gray-400 text-xs">15 days ago</span>
                       </div>
                     </div>
