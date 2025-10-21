@@ -62,7 +62,7 @@ function App() {
                         <div class="flex space-x-1">
                           <span class="text-gray-400 capitalize">12 days</span>
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
-                            Chat With Poster
+                            Chat with poster
                           </span>
                         </div>
                       </div>
@@ -103,7 +103,7 @@ function App() {
                       <div class="flex space-x-1">
                         <span class="text-gray-400 capitalize">15 days</span>
                         <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
-                          Chat With Poster
+                          Chat with poster
                         </span>
                       </div>
                     </div>
@@ -131,7 +131,7 @@ function App() {
                         <div class="flex space-x-1">
                           <span class="text-gray-400 capitalize">5 days</span>
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
-                            Chat With Poster
+                            Chat with poster
                           </span>
                         </div>
                       </div>
@@ -159,7 +159,7 @@ function App() {
                       <div class="flex space-x-1">
                         <span class="text-gray-400 capitalize">15 days</span>
                         <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
-                          Chat With Poster
+                          Chat with poster
                         </span>
                       </div>
                     </div>
@@ -188,7 +188,7 @@ function App() {
                         <div class="flex space-x-1">
                           <span class="text-gray-400 capitalize">1 day</span>
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
-                            Chat With Poster
+                            Chat with poster
                           </span>
                         </div>
                       </div>
