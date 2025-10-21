@@ -77,7 +77,7 @@ function App() {
                   <h2>All Posts</h2>
                   <div class="space-x-3 text-slate-400">
                     <span class="text-purple-800 cursor-pointer hover:opacity-60 underline decoration-dashed decoration-purple-600">
-                      Sort Posts
+                      SORT
                     </span>
                   </div>
                 </div>
