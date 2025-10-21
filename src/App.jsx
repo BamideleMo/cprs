@@ -29,7 +29,7 @@ function App() {
           {/* <PostedItems /> */}
           <div class="flex flex-col space-y-4 sm:space-y-0 sm:flex-row-reverse justify-between">
             <div class="w-full sm:w-[230px] lg:w-[280px] xl:w-[300px]">
-              <div class="bg-green-50 rounded-lg p-2">
+              <div class="bg-gray-50 rounded-lg p-2">
                 <div class="flex justify-between">
                   <h2>Sponsored Post</h2>
                   <div class="space-x-3">
@@ -46,7 +46,7 @@ function App() {
                         &nbsp;<u>Handout</u>
                       </h3>
                       <div class="w-fit">
-                        <span class="text-gray-400 text-xs bg-gray-100 border border-gray-200 rounded px-0.5">5 days ago</span>
+                        <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">5 days ago</span>
                       </div>
                     </div>
                     <div class="text-sm">
@@ -70,7 +70,7 @@ function App() {
               </div>
             </div>
             <div class="w-full sm:w-[360px] lg:w-[400px] xl:w-[450px]">
-              <div class="bg-green-50 rounded-lg p-2">
+              <div class="bg-gray-50 rounded-lg p-2">
                 <div class="flex justify-between">
                   <h2>All Posts</h2>
                   <div class="space-x-3 text-slate-400">
@@ -87,7 +87,7 @@ function App() {
                         : &nbsp;<u>For Rent</u>
                       </h3>
                       <div class="w-fit">
-                        <span class="text-gray-400 text-xs bg-gray-100 border border-gray-200 rounded px-0.5">8 days ago</span>
+                        <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">8 days ago</span>
                       </div>
                     </div>
                     <div class="text-sm">
@@ -112,7 +112,7 @@ function App() {
                         <u>Fashion Item</u>
                       </h3>
                       <div class="w-fit">
-                        <span class="text-gray-400 text-xs bg-gray-100 border border-gray-200 rounded px-0.5">10 days ago</span>
+                        <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">10 days ago</span>
                       </div>
                     </div>
                     <div class="text-sm">
@@ -138,7 +138,7 @@ function App() {
                         : &nbsp;<u>Request</u>
                       </h3>
                       <div class="w-fit">
-                        <span class="text-gray-400 text-xs bg-gray-100 border border-gray-200 rounded px-0.5">12 days ago</span>
+                        <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">12 days ago</span>
                       </div>
                     </div>
                     <div class="text-sm">
@@ -163,7 +163,7 @@ function App() {
                         <u>Religious</u>
                       </h3>
                       <div class="w-fit">
-                        <span class="text-gray-400 text-xs bg-gray-100 border border-gray-200 rounded px-0.5">15 days ago</span>
+                        <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">15 days ago</span>
                       </div>
                     </div>
                     <div class="text-sm">
