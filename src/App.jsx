@@ -50,13 +50,13 @@ function App() {
                       </div>
                     </div>
                     <div class="text-xs sm:text-sm">
-                      How a university student in Nigeria can start a business
-                      with very little (or no) capital [Softcopy].
+                      How a University Student in Nigeria can start a business
+                      with very little (or no) capital.
                     </div>
                     <div>
                       <div class="flex justify-between mt-1 text-xs">
                         <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
-                          1K
+                          1,000 Naira
                         </span>
                         <div class="flex space-x-1">
                           <span class="text-gray-400 capitalize">12 days</span>
@@ -84,8 +84,8 @@ function App() {
                   <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
                     <div class="flex justify-between">
                       <h3 class="text-black">
-                        <span class="text-green-600">Accommodation</span>:
-                        Available
+                        <span class="text-cyan-700">Accommodation</span>: For
+                        Rent
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
                         <Badge bgColor="#52adf2" />
@@ -137,7 +137,7 @@ function App() {
                   <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
                     <div class="flex justify-between">
                       <h3 class="text-black">
-                        <span class="text-green-600">Accommodation</span>:
+                        <span class="text-cyan-700">Accommodation</span>:
                         Request
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-200 border border-gray-300 rounded-xl px-0.5 cursor-pointer hover:opacity-60">
