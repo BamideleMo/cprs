@@ -49,7 +49,7 @@ function App() {
                         <User />
                       </div>
                     </div>
-                    <div class="text-xs sm:text-sm">
+                    <div class="text-sm">
                       How a University Student in Nigeria can start a business
                       with very little (or no) capital.
                     </div>
@@ -92,7 +92,7 @@ function App() {
                         <User />
                       </div>
                     </div>
-                    <div class="text-xs sm:text-sm">
+                    <div class="text-sm">
                       1 room self-con available very close to main campus.
                     </div>
                     <div class="flex justify-between mt-1 text-xs">
@@ -117,7 +117,7 @@ function App() {
                         <User />
                       </div>
                     </div>
-                    <div class="text-xs sm:text-sm">
+                    <div class="text-sm">
                       Beautiful Polo shirts available for sale at student price.
                     </div>
                     <div>
@@ -145,7 +145,7 @@ function App() {
                         <User />
                       </div>
                     </div>
-                    <div class="text-xs sm:text-sm">
+                    <div class="text-sm">
                       I need 1 room (not self-con) anywhere around school gate
                       urgently.
                     </div>
@@ -171,7 +171,7 @@ function App() {
                         <User />
                       </div>
                     </div>
-                    <div class="text-xs sm:text-sm">
+                    <div class="text-sm">
                       Join us at Celebration Victory Assembly for a memorable
                       service this Sunday. There'll be free package for 1st
                       timers.
