@@ -60,7 +60,7 @@ function App() {
                         </span>
                         <div class="flex space-x-1">
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
-                            Chat with poster
+                            Chat Now
                           </span>
                         </div>
                       </div>
@@ -99,7 +99,7 @@ function App() {
                       </span>
                       <div class="flex space-x-1">
                         <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
-                          Chat with poster
+                          Chat Now
                         </span>
                       </div>
                     </div>
@@ -125,7 +125,7 @@ function App() {
                         </span>
                         <div class="flex space-x-1">
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
-                            Chat with poster
+                            Chat Now
                           </span>
                         </div>
                       </div>
@@ -151,7 +151,7 @@ function App() {
                       </span>
                       <div class="flex space-x-1">
                         <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
-                          Chat with poster
+                          Chat Now
                         </span>
                       </div>
                     </div>
@@ -178,7 +178,7 @@ function App() {
                         </span>
                         <div class="flex space-x-1">
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
-                            Chat with poster
+                            Chat Now
                           </span>
                         </div>
                       </div>
