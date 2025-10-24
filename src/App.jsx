@@ -6,8 +6,10 @@ import { MetaProvider, Title, Meta, Link } from "@solidjs/meta";
 import PostedItems from "./components/PostedItems";
 import Badge from "./components/icons/Badge";
 import User from "./components/icons/User";
-import Question from "./components/icons/Question";
+import Question from "./components/icons/Search";
 import { A } from "@solidjs/router";
+import Search from "./components/icons/Search";
+import Sort from "./components/icons/Sort";
 
 function App() {
   return (
@@ -28,7 +30,7 @@ function App() {
         <section class="w-full px-2 sm:w-[620px] lg:w-[720px] xl:w-[800px] mx-auto mt-6 lg:mt-10">
           {/* <PostedItems /> */}
           <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row-reverse justify-between">
-            <div class="w-full md:w-[230px] lg:w-[280px] xl:w-[350px]">
+            <div class="w-full sm:w-10/12 sm:mx-auto md:w-[230px] lg:w-[280px] xl:w-[350px]">
               <div class="bg-gray-100 rounded-lg p-2">
                 <div class="flex justify-between">
                   <h2>Sponsored Post</h2>
@@ -75,13 +77,16 @@ function App() {
                 </div>
               </div>
             </div>
-            <div class="w-full md:w-[360px] lg:w-[400px] xl:w-[420px]">
+            <div class="w-full sm:w-10/12 sm:mx-auto md:w-[360px] lg:w-[400px] xl:w-[420px]">
               <div class="bg-gray-100 rounded-lg p-2">
                 <div class="flex justify-between">
                   <h2>All Posts</h2>
-                  <div class="space-x-3 text-slate-400">
-                    <span class="text-purple-800 cursor-pointer hover:opacity-60 underline decoration-dotted decoration-purple-600">
-                      SORT
+                  <div class="flex space-x-4 text-slate-400">
+                    <span class="text-purple-800 cursor-pointer hover:opacity-60">
+                      <Sort />
+                    </span>
+                    <span class="text-purple-800 cursor-pointer hover:opacity-60">
+                      <Search />
                     </span>
                   </div>
                 </div>
