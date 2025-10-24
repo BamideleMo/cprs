@@ -45,7 +45,10 @@ function App() {
                         <span class="text-red-600 boldTxt">For Sale</span>:
                         &nbsp;<u>Handout</u>
                       </h3>
-                      <div class="w-fit">xxx</div>
+                      <div class="w-fit flex space-x-1 bg-gray-50 border border-gray-100 rounded-lg p-0.5">
+                        <Badge status="verified" />
+                        <User />
+                      </div>
                     </div>
                     <div class="text-sm">
                       How a University Student in Nigeria can start a business
@@ -89,7 +92,10 @@ function App() {
                         <span class="text-cyan-700 boldTxt">Accommodation</span>
                         : &nbsp;<u>For Rent</u>
                       </h3>
-                      <div class="w-fit">xxx</div>
+                      <div class="w-fit flex space-x-1 bg-gray-50 border border-gray-100 rounded-lg p-0.5">
+                        <Badge status="verified" />
+                        <User />
+                      </div>
                     </div>
                     <div class="text-sm">
                       1 room self-con available very close to main campus.
@@ -117,10 +123,9 @@ function App() {
                         :&nbsp;
                         <u>Fashion Item</u>
                       </h3>
-                      <div class="w-fit">
-                        <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">
-                          10 days ago
-                        </span>
+                      <div class="w-fit flex space-x-1 bg-gray-50 border border-gray-100 rounded-lg p-0.5">
+                        <Badge status="verified" />
+                        <User />
                       </div>
                     </div>
                     <div class="text-sm">
@@ -128,9 +133,14 @@ function App() {
                     </div>
                     <div>
                       <div class="flex justify-between mt-1 lg:mt-3 text-xs">
-                        <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
-                          4,500
-                        </span>
+                        <div class="flex space-x-2">
+                          <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
+                            4,500
+                          </span>
+                          <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">
+                            10 days ago
+                          </span>
+                        </div>
                         <div class="flex space-x-1">
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                             Chat
@@ -145,7 +155,10 @@ function App() {
                         <span class="text-cyan-700 boldTxt">Accommodation</span>
                         : &nbsp;<u>Request</u>
                       </h3>
-                      <div class="w-fit">xxx</div>
+                      <div class="w-fit flex space-x-1 bg-gray-50 border border-gray-100 rounded-lg p-0.5">
+                        <Badge status="unverified" />
+                        <User />
+                      </div>
                     </div>
                     <div class="text-sm">
                       I need 1 room (not self-con) anywhere around school gate
@@ -173,7 +186,10 @@ function App() {
                         <span class="text-blue-600 boldTxt">Event</span>: &nbsp;
                         <u>Religious</u>
                       </h3>
-                      <div class="w-fit">xxx</div>
+                      <div class="w-fit flex space-x-1 bg-gray-50 border border-gray-100 rounded-lg p-0.5">
+                        <Badge status="verified" />
+                        <User />
+                      </div>
                     </div>
                     <div class="text-sm">
                       Join us at Celebration Victory Assembly for a memorable
