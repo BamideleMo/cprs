@@ -42,8 +42,8 @@ function App() {
                   <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
                     <div class="flex justify-between">
                       <h3 class="text-black">
-                        <span class="text-red-600 boldTxt">For Sale</span>:
-                        &nbsp;<u>Handout</u>
+                        <span class="text-red-600 boldTxt">For Sale</span>:{" "}
+                        <u>Handout</u>
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-lg p-0.5">
                         <Badge status="verified" />
@@ -90,7 +90,7 @@ function App() {
                     <div class="flex justify-between">
                       <h3 class="text-black">
                         <span class="text-cyan-700 boldTxt">Accommodation</span>
-                        : &nbsp;<u>For Rent</u>
+                        : <u>For Rent</u>
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-lg p-0.5">
                         <Badge status="verified" />
@@ -119,8 +119,7 @@ function App() {
                   <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
                     <div class="flex justify-between">
                       <h3 class="text-black">
-                        <span class="text-red-600 boldTxt">For Sale</span>
-                        :&nbsp;
+                        <span class="text-red-600 boldTxt">For Sale</span>:{" "}
                         <u>Fashion Item</u>
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-lg p-0.5">
@@ -153,7 +152,7 @@ function App() {
                     <div class="flex justify-between">
                       <h3 class="text-black">
                         <span class="text-cyan-700 boldTxt">Accommodation</span>
-                        : &nbsp;<u>Request</u>
+                        : <u>Request</u>
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-lg p-0.5">
                         <Badge status="unverified" />
@@ -183,7 +182,7 @@ function App() {
                   <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
                     <div class="flex justify-between">
                       <h3 class="text-black">
-                        <span class="text-blue-600 boldTxt">Event</span>: &nbsp;
+                        <span class="text-blue-600 boldTxt">Event</span>:{" "}
                         <u>Religious</u>
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-lg p-0.5">
