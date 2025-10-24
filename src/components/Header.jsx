@@ -151,7 +151,7 @@ function Header() {
           </div>
           <div class="w-fit space-x-6 md:space-x-10 pt-0 md:pt-0 text-sm flex items-center">
             <A href="https://gist.offk.ng" class="hover:opacity-60 uppercase">
-              Weekly Gist
+              Gist
             </A>
           </div>
         </div>

@@ -28,7 +28,7 @@ function App() {
         <section class="w-full px-2 sm:w-[620px] lg:w-[720px] xl:w-[800px] mx-auto mt-6 lg:mt-10">
           {/* <PostedItems /> */}
           <div class="flex flex-col space-y-4 sm:space-y-0 sm:flex-row-reverse justify-between">
-            <div class="w-full sm:w-[230px] lg:w-[280px] xl:w-[300px]">
+            <div class="w-full sm:w-[230px] lg:w-[280px] xl:w-[350px]">
               <div class="bg-gray-100 rounded-lg p-2">
                 <div class="flex justify-between">
                   <h2>Sponsored Post</h2>
@@ -45,9 +45,7 @@ function App() {
                         <span class="text-red-600 boldTxt">For Sale</span>:
                         &nbsp;<u>Handout</u>
                       </h3>
-                      <div class="w-fit">
-                        <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">5 days ago</span>
-                      </div>
+                      <div class="w-fit">xxx</div>
                     </div>
                     <div class="text-sm">
                       How a University Student in Nigeria can start a business
@@ -55,9 +53,14 @@ function App() {
                     </div>
                     <div>
                       <div class="flex justify-between mt-1 lg:mt-3 text-xs">
-                        <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
-                          1,000 Naira
-                        </span>
+                        <div class="flex space-x-2">
+                          <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
+                            1,000 Naira
+                          </span>
+                          <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">
+                            5 days ago
+                          </span>
+                        </div>
                         <div class="flex space-x-1">
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                             Chat
@@ -69,7 +72,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div class="w-full sm:w-[360px] lg:w-[400px] xl:w-[450px]">
+            <div class="w-full sm:w-[360px] lg:w-[400px] xl:w-[420px]">
               <div class="bg-gray-100 rounded-lg p-2">
                 <div class="flex justify-between">
                   <h2>All Posts</h2>
@@ -86,17 +89,20 @@ function App() {
                         <span class="text-cyan-700 boldTxt">Accommodation</span>
                         : &nbsp;<u>For Rent</u>
                       </h3>
-                      <div class="w-fit">
-                        <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">8 days ago</span>
-                      </div>
+                      <div class="w-fit">xxx</div>
                     </div>
                     <div class="text-sm">
                       1 room self-con available very close to main campus.
                     </div>
                     <div class="flex justify-between mt-1 lg:mt-3 text-xs">
-                      <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
-                        450,000
-                      </span>
+                      <div class="flex space-x-2">
+                        <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
+                          450,000
+                        </span>
+                        <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">
+                          8 days ago
+                        </span>
+                      </div>
                       <div class="flex space-x-1">
                         <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                           Chat
@@ -112,7 +118,9 @@ function App() {
                         <u>Fashion Item</u>
                       </h3>
                       <div class="w-fit">
-                        <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">10 days ago</span>
+                        <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">
+                          10 days ago
+                        </span>
                       </div>
                     </div>
                     <div class="text-sm">
@@ -137,18 +145,21 @@ function App() {
                         <span class="text-cyan-700 boldTxt">Accommodation</span>
                         : &nbsp;<u>Request</u>
                       </h3>
-                      <div class="w-fit">
-                        <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">12 days ago</span>
-                      </div>
+                      <div class="w-fit">xxx</div>
                     </div>
                     <div class="text-sm">
                       I need 1 room (not self-con) anywhere around school gate
                       urgently.
                     </div>
                     <div class="flex justify-between mt-1 lg:mt-3 text-xs">
-                      <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
-                        Budget 250k
-                      </span>
+                      <div class="flex space-x-2">
+                        <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
+                          Budget 250k
+                        </span>
+                        <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">
+                          12 days ago
+                        </span>
+                      </div>
                       <div class="flex space-x-1">
                         <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                           Chat
@@ -162,9 +173,7 @@ function App() {
                         <span class="text-blue-600 boldTxt">Event</span>: &nbsp;
                         <u>Religious</u>
                       </h3>
-                      <div class="w-fit">
-                        <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">15 days ago</span>
-                      </div>
+                      <div class="w-fit">xxx</div>
                     </div>
                     <div class="text-sm">
                       Join us at Celebration Victory Assembly for a memorable
@@ -173,9 +182,14 @@ function App() {
                     </div>
                     <div>
                       <div class="flex justify-between mt-1 lg:mt-3 text-xs">
-                        <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
-                          FREE
-                        </span>
+                        <div class="flex space-x-2">
+                          <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
+                            FREE
+                          </span>
+                          <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">
+                            15 days ago
+                          </span>
+                        </div>
                         <div class="flex space-x-1">
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                             Chat
