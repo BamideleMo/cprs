@@ -3,6 +3,7 @@ import { Match, Show, Switch } from "solid-js";
 import Close from "./icons/Close";
 import { createSignal, createEffect, onMount } from "solid-js";
 import PostItemForm from "./PostItemForm";
+import Heart from "./icons/Heart";
 
 function Hero() {
   const [showModal, setShowModal] = createSignal(false);
@@ -55,7 +56,7 @@ function Hero() {
               </div>
             </h1>
             <h2 class="text-sm 2xl:text-lg leading-tight mt-2 text-gray-600">
-              Created for{" "}
+              Created with <Heart /> for{" "}
               <Show when={JSON.parse(localStorage.getItem("OffK"))}>
                 <span class="bg-purple-100">
                   {JSON.parse(localStorage.getItem("OffK")).uni}
