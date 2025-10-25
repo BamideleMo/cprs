@@ -83,11 +83,9 @@ function App() {
                 <div class="flex justify-between">
                   <h2 class="py-1">All Posts</h2>
                   <div class="text-black">
-                    <div class="cursor-pointer hover:opacity-60 w-fit flex space-x-4 bg-gray-200 border border-slate-400 rounded-xl py-1 px-1.5 text-xs">
-                      <span>🪮&nbsp;Sort</span>
-                      <span>
-                        <ArrowDown />
-                      </span>
+                    <div class="cursor-pointer hover:opacity-60 w-fit flex space-x-2 bg-gray-200 border border-black rounded-xl py-1 px-1.5 text-xs">
+                      <span>🪮</span>
+                      <span>Sort Posts</span>
                     </div>
                   </div>
                 </div>
