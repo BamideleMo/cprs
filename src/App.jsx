@@ -82,10 +82,10 @@ function App() {
               <div class="bg-gray-100 rounded-lg p-2">
                 <div class="flex justify-between">
                   <h2 class="py-1">All Posts</h2>
-                  <div class="flex space-x-4 text-black boldTxt">
-                    <div class="w-fit bg-gray-200 border border-slate-400 rounded-lg py-1.5 px-1 text-xs uppercase">
+                  <div class="text-black boldTxt">
+                    <div class="w-fit flex space-x-4 bg-gray-200 border border-slate-400 rounded-lg py-1.5 px-1 text-xs uppercase">
+                      <span>🪮&nbsp;Sort</span>
                       <span>
-                        🪮&nbsp;Sort&nbsp;&nbsp;&nbsp;&nbsp;
                         <ArrowDown />
                       </span>
                     </div>
