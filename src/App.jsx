@@ -10,6 +10,7 @@ import Question from "./components/icons/Search";
 import { A } from "@solidjs/router";
 import Search from "./components/icons/Search";
 import Sort from "./components/icons/Sort";
+import ArrowDown from "./components/icons/ArrowDown";
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
             <div class="w-full sm:w-10/12 sm:mx-auto md:w-[230px] lg:w-[280px] xl:w-[350px]">
               <div class="bg-gray-100 rounded-lg p-2">
                 <div class="flex justify-between">
-                  <h2>Sponsored Post</h2>
+                  <h2 class="py-1">Sponsored Post</h2>
                   <div class="space-x-3">
                     <span class="text-slate-500 cursor-pointer hover:opacity-60 ">
                       .
@@ -41,7 +42,7 @@ function App() {
                   </div>
                 </div>
                 <div class="space-y-4 mt-2">
-                  <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
+                  <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-400">
                     <div class="flex justify-between">
                       <h3 class="text-black">
                         <span class="text-red-600 boldTxt">For Sale</span>:{" "}
@@ -77,24 +78,24 @@ function App() {
                 </div>
               </div>
             </div>
-            <div class="w-full sm:w-10/12 sm:mx-auto md:w-[360px] lg:w-[400px] xl:w-[420px]">
+            <div class="w-full sm:w-10/12 sm:mx-auto md:w-[360px] lg:w-[400px] xl:w-[400px]">
               <div class="bg-gray-100 rounded-lg p-2">
                 <div class="flex justify-between">
-                  <h2>All Posts</h2>
-                  <div class="flex space-x-4 text-slate-400">
-                    <span class="text-purple-800 cursor-pointer hover:opacity-60">
-                      <Sort />
-                    </span>
-                    <span class="text-purple-800 cursor-pointer hover:opacity-60">
-                      <Search />
-                    </span>
+                  <h2 class="py-1">All Posts</h2>
+                  <div class="flex space-x-4 text-black boldTxt">
+                    <div class="w-fit bg-gray-200 border border-slate-400 rounded-lg py-1.5 px-1 text-xs uppercase">
+                      <span>
+                        🪮&nbsp;Sort&nbsp;&nbsp;&nbsp;&nbsp;
+                        <ArrowDown />
+                      </span>
+                    </div>
                   </div>
                 </div>
                 <div class="space-y-2 mt-2">
-                  <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
+                  <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-400">
                     <div class="flex justify-between">
                       <h3 class="text-black">
-                        <span class="text-cyan-700 boldTxt">Accommodation</span>
+                        <span class="text-teal-600 boldTxt">Accommodation</span>
                         : <u>For Rent</u>
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-lg p-0.5">
@@ -121,7 +122,7 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
+                  <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-400">
                     <div class="flex justify-between">
                       <h3 class="text-black">
                         <span class="text-red-600 boldTxt">For Sale</span>:{" "}
@@ -153,10 +154,10 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
+                  <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-400">
                     <div class="flex justify-between">
                       <h3 class="text-black">
-                        <span class="text-cyan-700 boldTxt">Accommodation</span>
+                        <span class="text-teal-600 boldTxt">Accommodation</span>
                         : <u>Request</u>
                       </h3>
                       <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-lg p-0.5">
@@ -184,7 +185,7 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-200">
+                  <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-400">
                     <div class="flex justify-between">
                       <h3 class="text-black">
                         <span class="text-blue-600 boldTxt">Event</span>:{" "}
