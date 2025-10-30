@@ -38,31 +38,32 @@ function Hero() {
       <section class="-mt-4">
         <div class="w-full px-1 sm:w-[620px] 2xl:w-[900px] mx-auto">
           <div class="mesh-bg pt-16 text-center">
-            <h1 class="boldTxt text-slate-500 text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl font-semibold leading-tight lg:leading-8 lg:w-[400px] lg:mx-auto">
+            <h1
+              class="boldTxt text-slate-500 text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl font-semibold leading-tight lg:leading-8 
+            lg:w-[500px] lg:mx-auto"
+            >
               FIND & POST
               <div class="sm:text-2xl lg:text-3xl 2xl:text-4xl text-black">
-                <span class="underline decoration-green-400 decoration-1">
-                  Student Accommodation
+                <span class="underline decoration-green-400 decoration-2">
+                  Campus Accommodation
                 </span>
                 , <br class="sm:hidden" />
-                <span class="underline decoration-blue-400 decoration-1">
+                <span class="underline decoration-blue-400 decoration-2">
                   Events
                 </span>
                 , &{" "}
-                <span class="underline decoration-red-400 decoration-1">
+                <span class="underline decoration-red-400 decoration-2">
                   Items For Sale
                 </span>
-                .
               </div>
             </h1>
-            <h2 class="text-sm 2xl:text-lg leading-tight mt-2 text-gray-600">
-              Created with <Heart /> for{" "}
+            <h2 class="text-lg 2xl:text-lg leading-tight mt-2 text-gray-600">
+              For{" "}
               <Show when={JSON.parse(localStorage.getItem("OffK"))}>
-                <span class="bg-purple-100">
+                <span class="bg-purple-100 px-1">
                   {JSON.parse(localStorage.getItem("OffK")).uni}
                 </span>
-              </Show>{" "}
-              Students!
+              </Show>{" "}Students!
             </h2>
             <div class="pt-6 space-x-4">
               <span

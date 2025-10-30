@@ -9,7 +9,7 @@ function User(props) {
       viewBox="0 0 24 24"
       stroke-width="1.5"
       stroke="currentColor"
-      class="size-3 mt-0.5"
+      class="size-3 mt-0.5 text-black"
     >
       <path
         stroke-linecap="round"

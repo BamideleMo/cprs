@@ -31,14 +31,14 @@ function Footer(props) {
             class="w-fit flex flex-row space-x-6 space-y-0 md:flex-row 
       md:space-y-0 md:space-x-6 lg:space-x-8  text-right"
           >
-            <li class="md:pt-0">
+            {/* <li class="md:pt-0">
               <A
                 href="/faqs"
                 class="hover:opacity-60 underline decoration-dashed decoration-purple-600"
               >
                 FAQs
               </A>
-            </li>
+            </li> */}
             {/* <li class="">
               <A
                 href="/safety"

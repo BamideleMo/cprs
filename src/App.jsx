@@ -42,15 +42,18 @@ function App() {
                   </div>
                 </div>
                 <div class="space-y-4 mt-2">
-                  <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-400">
+                  <div class="bg-green-50  text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-400">
                     <div class="flex justify-between">
                       <h3 class="text-black">
                         <span class="text-red-600 boldTxt">For Sale</span>:{" "}
                         <u>Handout</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-lg p-0.5">
-                        <Badge status="verified" />
-                        <User />
+                      <div class="flex space-x-1.5 text-xs">
+                        <span class="mt-0.5 text-gray-500">15 days</span>
+                        <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-lg p-0.5">
+                          <Badge status="verified" />
+                          <User />
+                        </div>
                       </div>
                     </div>
                     <div class="text-sm">
@@ -59,15 +62,14 @@ function App() {
                     </div>
                     <div>
                       <div class="flex justify-between mt-1 lg:mt-3 text-xs">
-                        <div class="flex space-x-2">
-                          <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
-                            1,000 Naira
-                          </span>
-                          <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">
-                            5 days ago
-                          </span>
+                        <div class="flex space-x-0.5">
+                          <span class="text-gray-400">Amt:</span>
+                          <span class="boldTxt text-xs">1,000 Naira</span>
                         </div>
-                        <div class="flex space-x-1">
+                        <div class="flex space-x-4">
+                          <span class="cursor-pointer hover:opacity-60 text-pink-400 text-xs bg-pink-50 border border-pink-200 rounded px-0.5">
+                            Report
+                          </span>
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                             Chat
                           </span>
@@ -84,36 +86,37 @@ function App() {
                   <h2 class="py-1">All Posts</h2>
                   <div class="text-black">
                     <div class="cursor-pointer hover:opacity-60 w-fit flex space-x-2 bg-gray-200 border border-black rounded-xl py-1 px-1.5 text-xs">
-                      <span>🪮</span>
                       <span>Sort Posts</span>
                     </div>
                   </div>
                 </div>
-                <div class="space-y-2 mt-2">
+                <div class="space-y-4 mt-2">
                   <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-400">
                     <div class="flex justify-between">
                       <h3 class="text-black">
                         <span class="text-teal-600 boldTxt">Accommodation</span>
                         : <u>For Rent</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-lg p-0.5">
-                        <Badge status="verified" />
-                        <User />
+                      <div class="flex space-x-1.5 text-xs">
+                        <span class="mt-0.5 text-gray-500">15 days</span>
+                        <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-lg p-0.5">
+                          <Badge status="verified" />
+                          <User />
+                        </div>
                       </div>
                     </div>
                     <div class="text-sm">
                       1 room self-con available very close to main campus.
                     </div>
                     <div class="flex justify-between mt-1 lg:mt-3 text-xs">
-                      <div class="flex space-x-2">
-                        <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
-                          450,000
-                        </span>
-                        <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">
-                          8 days ago
-                        </span>
+                      <div class="flex space-x-0.5">
+                        <span class="text-gray-400">Amt:</span>
+                        <span class="boldTxt text-xs"> 450,000</span>
                       </div>
-                      <div class="flex space-x-1">
+                      <div class="flex space-x-4">
+                        <span class="cursor-pointer hover:opacity-60 text-pink-400 text-xs bg-pink-50 border border-pink-200 rounded px-0.5">
+                          Report
+                        </span>
                         <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                           Chat
                         </span>
@@ -126,25 +129,27 @@ function App() {
                         <span class="text-red-600 boldTxt">For Sale</span>:{" "}
                         <u>Fashion Item</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-lg p-0.5">
-                        <Badge status="verified" />
-                        <User />
+                      <div class="flex space-x-1.5 text-xs">
+                        <span class="mt-0.5 text-gray-500">15 days</span>
+                        <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-lg p-0.5">
+                          <Badge status="verified" />
+                          <User />
+                        </div>
                       </div>
                     </div>
                     <div class="text-sm">
-                      Beautiful Polo shirts available for sale at student price.
+                      Beautiful Polo shirts available for sale at student Amt.
                     </div>
                     <div>
                       <div class="flex justify-between mt-1 lg:mt-3 text-xs">
-                        <div class="flex space-x-2">
-                          <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
-                            4,500
-                          </span>
-                          <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">
-                            10 days ago
-                          </span>
+                        <div class="flex space-x-0.5">
+                          <span class="text-gray-400">Amt:</span>
+                          <span class="boldTxt text-xs">4,500</span>
                         </div>
-                        <div class="flex space-x-1">
+                        <div class="flex space-x-4">
+                          <span class="cursor-pointer hover:opacity-60 text-pink-400 text-xs bg-pink-50 border border-pink-200 rounded px-0.5">
+                            Report
+                          </span>
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                             Chat
                           </span>
@@ -158,9 +163,12 @@ function App() {
                         <span class="text-teal-600 boldTxt">Accommodation</span>
                         : <u>Request</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-lg p-0.5">
-                        <Badge status="unverified" />
-                        <User />
+                      <div class="flex space-x-1.5 text-xs">
+                        <span class="mt-0.5 text-gray-500">15 days</span>
+                        <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-lg p-0.5">
+                          <Badge status="unverified" />
+                          <User />
+                        </div>
                       </div>
                     </div>
                     <div class="text-sm">
@@ -168,15 +176,14 @@ function App() {
                       urgently.
                     </div>
                     <div class="flex justify-between mt-1 lg:mt-3 text-xs">
-                      <div class="flex space-x-2">
-                        <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
-                          Budget 250k
-                        </span>
-                        <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">
-                          12 days ago
-                        </span>
+                      <div class="flex space-x-0.5">
+                        <span class="text-gray-400">Amt:</span>
+                        <span class="boldTxt text-xs">Budget 250k</span>
                       </div>
-                      <div class="flex space-x-1">
+                      <div class="flex space-x-4">
+                        <span class="cursor-pointer hover:opacity-60 text-pink-400 text-xs bg-pink-50 border border-pink-200 rounded px-0.5">
+                          Report
+                        </span>
                         <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                           Chat
                         </span>
@@ -189,9 +196,12 @@ function App() {
                         <span class="text-blue-600 boldTxt">Event</span>:{" "}
                         <u>Religious</u>
                       </h3>
-                      <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-lg p-0.5">
-                        <Badge status="verified" />
-                        <User />
+                      <div class="flex space-x-1.5 text-xs">
+                        <span class="mt-0.5 text-gray-500">15 days</span>
+                        <div class="w-fit flex space-x-1 bg-gray-100 border border-gray-200 rounded-lg p-0.5">
+                          <Badge status="unverified" />
+                          <User />
+                        </div>
                       </div>
                     </div>
                     <div class="text-sm">
@@ -201,15 +211,14 @@ function App() {
                     </div>
                     <div>
                       <div class="flex justify-between mt-1 lg:mt-3 text-xs">
-                        <div class="flex space-x-2">
-                          <span class="bg-yellow-50 border border-yellow-300 px-1 rounded text-xs cursor-pointer hover:opacity-60">
-                            FREE
-                          </span>
-                          <span class="text-gray-400 text-xs bg-green-50 border border-gray-200 rounded px-0.5">
-                            15 days ago
-                          </span>
+                        <div class="flex space-x-0.5">
+                          <span class="text-gray-400">Amt:</span>
+                          <span class="boldTxt text-xs"> FREE</span>
                         </div>
-                        <div class="flex space-x-1">
+                        <div class="flex space-x-4">
+                          <span class="cursor-pointer hover:opacity-60 text-pink-400 text-xs bg-pink-50 border border-pink-200 rounded px-0.5">
+                            Report
+                          </span>
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                             Chat
                           </span>

@@ -143,18 +143,24 @@ function Header() {
         <div class="w-full px-1 sm:w-[620px] lg:w-[900px] xl:w-[1000px] flex justify-between mx-auto">
           <div class="flex flex-col -space-y-2">
             <Logo />
-            <Show when={JSON.parse(localStorage.getItem("OffK"))}>
-              <A href="/" class="mt-2 text-black text-xs font-normal">
+            {/* <Show when={JSON.parse(localStorage.getItem("OffK"))}>
+              <A href="/" class="text-black text-xs font-normal">
                 {JSON.parse(localStorage.getItem("OffK")).uni}
               </A>
-            </Show>
+            </Show> */}
           </div>
           <div class="w-fit space-x-6 md:space-x-10 pt-0 md:pt-0 text-sm flex items-center">
             <A
               href="https://newsletter.offk.ng"
               class="hover:opacity-60 uppercase"
             >
-              Newsletter
+              Gist
+            </A>
+            <A
+              href="https://newsletter.offk.ng"
+              class="hover:opacity-60 uppercase"
+            >
+              FAQs
             </A>
           </div>
         </div>
