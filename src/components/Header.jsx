@@ -150,17 +150,11 @@ function Header() {
             </Show> */}
           </div>
           <div class="w-fit space-x-6 md:space-x-10 pt-0 md:pt-0 text-sm flex items-center">
-            <A
-              href="https://newsletter.offk.ng"
-              class="hover:opacity-60 uppercase"
-            >
-              Gist
-            </A>
-            <A
-              href="https://newsletter.offk.ng"
-              class="hover:opacity-60 uppercase"
-            >
+            <A href="/faqs" class="hover:opacity-60 uppercase">
               FAQs
+            </A>
+            <A href="https://gist.onk.ng" class="hover:opacity-60 uppercase">
+              Gist
             </A>
           </div>
         </div>

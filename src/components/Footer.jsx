@@ -46,15 +46,15 @@ function Footer(props) {
               >
                 Safety Rules
               </A>
-            </li>
+            </li> */}
             <li class="">
               <A
-                href="/social-impact"
+                href="/report"
                 class="hover:opacity-60 underline decoration-dashed decoration-purple-600"
               >
-                Social Impact
+                Report
               </A>
-            </li> */}
+            </li>
             <li>
               <A
                 href="/terms"

@@ -66,10 +66,7 @@ function App() {
                           <span class="text-gray-400">Amt:</span>
                           <span class="boldTxt text-xs">1,000 Naira</span>
                         </div>
-                        <div class="flex space-x-4">
-                          <span class="cursor-pointer hover:opacity-60 text-pink-400 text-xs bg-pink-50 border border-pink-200 rounded px-0.5">
-                            Report
-                          </span>
+                        <div class="flex space-x-2">
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                             Chat
                           </span>
@@ -113,10 +110,7 @@ function App() {
                         <span class="text-gray-400">Amt:</span>
                         <span class="boldTxt text-xs"> 450,000</span>
                       </div>
-                      <div class="flex space-x-4">
-                        <span class="cursor-pointer hover:opacity-60 text-pink-400 text-xs bg-pink-50 border border-pink-200 rounded px-0.5">
-                          Report
-                        </span>
+                      <div class="flex space-x-2">
                         <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                           Chat
                         </span>
@@ -146,10 +140,10 @@ function App() {
                           <span class="text-gray-400">Amt:</span>
                           <span class="boldTxt text-xs">4,500</span>
                         </div>
-                        <div class="flex space-x-4">
-                          <span class="cursor-pointer hover:opacity-60 text-pink-400 text-xs bg-pink-50 border border-pink-200 rounded px-0.5">
+                        <div class="flex space-x-2">
+                          {/* <span class="cursor-pointer hover:opacity-60 text-pink-400 text-xs bg-pink-50 border border-pink-400 rounded px-0.5">
                             Report
-                          </span>
+                          </span> */}
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                             Chat
                           </span>
@@ -180,10 +174,7 @@ function App() {
                         <span class="text-gray-400">Amt:</span>
                         <span class="boldTxt text-xs">Budget 250k</span>
                       </div>
-                      <div class="flex space-x-4">
-                        <span class="cursor-pointer hover:opacity-60 text-pink-400 text-xs bg-pink-50 border border-pink-200 rounded px-0.5">
-                          Report
-                        </span>
+                      <div class="flex space-x-2">
                         <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                           Chat
                         </span>
@@ -215,10 +206,7 @@ function App() {
                           <span class="text-gray-400">Amt:</span>
                           <span class="boldTxt text-xs"> FREE</span>
                         </div>
-                        <div class="flex space-x-4">
-                          <span class="cursor-pointer hover:opacity-60 text-pink-400 text-xs bg-pink-50 border border-pink-200 rounded px-0.5">
-                            Report
-                          </span>
+                        <div class="flex space-x-2">
                           <span class="bg-slate-600 border border-black px-1 rounded text-white cursor-pointer hover:opacity-60">
                             Chat
                           </span>

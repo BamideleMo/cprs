@@ -45,7 +45,7 @@ function Hero() {
               FIND & POST
               <div class="sm:text-2xl lg:text-3xl 2xl:text-4xl text-black">
                 <span class="underline decoration-green-400 decoration-2">
-                  Campus Accommodation
+                  Student Accommodation
                 </span>
                 , <br class="sm:hidden" />
                 <span class="underline decoration-blue-400 decoration-2">
