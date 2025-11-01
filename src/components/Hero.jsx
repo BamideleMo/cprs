@@ -73,7 +73,7 @@ function Hero() {
                 }}
                 class="cursor-pointer bg-purple-800 text-white p-2.5 rounded-lg hover:opacity-60"
               >
-                👋 Make Post
+                👋 Make a Post
               </span>
             </div>
             <svg

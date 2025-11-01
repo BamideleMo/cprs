@@ -79,13 +79,22 @@ function App() {
             </div>
             <div class="w-full sm:w-10/12 sm:mx-auto md:w-[360px] lg:w-[400px] xl:w-[400px]">
               <div class="bg-gray-100 rounded-lg p-2">
-                <div class="flex justify-between">
-                  <h2 class="py-1">All Posts</h2>
-                  <div class="text-black">
-                    <div class="cursor-pointer hover:opacity-60 w-fit flex space-x-2 bg-gray-200 border border-black rounded-xl py-1 px-1.5 text-xs">
-                      <span>Sort Posts</span>
-                    </div>
+                <div class="flex text-black text-xs space-x-2 pt-1.5">
+                  <div class="w-fit border bg-slate-200 py-1 px-2 rounded-full hover:bg-purple-200 cursor-pointer whitespace-nowrap">
+                    All Posts
                   </div>
+                  <div class="w-fit border bg-slate-200 py-1 px-2 rounded-full hover:bg-purple-200 cursor-pointer whitespace-nowrap">
+                    For Sale
+                  </div>
+                  <div class="w-fit border bg-slate-200 py-1 px-2 rounded-full hover:bg-purple-200 cursor-pointer whitespace-nowrap">
+                    Events
+                  </div>
+                  <div class="w-fit border bg-slate-200 py-1 px-2 rounded-full hover:bg-purple-200 cursor-pointer whitespace-nowrap">
+                    Accommodation
+                  </div>
+                </div>
+                <div class="mt-3 pt-3 border-t-2 border-gray-300">
+                  <h2 class="w-fit">Showing Accommodation</h2>
                 </div>
                 <div class="space-y-4 mt-2">
                   <div class="bg-white text-slate-600 text-sm p-1.5 sm:p-2 rounded-lg border border-slate-400">
