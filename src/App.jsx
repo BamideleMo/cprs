@@ -19,7 +19,7 @@ function App() {
       <Meta name="description" content="CPRS"></Meta>
       <Link rel="preload" as="image" href={screen}></Link>
       <div class="bg-white text-sm">
-        <div class="w-11/12 lg:w-2/4 text-lg text-gray-400 text-center">
+        <div class="w-11/12 lg:w-2/4 text-lg mx-auto text-gray-400 text-center">
           Coming soon.
         </div>
       </div>
