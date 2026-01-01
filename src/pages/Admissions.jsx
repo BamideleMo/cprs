@@ -105,6 +105,19 @@ function Admissions() {
                   Graduate Courses – ₦10,000
                 </p>
               </div>
+              <div>
+                <h2 class="text-lg mb-1 leading-tight">
+                  <span class="text-gray-400 block underline">Scholarship</span>
+                </h2>
+                <p>
+                  We understand that funding your education is a herculean task.
+                  Therefore, all admitted students are provided with a RETA
+                  Scholarship Fund to support your education. This is a tuition
+                  fee reduction provided by Reconciliation Trainers Africa
+                  (RETA) as its support for the education and advancement of
+                  peace projects in Nigeria.
+                </p>
+              </div>
             </div>
           </div>
         </section>
