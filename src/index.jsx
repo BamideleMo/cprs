@@ -5,6 +5,8 @@ import { Router, Route } from "@solidjs/router";
 import "./index.css";
 import App from "./App";
 import About from "./pages/About";
+import Academics from "./pages/Academics";
+import Admissions from "./pages/Admissions";
 
 const root = document.getElementById("root");
 
@@ -19,6 +21,8 @@ render(
     <Router>
       <Route path="/" component={App} />
       <Route path="/about-cprs" component={About} />
+      <Route path="/academics" component={Academics} />
+      <Route path="/admissions" component={Admissions} />
       {/* <Route path="*" component={NotFound} /> */}
     </Router>
   ),

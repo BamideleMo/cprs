@@ -11,7 +11,7 @@ function About() {
       <Meta name="description" content="About CPRS"></Meta>
       <div class="bg-white text-sm">
         <Header />
-        <section class="w-full px-1 sm:w-[620px] 2xl:w-[900px] mx-auto">
+        <section class="w-full px-1 sm:w-[620px] 2xl:w-[900px] mx-auto pb-20">
           <div class="my-6 sm:my-10 mx-2 text-left">
             <div class="text-center">
               <h2 class="text-lg sm:text-xl sm:mt-2 text-gray-600 leading-tight">
@@ -19,7 +19,7 @@ function About() {
               </h2>
             </div>
 
-            <div class="my-6 space-y-6 text-base">
+            <div class="my-6 space-y-6 text-base text-gray-700">
               <div>
                 <h2 class="text-lg mb-1 leading-tight">
                   <span class="text-gray-400 block underline">History</span>
@@ -50,6 +50,17 @@ function About() {
                 <p>
                   Adult Education Resource Centre, Mungyel, behind WAEC Office,
                   Jos South LGA, Plateau State Nigeria.
+                </p>
+              </div>
+              <div>
+                <h2 class="text-lg mb-1 leading-tight">
+                  <span class="text-gray-400 block underline">Our Faculty</span>
+                </h2>
+                <p>
+                  We have dedicated and experienced faculty members with
+                  national and international experiences that are committed to
+                  professionalism and integrity. You will find in them a rich
+                  contextual experience in peacebuilding.
                 </p>
               </div>
             </div>

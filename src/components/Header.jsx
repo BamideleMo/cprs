@@ -25,7 +25,7 @@ function Header(props) {
                 </span>
               </div>
               <div>
-                <Menu/>
+                <Menu />
               </div>
             </div>
           </div>
@@ -34,7 +34,10 @@ function Header(props) {
       <header class="border-t-2 border-yellow-400 py-2">
         <div class="w-11/12 lg:w-[1200px] mx-auto">
           <div class="flex justify-between">
-            <div class="w-fit space-x-1 flex">
+            <div
+              onClick={() => window.location.replace("/")}
+              class="w-fit space-x-1 flex cursor-pointer hover:opacity-60"
+            >
               <div class="w-16 lg:w-20">
                 <img src={logo} class="w-full" />
               </div>

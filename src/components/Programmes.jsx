@@ -37,15 +37,6 @@ function Programmes(props) {
                 Diploma in Security Management Technology
               </li>
             </ul>
-            <div class="pt-4">
-              <A
-                href="/"
-                class="flex text-green-700 font-bold hover:opacity-60"
-              >
-                <ArrRight />
-                <span class="-mt-0.5">Entry Requirements</span>
-              </A>
-            </div>
           </div>
           <div class="border border-gray-700 rounded-lg shadow-lg p-4 drop-shadow-lg">
             <h2 class="text-lg text-blue-800 font-bold leading-tight">
@@ -70,15 +61,6 @@ function Programmes(props) {
                 Bachelor of Arts Education & Conflict Studies
               </li>
             </ul>
-            <div class="pt-4">
-              <A
-                href="/"
-                class="flex text-green-700 font-bold hover:opacity-60"
-              >
-                <ArrRight />
-                <span class="-mt-0.5">Entry Requirements</span>
-              </A>
-            </div>
           </div>
           <div class="border border-gray-700 rounded-lg shadow-lg p-4 drop-shadow-lg">
             <h2 class="text-lg text-blue-800 font-bold leading-tight">
@@ -97,15 +79,6 @@ function Programmes(props) {
                 Postgraduate Diploma Criminology & Security Technology
               </li>
             </ul>
-            <div class="pt-4">
-              <A
-                href="/"
-                class="flex text-green-700 font-bold hover:opacity-60"
-              >
-                <ArrRight />
-                <span class="-mt-0.5">Entry Requirements</span>
-              </A>
-            </div>
           </div>
           <div class="border border-gray-700 rounded-lg shadow-lg p-4 drop-shadow-lg">
             <h2 class="text-lg text-blue-800 font-bold leading-tight">
@@ -132,15 +105,20 @@ function Programmes(props) {
                 Master of Arts Education & Conflict Studies
               </li>
             </ul>
-            <div class="pt-4">
-              <A
-                href="/"
-                class="flex text-green-700 font-bold hover:opacity-60"
-              >
-                <ArrRight />
-                <span class="-mt-0.5">Entry Requirements</span>
-              </A>
-            </div>
+          </div>
+        </div>
+        <div class="mt-8 flex">
+          <div class="grow pt-1.5">
+            <div class="border-y border-dashed border-gray-200 h-1 rounded-full">&nbsp;</div>
+          </div>
+          <div class="w-fit">
+            <A
+              href="/admissions"
+              class="flex text-green-700 font-bold hover:opacity-60"
+            >
+              <ArrRight />
+              <span class="-mt-0.5">See Entry Requirements</span>
+            </A>
           </div>
         </div>
       </div>
