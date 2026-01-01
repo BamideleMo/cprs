@@ -4,6 +4,7 @@ import { Router, Route } from "@solidjs/router";
 
 import "./index.css";
 import App from "./App";
+import About from "./pages/About";
 
 const root = document.getElementById("root");
 
@@ -17,6 +18,7 @@ render(
   () => (
     <Router>
       <Route path="/" component={App} />
+      <Route path="/about-cprs" component={About} />
       {/* <Route path="*" component={NotFound} /> */}
     </Router>
   ),
