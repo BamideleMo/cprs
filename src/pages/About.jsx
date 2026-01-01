@@ -63,6 +63,28 @@ function About() {
                   contextual experience in peacebuilding.
                 </p>
               </div>
+              <div>
+                <h2 class="text-lg mb-1 leading-tight">
+                  <span class="text-gray-400 block underline">
+                    Principal Officers of the College
+                  </span>
+                </h2>
+                <p>
+                  <b>RECTOR</b> — Rev. Assoc. Prof. Joseph Maren Sampson, PhD
+                  <br />
+                  <b>REGISTRAR</b> — Mr. Stephen Pwaspo Mangniang, FCNA
+                  <br />
+                  <b>BURSAR</b> — Dr. Mrs. Margaret Stephen Mangniang, CAN
+                  <br />
+                  <b>ACADEMIC DEAN</b> — Dr. Johnson Mafulul Makut
+                  <br />
+                  <b>DEAN OF STUDENTS AFFAIRS</b> — Mr. Rotgak Danjuma
+                  <br />
+                  <b>HEAD OF EDUCATION</b> — Mrs. Margaret Ogisa
+                  <br />
+                  <b>HEAD OF PEACE & CONFLICT</b> — Dr. Nanaghan Adesola Peter
+                </p>
+              </div>
             </div>
           </div>
         </section>
