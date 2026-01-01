@@ -20,11 +20,10 @@ body {
 
 .bg-image {
   background-image: url(assets/bg-image.jpg);
-  /* background-position: top center; */
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 616px;
+  /* min-height: 616px; */
 }
 
 /* VerticalTextSlider.css */

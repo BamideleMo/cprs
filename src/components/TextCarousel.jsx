@@ -136,7 +136,7 @@ function TextCarousel(props) {
               <div
                 class={`min-w-full flex flex-col items-left justify-center text-white pb-8`}
               >
-                <h2 class="text-3xl font-black mb-4">{slide.title}</h2>
+                <h2 class="text-2xl leading-tight lg:text-3xl font-black mb-4">{slide.title}</h2>
               </div>
             )}
           </For>
