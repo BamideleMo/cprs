@@ -19,7 +19,7 @@ function Admissions() {
               </h2>
             </div>
 
-            <div class="my-6 space-y-6 text-base text-gray-700">
+            <div class="my-6 space-y-6 text-base text-gray-700 text-pretty text-justify">
               <div>
                 <h2 class="text-lg mb-1 leading-tight">
                   <span class="text-gray-400 block underline">

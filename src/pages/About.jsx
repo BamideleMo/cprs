@@ -19,7 +19,7 @@ function About() {
               </h2>
             </div>
 
-            <div class="my-6 space-y-6 text-base text-gray-700">
+            <div class="my-6 space-y-6 text-base text-gray-700 text-pretty text-justify">
               <div>
                 <h2 class="text-lg mb-1 leading-tight">
                   <span class="text-gray-400 block underline">History</span>
@@ -66,24 +66,91 @@ function About() {
               <div>
                 <h2 class="text-lg mb-1 leading-tight">
                   <span class="text-gray-400 block underline">
-                    Principal Officers of the College
+                    Accreditation and Affiliation
                   </span>
                 </h2>
                 <p>
-                  <b>RECTOR</b> — Rev. Assoc. Prof. Joseph Maren Sampson, PhD
-                  <br />
-                  <b>REGISTRAR</b> — Mr. Stephen Pwaspo Mangniang, FCNA
-                  <br />
-                  <b>BURSAR</b> — Dr. Mrs. Margaret Stephen Mangniang, CAN
-                  <br />
-                  <b>ACADEMIC DEAN</b> — Dr. Johnson Mafulul Makut
-                  <br />
-                  <b>DEAN OF STUDENTS AFFAIRS</b> — Mr. Rotgak Danjuma
-                  <br />
-                  <b>HEAD OF EDUCATION</b> — Mrs. Margaret Ogisa
-                  <br />
-                  <b>HEAD OF PEACE & CONFLICT</b> — Dr. Nanaghan Adesola Peter
+                  CPRS is legally registered with the Corporate Affairs
+                  Commission as a Limited Liability Company approved to offer
+                  educational services leading to the award of degrees with CAC
+                  Registration No RC 1530450.
                 </p>
+              </div>
+              <div>
+                <p>
+                  CPRS is affiliated to LAWNA Theological Seminary (LATS) Jos.
+                  LATS is a Seminary of the Apostolic Church of Nigeria LAWNA
+                  Territory. CPRS is also recognized by the Ministries of Higher
+                  Education in Plateau and Nasarawa States. CPRS is also a
+                  Correspondent Member of ACTEA Africa.
+                </p>
+              </div>
+              <div>
+                <h2 class="text-lg mb-1 leading-tight">
+                  <span class="text-gray-400 block underline">
+                    Principal Officers of the College
+                  </span>
+                </h2>
+                <ul class="space-y-1 list-disc mx-6">
+                  <li>
+                    <b>RECTOR</b> — Rev. Assoc. Prof. Joseph Maren Sampson, PhD
+                  </li>
+                  <li>
+                    <b>REGISTRAR</b> — Mr. Stephen Pwaspo Mangniang, FCNA
+                  </li>
+                  <li>
+                    <b>BURSAR</b> — Dr. Mrs. Margaret Stephen Mangniang, CAN
+                  </li>
+                  <li>
+                    <b>ACADEMIC DEAN</b> — Dr. Johnson Mafulul Makut
+                  </li>
+                  <li>
+                    <b>DEAN OF STUDENTS AFFAIRS</b> — Mr. Rotgak Danjuma
+                  </li>
+                  <li>
+                    <b>HEAD OF EDUCATION</b> — Mrs. Margaret Ogisa
+                  </li>
+                  <li>
+                    <b>HEAD OF PEACE & CONFLICT</b> — Dr. Nanaghan Adesola Peter
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2 class="text-lg mb-1 leading-tight">
+                  <span class="text-gray-400 block underline">
+                    Governing Council Members
+                  </span>
+                </h2>
+                <ul class="space-y-1 list-decimal mx-6">
+                  <li>
+                    <b>Chairperson</b> — Prof. Mrs. Juliana Mulmicit Mafwil, MNI
+                  </li>
+                  <li>
+                    <b>Member</b> — Dr. Joseph Gusen
+                  </li>
+                  <li>
+                    <b>Member</b> — Mrs. Elizabeth Gwary
+                  </li>
+                  <li>
+                    <b>Member</b> — Rtd. Major Sule Gebu Baduwa
+                  </li>
+                  <li>
+                    <b>Member</b> — Rt. Bishop Nathan Nyiekaa Inyom
+                  </li>
+                  <li>
+                    <b>Member</b> — Engr. Mrs. Esther G. Gonda
+                  </li>
+                  <li>
+                    <b>Secretary to Council</b> — Rev. Assoc. Prof. Joseph Maren
+                    Sampson
+                  </li>
+                  <li>
+                    <b>Member</b> — Prof. Joseph G. Golwa
+                  </li>
+                  <li>
+                    <b>Member</b> — Hon. Solomon Bulus Maren
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

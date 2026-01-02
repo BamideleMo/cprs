@@ -24,7 +24,7 @@ function Welcome(props) {
           </h2>
           <div class="mt-4 lg:mt-10 text-green-700">
             <A
-              href="#"
+              href="/about-cprs"
               class="w-fit font-bold text-base flex space-x-1 hover:opacity-60"
             >
               <span class="-mt-0.5">

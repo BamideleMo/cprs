@@ -13,24 +13,27 @@ function Hero(props) {
           <TextCarousel />
           <div class="pb-6 flex space-x-3 lg:space-x-6 mt-4 font-bold text-xs md:text-sm">
             <A
-              href="/"
+              href="/academics#programmes"
               class="bg-green-700 text-white p-2 lg:p-3 border border-black hover:opacity-60"
             >
               View Programmes
             </A>
-            <A
-              href="/"
+            <a
+              href="https://wa.me/2347039634892"
+              target="_blank"
               class="flex w-fit space-x-1 text-red-700 bg-gray-50 p-2 lg:p-3 border border-red-700 hover:opacity-60"
             >
               <span>
                 <img src={chatIcon} class="w-4 lg:mt-0.5" />
               </span>
               <span>Chat with Admissions Office</span>
-            </A>
+            </a>
           </div>
         </div>
       </div>
-      <div class="lg:flex-1 bg-image min-h-[200px] lg:min-h-[616px]">&nbsp;</div>
+      <div class="lg:flex-1 bg-image min-h-[200px] lg:min-h-[616px]">
+        &nbsp;
+      </div>
     </div>
   );
 }

@@ -17,7 +17,7 @@ function Centre(props) {
           </div>
           <div class="lg:w-1/5 pt-8 lg:pt-4 lg:text-center">
             <A
-              href=""
+              href="/cpd"
               class="border border-black p-3 bg-green-700 hover:opacity-60"
             >
               <ArrRight />

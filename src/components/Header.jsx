@@ -65,7 +65,7 @@ function Header(props) {
       <div class="border-t border-yellow-200 bg-green-700 py-2 text-center text-white text-sm">
         <div class="w-11/12 lg:w-[1200px] mx-auto">
           Sales of Admission forms is ongoing.{" "}
-          <A href="/" class="underline hover:opacity-60">
+          <A href="/apply" class="underline hover:opacity-60">
             Apply Now!
           </A>
         </div>

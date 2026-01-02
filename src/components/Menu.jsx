@@ -28,8 +28,8 @@ function Menu(props) {
         </A>
       </li>
       <li>
-        <A href="#" class="border-b border-green-600 hover:border-dotted">
-          Contact Us
+        <A href="/partnerships" class="border-b border-green-600 hover:border-dotted">
+          Partnerships
         </A>
       </li>
     </ul>

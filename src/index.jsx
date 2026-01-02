@@ -7,6 +7,9 @@ import App from "./App";
 import About from "./pages/About";
 import Academics from "./pages/Academics";
 import Admissions from "./pages/Admissions";
+import CPD from "./pages/CPD";
+import InstitutionalPartnerships from "./pages/InstitutionalPartnerships";
+import Apply from "./pages/Apply";
 
 const root = document.getElementById("root");
 
@@ -23,6 +26,9 @@ render(
       <Route path="/about-cprs" component={About} />
       <Route path="/academics" component={Academics} />
       <Route path="/admissions" component={Admissions} />
+      <Route path="/cpd" component={CPD} />
+      <Route path="/partnerships" component={InstitutionalPartnerships} />
+      <Route path="/apply" component={Apply} />
       {/* <Route path="*" component={NotFound} /> */}
     </Router>
   ),

@@ -59,7 +59,10 @@ function Academics() {
                 </h2>
                 <p>You can Study by weekends or online.</p>
               </div>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:border-y md:py-5">
+              <div
+                id="programmes"
+                class="grid grid-cols-1 md:grid-cols-2 gap-6 md:border-y md:py-5"
+              >
                 <div>
                   <h2 class="text-lg mb-1 leading-tight">
                     <span class="text-gray-400 block underline">
@@ -142,6 +145,8 @@ function Academics() {
                   </ul>
                 </div>
               </div>
+
+              <div>xxx</div>
             </div>
           </div>
         </section>
