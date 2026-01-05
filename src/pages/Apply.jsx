@@ -27,9 +27,15 @@ function Apply() {
                     How to apply
                   </span>
                 </h2>
-                
+
+                <p>Click the link below to download our application form:</p>
                 <p>
-                  .
+                  <a
+                    class="text-green-700 font-bold hover:opacity-60"
+                    href="https://drive.google.com/file/d/1Qu1pRHbPmjgbnqo5XGwBZ6kNvAiNFZ5L/view?usp=sharing"
+                  >
+                    Download (PDF)
+                  </a>
                 </p>
               </div>
             </div>

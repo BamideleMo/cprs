@@ -94,13 +94,19 @@ function Academics() {
                     </li>
 
                     <li class="border-l border-dotted border-red-700 leading-tight pl-1">
-                      Bachelor of Science, Criminology and Security Technology
-                    </li>
-                    <li class="border-l border-dotted border-red-700 leading-tight pl-1">
-                      Bachelor of Arts, Peace and Counselling Studies
+                      Bachelor of Science Criminology & Security Studies
                     </li>
                     <li class="border-l border-dotted border-red-700 leading-tight pl-1">
                       Bachelor of Arts Education & Conflict Studies
+                    </li>
+                    <li class="border-l border-dotted border-red-700 leading-tight pl-1">
+                      Bachelor of Arts Education, Guidance and Counselling
+                    </li>
+                    <li class="border-l border-dotted border-red-700 leading-tight pl-1">
+                      Bachelor of Arts Education, Admin & Planning
+                    </li>
+                    <li class="border-l border-dotted border-red-700 leading-tight pl-1">
+                      Bachelor of Arts Christian Religious Studies
                     </li>
                   </ul>
                 </div>
@@ -145,8 +151,6 @@ function Academics() {
                   </ul>
                 </div>
               </div>
-
-              <div>xxx</div>
             </div>
           </div>
         </section>

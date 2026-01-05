@@ -111,11 +111,11 @@ function Admissions() {
                 </h2>
                 <p>
                   We understand that funding your education is a herculean task.
-                  Therefore, all admitted students are provided with a RETA
-                  Scholarship Fund to support your education. This is a tuition
-                  fee reduction provided by Reconciliation Trainers Africa
-                  (RETA) as its support for the education and advancement of
-                  peace projects in Nigeria.
+                  Therefore, all admitted students enjoy a tuition free
+                  Scholarship to support your education. This is a tuition fee
+                  reduction supported by Josephmaren Peace Foundation Nigeria as
+                  its support for the education and advancement of peace
+                  projects in Nigeria.
                 </p>
               </div>
             </div>

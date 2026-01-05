@@ -70,19 +70,11 @@ function About() {
                   </span>
                 </h2>
                 <p>
-                  CPRS is legally registered with the Corporate Affairs
-                  Commission as a Limited Liability Company approved to offer
-                  educational services leading to the award of degrees with CAC
-                  Registration No RC 1530450.
-                </p>
-              </div>
-              <div>
-                <p>
-                  CPRS is affiliated to LAWNA Theological Seminary (LATS) Jos.
-                  LATS is a Seminary of the Apostolic Church of Nigeria LAWNA
-                  Territory. CPRS is also recognized by the Ministries of Higher
-                  Education in Plateau and Nasarawa States. CPRS is also a
-                  Correspondent Member of ACTEA Africa.
+                  CPRS is affiliated to Northeast Theological Seminary, Demsa
+                  Yola. Northeast Theological Seminary is an affiliate of Taraba
+                  State University, Jalingo. CPRS is also recognized by the
+                  Ministries of Higher Education in Plateau and Nasarawa States.
+                  CPRS is also a Correspondent Member of ACTEA Africa.
                 </p>
               </div>
               <div>
