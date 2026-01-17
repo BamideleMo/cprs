@@ -69,7 +69,7 @@ function TextCarousel(props) {
   const slides = [
     {
       id: 1,
-      title: "Northeast Theological Seminary, Demsa Yola.",
+      title: "Affiliated to Northeast Theological Seminary, Demsa Yola.",
     },
     {
       id: 2,
