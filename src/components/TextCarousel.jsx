@@ -69,7 +69,7 @@ function TextCarousel(props) {
   const slides = [
     {
       id: 1,
-      title: "Affiliated to LAWNA Theological Seminary, Jos.",
+      title: "Northeast Theological Seminary, Demsa Yola.",
     },
     {
       id: 2,
@@ -136,7 +136,9 @@ function TextCarousel(props) {
               <div
                 class={`min-w-full flex flex-col items-left justify-center text-white pb-8`}
               >
-                <h2 class="text-2xl leading-tight lg:text-3xl font-black mb-4">{slide.title}</h2>
+                <h2 class="text-2xl leading-tight lg:text-3xl font-black mb-4">
+                  {slide.title}
+                </h2>
               </div>
             )}
           </For>
